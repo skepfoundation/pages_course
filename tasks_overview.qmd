@@ -1,3 +1,13 @@
 ---
 title: "Course Tasks"
 ---
+
+# Task 1 - Creating Your First Github Repo
+
+Git is the world's [most popular version control system](https://www.accuwebhosting.com/blog/best-version-control-systems/) and Github is the most popular site for hosting code using git in the cloud. As a version control system, Git helps you keep your coding project files organized by keeping a record of when you edited files and tags them with short notes about what changes were made in the last iteration. This is particularly helpful when you are colaborating on a project with other programmers and need to stay tidy while working on the same files.
+
+Github is a free web service for storing your version controlled code in the cloud. It allows you to access your code from anywhere and it provides a handy interface for tracking your code's changes over time. It also happens to have a handy service for hosting static websites for free on their platform.
+
+In this task you will create a github account, create a repository, and clone that repository onto your local machine in Rstudio.
+
+-   [Details](tasks/task_01.qmd)
