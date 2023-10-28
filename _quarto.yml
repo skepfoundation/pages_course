@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Github Pages Training"
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Tools"
+        menu: 
+          - href: tools/r_installation.qmd
+            text: "R Installation"
+          - href: tools/r_studio.qmd
+            text: "R Studio"
+          - href: tools/git_installation.qmd
+            text: "Git Installation"
+          - href: tools/github_setup.qmd
+            text: "Github Setup"
+      - href: tasks_overview.qmd
+        text: Course Tasks
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

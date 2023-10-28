@@ -1,0 +1,23 @@
+---
+title: "R Installation"
+---
+
+# What is R?
+
+R is a programming language developed by Ross Ihaka and Robert Gentleman designed for statistical programming. It is primarily focused on data wrangling and visualization.
+
+As the phrase "programming language" suggests, R is a language used to instruct a computer to carry out complex commands. Like most any other language you will need to understand its grammar and syntax in order to fluently "speak" it. The more fluent you become in it, the easier it will be for you to communicate your wants and desires to it.
+
+# Installing R
+
+1.  Go to [cloud.r-project.org](https://cloud.r-project.org/)
+
+2.  Click on the download link for your computer system. For example if you are using a windows computer click "Download R for Windows"
+
+3.  Click on "base"
+
+4.  Click on the download version for the current version of R. (At time of writing the button says "Download R-4.3.1 for Windows" on a windows computer.) Make sure you know where you save the downloaded file so that you can run the installer.
+
+5.  Navigate to the downloaded file and run the installer by double clicking. (Usually it is title something like "R-4.3.1-win") Follow the steps for the installation wizard. It is highly recommended you just keep the recommended installation settings especially if you haven't done this before.
+
+6.  R should now be properly installed. We'll show you how to check it properly in the next tutorial ["Installing R Studio"](r_studio.qmd)

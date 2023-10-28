@@ -1,0 +1,57 @@
+---
+title: "Welcome!"
+---
+
+# Introduction
+
+Welcome to GitHub Pages Training, a course designed to take you from complete beginner to a website creating machine! In this course we will walk through the basics of using Github, R, and Quarto for website development. If you don't know what any of those are, that is OK. We'll teach you! Just know this, we will collectively use those tools to develop free websites. Along the way you will pick up the fundamental data science skills used by professionals every day.
+
+# Required Experience
+
+This course assumes that you have no technical experience with website creation, programming, or using GitHub. It does however assume that you have a basic understanding of how to navigate a computer and its file management system.
+
+You will be well served by knowing how to find answers to your questions through a search engine like [Google](google.com). Many say that the best programmers are really just the best googlers.
+
+Some excellent websites where people post questions and answers to common programming questions are [Stack Overflow](stackoverflow.com) and [GitHub](github.com).
+
+# Required Materials
+
+You will need access to the following materials to complete this course:
+
+-   A computer with at least 8GB of RAM
+
+-   A stable internet connection
+
+-   A discord account with access to our discord server
+
+# Course Structure
+
+This course is designed to allow you to complete learning assignments on your own but with some healthy support from our data science team. We will meet for whole team check-ins once a week virtually through zoom. Additionally, we will have a discord server where you can post questions, pictures of your class projects, and assist other learners in our community.
+
+You are expected to interact on that discord server over the duration of the course both for your benefit and the benefit of your peers. It's also a great place to meet like-minded individuals and grow your network!
+
+You will be assigned a data science mentor who can help you with your assignments. Discord will be your primary tool for interacting.
+
+# Course Outcomes
+
+### What you will know by the end
+
+By the end of this course you should know how to build a basic, static website using R and hosted for free on Github. You will know how to customize your website and how to add cool things like embedded pictures and videos, interactive charts, and direct links to social platforms like facebook and twitter.
+
+-   You will know how to use Github for version control of future coding projects.
+
+-   You will know how to use the R programming language to generate plots and manage data from a variety of sources.
+
+-   You will know how to use Quarto to publish professional reports including websites.
+
+### What you will *not* know by the end
+
+While we hope you feel you can create a custom website from scratch by the end of this course, there will still be some things you won't be able to do by the end.
+
+-   You won't be able to create a dynamic website. A dynamic website is where he contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
+
+-   You won't known the ins and outs of data science skills like data wrangling or machine learning. (These are saved for future courses)
+
+# Conclusion
+
+We truly hope you enjoy this course and that it serves you on your data science journey. This course is designed to teach you the basic skills you will need to succeed as a data scientist. We do this through a lens of learning how to create websites but with the primary intent of giving you transferable skills to succeed in the world of data science.
