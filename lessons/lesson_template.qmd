@@ -1,0 +1,37 @@
+---
+title: "Lesson"
+---
+
+## Overview
+
+\[Replace this text with a paragraph explaining what will be learned in this lesson\]
+
+## Learning Objectives
+
+\[write a single bullet point for each thing that a learner will be able to do by the end of the lesson. Traditionally these are written with the sentence starter "Students will be able to..."\]
+
+-   Students will be able to \[set up a github profile\]
+
+-   Students will be able to \[create new github repos\]
+
+## Lesson
+
+\[Replace this text with the content of the actual lesson\]
+
+## Practice Activity
+
+\[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.\]
+
+## Conclusion
+
+\[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.
+
+example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.\]
+
+## FAQ
+
+\[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with\]
+
+#### What is two-factor authentication?
+
+Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
