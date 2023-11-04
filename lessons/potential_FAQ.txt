@@ -1,0 +1,3 @@
+FAQ
+why is the link to the quarto installation not working?
+It could be because the server in your area is non-responsive. Try using a VPN set to another country (preferably, the US). You can use a free VPN extension on chrome (or whatever browser you are using). Reload the page and try the installation link again. The quarto file should download.

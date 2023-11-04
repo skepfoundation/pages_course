@@ -1,0 +1,76 @@
+---
+title: "Lesson 01: Creating a Github Account"
+---
+
+## Overview
+
+This lesson will go over the steps necessary to create a GitHub account
+
+## Learning Objectives
+
+-   Students will be able to set up a github profile.
+
+## Lesson
+
+### Step 01: Find Github
+
+- Navigate to [Github.com](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
+- Click on the right side of the pink arrow to enter your email address.
+
+### Step 02: Enter Email address, Password, and Username
+
+- Enter a valid email address that you have immediate access to. *Double check to make sure the email address is valid and that you have access to it*.
+- If the **continue** button turns green, tap it.
+- A new section  will appear prompting you to input a password. *Make sure to follow the password guidelines that will appear at the bottom of the password input area*.
+- Again, click on the green **continue** button.
+- A new section will appear prompting you to input a username. *Follow the username guidelines that will appear at the bottom of the username input area*.
+- Click on the green **continue** button.
+- A prompt will appear asking if you want to receive annoucements via email. If you are okay with receiving product email and announcements from Github, enter the letter **y**, if not, enter the letter **n** in the input area provided.
+- Click on the green **continue** button.
+
+### Step 03: Verifying your account
+
+- A new section will drop down asking you to verify your account. Click on the word **Verify**. *It should turn green when you hover over it*.
+- The verification challenge would be a picture of a pointing hand on the left, and a picture of an animal on the right. The challenge is to use the **⬅** and **➡** buttons which are below the picture of an animal to position the animal to face in the direction the hand is pointing.
+- You may have one or two of a similar challenge.
+- When you are done with the challenge a check mark ✅ will appear.
+- Now click on the green **create account** button that will be at the bottom of the screen.
+- A code will be sent to the email address you entered previously.
+- Open you email account and refresh your inbox. You should see a message from Github.
+- If after a while, you still do not see an email from Github, go back to the webpage and tap the link below the **Enter code** section. The link will be named **Resend the code**. This will prompt Github to send a new message to your email.
+- When you receive the email, open it and take note of the numbers there.
+- Return to the Github webpage and input the numbers into the boxes provided.
+- If you have entered the numbers correctly, a new webpage will appear.
+
+### Step 04: Final Setup
+- You will be asked two questions
+  - How many team members will be working with you?
+    - For this question choose the option **2-5**.
+  - Are you a student or teacher?
+    - For this question choose the option **student** if you are a student. Choose **N/A** if you are neither a student nor a teacher.
+- A new webpage will appear asking you some questions. Just click the **continue** button found at the bottom of the page.
+- You will see a new webpage with two sections, one labelled **Free** and the other **Get Student Benefits**.
+- For now, go to the bottom of the page and  click **Continue for free**, even if you are a student. *You can get student benefits later*.
+- **Woohoo!!** Your Github dashboard should now be open.
+
+### Congratulations 🎉😎, You have successfully created a GitHub Account/Profile! 
+
+## Practice Activity
+
+- Create a Github account.
+- When your dashboard opens, take a screen shot of it.
+- Post the screenshot in your group so your classmates and mentors can see.
+
+## Conclusion
+
+ You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.
+
+## FAQ
+
+#### What is two-factor authentication?
+
+Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
+
+#### What if I fail the picture challenge?
+
+Don't stress. Refresh the webpage and try again.
