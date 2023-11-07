@@ -74,15 +74,19 @@ To create a GitHub profile README, you simply create a new repository that has t
 
 3. A Create a new repository page opens. In the **Repository name** field, enter the username of your GitHub account. After entering the username, GitHub displays a message describing that you’re about to create a GitHub special repository.
    
-![There will be a screenshot to illustrate]()
+![](./images/2.1.png)
 
-4. Check the **public** checkbox under repository type to make the Github profile README visible to everyone who visits the Github profile page. If you don't want users to see your Github profile README while it's still in development, you can choose **Private**. Once done with editing the README, you can go to the repo settings to change it's visibilty to **Public**.
+1. Check the **public** checkbox under repository type to make the Github profile README visible to everyone who visits the Github profile page. If you don't want users to see your Github profile README while it's still in development, you can choose **Private**. Once done with editing the README, you can go to the repo settings to change it's visibilty to **Public**.
 
-5. Check the **Add a README file checkbox. This will add a README.md file where we'll add the profile contents. The field values should look similar to the image below.
+2. Check the **Add a README file checkbox. This will add a README.md file where we'll add the profile contents. The field values should look similar to the image below.
 
-![A screen shot to illustrate]()
+![](./images/2.png)
 
 6. Click on the **Create repository** button. A special repository is created successfully. Go to the repository you just created and you'll see a **README.md** file added to the repository.
+
+![](./images/3.png)
+
+7. Click on the **Create repository** button. A special repository is created successfully. Go to the repository you just created and you'll see a **README.md** file added to the repository.
    
 ![image to illustrate]()
 
