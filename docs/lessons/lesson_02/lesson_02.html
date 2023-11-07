@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Github Pages Training - Lesson_02</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Github Pages Training</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
+        <li>
+    <a class="dropdown-item" href="../../tools/r_installation.html" rel="" target="">
+ <span class="dropdown-text">R Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/r_studio.html" rel="" target="">
+ <span class="dropdown-text">R Studio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/git_installation.html" rel="" target="">
+ <span class="dropdown-text">Git Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/github_setup.html" rel="" target="">
+ <span class="dropdown-text">Github Setup</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../tasks_overview.html" rel="" target="">
+ <span class="menu-text">Course Tasks</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overviewpages_courselessonslesson_template.qmd" id="toc-overviewpages_courselessonslesson_template.qmd" class="nav-link active" data-scroll-target="#overviewpages_courselessonslesson_template.qmd">Overviewpages_course/lessons/lesson_template.qmd</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-github-profile-readme" id="toc-what-is-a-github-profile-readme" class="nav-link" data-scroll-target="#what-is-a-github-profile-readme">What is a Github Profile README?</a></li>
+  </ul></li>
+  <li><a href="#creating-a-github-profile-readme-file" id="toc-creating-a-github-profile-readme-file" class="nav-link" data-scroll-target="#creating-a-github-profile-readme-file">Creating a github profile README file</a></li>
+  <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lesson_02</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="overviewpages_courselessonslesson_template.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="overviewpages_courselessonslesson_template.qmd">Overviewpages_course/lessons/lesson_template.qmd</h2>
+<p>In this lesson, we will embark on a journey to create your very own profile page on github using Markdown, a lightweight and easy-to-use syntax for styling all forms of writing on the web. Markdown is widely used because it allows you to maintain the readability of plain text while offering the styling capabilities of HTML. Our goal is to familiarize you with the foundational elements of Markdown to transform plain text into a rich, well-formatted document.</p>
+<p>Throughout the lesson, we will explore the basic constructs of Markdown, such as headers, emphasis, lists, links, and images, which will serve as the building blocks for your profile page. You will learn how to structure content with different levels of headings and how to emphasize text using bold and italic styles to make your page more engaging.</p>
+<p>Additionally, we will delve into creating ordered and unordered lists to organize your skills and achievements in a visually appealing manner. We will also cover the process of incorporating hyperlinks and images, enabling you to link to projects or personal works and add a personal touch with your photo.</p>
+<p>By the end of this lesson, you will have crafted a personal profile page that not only tells your story but also showcases your newfound Markdown skills. This profile can serve as a starting point for your portfolio, a personal webpage, or a GitHub README file, providing a snapshot of your professional persona to the world. As a hands-on approach to learning, you will actively engage in writing Markdown, receiving immediate visual feedback, and iterating on your design to create a compelling and informative profile page.</p>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li><p>Students will be able to recognize and apply markdown syntax to create structured and styled text documents.</p></li>
+<li><p>Students will be able to organize content using headers to create clear hierarchy and flow within their profile page.</p></li>
+<li><p>Students will be able to emphasize key aspects of their profile using bold and italic text formatting.</p></li>
+<li><p>Students will be able to construct ordered and unordered lists to list accomplishments, skills and interests effectively.</p></li>
+<li><p>Students will be able to embed hyperlinks and connect their profile to personal projects, professional networks, or external references.</p></li>
+<li><p>Students will be able to insert images to personalize their profile page, making it more visually engaging.</p></li>
+<li><p>Students will be able to craft a concise biography or personal statement that reflects their individual journey and aspirations.</p></li>
+<li><p>Students will be able to utilize blockquotes to highlight personal mottos.</p></li>
+<li><p>Students will be able to implement code blocks and inline code to showcase technical skills or highlight programming projects.</p></li>
+<li><p>Students will be able to create a comprehensive and visually appealing profile page that can be shared and viewed on various platforms, including Github and personal blogs.</p></li>
+</ul>
+</section>
+<section id="lesson" class="level2">
+<h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
+<section id="what-is-a-github-profile-readme" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-github-profile-readme">What is a Github Profile README?</h3>
+<p>Since the beginning of this lesson, we’ve actually made mention of github profile readme, and I believe some of you don’t really have an idea what it is all about.</p>
+<p>A GitHub profile README is a special repository that you can create to add a README file to your GitHub profile. It acts as a customizable “about me” section where you can introduce yourself, showcase your work, and share information about your interests, projects, or achievements.</p>
+<p>When someone visits your GitHub profile, the content of this README is displayed prominently, so it’s a great way to make a first impression on people who are exploring your GitHub repositories or looking to learn more about you as a developer or contributor.</p>
+<p>To create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is <code>octocat</code>, you would create a repository named <code>octocat</code>. Inside this repository, you place a <code>README.md</code> file. Whatever you write in the <code>README.md</code> file using Markdown will appear on your GitHub profile.</p>
+<p>[We will include an image of the sample github profile and how it will look like in this section]</p>
+<p><strong>In the next section, we will look at the steps taken to create a github README file for a github profile.</strong></p>
+<hr>
+</section>
+</section>
+<section id="creating-a-github-profile-readme-file" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-github-profile-readme-file">Creating a github profile README file</h2>
+<ol type="1">
+<li>Log in to GitHub.</li>
+<li>Click on <strong>+</strong> icon at top right of the page and select <strong>New Repository</strong>.</li>
+</ol>
+<p><img src="./images/1.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>A Create a new repository page opens. In the <strong>Repository name</strong> field, enter the username of your GitHub account. After entering the username, GitHub displays a message describing that you’re about to create a GitHub special repository.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src=".png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">There will be a screenshot to illustrate</figcaption>
+</figure>
+</div>
+<ol start="4" type="1">
+<li><p>Check the <strong>public</strong> checkbox under repository type to make the Github profile README visible to everyone who visits the Github profile page. If you don’t want users to see your Github profile README while it’s still in development, you can choose <strong>Private</strong>. Once done with editing the README, you can go to the repo settings to change it’s visibilty to <strong>Public</strong>.</p></li>
+<li><p>Check the **Add a README file checkbox. This will add a README.md file where we’ll add the profile contents. The field values should look similar to the image below.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src=".png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">A screen shot to illustrate</figcaption>
+</figure>
+</div>
+<ol start="6" type="1">
+<li>Click on the <strong>Create repository</strong> button. A special repository is created successfully. Go to the repository you just created and you’ll see a <strong>README.md</strong> file added to the repository.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src=".png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">image to illustrate</figcaption>
+</figure>
+</div>
+</section>
+<section id="practice-activity" class="level2">
+<h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
+<p>[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.]</p>
+<p>[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.</p>
+<p>example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.]</p>
+</section>
+<section id="faq" class="level2">
+<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
+<p>[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with]</p>
+<section id="what-is-two-factor-authentication" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-two-factor-authentication">What is two-factor authentication?</h4>
+<p>Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
