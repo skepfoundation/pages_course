@@ -76,9 +76,9 @@ To create a GitHub profile README, you simply create a new repository that has t
    
 ![](./images/2.1.png)
 
-1. Check the **public** checkbox under repository type to make the Github profile README visible to everyone who visits the Github profile page. If you don't want users to see your Github profile README while it's still in development, you can choose **Private**. Once done with editing the README, you can go to the repo settings to change it's visibilty to **Public**.
+4. Check the **public** checkbox under repository type to make the Github profile README visible to everyone who visits the Github profile page. If you don't want users to see your Github profile README while it's still in development, you can choose **Private**. Once done with editing the README, you can go to the repo settings to change it's visibilty to **Public**.
 
-2. Check the **Add a README file checkbox. This will add a README.md file where we'll add the profile contents. The field values should look similar to the image below.
+5. Check the **Add a README file** checkbox. This will add a ```README.md``` file where we'll add the profile contents. The field values should look similar to the image below.
 
 ![](./images/2.png)
 
@@ -86,9 +86,35 @@ To create a GitHub profile README, you simply create a new repository that has t
 
 ![](./images/3.png)
 
-7. Click on the **Create repository** button. A special repository is created successfully. Go to the repository you just created and you'll see a **README.md** file added to the repository.
-   
-![image to illustrate]()
+In the next few sections, we'll add contents to our README.md file. We'll use Github's file editor to write and preview the changes. There are other text editor which you can use as well such as **Vs Code Editor**, **Sublime Text**, **Atom** etc. But making use of this editors, you will have to clone the repository on your local machine and run changes needed. You can look that up at your own free time.
+
+But for this lesson, we shall be making use of Github file editor. Open the **README.md** file and click on the Edit this file icon (a pencil icon) on the top right of the repo page. As highlighted in the image below:
+
+![](./images/3.1.png)
+
+## Adding GIFS and Social Links to your Github Profile README
+
+Here's an image of the content that will be added in this section:
+[](./images/6.png)
+
+The Gif used in this section can be found [here](https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9). I found this GIF on [Giphy](https://giphy.com/), which is full of free GIFs to use.
+
+Go to the [GIF Link](https://giphy.com/stickers/hacktiv8-coding-codingfromhome-fromhome-M9gbBd9nbDrOTu1Mqx?utm_term=) and click on the **Share** button and then **Copy GIF Link**. We'll add this copied link to an HTML ``` img ``` tag to display it in the Markdown file. We're using the ``` img ``` tag as it'll help us specify the width of the image.
+
+In the Github file editor, replace the ``` README.md ``` file content with the following code:
+
+```Markdown
+    <div id="header" align="center">
+        <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
+    </div>
+```
+The ```src``` attribute points to the URL we copied in the previous step. Since all the contents in this section are center-aligned, we've wrapped the image in an HTML ```div``` tag with the ```align="center"``` attribute.
+
+Note: Github converts the README Markdown to HTML and renders it on Github. After conversion, the HTML is sanitized, and for security reasons, it ignores certain HTML tags and attributes such as ```<script>, <style>, <style>``` etc. For this reason, we've used an ```align``` attribute instead of CSS.
+
+Click on the **Preview** tab, the picture below is what you will get.
+![](./images/7.png)
+
 
 
 ## Practice Activity
