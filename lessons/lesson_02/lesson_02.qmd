@@ -94,6 +94,8 @@ But for this lesson, we shall be making use of Github file editor. Open the **RE
 
 ## Adding GIFS and Social Links to your Github Profile README
 
+- ## Adding GIFS to  your Github Profile README
+
 Here's an image of the content that will be added in this section:
 [](./images/6.png)
 
@@ -108,12 +110,31 @@ In the Github file editor, replace the ``` README.md ``` file content with the f
         <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
     </div>
 ```
+
 The ```src``` attribute points to the URL we copied in the previous step. Since all the contents in this section are center-aligned, we've wrapped the image in an HTML ```div``` tag with the ```align="center"``` attribute.
 
 Note: Github converts the README Markdown to HTML and renders it on Github. After conversion, the HTML is sanitized, and for security reasons, it ignores certain HTML tags and attributes such as ```<script>, <style>, <style>``` etc. For this reason, we've used an ```align``` attribute instead of CSS.
 
 Click on the **Preview** tab, the picture below is what you will get.
 ![](./images/7.png)
+
+- ## Adding Social Network Links/Badges to your Github profile README
+On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium(blog site), etc. But for this lessson, we shall only focus on two: LinkedIn and Twitter.
+
+To get the respective badges for each social networks, we'll use [shields.io](https://shields.io/) which provides various endpoints letting users create and customize social medial badges. We'll use the [](https://img.shields.io/badge/) URL and pass additional parameters to this URL to get the respective social media badges.
+
+- The first parameter we will pass is ```Label```(This represents the social network site name that will appear on the badge) and ```Color``` (which represents the color of the social network badge respectively). ```Label-Color```
+
+In the case of our example being **LinkedIn** and **Twitter**, their color will be **blue**.
+
+When the parameters listed above (Label and color) are combined with [https://img.shields.io/badge/](https://img.shields.io/badge/), the following URL is created.
+
+## For LinkedIn:
+```https://img.shields.io/badge/LinkedIn-blue```
+
+## For Twitter:
+```https://img.shields.io/badge/Twitter-blue```
+
 
 
 

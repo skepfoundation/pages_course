@@ -169,6 +169,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#creating-a-github-profile-readme-file" id="toc-creating-a-github-profile-readme-file" class="nav-link" data-scroll-target="#creating-a-github-profile-readme-file">Creating a github profile README file</a></li>
   <li><a href="#adding-gifs-and-social-links-to-your-github-profile-readme" id="toc-adding-gifs-and-social-links-to-your-github-profile-readme" class="nav-link" data-scroll-target="#adding-gifs-and-social-links-to-your-github-profile-readme">Adding GIFS and Social Links to your Github Profile README</a></li>
+  <li><a href="#for-linkedin" id="toc-for-linkedin" class="nav-link" data-scroll-target="#for-linkedin">For LinkedIn:</a></li>
+  <li><a href="#for-twitter" id="toc-for-twitter" class="nav-link" data-scroll-target="#for-twitter">For Twitter:</a></li>
   <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
   </ul>
@@ -255,6 +257,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="adding-gifs-and-social-links-to-your-github-profile-readme" class="level2">
 <h2 class="anchored" data-anchor-id="adding-gifs-and-social-links-to-your-github-profile-readme">Adding GIFS and Social Links to your Github Profile README</h2>
+<ul>
+<li><h2 id="adding-gifs-to-your-github-profile-readme" class="anchored">Adding GIFS to your Github Profile README</h2></li>
+</ul>
 <p>Here’s an image of the content that will be added in this section: <a href="./images/6.png"></a></p>
 <p>The Gif used in this section can be found <a href="https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9">here</a>. I found this GIF on <a href="https://giphy.com/">Giphy</a>, which is full of free GIFs to use.</p>
 <p>Go to the <a href="https://giphy.com/stickers/hacktiv8-coding-codingfromhome-fromhome-M9gbBd9nbDrOTu1Mqx?utm_term=">GIF Link</a> and click on the <strong>Share</strong> button and then <strong>Copy GIF Link</strong>. We’ll add this copied link to an HTML <code>img</code> tag to display it in the Markdown file. We’re using the <code>img</code> tag as it’ll help us specify the width of the image.</p>
@@ -265,6 +270,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The <code>src</code> attribute points to the URL we copied in the previous step. Since all the contents in this section are center-aligned, we’ve wrapped the image in an HTML <code>div</code> tag with the <code>align="center"</code> attribute.</p>
 <p>Note: Github converts the README Markdown to HTML and renders it on Github. After conversion, the HTML is sanitized, and for security reasons, it ignores certain HTML tags and attributes such as <code>&lt;script&gt;, &lt;style&gt;, &lt;style&gt;</code> etc. For this reason, we’ve used an <code>align</code> attribute instead of CSS.</p>
 <p>Click on the <strong>Preview</strong> tab, the picture below is what you will get. <img src="./images/7.png" class="img-fluid"></p>
+<ul>
+<li><h2 id="adding-social-network-linksbadges-to-your-github-profile-readme" class="anchored">Adding Social Network Links/Badges to your Github profile README</h2>
+On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium(blog site), etc. But for this lessson, we shall only focus on two: LinkedIn and Twitter.</li>
+</ul>
+<p>To get the respective badges for each social networks, we’ll use <a href="https://shields.io/">shields.io</a> which provides various endpoints letting users create and customize social medial badges. We’ll use the <a href="https://img.shields.io/badge/"></a> URL and pass additional parameters to this URL to get the respective social media badges.</p>
+<ul>
+<li>The first parameter we will pass is <code>Label</code>(This represents the social network site name that will appear on the badge) and <code>Color</code> (which represents the color of the social network badge respectively). <code>Label-Color</code></li>
+</ul>
+<p>In the case of our example being <strong>LinkedIn</strong> and <strong>Twitter</strong>, their color will be <strong>blue</strong>.</p>
+<p>When the parameters listed above (Label and color) are combined with <a href="https://img.shields.io/badge/">https://img.shields.io/badge/</a>, the following URL is created.</p>
+</section>
+<section id="for-linkedin" class="level2">
+<h2 class="anchored" data-anchor-id="for-linkedin">For LinkedIn:</h2>
+<p><code>https://img.shields.io/badge/LinkedIn-blue</code></p>
+</section>
+<section id="for-twitter" class="level2">
+<h2 class="anchored" data-anchor-id="for-twitter">For Twitter:</h2>
+<p><code>https://img.shields.io/badge/Twitter-blue</code></p>
 </section>
 <section id="practice-activity" class="level2">
 <h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
