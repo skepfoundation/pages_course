@@ -32,7 +32,7 @@ This lesson will provide you with fundamental knowledge of Markdown and its uses
 
 -   Markdown is future proof. Even if the application you’re using stops working at some point in the future, you’ll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to milestone documents that need to be preserved indefinitely.
 
-In summary, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you'll be throughout your data science journey.
+In summary, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you'll be using throughout your data science journey.
 
 ## Practice Activity
 
