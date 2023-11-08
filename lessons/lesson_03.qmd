@@ -1,0 +1,53 @@
+---
+title: "Lesson 03: Introduction to Using Markdown "
+---
+
+## Overview
+
+This lesson will provide you with fundamental knowledge of Markdown and its uses
+
+## Learning Objectives
+
+-   Students will understand the importance of Markdown and its use cases
+
+-   Students will be able to create visually appealing Markdown files e.g readme's
+
+## Lesson
+
+### What is Markdown ?
+
+    Markdown is a markup language (no pun intended 🙂) that you can use to add formatting elements to plaintext text documents. Simillar to HTML used in browsers, but lightweight, with syntax that's very readable and unobstrusive.
+
+### Why use Markdown ?
+
+-   Markdown can be used for basically everything. It's used to create websites, documents, notes, presentations and technical documentation.
+
+-   Markdown is as beginner-friendly as it's powerful.
+
+-   Markdown is portable. Markdown-formatted text files can be opened using virtually any application.
+
+-   Markdown is platform independent. You can create Markdown-formatted text on any device running any operating system.
+
+-   Markdown is everywhere. It's supported on GitHub, and lots of desktop and web-based applications.
+
+-   Markdown is future proof. Even if the application you’re using stops working at some point in the future, you’ll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to milestone documents that need to be preserved indefinitely.
+
+In summary, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you'll be using throughout your data science journey.
+
+## Practice Activity
+
+\[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.\]
+
+## Conclusion
+
+\[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.
+
+example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.\]
+
+## FAQ
+
+\[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with\]
+
+#### What is two-factor authentication?
+
+Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
