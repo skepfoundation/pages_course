@@ -136,6 +136,12 @@ When the parameters listed above (Label and color) are combined with [https://im
 ```https://img.shields.io/badge/Twitter-blue```
 
 
+## Adding a Banner GIF and About Me Section
+![](./images/8.png)
+
+
+
+
 
 
 ## Practice Activity
