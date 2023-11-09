@@ -139,6 +139,8 @@ When the parameters listed above (Label and color) are combined with [https://im
 ## Adding a Banner GIF and About Me Section
 ![](./images/8.png)
 
+\[This is a placeholder for the about me section]\
+
 
 
 
