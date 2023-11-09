@@ -4,3 +4,6 @@
 .Ruserdata
 
 /.quarto/
+/.images/
+
+/pages_course/lessons/lesson_02/images/*

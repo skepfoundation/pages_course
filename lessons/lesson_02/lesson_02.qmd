@@ -1,0 +1,163 @@
+---
+title: "Lesson_02"
+---
+
+## Overviewpages_course/lessons/lesson_template.qmd
+
+In this lesson, we will embark on a journey to create your very own profile page on github using Markdown, a lightweight and easy-to-use syntax for styling all forms of writing on the web. Markdown is widely used because it allows you to maintain the readability of plain text while offering the styling capabilities of HTML. Our goal is to familiarize you with the foundational elements of Markdown to transform plain text into a rich, well-formatted document.
+
+Throughout the lesson, we will explore the basic constructs of Markdown, such as headers, emphasis, lists, links, and images, which will serve as the building blocks for your profile page. You will learn how to structure content with different levels of headings and how to emphasize text using bold and italic styles to make your page more engaging.
+
+Additionally, we will delve into creating ordered and unordered lists to organize your skills and achievements in a visually appealing manner. We will also cover the process of incorporating hyperlinks and images, enabling you to link to projects or personal works and add a personal touch with your photo.
+
+By the end of this lesson, you will have crafted a personal profile page that not only tells your story but also showcases your newfound Markdown skills. This profile can serve as a starting point for your portfolio, a personal webpage, or a GitHub README file, providing a snapshot of your professional persona to the world. As a hands-on approach to learning, you will actively engage in writing Markdown, receiving immediate visual feedback, and iterating on your design to create a compelling and informative profile page.
+
+
+
+## Learning Objectives
+
+-   Students will be able to recognize and apply markdown syntax to create structured and styled text documents.
+
+-   Students will be able to organize content using headers to create clear hierarchy and flow within their profile page.
+  
+
+-   Students will be able to emphasize key aspects of their profile using bold and italic text formatting.
+  
+
+-   Students will be able to construct ordered and unordered lists to list accomplishments, skills and interests effectively.
+  
+
+-   Students will be able to embed hyperlinks and connect their profile to personal projects, professional networks, or external references.
+  
+
+-   Students will be able to insert images to personalize their profile page, making it more visually engaging.
+
+
+-   Students will be able to craft a concise biography or personal statement that reflects their individual journey and aspirations.
+
+
+-   Students will be able to utilize blockquotes to highlight personal mottos.
+
+
+-   Students will be able to implement code blocks and inline code to showcase technical skills or highlight programming projects.
+
+
+-   Students will be able to create a comprehensive and visually appealing profile page that can be shared and viewed on various platforms, including Github and personal blogs.
+
+## Lesson
+
+### What is a Github Profile README?
+
+Since the beginning of this lesson, we've actually made mention of github profile readme, and I believe  some of you don't really have an idea what it is all about.
+
+A GitHub profile README is a special repository that you can create to add a README file to your GitHub profile. It acts as a customizable "about me" section where you can introduce yourself, showcase your work, and share information about your interests, projects, or achievements. 
+
+When someone visits your GitHub profile, the content of this README is displayed prominently, so it's a great way to make a first impression on people who are exploring your GitHub repositories or looking to learn more about you as a developer or contributor.
+
+To create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is `octocat`, you would create a repository named `octocat`. Inside this repository, you place a `README.md` file. Whatever you write in the `README.md` file using Markdown will appear on your GitHub profile.
+
+\[We will include an image of the sample github profile and how it will look like in this section\]
+
+**In the next section, we will look at the steps taken to create a github README file for a github profile.**
+
+
+
+-------------------------------------------------------------
+## Creating a github profile README file
+
+
+1. Log in to GitHub.
+2. Click on **+** icon at top right of the page and select **New Repository**.
+
+![](./images/1.png)
+
+
+3. A Create a new repository page opens. In the **Repository name** field, enter the username of your GitHub account. After entering the username, GitHub displays a message describing that you’re about to create a GitHub special repository.
+   
+![](./images/2.1.png)
+
+4. Check the **public** checkbox under repository type to make the Github profile README visible to everyone who visits the Github profile page. If you don't want users to see your Github profile README while it's still in development, you can choose **Private**. Once done with editing the README, you can go to the repo settings to change it's visibilty to **Public**.
+
+5. Check the **Add a README file** checkbox. This will add a ```README.md``` file where we'll add the profile contents. The field values should look similar to the image below.
+
+![](./images/2.png)
+
+6. Click on the **Create repository** button. A special repository is created successfully. Go to the repository you just created and you'll see a **README.md** file added to the repository.
+
+![](./images/3.png)
+
+In the next few sections, we'll add contents to our README.md file. We'll use Github's file editor to write and preview the changes. There are other text editor which you can use as well such as **Vs Code Editor**, **Sublime Text**, **Atom** etc. But making use of this editors, you will have to clone the repository on your local machine and run changes needed. You can look that up at your own free time.
+
+But for this lesson, we shall be making use of Github file editor. Open the **README.md** file and click on the Edit this file icon (a pencil icon) on the top right of the repo page. As highlighted in the image below:
+
+![](./images/3.1.png)
+
+## Adding GIFS and Social Links to your Github Profile README
+
+- ## Adding GIFS to  your Github Profile README
+
+Here's an image of the content that will be added in this section:
+[](./images/6.png)
+
+The Gif used in this section can be found [here](https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9). I found this GIF on [Giphy](https://giphy.com/), which is full of free GIFs to use.
+
+Go to the [GIF Link](https://giphy.com/stickers/hacktiv8-coding-codingfromhome-fromhome-M9gbBd9nbDrOTu1Mqx?utm_term=) and click on the **Share** button and then **Copy GIF Link**. We'll add this copied link to an HTML ``` img ``` tag to display it in the Markdown file. We're using the ``` img ``` tag as it'll help us specify the width of the image.
+
+In the Github file editor, replace the ``` README.md ``` file content with the following code:
+
+```Markdown
+    <div id="header" align="center">
+        <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
+    </div>
+```
+
+The ```src``` attribute points to the URL we copied in the previous step. Since all the contents in this section are center-aligned, we've wrapped the image in an HTML ```div``` tag with the ```align="center"``` attribute.
+
+Note: Github converts the README Markdown to HTML and renders it on Github. After conversion, the HTML is sanitized, and for security reasons, it ignores certain HTML tags and attributes such as ```<script>, <style>, <style>``` etc. For this reason, we've used an ```align``` attribute instead of CSS.
+
+Click on the **Preview** tab, the picture below is what you will get.
+![](./images/7.png)
+
+- ## Adding Social Network Links/Badges to your Github profile README
+On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium(blog site), etc. But for this lessson, we shall only focus on two: LinkedIn and Twitter.
+
+To get the respective badges for each social networks, we'll use [shields.io](https://shields.io/) which provides various endpoints letting users create and customize social medial badges. We'll use the [](https://img.shields.io/badge/) URL and pass additional parameters to this URL to get the respective social media badges.
+
+- The first parameter we will pass is ```Label```(This represents the social network site name that will appear on the badge) and ```Color``` (which represents the color of the social network badge respectively). ```Label-Color```
+
+In the case of our example being **LinkedIn** and **Twitter**, their color will be **blue**.
+
+When the parameters listed above (Label and color) are combined with [https://img.shields.io/badge/](https://img.shields.io/badge/), the following URL is created.
+
+## For LinkedIn:
+```https://img.shields.io/badge/LinkedIn-blue```
+
+## For Twitter:
+```https://img.shields.io/badge/Twitter-blue```
+
+
+## Adding a Banner GIF and About Me Section
+![](./images/8.png)
+
+\[This is a placeholder for the about me section]\
+
+
+
+
+
+
+## Practice Activity
+
+\[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.\]
+
+\[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.
+
+example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.\]
+
+## FAQ
+
+\[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with\]
+
+#### What is two-factor authentication?
+
+Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
