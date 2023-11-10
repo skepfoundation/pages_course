@@ -190,7 +190,143 @@ The picture below is an example of how it should look like if done properly. Rem
 ## Adding Github Stats to your Github Profile
 
 Here is an image of what we will do in this section.
-![Image placeholder for sample image]()
+![Figure XII](./images/12.png)
+
+For the stats heading, add the following code to your ```README.md``` file.
+
+```markdown
+    ---
+    ### :fire: My Stats:
+```
+In this section, we will be adding some stats (short for statistics) about user's Github activity. These stats will include the following:
+- Number of commits,
+- Number of PRs, etc.
+
+There are many open-source projects on Github that offers different stats for the Github profile. They are as follows:
+
+1. [Github Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+2. [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+   
+And after my research, I found out that we will be using 2 of them to achieve what we need in **Figure XII**.
+
+Now let's break down what each of the open-source projects provides.
+
+## Link 1:
+The first link which can be accessed with the following URL 
+```markdown 
+(https://github.com/DenverCoder1/github-readme-streak-stats)
+``` 
+provides us with the following:
+
+1. Total number of contributions by a user
+2. Longest streak of contributions for a user
+3. Current streak stat for a user.
+
+
+When you click on the link, it will direct you to a page as displayed below.
+
+![](./images/16.png)
+
+
+Then you will have to navigate to the **Quick Setup** section in the page as shown below.
+
+
+![](./images/15.png)
+
+On the **Quick Setup** section, you will do the following just as directed in the website;
+
+1. Copy-paste the markdown below into your GitHub profile README
+
+
+```markdown
+[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)](https://git.io/streak-stats)
+```
+The Markdown takes several parameters, but for this lesson, we shall only focus on just two which are:
+
+1. Your Github profile name. Replace the ```user = DenverCoder1``` parameter to your Github profile name.
+2. 
+3. The theme of your choice. you may include ```&theme=dark``` after the user profile name.
+
+Here is the sample of the full link 
+```markdown
+[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&theme=dark)](https://git.io/streak-stats)
+```
+
+For further customization, you can explore the website and tweak the parameters as you wish.
+
+Here is the preview, with ```08***005790``` as the username.
+
+![](./images/17.png)
+
+
+## Link 2:
+The second link which can be accessed with the following URL 
+```markdown
+https://github.com/anuraghazra/github-readme-stats
+``` 
+provides us with the following:
+
+1. Github profile summary statistics.
+
+2. Most used languages. 
+
+As shown below:
+
+![](./images/13.png)
+
+
+
+### Github profile summary stats:
+
+You can achieve number 1 above by copying the markdown below and pasting it in you **README.md** file.
+
+```markdown
+    [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+```
+
+### Note:
+
+Replace the **username** to your Github profile username and **theme** any theme of your choosing. You can click on **Link 2** above to explore the site for your personal customizations.
+
+### Most used languages:
+
+To achieve number 2, as previewed in the diagram below:
+
+![](./images/14.png)
+
+Copy the markdown code 
+```markdown
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
+``` 
+and paste it in your Github profile ```README.md``` file. Remember to replace the ```username``` to your Github profile username.
+
+### Center Alignment of the stats:
+
+As seen in the sample, the stats were center aligned. to achieve this, you can copy the code below and paste it in your markdown.
+
+```markdown
+<p align="center">
+  <a href="[https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats)">
+    <img src="https://github-readme-stats.vercel.app/api?username=08168005790&theme=dark" alt="GitHub profile Streak" />
+  </a>
+</p>
+
+
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com/?user=08168005790&theme=dark" alt="GitHub Streak" />
+  </a>
+</p>
+
+<p align= "center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=08168005790&theme=dark&layout=compact" alt="top langs"/>
+</p>
+```
+
+The picture below is the preview of the setup for this section:
+
+![](./images/12.png).
+
 
 
 ## Practice Activity
