@@ -174,6 +174,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#adding-a-banner-gif-and-about-me-section" id="toc-adding-a-banner-gif-and-about-me-section" class="nav-link" data-scroll-target="#adding-a-banner-gif-and-about-me-section">Adding a Banner GIF and About Me Section</a></li>
   <li><a href="#adding-languages-and-tools" id="toc-adding-languages-and-tools" class="nav-link" data-scroll-target="#adding-languages-and-tools">Adding Languages and Tools</a></li>
   <li><a href="#adding-github-stats-to-your-github-profile" id="toc-adding-github-stats-to-your-github-profile" class="nav-link" data-scroll-target="#adding-github-stats-to-your-github-profile">Adding Github Stats to your Github Profile</a></li>
+  <li><a href="#link-1" id="toc-link-1" class="nav-link" data-scroll-target="#link-1">Link 1:</a></li>
+  <li><a href="#link-2" id="toc-link-2" class="nav-link" data-scroll-target="#link-2">Link 2:</a>
+  <ul class="collapse">
+  <li><a href="#github-profile-summary-stats" id="toc-github-profile-summary-stats" class="nav-link" data-scroll-target="#github-profile-summary-stats">Github profile summary stats:</a></li>
+  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note:</a></li>
+  <li><a href="#most-used-languages" id="toc-most-used-languages" class="nav-link" data-scroll-target="#most-used-languages">Most used languages:</a></li>
+  <li><a href="#center-alignment-of-the-stats" id="toc-center-alignment-of-the-stats" class="nav-link" data-scroll-target="#center-alignment-of-the-stats">Center Alignment of the stats:</a></li>
+  </ul></li>
   <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
   </ul>
@@ -329,6 +337,100 @@ On this section, we will be adding social network badges to your github profile 
 </section>
 <section id="adding-github-stats-to-your-github-profile" class="level2">
 <h2 class="anchored" data-anchor-id="adding-github-stats-to-your-github-profile">Adding Github Stats to your Github Profile</h2>
+<p>Here is an image of what we will do in this section. <img src="./images/12.png" class="img-fluid" alt="Figure XII"></p>
+<p>For the stats heading, add the following code to your <code>README.md</code> file.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">    ---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="in">    ### :fire: My Stats:</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this section, we will be adding some stats (short for statistics) about user’s Github activity. These stats will include the following: - Number of commits, - Number of PRs, etc.</p>
+<p>There are many open-source projects on Github that offers different stats for the Github profile. They are as follows:</p>
+<ol type="1">
+<li><a href="https://github.com/DenverCoder1/github-readme-streak-stats">Github Streak Stats</a></li>
+<li><a href="https://github.com/anuraghazra/github-readme-stats">Github Readme Stats</a></li>
+</ol>
+<p>And after my research, I found out that we will be using 2 of them to achieve what we need in <strong>Figure XII</strong>.</p>
+<p>Now let’s break down what each of the open-source projects provides.</p>
+</section>
+<section id="link-1" class="level2">
+<h2 class="anchored" data-anchor-id="link-1">Link 1:</h2>
+<p>The first link which can be accessed with the following URL</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(https://github.com/DenverCoder1/github-readme-streak-stats)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>provides us with the following:</p>
+<ol type="1">
+<li>Total number of contributions by a user</li>
+<li>Longest streak of contributions for a user</li>
+<li>Current streak stat for a user.</li>
+</ol>
+<p>When you click on the link, it will direct you to a page as displayed below.</p>
+<p><img src="./images/16.png" class="img-fluid"></p>
+<p>Then you will have to navigate to the <strong>Quick Setup</strong> section in the page as shown below.</p>
+<p><img src="./images/15.png" class="img-fluid"></p>
+<p>On the <strong>Quick Setup</strong> section, you will do the following just as directed in the website;</p>
+<ol type="1">
+<li>Copy-paste the markdown below into your GitHub profile README</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)</span><span class="co">](https://git.io/streak-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The Markdown takes several parameters, but for this lesson, we shall only focus on just two which are:</p>
+<ol type="1">
+<li>Your Github profile name. Replace the <code>user = DenverCoder1</code> parameter to your Github profile name.</li>
+<li></li>
+<li>The theme of your choice. you may include <code>&amp;theme=dark</code> after the user profile name.</li>
+</ol>
+<p>Here is the sample of the full link</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&amp;theme=dark)</span><span class="co">](https://git.io/streak-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For further customization, you can explore the website and tweak the parameters as you wish.</p>
+<p>Here is the preview, with <code>08***005790</code> as the username.</p>
+<p><img src="./images/17.png" class="img-fluid"></p>
+</section>
+<section id="link-2" class="level2">
+<h2 class="anchored" data-anchor-id="link-2">Link 2:</h2>
+<p>The second link which can be accessed with the following URL</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>https://github.com/anuraghazra/github-readme-stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>provides us with the following:</p>
+<ol type="1">
+<li><p>Github profile summary statistics.</p></li>
+<li><p>Most used languages.</p></li>
+</ol>
+<p>As shown below:</p>
+<p><img src="./images/13.png" class="img-fluid"></p>
+<section id="github-profile-summary-stats" class="level3">
+<h3 class="anchored" data-anchor-id="github-profile-summary-stats">Github profile summary stats:</h3>
+<p>You can achieve number 1 above by copying the markdown below and pasting it in you <strong>README.md</strong> file.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="in">    [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="note" class="level3">
+<h3 class="anchored" data-anchor-id="note">Note:</h3>
+<p>Replace the <strong>username</strong> to your Github profile username and <strong>theme</strong> any theme of your choosing. You can click on <strong>Link 2</strong> above to explore the site for your personal customizations.</p>
+</section>
+<section id="most-used-languages" class="level3">
+<h3 class="anchored" data-anchor-id="most-used-languages">Most used languages:</h3>
+<p>To achieve number 2, as previewed in the diagram below:</p>
+<p><img src="./images/14.png" class="img-fluid"></p>
+<p>Copy the markdown code</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&amp;layout=compact)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and paste it in your Github profile <code>README.md</code> file. Remember to replace the <code>username</code> to your Github profile username.</p>
+</section>
+<section id="center-alignment-of-the-stats" class="level3">
+<h3 class="anchored" data-anchor-id="center-alignment-of-the-stats">Center Alignment of the stats:</h3>
+<p>As seen in the sample, the stats were center aligned. to achieve this, you can copy the code below and paste it in your markdown.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"[https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats)"</span><span class="kw">&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github-readme-stats.vercel.app/api?username=08168005790</span><span class="er">&amp;</span><span class="st">theme=dark"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"GitHub profile Streak"</span> <span class="kw">/&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"https://git.io/streak-stats"</span><span class="kw">&gt;</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://streak-stats.demolab.com/?user=08168005790</span><span class="er">&amp;</span><span class="st">theme=dark"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"GitHub Streak"</span> <span class="kw">/&gt;</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span> <span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github-readme-stats.vercel.app/api/top-langs/?username=08168005790</span><span class="er">&amp;</span><span class="st">theme=dark</span><span class="er">&amp;</span><span class="st">layout=compact"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"top langs"</span><span class="kw">/&gt;</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The picture below is the preview of the setup for this section:</p>
+<p><img src="./images/12.png" class="img-fluid">.</p>
+</section>
 </section>
 <section id="practice-activity" class="level2">
 <h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
