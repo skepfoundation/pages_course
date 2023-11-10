@@ -189,6 +189,9 @@ The picture below is an example of how it should look like if done properly. Rem
 
 ## Adding Github Stats to your Github Profile
 
+Here is an image of what we will do in this section.
+![Image placeholder for sample image]()
+
 
 ## Practice Activity
 
