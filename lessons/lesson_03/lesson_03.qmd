@@ -94,7 +94,7 @@ My example link is [example](https://www.example.com)
 
 The rendered output looks like this:
 
- ![A River](./Image/lake-8305673_1280.webp)
+ ![A River](./image/lake-8305673_1280.webp)
 
 
 
@@ -140,6 +140,3 @@ In the next lesson you will learn how to host websites on Github.
 [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 
 [Interactive Markdown Tutorial](https://www.markdowntutorial.com/lesson/1/)
-
-
-
