@@ -221,7 +221,7 @@
     "href": "lessons/lesson_02/lesson_02.html#lesson",
     "title": "Lesson_02",
     "section": "Lesson",
-    "text": "Lesson\n\nWhat is a Github Profile README?\nSince the beginning of this lesson, we’ve actually made mention of github profile readme, and I believe some of you don’t really have an idea what it is all about.\nA GitHub profile README is a special repository that you can create to add a README file to your GitHub profile. It acts as a customizable “about me” section where you can introduce yourself, showcase your work, and share information about your interests, projects, or achievements.\nWhen someone visits your GitHub profile, the content of this README is displayed prominently, so it’s a great way to make a first impression on people who are exploring your GitHub repositories or looking to learn more about you as a developer or contributor.\nTo create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is octocat, you would create a repository named octocat. Inside this repository, you place a README.md file. Whatever you write in the README.md file using Markdown will appear on your GitHub profile.\n[We will include an image of the sample github profile and how it will look like in this section]\nIn the next section, we will look at the steps taken to create a github README file for a github profile."
+    "text": "Lesson\n\nWhat is a Github Profile README?\nSince the beginning of this lesson, we’ve actually made mention of github profile readme, and I believe some of you don’t really have an idea what it is all about.\nA GitHub profile README is a special repository that you can create to add a README file to your GitHub profile. It acts as a customizable “about me” section where you can introduce yourself, showcase your work, and share information about your interests, projects, or achievements.\nWhen someone visits your GitHub profile, the content of this README is displayed prominently, so it’s a great way to make a first impression on people who are exploring your GitHub repositories or looking to learn more about you as a developer or contributor.\nTo create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is octocat, you would create a repository named octocat. Inside this repository, you place a README.md file. Whatever you write in the README.md file using Markdown will appear on your GitHub profile.\n\nPictured below is what your github profile will be if you do everything right.\n\n\nYour browser does not support the video tag. \nIn the next section, we will look at the steps taken to create a github README file for a github profile."
   },
   {
     "objectID": "lessons/lesson_02/lesson_02.html#creating-a-github-profile-readme-file",
@@ -235,7 +235,7 @@
     "href": "lessons/lesson_02/lesson_02.html#practice-activity",
     "title": "Lesson_02",
     "section": "Practice Activity",
-    "text": "Practice Activity\n[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.]\n[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.\nexample: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.]"
+    "text": "Practice Activity\n\nList five texting formating markdown syntax\nHow can you insert images and links on markdown?\nFrom what you learnt so far, create a Github Profile README file and update your profile accordingly.\nList 5 Markdown emojis and how to insert them in a markdown file\n\nYou should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn Github website creation."
   },
   {
     "objectID": "lessons/lesson_02/lesson_02.html#faq",
@@ -277,7 +277,7 @@
     "href": "lessons/lesson_02/lesson_02.html#adding-a-banner-gif-and-about-me-section",
     "title": "Lesson_02",
     "section": "Adding a Banner GIF and About Me Section",
-    "text": "Adding a Banner GIF and About Me Section\n\n[This is a placeholder for the about me section… The details shall be added much later.]"
+    "text": "Adding a Banner GIF and About Me Section"
   },
   {
     "objectID": "lessons/lesson_02/lesson_02.html#adding-languages-and-tools",
@@ -306,61 +306,6 @@
     "title": "Lesson_02",
     "section": "Link 1:",
     "text": "Link 1:\nThe first link which can be accessed with the following URL\n(https://github.com/DenverCoder1/github-readme-streak-stats)\nprovides us with the following:\n\nTotal number of contributions by a user\nLongest streak of contributions for a user\nCurrent streak stat for a user.\n\nWhen you click on the link, it will direct you to a page as displayed below.\n\nThen you will have to navigate to the Quick Setup section in the page as shown below.\n\nOn the Quick Setup section, you will do the following just as directed in the website;\n\nCopy-paste the markdown below into your GitHub profile README\n\n[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)](https://git.io/streak-stats)\nThe Markdown takes several parameters, but for this lesson, we shall only focus on just two which are:\n\nYour Github profile name. Replace the user = DenverCoder1 parameter to your Github profile name.\n\nThe theme of your choice. you may include &theme=dark after the user profile name.\n\nHere is the sample of the full link\n[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&theme=dark)](https://git.io/streak-stats)\nFor further customization, you can explore the website and tweak the parameters as you wish.\nHere is the preview, with 08***005790 as the username."
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html",
-    "href": "lessons/lesson_03/lesson_03.html",
-    "title": "Understanding Markdown",
-    "section": "",
-    "text": "You will learn the basics of Markdown, a lightweight markup language that is widely used for formatting plain text. Markdown is commonly used for writing content on platforms like GitHub, where it is essential for creating README files, documentation, and more."
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html#overview",
-    "href": "lessons/lesson_03/lesson_03.html#overview",
-    "title": "Understanding Markdown",
-    "section": "",
-    "text": "You will learn the basics of Markdown, a lightweight markup language that is widely used for formatting plain text. Markdown is commonly used for writing content on platforms like GitHub, where it is essential for creating README files, documentation, and more."
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html#learning-objectives",
-    "href": "lessons/lesson_03/lesson_03.html#learning-objectives",
-    "title": "Understanding Markdown",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nStudents will be able to format plain text using Markdown syntax.\nStudents will be able to write README files using Markdown in GitHub repositories."
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html#lesson",
-    "href": "lessons/lesson_03/lesson_03.html#lesson",
-    "title": "Understanding Markdown",
-    "section": "Lesson",
-    "text": "Lesson\n\nEmphasizing text in Markdown\n\nIn Markdown, the use of asterisks (*) or underscores (_) allows you to emphasize text by making it either italic or bold.\nTo make text italic, wrap it with a single asterisk or underscore on both sides: *italic* or _italic_.\nFor bold text, wrap it with double asterisks or underscores: **bold** or __bold__.\n\n\n\nHeadings in Markdown\n\nHeadings are created using hash (#) symbols. The number of hash symbols determines the level of the heading, with more hash symbols indicating a lower-level heading.\n# Heading 1: This is a top-level heading. It will be rendered as a large, bold heading.\n## Heading 2: This is a second-level heading. It is slightly smaller and less prominent than Heading 1.\n### Heading 3: This is a third-level heading. It is smaller than Heading 2 and is typically used for subsections or less important headings.\n\n\n\nLists in Markdown\n\nYou can create both unordered lists (bullet points) and ordered lists (numbered items)\n\n\nUnordered list\n- Item 1\n- Item 2\n\n\nOrdered list\n1. Ordered Item 1\n2. Ordered Item 2\n\n\n\nCode blocks in Markdown\n\nTo indicate code blocks, use three backticks before and after the block of code.\n\n\nprint(\"Hello World\")\n\n\nOther common rules\n\nHorizontal Rule\n\nYou can create a horizontal rule by using three consecutive hyphens (—) or three consecutive asterisks (***).\n\n--- or ***\n\n\nLinks\n[title](https://www.example.com)\n\n\nImages\n![alt text](image.jpg)"
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html#practice-activity",
-    "href": "lessons/lesson_03/lesson_03.html#practice-activity",
-    "title": "Understanding Markdown",
-    "section": "Practice Activity",
-    "text": "Practice Activity\n\nGitHub Profile Setup:\n\nIf you don’t have a GitHub account, sign up for one here.\nCreate a new repository with the name “Markdown Practice”.\nAdd a short description and initialize it with a README.\n\n\n\nMarkdown README:\n\nEdit the README file in your repository using the GitHub online editor.\n\n\nUse Markdown to add the following elements:\n\nHeadings (at least two levels).\nEmphasis (italic and bold text) the text “Hello World”.\nLists (both ordered and unordered). (e.g., list of your favourite fruits)\nLinks to external resources (e.g., a link to the GitHub).\nAn image (you can use the GitHub logo).\nA code block with a simple code snippet (e.g., Hello World in any programming language of your choice ).\nA horizontal rule at the end."
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html#conclusion",
-    "href": "lessons/lesson_03/lesson_03.html#conclusion",
-    "title": "Understanding Markdown",
-    "section": "Conclusion",
-    "text": "Conclusion\n[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.\nexample: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.]"
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html#faq",
-    "href": "lessons/lesson_03/lesson_03.html#faq",
-    "title": "Understanding Markdown",
-    "section": "FAQ",
-    "text": "FAQ\n[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with]"
-  },
-  {
-    "objectID": "lessons/lesson_03/lesson_03.html#resources",
-    "href": "lessons/lesson_03/lesson_03.html#resources",
-    "title": "Understanding Markdown",
-    "section": "Resources",
-    "text": "Resources\nMarkdown Cheatsheet\nInteractive Markdown Tutorial\n\nWhat is two-factor authentication?\nTwo-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone."
   }
+  
 ]
