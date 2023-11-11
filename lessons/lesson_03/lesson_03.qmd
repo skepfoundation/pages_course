@@ -1,5 +1,5 @@
 ---
-title: "Understanding Markdown"
+title: "Lesson 03: Writing in Markdown"
 ---
 
 ## Overview
@@ -14,6 +14,19 @@ You will learn the basics of Markdown, a lightweight markup language that is wid
 -   Students will be able to write README files using Markdown in GitHub  repositories.
 
 ## Lesson
+
+### Why Markdown Matters ?
+
+-   Markdown can be used for basically everything. It's used to create websites, documents, notes, presentations and technical documentation.
+
+-   Markdown is as beginner-friendly as it's powerful, portable and platform independent. It can be created on any device running any operating system, using virtually any application.
+
+-   Markdown is everywhere. It's supported on GitHub, and lots of desktop and web-based applications.
+
+-   Markdown is future proof. Even if the application you’re using stops working at some point in the future, you’ll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to milestone documents that need to be preserved indefinitely.
+
+In short, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you'll be using throughout your data science journey. Knowing how to use it will prove essential as you kickstart your journey.
+
 
 ### Emphasizing text in Markdown
 
@@ -50,7 +63,9 @@ You will learn the basics of Markdown, a lightweight markup language that is wid
 
 ### Code blocks in Markdown
 
-* To indicate code blocks, use three backticks before and after the block of code.
+* To indicate code blocks, use three backticks before and after the block of code. As such: `` ```python "insert python code" ``` ``
+
+You can do this with any coding language. The output will look like this:
 
 
 ```python 
@@ -67,18 +82,27 @@ print("Hello World")
 ``` --- or *** ```
 
 #### Links
+* To create a link, enclose the link text in square brackets and then follow it immediately with the URL in parentheses. As such: ```[link text](https://www.example.com)```
 
-```[title](https://www.example.com)```
+The rendered output looks like this:
+My example link is [example](https://www.example.com)
+
+
 
 #### Images
+* To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title in quotation marks after the path or URL. As such: ```![alt text](/path/to/image.jpg)```
 
-```![alt text](image.jpg)```
+The rendered output looks like this:
+
+ ![A River](./image/lake-8305673_1280.webp)
+
+
 
 ## Practice Activity
 
 ### GitHub Profile Setup:
 
-* If you don't have a GitHub account, sign up for one [here](https://www.github.com).
+* If you don't have a GitHub account, sign up for one [here](https://www.github.com). Refer to Lesson 1 guide.
 * Create a new repository with the name "Markdown Practice".
 * Add a short description and initialize it with a README.
 
@@ -98,19 +122,21 @@ print("Hello World")
 
 ## Conclusion
 
-\[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.
+Good job completing this lesson! By now you should:
 
-example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.\]
+-   Have fundamental knowledge of using Markdown
+
+-   Have created a README file using Markdown, with an image, a code block and working links.
+
+In the next lesson you will learn how to host websites on Github.
+
 
 ## FAQ
 
-\[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with\]
+###
 
 ## Resources
 
 [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 
 [Interactive Markdown Tutorial](https://www.markdowntutorial.com/lesson/1/)
-
-
-
