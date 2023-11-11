@@ -1,0 +1,116 @@
+---
+title: "Understanding Markdown"
+---
+
+## Overview
+
+You will learn the basics of Markdown, a lightweight markup language that is widely used for formatting plain text. Markdown is commonly used for writing content on platforms like GitHub, where it is essential for creating README files, documentation, and more.
+
+## Learning Objectives
+
+
+-   Students will be able to format plain text using Markdown syntax.
+
+-   Students will be able to write README files using Markdown in GitHub  repositories.
+
+## Lesson
+
+### Emphasizing text in Markdown
+
+* In Markdown, the use of asterisks (*) or underscores (_) allows you to emphasize text by making it either *italic* or **bold**.
+
+* To make text italic, wrap it with a single asterisk or underscore on both sides: ```*italic* or _italic_.```
+
+* For bold text, wrap it with double asterisks or underscores: ```**bold** or __bold__.```
+
+### Headings in Markdown 
+
+* Headings are created using hash (#) symbols. The number of hash symbols determines the level of the heading, with more hash symbols indicating a lower-level heading.
+
+* ```# Heading 1```: This is a top-level heading. It will be rendered as a large, bold heading.
+
+* ```## Heading 2```: This is a second-level heading. It is slightly smaller and less prominent than Heading 1.
+
+* ```### Heading 3```: This is a third-level heading. It is smaller than Heading 2 and is typically used for subsections or less important headings.
+
+### Lists in Markdown
+
+* You can create both unordered lists (bullet points) and ordered lists (numbered items)
+
+#### Unordered list
+```- Item 1```
+
+```- Item 2```
+
+#### Ordered list
+
+```1. Ordered Item 1```
+
+```2. Ordered Item 2```
+
+### Code blocks in Markdown
+
+* To indicate code blocks, use three backticks before and after the block of code.
+
+
+```python 
+
+print("Hello World")
+
+```
+
+### Other common rules 
+
+#### Horizontal Rule
+* You can create a horizontal rule by using three consecutive hyphens (---) or three consecutive asterisks (***).
+
+``` --- or *** ```
+
+#### Links
+
+```[title](https://www.example.com)```
+
+#### Images
+
+```![alt text](image.jpg)```
+
+## Practice Activity
+
+### GitHub Profile Setup:
+
+* If you don't have a GitHub account, sign up for one [here](https://www.github.com).
+* Create a new repository with the name "Markdown Practice".
+* Add a short description and initialize it with a README.
+
+### Markdown README:
+
+* Edit the README file in your repository using the GitHub online editor.
+
+#### Use Markdown to add the following elements:
+
+* Headings (at least two levels).
+* Emphasis (italic and bold text) the text **"Hello World"**.
+* Lists (both ordered and unordered). **(e.g., list of your favourite fruits)**
+* Links to external resources **(e.g., a link to the GitHub).**
+* An image **(you can use the GitHub logo)**.
+* A code block with a simple code snippet **(e.g., Hello World in any programming language of your choice )**.
+* A horizontal rule at the end.
+
+## Conclusion
+
+\[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.
+
+example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.\]
+
+## FAQ
+
+\[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with\]
+
+## Resources
+
+[Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+
+[Interactive Markdown Tutorial](https://www.markdowntutorial.com/lesson/1/)
+
+
+
