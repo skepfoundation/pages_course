@@ -56,7 +56,12 @@ When someone visits your GitHub profile, the content of this README is displayed
 
 To create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is `octocat`, you would create a repository named `octocat`. Inside this repository, you place a `README.md` file. Whatever you write in the `README.md` file using Markdown will appear on your GitHub profile.
 
-\[We will include an image of the sample github profile and how it will look like in this section\]
+###### Pictured below is what your github profile will be if you do everything right.
+
+<video width="800" height="315" autoplay loop muted>
+  <source src="./images/v1.webm" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 **In the next section, we will look at the steps taken to create a github README file for a github profile.**
 
@@ -140,7 +145,6 @@ When the parameters listed above (Label and color) are combined with [https://im
 ![](./images/8.png)
 
 
-\[This is a placeholder for the about me section... The details shall be added much later.]\
 
 
 ## Adding Languages and Tools
@@ -329,18 +333,53 @@ The picture below is the preview of the setup for this section:
 
 
 
+## Achievements:
+At the end of this lesson, you should be able to
+
+- Identify markdown syntax and apply those syntax to create structured and styled text documents.
+
+
+- Emphasize key aspects of their profile using bold and italic text formatting.
+
+
+- Embed images and links within your markdown file
+
+
+- Create a professional Github Profile README.
+
+
 ## Practice Activity
 
-\[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.\]
+1. List five texting formating markdown syntax
+2. How can you insert images and links on markdown?
+3. From what you learnt so far, create a Github Profile README file and update your profile accordingly.
+4. List 5 Markdown emojis and how to insert them in a markdown file
 
-\[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.
 
-example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.\]
+You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn **Github website creation.**
 
-## FAQ
 
-\[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with\]
 
-#### What is two-factor authentication?
+## FAQs
+
+## What is a GitHub README?
+A GitHub README is a fundamental document in a software project hosted on GitHub, typically named “README.md” using Markdown formatting. Serving as the front page of a repository, it offers a concise yet informative introduction to the project. The README’s primary purpose is to provide an overview of the project’s purpose, features, and usage. It often includes installation instructions, usage examples, and links to more comprehensive documentation.
+Moreover, the README may contain guidelines for contributing to the project, specifying how users can report issues, propose changes, or adhere to coding conventions. It also mentions the project’s license, outlining how others can use and contribute to the code. Visual elements like badges may be added to display essential information such as build status, code coverage, or version numbers. In essence, a well-crafted README is instrumental in facilitating project understanding, user adoption, and collaboration within the GitHub community.
+
+## How to customize a GitHub profile?
+Customizing your GitHub profile is a great way to personalize your presence on the platform and highlight your work and interests. To get started, create or update a repository with the same name as your GitHub username. Within this repository, add a README.md file where you can provide information about yourself, your projects, and other details you want to showcase. You can use Markdown formatting to style your content, including text, images, links, and more.
+After customizing your README.md, commit your changes to the repository. Then, navigate to your repository’s settings, specifically the “GitHub Pages” section. Here, set the branch containing your README.md as the source, and save your settings. Your customized profile will now display your README.md content, allowing you to share your story and projects with the GitHub community. If desired, you can further personalize your profile by pinning repositories that you want to feature prominently.
+Remember that your GitHub profile is visible to the public, so make sure your customization represents you and your work effectively. This customization not only adds a personal touch to your GitHub presence but also serves as a valuable portfolio for potential collaborators and employers.
+
+## How to add GitHub stats to README?
+To add GitHub stats to your README, you can utilize third-party services like GitHub Readme Stats or shields.io. With GitHub Readme Stats, you can easily embed dynamic GitHub statistics directly into your README. Start by visiting the GitHub Readme Stats repository, copying the provided code snippet, and pasting it into your README.md file. Customize the code with your GitHub username and preferred options, then commit the changes. When someone views your README on GitHub, it will automatically fetch and display your GitHub statistics, enhancing your profile’s visibility.
+Another option is to use shields.io, a versatile badge generator service. You can access shields.io and select the GitHub category to create badges showcasing various GitHub statistics, such as followers, stars, or your latest commit. After configuring your badge, shields.io will generate a URL that you can embed in your README. Simply insert an image tag with the generated URL in your README.md, and the badge will appear, offering a quick snapshot of your GitHub activity.
+
+## How to make a good GitHub profile README?
+To create an impactful GitHub profile README, focus on a concise yet engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable. Use a professional photo to humanize your profile.
+Next, showcase your work by organizing sections with project thumbnails, titles, descriptions, and links to your repositories or deployed applications. Consider incorporating GitHub Readme Stats or widgets to display your GitHub activity, lending credibility to your contributions. List your skills and technologies to give viewers insight into your expertise. Highlight significant achievements and contributions, and provide contact information for networking and collaboration opportunities.
+Customize the appearance with Markdown or HTML for formatting and maintain a consistent theme. Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action. Don’t hesitate to infuse creativity through GIFs, emojis, or unique design elements. Lastly, review and proofread your README for clarity and accuracy, aiming to create a lasting and positive impression for those who explore your GitHub profile.
+
+## What is two-factor authentication?
 
 Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.

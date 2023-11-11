@@ -358,7 +358,7 @@
     "href": "lessons/lesson_02/lesson_02.html#lesson",
     "title": "Lesson_02",
     "section": "Lesson",
-    "text": "Lesson\n\nWhat is a Github Profile README?\nSince the beginning of this lesson, we’ve actually made mention of github profile readme, and I believe some of you don’t really have an idea what it is all about.\nA GitHub profile README is a special repository that you can create to add a README file to your GitHub profile. It acts as a customizable “about me” section where you can introduce yourself, showcase your work, and share information about your interests, projects, or achievements.\nWhen someone visits your GitHub profile, the content of this README is displayed prominently, so it’s a great way to make a first impression on people who are exploring your GitHub repositories or looking to learn more about you as a developer or contributor.\nTo create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is octocat, you would create a repository named octocat. Inside this repository, you place a README.md file. Whatever you write in the README.md file using Markdown will appear on your GitHub profile.\n[We will include an image of the sample github profile and how it will look like in this section]\nIn the next section, we will look at the steps taken to create a github README file for a github profile."
+    "text": "Lesson\n\nWhat is a Github Profile README?\nSince the beginning of this lesson, we’ve actually made mention of github profile readme, and I believe some of you don’t really have an idea what it is all about.\nA GitHub profile README is a special repository that you can create to add a README file to your GitHub profile. It acts as a customizable “about me” section where you can introduce yourself, showcase your work, and share information about your interests, projects, or achievements.\nWhen someone visits your GitHub profile, the content of this README is displayed prominently, so it’s a great way to make a first impression on people who are exploring your GitHub repositories or looking to learn more about you as a developer or contributor.\nTo create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is octocat, you would create a repository named octocat. Inside this repository, you place a README.md file. Whatever you write in the README.md file using Markdown will appear on your GitHub profile.\n\nPictured below is what your github profile will be if you do everything right.\n\n\nYour browser does not support the video tag. \nIn the next section, we will look at the steps taken to create a github README file for a github profile."
   },
   {
     "objectID": "lessons/lesson_02/lesson_02.html#creating-a-github-profile-readme-file",
@@ -372,7 +372,7 @@
     "href": "lessons/lesson_02/lesson_02.html#practice-activity",
     "title": "Lesson_02",
     "section": "Practice Activity",
-    "text": "Practice Activity\n[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.]\n[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.\nexample: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.]"
+    "text": "Practice Activity\n\nList five texting formating markdown syntax\nHow can you insert images and links on markdown?\nFrom what you learnt so far, create a Github Profile README file and update your profile accordingly.\nList 5 Markdown emojis and how to insert them in a markdown file\n\nYou should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn Github website creation."
   },
   {
     "objectID": "lessons/lesson_02/lesson_02.html#faq",
@@ -414,7 +414,7 @@
     "href": "lessons/lesson_02/lesson_02.html#adding-a-banner-gif-and-about-me-section",
     "title": "Lesson_02",
     "section": "Adding a Banner GIF and About Me Section",
-    "text": "Adding a Banner GIF and About Me Section\n\n[This is a placeholder for the about me section… The details shall be added much later.]"
+    "text": "Adding a Banner GIF and About Me Section"
   },
   {
     "objectID": "lessons/lesson_02/lesson_02.html#adding-languages-and-tools",
@@ -443,6 +443,7 @@
     "title": "Lesson_02",
     "section": "Link 1:",
     "text": "Link 1:\nThe first link which can be accessed with the following URL\n(https://github.com/DenverCoder1/github-readme-streak-stats)\nprovides us with the following:\n\nTotal number of contributions by a user\nLongest streak of contributions for a user\nCurrent streak stat for a user.\n\nWhen you click on the link, it will direct you to a page as displayed below.\n\nThen you will have to navigate to the Quick Setup section in the page as shown below.\n\nOn the Quick Setup section, you will do the following just as directed in the website;\n\nCopy-paste the markdown below into your GitHub profile README\n\n[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)](https://git.io/streak-stats)\nThe Markdown takes several parameters, but for this lesson, we shall only focus on just two which are:\n\nYour Github profile name. Replace the user = DenverCoder1 parameter to your Github profile name.\n\nThe theme of your choice. you may include &theme=dark after the user profile name.\n\nHere is the sample of the full link\n[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&theme=dark)](https://git.io/streak-stats)\nFor further customization, you can explore the website and tweak the parameters as you wish.\nHere is the preview, with 08***005790 as the username."
+<<<<<<< HEAD
   },
   {
     "objectID": "lessons/lesson_03/lesson_03.html",
@@ -500,5 +501,8 @@
     "section": "Resources",
     "text": "Resources\nMarkdown Cheatsheet\nInteractive Markdown Tutorial\n\nWhat is two-factor authentication?\nTwo-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone."
 >>>>>>> c407ef1f358b86d1f58a26346095ce3d578166d0
+=======
+>>>>>>> d473fd8749f9732741b8db8fe3b22c1cc883a150
   }
+  
 ]
