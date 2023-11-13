@@ -1,0 +1,133 @@
+---
+title: "Profile Ideas & Code"
+format:
+  html:
+    code-copy: true
+    code-line-numbers: true
+---
+
+This page will help you know what to incude on your github profile readme. All these are ideas. Use this code as needed in your profile.
+
+On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.
+
+Note that here markdown is used. Github will also accept HTML. There are pros and cons to using each of these options. Markdown is easy to read and basic. HTML is less easy to read and very customizable. Stick with markdown for the duration of this course. Feel free to use HTML as you further your studies beyond this course.
+
+<br>
+
+## Name Section: 
+
+This will go best at the top of your profile readme. Paste this code at the top.
+
+::: columns
+::: {.column width="47%"}
+
+### John Doe
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="47%"}
+
+<br> 
+
+```{md}
+# John Doe
+```
+
+:::
+:::
+
+<br>
+
+## Description Section:
+
+Writing a description section is very important. Here is where you can make yourself stand out from others to employers. Below are ideas of what to include. Feel free to include anything that conveys that you are a capable employee in your field.
+
+Provide a brief introduction about yourself, your current academic pursuits, and your career goals. Mention your passion for technology and the specific field you're interested in (data science, computer science, web development).
+
+::: columns
+::: {.column width="47%"}
+
+### Description: 
+
+- 🔭 I’m currently working on [Current Project/Job].
+- 🌱 I’m currently learning [What you are learning].
+- 👯 I’m looking to collaborate on [Open Source Projects or any interesting projects].
+- 🤔 I’m looking for help with [Any specific help you need].
+- 💬 Ask me about [Anything you're open to discussions about].
+- 📫 How to reach me: [Your Email or other contact information].
+- ⚡ Fun fact: [Something interesting about yourself].
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="47%"}
+
+<br>
+
+```{md}
+## Description: 
+
+- 🔭 I’m currently working on [Current Project/Job].
+- 🌱 I’m currently learning [What you are learning].
+- 👯 I’m looking to collaborate on [Open Source Projects or any interesting projects].
+- 🤔 I’m looking for help with [Any specific help you need].
+- 💬 Ask me about [Anything you're open to discussions about].
+- 📫 How to reach me: [Your Email or other contact information].
+- ⚡ Fun fact: [Something interesting about yourself].
+```
+
+:::
+:::
+
+
+## Hard Skills Section
+
+This section is where you can show what you are comfortable using. As a beginner, this section can be empty. For more experienced students, it's a good idea to include the technology you are familiar with. Areas to include are:
+
+- **programming languages**: (python, JavaScript, C++...) 
+- **hosting services**: (Heroku, GitHub Pages, AWS...) 
+- **frameworks/libraries**: (pandas, tensorflow, ggplot2, ReactJS...) 
+- **databases**: (MSSQL, Postgres...) 
+
+or anything else that would help what technology you are comfotable using like Git/GitHub, Quarto which we will be learning later in this course. 
+
+The example below is table showing technology a Data Science student might be familiar with.
+
+::: columns
+::: {.column width="47%"}
+
+### Favorite Technology
+
+|               | Python        | R             |
+| ---           | :---:         | :---:         |
+| Reading       | Pandas        | Readr         |
+| Wrangling     | Pandas        | Tidyr & Dplyr |
+| Visualization | Matplotlib    | ggplot2       |
+| Model         | Scitkit-Learn | TidyModels    |
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="47%"}
+
+<br>
+
+```{{md}}
+## Favorite Technology
+
+|               | Python        | R             |
+| ---           | :---:         | :---:         |
+| Reading       | Pandas        | Readr         |
+| Wrangling     | Pandas        | Tidyr & Dplyr |
+| Visualization | Matplotlib    | ggplot2       |
+| Model         | Scitkit-Learn | TidyModels    |
+```
+
+:::
+:::
+
+
+## Notes
+
+Remember to keep your github profile readme up to date. This is just as important to getting a job as a resume is. This is a tool for finding work. Think to yourself, "If I were an employer, what would I need in an employee?". Whatever the answer to that is, convey it in your readme. 
