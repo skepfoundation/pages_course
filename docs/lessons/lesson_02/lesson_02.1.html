@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Github Pages Training - Lesson 03: Introduction to Using Markdown</title>
+<title>Github Pages Training - Profile Ideas &amp; Code</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +20,58 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -70,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Github Pages Training</span>
     </a>
   </div>
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -90,53 +124,27 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
         <li>
-    <a class="dropdown-item" href="../tools/r_installation.html" rel="" target="">
+    <a class="dropdown-item" href="../../tools/r_installation.html" rel="" target="">
  <span class="dropdown-text">R Installation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../tools/r_studio.html" rel="" target="">
+    <a class="dropdown-item" href="../../tools/r_studio.html" rel="" target="">
  <span class="dropdown-text">R Studio</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../tools/git_installation.html" rel="" target="">
+    <a class="dropdown-item" href="../../tools/git_installation.html" rel="" target="">
  <span class="dropdown-text">Git Installation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../tools/github_setup.html" rel="" target="">
+    <a class="dropdown-item" href="../../tools/github_setup.html" rel="" target="">
  <span class="dropdown-text">Github Setup</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../tasks_overview.html" rel="" target="">
+    <a class="nav-link" href="../../tasks_overview.html" rel="" target="">
  <span class="menu-text">Course Tasks</span></a>
   </li>  
-<<<<<<< HEAD
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-1" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Unit 1</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-1">    
-        <li>
-    <a class="dropdown-item" href="../pages_course_01.qmd" rel="" target="">
- <span class="dropdown-text">Lesson 1: Intro to GitHub</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../lessons/lesson_02/lesson_02.html" rel="" target="">
- <span class="dropdown-text">Lesson 2: GitHub Profile Readme Part 1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../pages_course_03.qmd" rel="" target="">
- <span class="dropdown-text">Lesson 3: Markdown</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../pages_course_04.qmd" rel="" target="">
- <span class="dropdown-text">Lesson 4: GitHub Profile Readme Part 2</span></a>
-  </li>  
-    </ul>
-  </li>
-=======
->>>>>>> 1649ff9 (changes on files)
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -153,16 +161,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
-  <ul class="collapse">
-  <li><a href="#what-is-markdown" id="toc-what-is-markdown" class="nav-link" data-scroll-target="#what-is-markdown">What is Markdown ?</a></li>
-  <li><a href="#why-use-markdown" id="toc-why-use-markdown" class="nav-link" data-scroll-target="#why-use-markdown">Why use Markdown ?</a></li>
-  </ul></li>
-  <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
+  <li><a href="#name-section" id="toc-name-section" class="nav-link active" data-scroll-target="#name-section">Name Section:</a></li>
+  <li><a href="#description-section" id="toc-description-section" class="nav-link" data-scroll-target="#description-section">Description Section:</a></li>
+  <li><a href="#hard-skills-section" id="toc-hard-skills-section" class="nav-link" data-scroll-target="#hard-skills-section">Hard Skills Section</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   </ul>
 </nav>
     </div>
@@ -171,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 03: Introduction to Using Markdown</h1>
+<h1 class="title">Profile Ideas &amp; Code</h1>
 </div>
 
 
@@ -186,54 +188,128 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This lesson will provide you with fundamental knowledge of Markdown and its uses</p>
+<p>This page will help you know what to incude on your github profile readme. All these are ideas. Use this code as needed in your profile.</p>
+<p>On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.</p>
+<p>Note that here markdown is used. Github will also accept HTML. There are pros and cons to using each of these options. Markdown is easy to read and basic. HTML is less easy to read and very customizable. Stick with markdown for the duration of this course. Feel free to use HTML as you further your studies beyond this course.</p>
+<p><br></p>
+<section id="name-section" class="level2">
+<h2 class="anchored" data-anchor-id="name-section">Name Section:</h2>
+<p>This will go best at the top of your profile readme. Paste this code at the top.</p>
+<div class="columns">
+<div class="column" style="width:47%;">
+<section id="john-doe" class="level3">
+<h3 class="anchored" data-anchor-id="john-doe">John Doe</h3>
 </section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<p><br></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {md} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a># John Doe</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="description-section" class="level2">
+<h2 class="anchored" data-anchor-id="description-section">Description Section:</h2>
+<p>Writing a description section is very important. Here is where you can make yourself stand out from others to employers. Below are ideas of what to include. Feel free to include anything that conveys that you are a capable employee in your field.</p>
+<p>Provide a brief introduction about yourself, your current academic pursuits, and your career goals. Mention your passion for technology and the specific field you’re interested in (data science, computer science, web development).</p>
+<div class="columns">
+<div class="column" style="width:47%;">
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description:</h3>
 <ul>
-<li><p>Students will understand the importance of Markdown and its use cases</p></li>
-<li><p>Students will be able to create visually appealing Markdown files e.g readme’s</p></li>
+<li>🔭 I’m currently working on [Current Project/Job].</li>
+<li>🌱 I’m currently learning [What you are learning].</li>
+<li>👯 I’m looking to collaborate on [Open Source Projects or any interesting projects].</li>
+<li>🤔 I’m looking for help with [Any specific help you need].</li>
+<li>💬 Ask me about [Anything you’re open to discussions about].</li>
+<li>📫 How to reach me: [Your Email or other contact information].</li>
+<li>⚡ Fun fact: [Something interesting about yourself].</li>
 </ul>
 </section>
-<section id="lesson" class="level2">
-<h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
-<section id="what-is-markdown" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-markdown">What is Markdown ?</h3>
-<pre><code>Markdown is a markup language (no pun intended 🙂) that you can use to add formatting elements to plaintext text documents. Simillar to HTML used in browsers, but lightweight, with syntax that's very readable and unobstrusive.</code></pre>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<p><br></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {md} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>## Description: </span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>- 🔭 I’m currently working on [Current Project/Job].</span>
+<span id="cb2-4"><a href="#cb2-4"></a>- 🌱 I’m currently learning [What you are learning].</span>
+<span id="cb2-5"><a href="#cb2-5"></a>- 👯 I’m looking to collaborate on [Open Source Projects or any interesting projects].</span>
+<span id="cb2-6"><a href="#cb2-6"></a>- 🤔 I’m looking for help with [Any specific help you need].</span>
+<span id="cb2-7"><a href="#cb2-7"></a>- 💬 Ask me about [Anything you're open to discussions about].</span>
+<span id="cb2-8"><a href="#cb2-8"></a>- 📫 How to reach me: [Your Email or other contact information].</span>
+<span id="cb2-9"><a href="#cb2-9"></a>- ⚡ Fun fact: [Something interesting about yourself].</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 </section>
-<section id="why-use-markdown" class="level3">
-<h3 class="anchored" data-anchor-id="why-use-markdown">Why use Markdown ?</h3>
+<section id="hard-skills-section" class="level2">
+<h2 class="anchored" data-anchor-id="hard-skills-section">Hard Skills Section</h2>
+<p>This section is where you can show what you are comfortable using. As a beginner, this section can be empty. For more experienced students, it’s a good idea to include the technology you are familiar with. Areas to include are:</p>
 <ul>
-<li><p>Markdown can be used for basically everything. It’s used to create websites, documents, notes, presentations and technical documentation.</p></li>
-<li><p>Markdown is as beginner-friendly as it’s powerful.</p></li>
-<li><p>Markdown is portable. Markdown-formatted text files can be opened using virtually any application.</p></li>
-<li><p>Markdown is platform independent. You can create Markdown-formatted text on any device running any operating system.</p></li>
-<li><p>Markdown is everywhere. It’s supported on GitHub, and lots of desktop and web-based applications.</p></li>
-<li><p>Markdown is future proof. Even if the application you’re using stops working at some point in the future, you’ll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to milestone documents that need to be preserved indefinitely.</p></li>
+<li><strong>programming languages</strong>: (python, JavaScript, C++…)</li>
+<li><strong>hosting services</strong>: (Heroku, GitHub Pages, AWS…)</li>
+<li><strong>frameworks/libraries</strong>: (pandas, tensorflow, ggplot2, ReactJS…)</li>
+<li><strong>databases</strong>: (MSSQL, Postgres…)</li>
 </ul>
-<p>In summary, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you’ll be using throughout your data science journey. Knowing how to use it will prove essential as you kickstart your journey.</p>
+<p>or anything else that would help what technology you are comfotable using like Git/GitHub, Quarto which we will be learning later in this course.</p>
+<p>The example below is table showing technology a Data Science student might be familiar with.</p>
+<div class="columns">
+<div class="column" style="width:47%;">
+<section id="favorite-technology" class="level3">
+<h3 class="anchored" data-anchor-id="favorite-technology">Favorite Technology</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Python</th>
+<th style="text-align: center;">R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reading</td>
+<td style="text-align: center;">Pandas</td>
+<td style="text-align: center;">Readr</td>
+</tr>
+<tr class="even">
+<td>Wrangling</td>
+<td style="text-align: center;">Pandas</td>
+<td style="text-align: center;">Tidyr &amp; Dplyr</td>
+</tr>
+<tr class="odd">
+<td>Visualization</td>
+<td style="text-align: center;">Matplotlib</td>
+<td style="text-align: center;">ggplot2</td>
+</tr>
+<tr class="even">
+<td>Model</td>
+<td style="text-align: center;">Scitkit-Learn</td>
+<td style="text-align: center;">TidyModels</td>
+</tr>
+</tbody>
+</table>
 </section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<p><br></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource {{md}} number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>## Favorite Technology</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>|               | Python        | R             |</span>
+<span id="cb3-4"><a href="#cb3-4"></a>| ---           | :---:         | :---:         |</span>
+<span id="cb3-5"><a href="#cb3-5"></a>| Reading       | Pandas        | Readr         |</span>
+<span id="cb3-6"><a href="#cb3-6"></a>| Wrangling     | Pandas        | Tidyr &amp; Dplyr |</span>
+<span id="cb3-7"><a href="#cb3-7"></a>| Visualization | Matplotlib    | ggplot2       |</span>
+<span id="cb3-8"><a href="#cb3-8"></a>| Model         | Scitkit-Learn | TidyModels    |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 </section>
-<section id="practice-activity" class="level2">
-<h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
-<p>[This is where we assign students a task to practice what they have learned. This should largely correlate with the Lesson Objectives from up above.]</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.</p>
-<p>example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.]</p>
-</section>
-<section id="faq" class="level2">
-<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
-<p>[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with]</p>
-<section id="what-is-two-factor-authentication" class="level4">
-<h4 class="anchored" data-anchor-id="what-is-two-factor-authentication">What is two-factor authentication?</h4>
-<p>Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.</p>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<p>Remember to keep your github profile readme up to date. This is just as important to getting a job as a resume is. This is a tool for finding work. Think to yourself, “If I were an employer, what would I need in an employee?”. Whatever the answer to that is, convey it in your readme.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

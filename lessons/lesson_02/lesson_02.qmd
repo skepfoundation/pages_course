@@ -1,5 +1,14 @@
 ---
 title: "Lesson_02"
+format:
+  html:
+    code-copy: true
+    code-line-numbers: true
+    page-layout: full
+    grid: 
+      body-width: 700px
+      margin-width: 200px
+      sidebar-width: 200px
 ---
 
 ## Creating A Github Profile README.md file
@@ -91,7 +100,7 @@ Go to the [GIF Link](https://giphy.com/stickers/hacktiv8-coding-codingfromhome-f
 
 In the Github file editor, replace the ``` README.md ``` file content with the following code:
 
-```Markdown
+```{Markdown}
     <div id="header" align="center">
         <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
     </div>
@@ -116,10 +125,14 @@ In the case of our example being **LinkedIn** and **Twitter**, their color will 
 When the parameters listed above (Label and color) are combined with [https://img.shields.io/badge/](https://img.shields.io/badge/), the following URL is created.
 
 ## For LinkedIn:
-```https://img.shields.io/badge/LinkedIn-blue```
+```{html}
+  https://img.shields.io/badge/LinkedIn-blue
+```
 
 ## For Twitter:
-```https://img.shields.io/badge/Twitter-blue```
+```{html}
+  https://img.shields.io/badge/Twitter-blue
+```
 
 
 ## Adding a Banner GIF and About Me Section
