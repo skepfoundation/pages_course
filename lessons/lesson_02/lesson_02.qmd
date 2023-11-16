@@ -1,14 +1,5 @@
 ---
 title: "Lesson_02"
-format:
-  html:
-    code-copy: true
-    code-line-numbers: true
-    page-layout: full
-    grid: 
-      body-width: 700px
-      margin-width: 200px
-      sidebar-width: 200px
 ---
 
 ## Creating A Github Profile README.md file
