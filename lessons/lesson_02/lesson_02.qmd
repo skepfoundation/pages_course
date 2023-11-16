@@ -2,7 +2,7 @@
 title: "Lesson_02"
 ---
 
-## Overviewpages_course/lessons/lesson_template.qmd
+## Creating A Github Profile README.md file
 
 In this lesson, we will embark on a journey to create your very own profile page on github using Markdown, a lightweight and easy-to-use syntax for styling all forms of writing on the web. Markdown is widely used because it allows you to maintain the readability of plain text while offering the styling capabilities of HTML. Our goal is to familiarize you with the foundational elements of Markdown to transform plain text into a rich, well-formatted document.
 
@@ -21,27 +21,8 @@ By the end of this lesson, you will have crafted a personal profile page that no
 -   Students will be able to organize content using headers to create clear hierarchy and flow within their profile page.
   
 
--   Students will be able to emphasize key aspects of their profile using bold and italic text formatting.
-  
-
--   Students will be able to construct ordered and unordered lists to list accomplishments, skills and interests effectively.
-  
-
 -   Students will be able to embed hyperlinks and connect their profile to personal projects, professional networks, or external references.
   
-
--   Students will be able to insert images to personalize their profile page, making it more visually engaging.
-
-
--   Students will be able to craft a concise biography or personal statement that reflects their individual journey and aspirations.
-
-
--   Students will be able to utilize blockquotes to highlight personal mottos.
-
-
--   Students will be able to implement code blocks and inline code to showcase technical skills or highlight programming projects.
-
-
 -   Students will be able to create a comprehensive and visually appealing profile page that can be shared and viewed on various platforms, including Github and personal blogs.
 
 ## Lesson
