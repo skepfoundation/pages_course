@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Github Pages Training - Understanding Markdown</title>
+<title>Github Pages Training - Lesson 03: Writing in Markdown</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,7 +151,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-1">    
         <li>
-    <a class="dropdown-item" href="../../lessons/lesson_01.html" rel="" target="">
+    <a class="dropdown-item" href="../../lessons/lesson_01/lesson_01.html" rel="" target="">
  <span class="dropdown-text">Lesson 1: Intro to GitHub</span></a>
   </li>  
         <li>
@@ -188,6 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
   <ul class="collapse">
+  <li><a href="#why-markdown-matters" id="toc-why-markdown-matters" class="nav-link" data-scroll-target="#why-markdown-matters">Why Markdown Matters ?</a></li>
   <li><a href="#emphasizing-text-in-markdown" id="toc-emphasizing-text-in-markdown" class="nav-link" data-scroll-target="#emphasizing-text-in-markdown">Emphasizing text in Markdown</a></li>
   <li><a href="#headings-in-markdown" id="toc-headings-in-markdown" class="nav-link" data-scroll-target="#headings-in-markdown">Headings in Markdown</a></li>
   <li><a href="#lists-in-markdown" id="toc-lists-in-markdown" class="nav-link" data-scroll-target="#lists-in-markdown">Lists in Markdown</a></li>
@@ -200,7 +201,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#markdown-readme" id="toc-markdown-readme" class="nav-link" data-scroll-target="#markdown-readme">Markdown README:</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul>
 </nav>
@@ -210,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Understanding Markdown</h1>
+<h1 class="title">Lesson 03: Writing in Markdown</h1>
 </div>
 
 
@@ -238,6 +242,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="lesson" class="level2">
 <h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
+<section id="why-markdown-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-markdown-matters">Why Markdown Matters ?</h3>
+<ul>
+<li><p>Markdown can be used for basically everything. It’s used to create websites, documents, notes, presentations and technical documentation.</p></li>
+<li><p>Markdown is as beginner-friendly as it’s powerful, portable and platform independent. It can be created on any device running any operating system, using virtually any application.</p></li>
+<li><p>Markdown is everywhere. It’s supported on GitHub, and lots of desktop and web-based applications.</p></li>
+<li><p>Markdown is future proof. Even if the application you’re using stops working at some point in the future, you’ll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to milestone documents that need to be preserved indefinitely.</p></li>
+</ul>
+<p>In short, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you’ll be using throughout your data science journey. Knowing how to use it will prove essential as you kickstart your journey.</p>
+</section>
 <section id="emphasizing-text-in-markdown" class="level3">
 <h3 class="anchored" data-anchor-id="emphasizing-text-in-markdown">Emphasizing text in Markdown</h3>
 <ul>
@@ -274,8 +288,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="code-blocks-in-markdown" class="level3">
 <h3 class="anchored" data-anchor-id="code-blocks-in-markdown">Code blocks in Markdown</h3>
 <ul>
-<li>To indicate code blocks, use three backticks before and after the block of code.</li>
+<li>To indicate code blocks, use three backticks before and after the block of code. As such: <code>```python "insert python code" ```</code></li>
 </ul>
+<p>You can do this with any coding language. The output will look like this:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -290,11 +305,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="links" class="level4">
 <h4 class="anchored" data-anchor-id="links">Links</h4>
-<p><code>[title](https://www.example.com)</code></p>
+<ul>
+<li>To create a link, enclose the link text in square brackets and then follow it immediately with the URL in parentheses. As such: <code>[link text](https://www.example.com)</code></li>
+</ul>
+<p>The rendered output looks like this: My example link is <a href="https://www.example.com">example</a></p>
 </section>
 <section id="images" class="level4">
 <h4 class="anchored" data-anchor-id="images">Images</h4>
-<p><code>![alt text](image.jpg)</code></p>
+<ul>
+<li>To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title in quotation marks after the path or URL. As such: <code>![alt text](/path/to/image.jpg)</code></li>
+</ul>
+<p>The rendered output looks like this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./image/lake-8305673_1280.webp" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">A River</figcaption>
+</figure>
+</div>
 </section>
 </section>
 </section>
@@ -303,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="github-profile-setup" class="level3">
 <h3 class="anchored" data-anchor-id="github-profile-setup">GitHub Profile Setup:</h3>
 <ul>
-<li>If you don’t have a GitHub account, sign up for one <a href="https://www.github.com">here</a>.</li>
+<li>If you don’t have a GitHub account, sign up for one <a href="https://www.github.com">here</a>. Refer to Lesson 1 guide.</li>
 <li>Create a new repository with the name “Markdown Practice”.</li>
 <li>Add a short description and initialize it with a README.</li>
 </ul>
@@ -329,12 +356,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>[Wrap-up by restating what should have been learned in this lesson. Then tease other lessons.</p>
-<p>example: You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.]</p>
+<p>Good job completing this lesson! By now you should:</p>
+<ul>
+<li><p>Have fundamental knowledge of using Markdown</p></li>
+<li><p>Have created a README file using Markdown, with an image, a code block and working links.</p></li>
+</ul>
+<p>In the next lesson you will learn how to host websites on Github.</p>
 </section>
 <section id="faq" class="level2">
 <h2 class="anchored" data-anchor-id="faq">FAQ</h2>
-<p>[This is where we will post common questions students have while doing a lesson along with answers to those questions. This list will likely grow as more students take the course and we learn what they struggle with]</p>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+</section>
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>

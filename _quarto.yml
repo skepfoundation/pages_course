@@ -24,7 +24,7 @@ website:
       - text: "Unit 1"
         menu: 
           - text: "Lesson 1: Intro to GitHub"
-            href: lessons\lesson_01.qmd
+            href: lessons\lesson_01\lesson_01.qmd
           - text: "Lesson 2: GitHub Profile Readme (Part 1)"
             href: lessons\lesson_02\lesson_02.qmd
           - text: "Lesson 3: Markdown"
