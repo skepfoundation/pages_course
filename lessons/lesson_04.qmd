@@ -1,6 +1,9 @@
 ---
 title: "Lesson 4: GitHub Profile Readme (Part 2)"
 subtitle: "Profile Readme Ideas & Code"
+engine: knitr
+filters:
+  - webr
 format:
   html:
     theme:
@@ -19,6 +22,9 @@ format:
       margin-width: 70px
 ---
 
+```{webr-r}
+5==5
+```
 
 This page will help you know what to incude on your github profile readme. All these are ideas. Use this code as needed in your profile.
 
