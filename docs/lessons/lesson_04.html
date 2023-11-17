@@ -92,253 +92,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/editor/editor.main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-<style>
-  .monaco-editor pre {
-    background-color: unset !important;
-  }
-
-  .qwebr-icon-status-spinner {
-    color: #7894c4;
-  }
-
-  .qwebr-icon-run-code {
-    color: #0d9c29
-  }
-
-  .qwebr-output-code-stdout {
-    color: #111;
-  }
-
-  .qwebr-output-code-stderr {
-    color: #db4133;
-  }
-
-  .qwebr-button-run {
-    background-color: #EEEEEE;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; /* Extra styling for consistency */
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    -webkit-text-decoration: none;
-    -moz-text-decoration: none;
-    -ms-text-decoration: none;
-    -o-text-decoration: none;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    border-color: #dee2e6;
-    border: 1px solid rgba(0,0,0,0);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-
-  .qwebr-button-run:hover {
-    color: #000;
-    background-color: #e3e6ea;
-    border-color: #e1e5e9;
-  }
-
-  .qwebr-button-run:disabled,.qwebr-button-run.disabled,fieldset:disabled .qwebr-button-run {
-    pointer-events: none;
-    opacity: .65
-  }
-
-  .reveal pre div code.qwebr-output-code-stdout, .reveal pre div code.qwebr-output-code-stderr {
-    padding: 0px;
-    display: contents;
-  }
-</style>
-
-<script type="module">
-
-  // Start a timer
-  const initializeWebRTimerStart = performance.now();
-
-  // Determine if we need to install R packages
-  var installRPackagesList = [''];
-  // Check to see if we have an empty array, if we do set to skip the installation.
-  var setupRPackages = !(installRPackagesList.indexOf("") !== -1);
-  var autoloadRPackages = true;
-
-  // Display a startup message?
-  var showStartupMessage = true;
-  var showHeaderMessage = false;
-  if (showStartupMessage) {
-
-    // Get references to header elements
-    const headerHTML = document.getElementById("title-block-header");
-    const headerRevealJS = document.getElementById("title-slide");
-
-    // Create the outermost div element for metadata
-    const quartoTitleMeta = document.createElement("div");
-    quartoTitleMeta.classList.add("quarto-title-meta");
-
-    // Create the first inner div element
-    const firstInnerDiv = document.createElement("div");
-
-    // Create the second inner div element for "WebR Status" heading and contents
-    const secondInnerDiv = document.createElement("div");
-    secondInnerDiv.classList.add("quarto-title-meta-heading");
-    secondInnerDiv.innerText = "WebR Status";
-
-    // Create another inner div for contents
-    const secondInnerDivContents = document.createElement("div");
-    secondInnerDivContents.classList.add("quarto-title-meta-contents");
-
-    // Describe the WebR state
-    var startupMessageWebR = document.createElement("p");
-    startupMessageWebR.innerText = "🟡 Loading...";
-    startupMessageWebR.setAttribute("id", "startup");
-    // Add `aria-live` to auto-announce the startup status to screen readers
-    startupMessageWebR.setAttribute("aria-live", "assertive");
-
-    // Append the startup message to the contents
-    secondInnerDivContents.appendChild(startupMessageWebR);
-
-    // Add a status indicator for COOP and COEP Headers if needed
-    if (showHeaderMessage) {
-      const crossOriginMessage = document.createElement("p");
-      crossOriginMessage.innerText = `${crossOriginIsolated ? '🟢' : '🟡'} COOP & COEP Headers`;
-      crossOriginMessage.setAttribute("id", "coop-coep-header");
-      secondInnerDivContents.appendChild(crossOriginMessage);
-    }
-
-    // Combine the inner divs and contents
-    firstInnerDiv.appendChild(secondInnerDiv);
-    firstInnerDiv.appendChild(secondInnerDivContents);
-    quartoTitleMeta.appendChild(firstInnerDiv);
-
-    // Determine where to insert the quartoTitleMeta element
-    if (headerHTML) {
-      // Append to the existing "title-block-header" element
-      headerHTML.appendChild(quartoTitleMeta);
-    } else if (headerRevealJS) {
-      // If using RevealJS, add to the "title-slide" div
-      headerRevealJS.appendChild(firstInnerDiv);
-    } else {
-      // If neither headerHTML nor headerRevealJS is found, insert after "webr-monaco-editor-init" script
-      const monacoScript = document.getElementById("webr-monaco-editor-init");
-      const header = document.createElement("header");
-      header.setAttribute("id", "title-block-header");
-      header.appendChild(quartoTitleMeta);
-      monacoScript.after(header);
-    }
-  }
-
-  // Retrieve the webr.mjs
-  import { WebR, ChannelType } from "https://webr.r-wasm.org/v0.2.1/webr.mjs";
-
-  // Populate WebR options with defaults or new values based on 
-  // webr meta
-  globalThis.webR = new WebR({
-    "baseURL": "https://webr.r-wasm.org/v0.2.1/",
-    "serviceWorkerUrl": "",
-    "homedir": "/home/web_user", 
-    "channelType": ChannelType.Automatic
-  });
-
-  // Initialization WebR
-  await globalThis.webR.init();
-
-  // Setup a shelter
-  globalThis.webRCodeShelter = await new globalThis.webR.Shelter();
-
-  // Setup a pager to allow processing help documentation 
-  await globalThis.webR.evalRVoid('webr::pager_install()'); 
-
-  // Function to set the button text
-  function qwebrSetInteractiveButtonState(buttonText, enableCodeButton = true) {
-    document.querySelectorAll(".qwebr-button-run").forEach((btn) => {
-      btn.innerHTML = buttonText;
-      btn.disabled = !enableCodeButton;
-    });
-  }
-
-  // Function to update the status message
-  function qwebrUpdateStatusHeader(message) {
-    startupMessageWebR.innerHTML = `
-      <i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i>
-      <span>${message}</span>`;
-  }
-
-  // Function to install a single package
-  async function qwebrInstallRPackage(packageName) {
-    await globalThis.webR.installPackages([packageName]);
-  }
-
-  // Function to load a single package
-  async function qwebrLoadRPackage(packageName) {
-    await globalThis.webR.evalRVoid(`library(${packageName});`);
-  }
-
-  // Generic function to process R packages
-  async function qwebrProcessRPackagesWithStatus(packages, processType, displayStatusMessageUpdate = true) {
-    // Switch between contexts
-    const messagePrefix = processType === 'install' ? 'Installing' : 'Loading';
-
-    // Modify button state
-    qwebrSetInteractiveButtonState(`🟡 ${messagePrefix} package ...`, false);
-
-    // Iterate over packages
-    for (let i = 0; i < packages.length; i++) {
-      const activePackage = packages[i];
-      const formattedMessage = `${messagePrefix} package ${i + 1} out of ${packages.length}: ${activePackage}`;
-      
-      // Display the update
-      if (displayStatusMessageUpdate) {
-        qwebrUpdateStatusHeader(formattedMessage);
-      }
-
-      // Run package installation
-      if (processType === 'install') {
-        await qwebrInstallRPackage(activePackage);
-      } else {
-        await qwebrLoadRPackage(activePackage);
-      }
-    }
-
-    // Clean slate
-    if (processType === 'load') {
-      await globalThis.webR.flush();
-    }
-  }
-
-
-  // Check to see if any packages need to be installed
-  if (setupRPackages) {
-    // Obtain only a unique list of packages
-    const uniqueRPackageList = Array.from(new Set(installRPackagesList));
-
-    // Install R packages one at a time (either silently or with a status update)
-    await qwebrProcessRPackagesWithStatus(uniqueRPackageList, 'install', showStartupMessage);
-
-    if(autoloadRPackages) {
-      // Load R packages one at a time (either silently or with a status update)
-      await qwebrProcessRPackagesWithStatus(uniqueRPackageList, 'load', showStartupMessage);
-    }
-  }
-
-  // Stop timer
-  const initializeWebRTimerEnd = performance.now();
-
-  // Release document status as ready
-  if (showStartupMessage) {
-    startupMessageWebR.innerText = "🟢 Ready!"
-  }
-  
-  qwebrSetInteractiveButtonState(
-    `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
-    true
-  );
-
-</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -450,6 +203,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#achievements" id="toc-achievements" class="nav-link" data-scroll-target="#achievements">Achievements:</a></li>
   <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
+  <li><a href="#for-linkedin-1" id="toc-for-linkedin-1" class="nav-link" data-scroll-target="#for-linkedin-1">For LinkedIn:</a></li>
+  <li><a href="#for-twitter-1" id="toc-for-twitter-1" class="nav-link" data-scroll-target="#for-twitter-1">For Twitter:</a></li>
+  <li><a href="#adding-a-banner-gif-and-about-me-section-1" id="toc-adding-a-banner-gif-and-about-me-section-1" class="nav-link" data-scroll-target="#adding-a-banner-gif-and-about-me-section-1">Adding a Banner GIF and About Me Section</a></li>
+  <li><a href="#adding-languages-and-tools-1" id="toc-adding-languages-and-tools-1" class="nav-link" data-scroll-target="#adding-languages-and-tools-1">Adding Languages and Tools</a></li>
+  <li><a href="#adding-github-stats-to-your-github-profile-1" id="toc-adding-github-stats-to-your-github-profile-1" class="nav-link" data-scroll-target="#adding-github-stats-to-your-github-profile-1">Adding Github Stats to your Github Profile</a></li>
+  <li><a href="#link-1-1" id="toc-link-1-1" class="nav-link" data-scroll-target="#link-1-1">Link 1:</a></li>
+  <li><a href="#link-2-1" id="toc-link-2-1" class="nav-link" data-scroll-target="#link-2-1">Link 2:</a>
+  <ul class="collapse">
+  <li><a href="#github-profile-summary-stats-1" id="toc-github-profile-summary-stats-1" class="nav-link" data-scroll-target="#github-profile-summary-stats-1">Github profile summary stats:</a></li>
+  <li><a href="#note-1" id="toc-note-1" class="nav-link" data-scroll-target="#note-1">Note:</a></li>
+  <li><a href="#most-used-languages-1" id="toc-most-used-languages-1" class="nav-link" data-scroll-target="#most-used-languages-1">Most used languages:</a></li>
+  <li><a href="#center-alignment-of-the-stats-1" id="toc-center-alignment-of-the-stats-1" class="nav-link" data-scroll-target="#center-alignment-of-the-stats-1">Center Alignment of the stats:</a></li>
+  </ul></li>
+  <li><a href="#achievements-1" id="toc-achievements-1" class="nav-link" data-scroll-target="#achievements-1">Achievements:</a></li>
+  <li><a href="#practice-activity-1" id="toc-practice-activity-1" class="nav-link" data-scroll-target="#practice-activity-1">Practice Activity</a></li>
+  <li><a href="#how-to-add-github-stats-to-readme" id="toc-how-to-add-github-stats-to-readme" class="nav-link" data-scroll-target="#how-to-add-github-stats-to-readme">How to add GitHub stats to README?</a></li>
+  <li><a href="#what-is-two-factor-authentication" id="toc-what-is-two-factor-authentication" class="nav-link" data-scroll-target="#what-is-two-factor-authentication">What is two-factor authentication?</a></li>
+  <li><a href="#adding-gifs-and-social-links-to-your-github-profile-readme-1" id="toc-adding-gifs-and-social-links-to-your-github-profile-readme-1" class="nav-link" data-scroll-target="#adding-gifs-and-social-links-to-your-github-profile-readme-1">Adding GIFS and Social Links to your Github Profile README</a>
+  <ul class="collapse">
+  <li><a href="#how-to-make-a-good-github-profile-readme" id="toc-how-to-make-a-good-github-profile-readme" class="nav-link" data-scroll-target="#how-to-make-a-good-github-profile-readme">How to make a good GitHub profile README?</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -459,16 +233,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
 <!-- main -->
 <main class="content column-page-right" id="quarto-document-content">
-<script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs/loader.js"></script>
-<script type="module" id="webr-monaco-editor-init">
-
-  // Configure the Monaco Editor's loader
-  require.config({
-    paths: {
-      'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/min/vs'
-    }
-  });
-</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -488,287 +252,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div id="qwebr-interactive-area-1" class="qwebr-interactive-area">
-  <button class="btn btn-default qwebr-button-run" disabled="" type="button" id="qwebr-button-run-1">🟡 Loading
-    webR...</button>
-  <div id="qwebr-console-area-1" class="qwebr-console-area">
-    <div id="qwebr-editor-1" class="qwebr-editor"></div>
-    <div id="qwebr-output-code-area-1" class="qwebr-output-code-area" aria-live="assertive">
-      <pre style="visibility: hidden"></pre>
-    </div>
-  </div>
-  <div id="qwebr-output-graph-area-1" class="qwebr-output-graph-area">
-  </div>
-</div>
-<script type="module">
-  // Retrieve webR code cell information
-  const runButton = document.getElementById("qwebr-button-run-1");
-  const outputCodeDiv = document.getElementById("qwebr-output-code-area-1");
-  const editorDiv = document.getElementById("qwebr-editor-1");
-  const outputGraphDiv = document.getElementById("qwebr-output-graph-area-1");
-
-  // Add a light grey outline around the code editor
-  editorDiv.style.border = "1px solid #eee";
-
-  // Load the Monaco Editor and create an instance
-  let editor;
-  require(['vs/editor/editor.main'], function () {
-    editor = monaco.editor.create(editorDiv, {
-      value: `5==5`,
-      language: 'r',
-      theme: 'vs-light',
-      automaticLayout: true,           // TODO: Could be problematic for slide decks
-      scrollBeyondLastLine: false,
-      minimap: {
-        enabled: false
-      },
-      fontSize: '17.5rem',               // Bootstrap is 1 rem
-      renderLineHighlight: "none",     // Disable current line highlighting
-      hideCursorInOverviewRuler: true  // Remove cursor indictor in right hand side scroll bar
-    });
-
-    // Dynamically modify the height of the editor window if new lines are added.
-    let ignoreEvent = false;
-    const updateHeight = () => {
-      const contentHeight = editor.getContentHeight();
-      // We're avoiding a width change
-      //editorDiv.style.width = `${width}px`;
-      editorDiv.style.height = `${contentHeight}px`;
-      try {
-        ignoreEvent = true;
-
-        // The key to resizing is this call
-        editor.layout();
-      } finally {
-        ignoreEvent = false;
-      }
-    };
-
-    // Helper function to check if selected text is empty
-    function isEmptyCodeText(selectedCodeText) {
-      return (selectedCodeText === null || selectedCodeText === undefined || selectedCodeText === "");
-    }
-
-    // Registry of keyboard shortcuts that should be re-added to each editor window
-    // when focus changes.
-    const addWebRKeyboardShortCutCommands = () => {
-      // Add a keydown event listener for Shift+Enter to run all code in cell
-      editor.addCommand(monaco.KeyMod.Shift | monaco.KeyCode.Enter, () => {
-
-        // Retrieve all text inside the editor
-        executeCode(editor.getValue());
-      });
-
-      // Add a keydown event listener for CMD/Ctrl+Enter to run selected code
-      editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, () => {
-
-        // Get the selected text from the editor
-        const selectedText = editor.getModel().getValueInRange(editor.getSelection());
-        // Check if no code is selected
-        if (isEmptyCodeText(selectedText)) {
-          // Obtain the current cursor position
-          let currentPosition = editor.getPosition();
-          // Retrieve the current line content
-          let currentLine = editor.getModel().getLineContent(currentPosition.lineNumber);
-
-          // Propose a new position to move the cursor to
-          let newPosition = new monaco.Position(currentPosition.lineNumber + 1, 1);
-
-          // Check if the new position is beyond the last line of the editor
-          if (newPosition.lineNumber > editor.getModel().getLineCount()) {
-            // Add a new line at the end of the editor
-            editor.executeEdits("addNewLine", [{
-            range: new monaco.Range(newPosition.lineNumber, 1, newPosition.lineNumber, 1),
-            text: "\n", 
-            forceMoveMarkers: true,
-            }]);
-          }
-          
-          // Run the entire line of code.
-          executeCode(currentLine);
-
-          // Move cursor to new position
-          editor.setPosition(newPosition);
-        } else {
-          // Code to run when Ctrl+Enter is pressed with selected code
-          executeCode(selectedText);
-        }
-      });
-    }
-
-    // Register an on focus event handler for when a code cell is selected to update
-    // what keyboard shortcut commands should work.
-    // This is a workaround to fix a regression that happened with multiple
-    // editor windows since Monaco 0.32.0 
-    // https://github.com/microsoft/monaco-editor/issues/2947
-    editor.onDidFocusEditorText(addWebRKeyboardShortCutCommands);
-
-    // Register an on change event for when new code is added to the editor window
-    editor.onDidContentSizeChange(updateHeight);
-
-    // Manually re-update height to account for the content we inserted into the call
-    updateHeight();
-  });
-
-  // Function to execute the code (accepts code as an argument)
-  async function executeCode(codeToRun) {
-
-    // Disallowing execution of other code cells
-    document.querySelectorAll(".qwebr-button-run").forEach((btn) => {
-      btn.disabled = true;
-    });
-
-    // Emphasize the active code cell
-    runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
-
-    // Create a canvas variable for graphics
-    let canvas = undefined;
-
-    // Create a pager variable for help/file contents
-    let pager = [];
-
-    // Process 
-    async function parseTypePager(msg) { 
-
-        // Split out the event data
-        const { path, title, deleteFile } = msg.data; 
-
-        // Process the pager data by reading the information from disk
-        const paged_data = await webR.FS.readFile(path).then((data) => {
-          // Obtain the file content
-          let content = new TextDecoder().decode(data);
-
-          // Remove excessive backspace characters until none remain
-          while(content.match(/.[\b]/)){
-            content = content.replace(/.[\b]/g, '');
-          }
-
-          // Returned cleaned data
-          return content;
-        });
-
-        // Unlink file if needed
-        if (deleteFile) { 
-          await webR.FS.unlink(path); 
-        } 
-
-        // Return extracted data with spaces
-        return paged_data;
-    } 
-
-    // Initialize webR
-    await webR.init();
-
-    // Setup a webR canvas by making a namespace call into the {webr} package
-    await webR.evalRVoid("webr::canvas(width=504, height=360)");
-
-    // Capture output data from evaluating the code
-    const result = await webRCodeShelter.captureR(codeToRun, {
-      withAutoprint: true,
-      captureStreams: true,
-      captureConditions: false//,
-      // env: webR.objs.emptyEnv, // maintain a global environment for webR v0.2.0
-    });
-
-    // Start attempting to parse the result data
-    try {
-
-      // Stop creating images
-      await webR.evalRVoid("dev.off()");
-
-      // Merge output streams of STDOUT and STDErr (messages and errors are combined.)
-      const out = result.output
-        .filter(evt => evt.type === "stdout" || evt.type === "stderr")
-        .map((evt, index) => {
-          const className = `qwebr-output-code-${evt.type}`;
-          return `<code id="${className}-editor-1-result-${index + 1}" class="${className}">${evt.data}</code>`;
-        })
-        .join("\n");
-
-
-      // Clean the state
-      const msgs = await webR.flush();
-
-      // Output each image event stored
-      msgs.forEach((msg) => {
-        // Determine if old canvas can be used or a new canvas is required.
-        if (msg.type === 'canvas'){
-          // Add image to the current canvas
-          if (msg.data.event === 'canvasImage') {
-            canvas.getContext('2d').drawImage(msg.data.image, 0, 0);
-          } else if (msg.data.event === 'canvasNewPage') {
-            // Generate a new canvas element
-            canvas = document.createElement("canvas");
-            canvas.setAttribute("width", 2 * 504);
-            canvas.setAttribute("height", 2 * 360);
-            canvas.style.width = "700px";
-            canvas.style.display = "block";
-            canvas.style.margin = "auto";
-          }
-        } 
-      });
-
-      // Use `map` to process the filtered "pager" events asynchronously
-      const pager = await Promise.all(
-        msgs.filter(msg => msg.type === 'pager').map(
-          async (msg) => {
-            return await parseTypePager(msg);
-          }
-        )
-      );
-
-      // Nullify the output area of content
-      outputCodeDiv.innerHTML = "";
-      outputGraphDiv.innerHTML = "";
-
-      // Design an output object for messages
-      const pre = document.createElement("pre");
-      if (/\S/.test(out)) {
-        // Display results as HTML elements to retain output styling
-        const div = document.createElement("div");
-        div.innerHTML = out;
-        pre.appendChild(div);
-      } else {
-        // If nothing is present, hide the element.
-        pre.style.visibility = "hidden";
-      }
-      outputCodeDiv.appendChild(pre);
-
-      // Place the graphics on the canvas
-      if (canvas) {
-        outputGraphDiv.appendChild(canvas);
-      }
-
-      // Display the pager data
-      if (pager) {
-        // Use the `pre` element to preserve whitespace.
-        pager.forEach((paged_data, index) => {
-          let pre_pager = document.createElement("pre");
-          pre_pager.innerText = paged_data;
-          pre_pager.classList.add("qwebr-output-code-pager");
-          pre_pager.setAttribute("id", "qwebr-output-code-pager-editor-1-result-" + (index + 1));
-          outputCodeDiv.appendChild(pre_pager);
-        });
-      }
-    } finally {
-      // Clean up the remaining code
-      webRCodeShelter.purge();
-    }
-
-    // Switch to allowing execution of code
-    document.querySelectorAll(".qwebr-button-run").forEach((btn) => {
-      btn.disabled = false;
-    });
-
-    // Revert to the initial code cell state
-    runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
-  }
-
-  // Add a click event listener to the run button
-  runButton.onclick = function () {
-    executeCode(editor.getValue());
-  };
-</script>
 <p>This page will help you know what to incude on your github profile readme. All these are ideas. Use this code as needed in your profile.</p>
 <p>On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.</p>
 <p>Note that here markdown is used. Github will also accept HTML. There are pros and cons to using each of these options. Markdown is easy to read and basic. HTML is less easy to read and very customizable. Stick with markdown for the duration of this course. Feel free to use HTML as you further your studies beyond this course.</p>
@@ -890,6 +373,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="notes">Notes</h2>
 <p>Remember to keep your github profile readme up to date. This is just as important to getting a job as a resume is. This is a tool for finding work. Think to yourself, “If I were an employer, what would I need in an employee?”. Whatever the answer to that is, convey it in your readme.</p>
 <p><br><br><br></p>
+<ul>
+<li><p>Students will be able to embed hyperlinks and connect their profile to personal projects, professional networks, or external references.</p></li>
+<li><p>Students will be able to create a comprehensive and visually appealing profile page that can be shared and viewed on various platforms, including Github and personal blogs.</p></li>
+</ul>
 </section>
 <section id="adding-gifs-and-social-links-to-your-github-profile-readme" class="level2">
 <h2 class="anchored" data-anchor-id="adding-gifs-and-social-links-to-your-github-profile-readme">Adding GIFS and Social Links to your Github Profile README</h2>
@@ -1074,8 +561,206 @@ On this section, we will be adding social network badges to your github profile 
 <li>List 5 Markdown emojis and how to insert them in a markdown file</li>
 </ol>
 <p>You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn <strong>Github website creation.</strong></p>
+<ul>
+<li><h2 id="adding-social-network-linksbadges-to-your-github-profile-readme-1" class="anchored">Adding Social Network Links/Badges to your Github profile README</h2>
+On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium(blog site), etc. But for this lessson, we shall only focus on two: LinkedIn and Twitter.</li>
+</ul>
+<p>To get the respective badges for each social networks, we’ll use <a href="https://shields.io/">shields.io</a> which provides various endpoints letting users create and customize social medial badges. We’ll use the <a href="https://img.shields.io/badge/"></a> URL and pass additional parameters to this URL to get the respective social media badges.</p>
+<ul>
+<li>The first parameter we will pass is <code>Label</code>(This represents the social network site name that will appear on the badge) and <code>Color</code> (which represents the color of the social network badge respectively). <code>Label-Color</code></li>
+</ul>
+<p>In the case of our example being <strong>LinkedIn</strong> and <strong>Twitter</strong>, their color will be <strong>blue</strong>.</p>
+<p>When the parameters listed above (Label and color) are combined with <a href="https://img.shields.io/badge/">https://img.shields.io/badge/</a>, the following URL is created.</p>
+</section>
+<section id="for-linkedin-1" class="level2">
+<h2 class="anchored" data-anchor-id="for-linkedin-1">For LinkedIn:</h2>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource {html} number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a href="#cb15-1"></a>  https://img.shields.io/badge/LinkedIn-blue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="for-twitter-1" class="level2">
+<h2 class="anchored" data-anchor-id="for-twitter-1">For Twitter:</h2>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource {html} number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a href="#cb16-1"></a>  https://img.shields.io/badge/Twitter-blue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="adding-a-banner-gif-and-about-me-section-1" class="level2">
+<h2 class="anchored" data-anchor-id="adding-a-banner-gif-and-about-me-section-1">Adding a Banner GIF and About Me Section</h2>
+<p><img src="./images/8.png" class="img-fluid"></p>
+</section>
+<section id="adding-languages-and-tools-1" class="level2">
+<h2 class="anchored" data-anchor-id="adding-languages-and-tools-1">Adding Languages and Tools</h2>
+<p>Below is the finished sample of how it will look when finished. <img src="./images/11.png" class="img-fluid"></p>
+<p>To achieve this, add the following code to your README.md file</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1"></a><span class="in">    ---</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a><span class="in">    ### :hammer_and_wrench: Languages and Tools :</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now, we will add images representing the technologies and skills you are familiar with. You can always finds free logos for many programming languages and tools in <a href="https://github.com/devicons/devicon/">DevIcons Github Repository</a>.</p>
+<p>Go to the icons foldwe and search and open the <code>Pandas</code> folder. In the folder, you’ll find images in SVG(Scaleable Vector Graphics) format. Click on any image and copy the URL shown in the browser’s address bar <img src="./images/9.png" class="img-fluid"></p>
+<p>We will make use of this URL in the <code>&lt;img /&gt;</code> tag and specify the <code>height</code> and <code>width</code> attribute accordingly. Similarly, you can search for other skills and include them in a seprate <code>&lt;img /&gt;</code> tags.</p>
+<p>Include the code below to your Github <code>README.md</code>. You can Add/Remove any skills of your choice. Ensure any skill you choose to show on your repo, they should be ones you are conversant with.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb18-1"><a href="#cb18-1"></a>    <span class="kw">&lt;div&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-3"><a href="#cb18-3"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-4"><a href="#cb18-4"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-5"><a href="#cb18-5"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-6"><a href="#cb18-6"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/flutter/flutter-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-7"><a href="#cb18-7"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Redux"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Redux "</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-8"><a href="#cb18-8"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"</span>  <span class="er">title</span><span class="ot">=</span><span class="st">"CSS3"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"CSS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-9"><a href="#cb18-9"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"HTML5"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"HTML"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-10"><a href="#cb18-10"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-11"><a href="#cb18-11"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-12"><a href="#cb18-12"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/gatsby/gatsby-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Gatsby"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"Gatsby"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-13"><a href="#cb18-13"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"MySQL"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"MySQL"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-14"><a href="#cb18-14"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-15"><a href="#cb18-15"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb18-16"><a href="#cb18-16"></a>        <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">**alt</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span></span>
+<span id="cb18-17"><a href="#cb18-17"></a>    <span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The picture below is an example of how it should look like if done properly. Remember, you are free to experiment on the height and width of the logos as you want. Feel free to increase and decrease them to any size of your choice. <img src="./images/10.png" class="img-fluid"></p>
+</section>
+<section id="adding-github-stats-to-your-github-profile-1" class="level2">
+<h2 class="anchored" data-anchor-id="adding-github-stats-to-your-github-profile-1">Adding Github Stats to your Github Profile</h2>
+<p>Here is an image of what we will do in this section. <img src="./images/12.png" class="img-fluid" alt="Figure XII"></p>
+<p>For the stats heading, add the following code to your <code>README.md</code> file.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="in">    ---</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="in">    ### :fire: My Stats:</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this section, we will be adding some stats (short for statistics) about user’s Github activity. These stats will include the following: - Number of commits, - Number of PRs, etc.</p>
+<p>There are many open-source projects on Github that offers different stats for the Github profile. They are as follows:</p>
+<ol type="1">
+<li><a href="https://github.com/DenverCoder1/github-readme-streak-stats">Github Streak Stats</a></li>
+<li><a href="https://github.com/anuraghazra/github-readme-stats">Github Readme Stats</a></li>
+</ol>
+<p>And after my research, I found out that we will be using 2 of them to achieve what we need in <strong>Figure XII</strong>.</p>
+<p>Now let’s break down what each of the open-source projects provides.</p>
+</section>
+<section id="link-1-1" class="level2">
+<h2 class="anchored" data-anchor-id="link-1-1">Link 1:</h2>
+<p>The first link which can be accessed with the following URL</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a>(https://github.com/DenverCoder1/github-readme-streak-stats)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>provides us with the following:</p>
+<ol type="1">
+<li>Total number of contributions by a user</li>
+<li>Longest streak of contributions for a user</li>
+<li>Current streak stat for a user.</li>
+</ol>
+<p>When you click on the link, it will direct you to a page as displayed below.</p>
+<p><img src="./images/16.png" class="img-fluid"></p>
+<p>Then you will have to navigate to the <strong>Quick Setup</strong> section in the page as shown below.</p>
+<p><img src="./images/15.png" class="img-fluid"></p>
+<p>On the <strong>Quick Setup</strong> section, you will do the following just as directed in the website;</p>
+<ol type="1">
+<li>Copy-paste the markdown below into your GitHub profile README</li>
+</ol>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">[</span><span class="al">![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)</span><span class="co">](https://git.io/streak-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The Markdown takes several parameters, but for this lesson, we shall only focus on just two which are:</p>
+<ol type="1">
+<li>Your Github profile name. Replace the <code>user = DenverCoder1</code> parameter to your Github profile name.</li>
+<li></li>
+<li>The theme of your choice. you may include <code>&amp;theme=dark</code> after the user profile name.</li>
+</ol>
+<p>Here is the sample of the full link</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a><span class="co">[</span><span class="al">![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&amp;theme=dark)</span><span class="co">](https://git.io/streak-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For further customization, you can explore the website and tweak the parameters as you wish.</p>
+<p>Here is the preview, with <code>08***005790</code> as the username.</p>
+<p><img src="./images/17.png" class="img-fluid"></p>
+</section>
+<section id="link-2-1" class="level2">
+<h2 class="anchored" data-anchor-id="link-2-1">Link 2:</h2>
+<p>The second link which can be accessed with the following URL</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1"></a>https://github.com/anuraghazra/github-readme-stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>provides us with the following:</p>
+<ol type="1">
+<li><p>Github profile summary statistics.</p></li>
+<li><p>Most used languages.</p></li>
+</ol>
+<p>As shown below:</p>
+<p><img src="./images/13.png" class="img-fluid"></p>
+<section id="github-profile-summary-stats-1" class="level3">
+<h3 class="anchored" data-anchor-id="github-profile-summary-stats-1">Github profile summary stats:</h3>
+<p>You can achieve number 1 above by copying the markdown below and pasting it in you <strong>README.md</strong> file.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1"></a><span class="in">    [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="note-1" class="level3">
+<h3 class="anchored" data-anchor-id="note-1">Note:</h3>
+<p>Replace the <strong>username</strong> to your Github profile username and <strong>theme</strong> any theme of your choosing. You can click on <strong>Link 2</strong> above to explore the site for your personal customizations.</p>
+</section>
+<section id="most-used-languages-1" class="level3">
+<h3 class="anchored" data-anchor-id="most-used-languages-1">Most used languages:</h3>
+<p>To achieve number 2, as previewed in the diagram below:</p>
+<p><img src="./images/14.png" class="img-fluid"></p>
+<p>Copy the markdown code</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1"></a><span class="al">![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&amp;layout=compact)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and paste it in your Github profile <code>README.md</code> file. Remember to replace the <code>username</code> to your Github profile username.</p>
+</section>
+<section id="center-alignment-of-the-stats-1" class="level3">
+<h3 class="anchored" data-anchor-id="center-alignment-of-the-stats-1">Center Alignment of the stats:</h3>
+<p>As seen in the sample, the stats were center aligned. to achieve this, you can copy the code below and paste it in your markdown.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"[https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats)"</span><span class="kw">&gt;</span></span>
+<span id="cb26-3"><a href="#cb26-3"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github-readme-stats.vercel.app/api?username=08168005790</span><span class="er">&amp;</span><span class="st">theme=dark"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"GitHub profile Streak"</span> <span class="kw">/&gt;</span></span>
+<span id="cb26-4"><a href="#cb26-4"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb26-5"><a href="#cb26-5"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb26-6"><a href="#cb26-6"></a></span>
+<span id="cb26-7"><a href="#cb26-7"></a></span>
+<span id="cb26-8"><a href="#cb26-8"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb26-9"><a href="#cb26-9"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"https://git.io/streak-stats"</span><span class="kw">&gt;</span></span>
+<span id="cb26-10"><a href="#cb26-10"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://streak-stats.demolab.com/?user=08168005790</span><span class="er">&amp;</span><span class="st">theme=dark"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"GitHub Streak"</span> <span class="kw">/&gt;</span></span>
+<span id="cb26-11"><a href="#cb26-11"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb26-12"><a href="#cb26-12"></a><span class="kw">&lt;/p&gt;</span></span>
+<span id="cb26-13"><a href="#cb26-13"></a></span>
+<span id="cb26-14"><a href="#cb26-14"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span> <span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb26-15"><a href="#cb26-15"></a>  <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github-readme-stats.vercel.app/api/top-langs/?username=08168005790</span><span class="er">&amp;</span><span class="st">theme=dark</span><span class="er">&amp;</span><span class="st">layout=compact"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"top langs"</span><span class="kw">/&gt;</span></span>
+<span id="cb26-16"><a href="#cb26-16"></a><span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The picture below is the preview of the setup for this section:</p>
+<p><img src="./images/12.png" class="img-fluid">.</p>
+</section>
+</section>
+<section id="achievements-1" class="level2">
+<h2 class="anchored" data-anchor-id="achievements-1">Achievements:</h2>
+<p>At the end of this lesson, you should be able to</p>
+<ul>
+<li><p>Identify markdown syntax and apply those syntax to create structured and styled text documents.</p></li>
+<li><p>Emphasize key aspects of their profile using bold and italic text formatting.</p></li>
+<li><p>Embed images and links within your markdown file</p></li>
+<li><p>Create a professional Github Profile README.</p></li>
+</ul>
+</section>
+<section id="practice-activity-1" class="level2">
+<h2 class="anchored" data-anchor-id="practice-activity-1">Practice Activity</h2>
+<ol type="1">
+<li>List five texting formating markdown syntax</li>
+<li>How can you insert images and links on markdown?</li>
+<li>From what you learnt so far, create a Github Profile README file and update your profile accordingly.</li>
+<li>List 5 Markdown emojis and how to insert them in a markdown file</li>
+</ol>
+<p>You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn <strong>Github website creation.</strong></p>
+</section>
+<section id="how-to-add-github-stats-to-readme" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-add-github-stats-to-readme">How to add GitHub stats to README?</h2>
+<p>To add GitHub stats to your README, you can utilize third-party services like GitHub Readme Stats or shields.io. With GitHub Readme Stats, you can easily embed dynamic GitHub statistics directly into your README. Start by visiting the GitHub Readme Stats repository, copying the provided code snippet, and pasting it into your README.md file. Customize the code with your GitHub username and preferred options, then commit the changes. When someone views your README on GitHub, it will automatically fetch and display your GitHub statistics, enhancing your profile’s visibility. Another option is to use shields.io, a versatile badge generator service. You can access shields.io and select the GitHub category to create badges showcasing various GitHub statistics, such as followers, stars, or your latest commit. After configuring your badge, shields.io will generate a URL that you can embed in your README. Simply insert an image tag with the generated URL in your README.md, and the badge will appear, offering a quick snapshot of your GitHub activity.</p>
+</section>
+<section id="what-is-two-factor-authentication" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-two-factor-authentication">What is two-factor authentication?</h2>
+<p>Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.</p>
+</section>
+<section id="adding-gifs-and-social-links-to-your-github-profile-readme-1" class="level2">
+<h2 class="anchored" data-anchor-id="adding-gifs-and-social-links-to-your-github-profile-readme-1">Adding GIFS and Social Links to your Github Profile README</h2>
+<ul>
+<li><h2 id="adding-gifs-to-your-github-profile-readme-1" class="anchored">Adding GIFS to your Github Profile README</h2></li>
+</ul>
+<p>Here’s an image of the content that will be added in this section: <a href="./images/6.png"></a></p>
+<p>The Gif used in this section can be found <a href="https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9">here</a>. I found this GIF on <a href="https://giphy.com/">Giphy</a>, which is full of free GIFs to use.</p>
+<p>Go to the <a href="https://giphy.com/stickers/hacktiv8-coding-codingfromhome-fromhome-M9gbBd9nbDrOTu1Mqx?utm_term=">GIF Link</a> and click on the <strong>Share</strong> button and then <strong>Copy GIF Link</strong>. We’ll add this copied link to an HTML <code>img</code> tag to display it in the Markdown file. We’re using the <code>img</code> tag as it’ll help us specify the width of the image.</p>
+<p>In the Github file editor, replace the <code>README.md</code> file content with the following code:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource {Markdown} number-lines code-with-copy"><code class="sourceCode"><span id="cb27-1"><a href="#cb27-1"></a>    &lt;div id="header" align="center"&gt;</span>
+<span id="cb27-2"><a href="#cb27-2"></a>        &lt;img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" /&gt;</span>
+<span id="cb27-3"><a href="#cb27-3"></a>    &lt;/div&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>src</code> attribute points to the URL we copied in the previous step. Since all the contents in this section are center-aligned, we’ve wrapped the image in an HTML <code>div</code> tag with the <code>align="center"</code> attribute.</p>
+<p>Note: Github converts the README Markdown to HTML and renders it on Github. After conversion, the HTML is sanitized, and for security reasons, it ignores certain HTML tags and attributes such as <code>&lt;script&gt;, &lt;style&gt;, &lt;style&gt;</code> etc. For this reason, we’ve used an <code>align</code> attribute instead of CSS.</p>
+<p>Click on the <strong>Preview</strong> tab, the picture below is what you will get. <img src="./images/7.png" class="img-fluid"></p>
+<p>Additionally, we will delve into creating ordered and unordered lists to organize your skills and achievements in a visually appealing manner. We will also cover the process of incorporating hyperlinks and images, enabling you to link to projects or personal works and add a personal touch with your photo.</p>
+<section id="how-to-make-a-good-github-profile-readme" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-make-a-good-github-profile-readme">How to make a good GitHub profile README?</h3>
+<p>To create an impactful GitHub profile README, focus on a concise yet engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable. Use a professional photo to humanize your profile. Next, showcase your work by organizing sections with project thumbnails, titles, descriptions, and links to your repositories or deployed applications. Consider incorporating GitHub Readme Stats or widgets to display your GitHub activity, lending credibility to your contributions. List your skills and technologies to give viewers insight into your expertise. Highlight significant achievements and contributions, and provide contact information for networking and collaboration opportunities. Customize the appearance with Markdown or HTML for formatting and maintain a consistent theme. Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action. Don’t hesitate to infuse creativity through GIFs, emojis, or unique design elements. Lastly, review and proofread your README for clarity and accuracy, aiming to create a lasting and positive impression for those who explore your GitHub profile.</p>
+<p>Throughout the lesson, we will explore the basic constructs of Markdown, such as headers, emphasis, lists, links, and images, which will serve as the building blocks for your profile page. You will learn how to structure content with different levels of headings and how to emphasize text using bold and italic styles to make your page more engaging.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
