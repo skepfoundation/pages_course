@@ -14,7 +14,7 @@ format:
     code-bloc-bg-alpha: -.2
     page-layout: full
     grid:
-      sidebar-width: 200px
+      sidebar-width: 300px
       body-width: 1030px
       margin-width: 70px
 ---
@@ -25,7 +25,25 @@ On the left is what the section will look like. On the right is the code used to
 
 Note that here markdown is used. Github will also accept HTML. There are pros and cons to using each of these options. Markdown is easy to read and basic. HTML is less easy to read and very customizable. Stick with markdown for the duration of this course. Feel free to use HTML as you further your studies beyond this course.
 
-<br>
+
+## Learning Objectives
+- Students will be able to embed hyperlinks and connect their profile to personal projects, professional networks, or external references. 
+- Students will be able to create a comprehensive and visually appealing profile page that can be shared and viewed on various platforms, including Github and personal blogs.
+
+
+### How to make a good GitHub profile README?
+To create an impactful GitHub profile README, focus on a concise yet engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable. Use a professional photo to humanize your profile.
+Next, showcase your work by organizing sections with project thumbnails, titles, descriptions, and links to your repositories or deployed applications. Consider incorporating GitHub Readme Stats or widgets to display your GitHub activity, lending credibility to your contributions. List your skills and technologies to give viewers insight into your expertise. Highlight significant achievements and contributions, and provide contact information for networking and collaboration opportunities.
+Customize the appearance with Markdown or HTML for formatting and maintain a consistent theme. Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action. Don’t hesitate to infuse creativity through GIFs, emojis, or unique design elements. Lastly, review and proofread your README for clarity and accuracy, aiming to create a lasting and positive impression for those who explore your GitHub profile.
+
+
+Throughout the lesson, we will explore the basic constructs of Markdown, such as headers, emphasis, lists, links, and images, which will serve as the building blocks for your profile page. You will learn how to structure content with different levels of headings and how to emphasize text using bold and italic styles to make your page more engaging.
+
+
+
+<br><br><br><br>
+
+
 
 ## Name Section: 
 
@@ -140,26 +158,10 @@ The example below is table showing technology a Data Science student might be fa
 :::
 
 
-## Notes
-
-Remember to keep your github profile readme up to date. This is just as important to getting a job as a resume is. This is a tool for finding work. Think to yourself, "If I were an employer, what would I need in an employee?". Whatever the answer to that is, convey it in your readme. 
-
-
-
-
-
-
 <br><br><br>
 
 
--   Students will be able to embed hyperlinks and connect their profile to personal projects, professional networks, or external references.
-  
--   Students will be able to create a comprehensive and visually appealing profile page that can be shared and viewed on various platforms, including Github and personal blogs.
-
-
 ## Adding GIFS and Social Links to your Github Profile README
-
-- ## Adding GIFS to  your Github Profile README
 
 Here's an image of the content that will be added in this section:
 [](./images/6.png)
@@ -183,7 +185,13 @@ Note: Github converts the README Markdown to HTML and renders it on Github. Afte
 Click on the **Preview** tab, the picture below is what you will get.
 ![](./images/7.png)
 
-- ## Adding Social Network Links/Badges to your Github profile README
+
+## Adding a Banner GIF and About Me Section
+![](./images/8.png)
+
+
+
+## Adding Social Network Links/Badges to your Github profile README
 On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium(blog site), etc. But for this lessson, we shall only focus on two: LinkedIn and Twitter.
 
 To get the respective badges for each social networks, we'll use [shields.io](https://shields.io/) which provides various endpoints letting users create and customize social medial badges. We'll use the [](https://img.shields.io/badge/) URL and pass additional parameters to this URL to get the respective social media badges.
@@ -194,17 +202,11 @@ In the case of our example being **LinkedIn** and **Twitter**, their color will 
 
 When the parameters listed above (Label and color) are combined with [https://img.shields.io/badge/](https://img.shields.io/badge/), the following URL is created.
 
-## For LinkedIn:
+### For LinkedIn:
 ```https://img.shields.io/badge/LinkedIn-blue```
 
-## For Twitter:
+### For Twitter:
 ```https://img.shields.io/badge/Twitter-blue```
-
-
-## Adding a Banner GIF and About Me Section
-![](./images/8.png)
-
-
 
 
 ## Adding Languages and Tools
@@ -250,6 +252,16 @@ Include the code below to your Github ```README.md```. You can Add/Remove any sk
 
 The picture below is an example of how it should look like if done properly. Remember, you are free to experiment on the height and width of the logos as you want. Feel free to increase and decrease them to any size of your choice.
 ![](./images/10.png)
+
+
+
+
+### Github profile summary stats:
+You can achieve number 1 above by copying the markdown below and pasting it in you **README.md** file.
+
+```markdown
+    [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+```
 
 ## Adding Github Stats to your Github Profile
 
@@ -584,14 +596,6 @@ As shown below:
 
 
 
-### Github profile summary stats:
-
-You can achieve number 1 above by copying the markdown below and pasting it in you **README.md** file.
-
-```markdown
-    [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
-```
-
 ### Note:
 
 Replace the **username** to your Github profile username and **theme** any theme of your choosing. You can click on **Link 2** above to explore the site for your personal customizations.
@@ -638,17 +642,10 @@ The picture below is the preview of the setup for this section:
 
 
 ## Achievements:
-At the end of this lesson, you should be able to
-
+At the end of this lesson, you should be able to:
 - Identify markdown syntax and apply those syntax to create structured and styled text documents.
-
-
 - Emphasize key aspects of their profile using bold and italic text formatting.
-
-
 - Embed images and links within your markdown file
-
-
 - Create a professional Github Profile README.
 
 
@@ -668,13 +665,6 @@ You should now have your own github profile and should be equipped to help other
 ## How to add GitHub stats to README?
 To add GitHub stats to your README, you can utilize third-party services like GitHub Readme Stats or shields.io. With GitHub Readme Stats, you can easily embed dynamic GitHub statistics directly into your README. Start by visiting the GitHub Readme Stats repository, copying the provided code snippet, and pasting it into your README.md file. Customize the code with your GitHub username and preferred options, then commit the changes. When someone views your README on GitHub, it will automatically fetch and display your GitHub statistics, enhancing your profile’s visibility.
 Another option is to use shields.io, a versatile badge generator service. You can access shields.io and select the GitHub category to create badges showcasing various GitHub statistics, such as followers, stars, or your latest commit. After configuring your badge, shields.io will generate a URL that you can embed in your README. Simply insert an image tag with the generated URL in your README.md, and the badge will appear, offering a quick snapshot of your GitHub activity.
-
-
-
-## What is two-factor authentication?
-Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
-
-
 
 ## Adding GIFS and Social Links to your Github Profile README
 
@@ -708,13 +698,9 @@ Click on the **Preview** tab, the picture below is what you will get.
 Additionally, we will delve into creating ordered and unordered lists to organize your skills and achievements in a visually appealing manner. We will also cover the process of incorporating hyperlinks and images, enabling you to link to projects or personal works and add a personal touch with your photo.
 
 
+## Notes
+Remember to keep your github profile readme up to date. This is just as important to getting a job as a resume is. This is a tool for finding work. Think to yourself, "If I were an employer, what would I need in an employee?". Whatever the answer to that is, convey it in your readme.
 
 
-### How to make a good GitHub profile README?
-To create an impactful GitHub profile README, focus on a concise yet engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable. Use a professional photo to humanize your profile.
-Next, showcase your work by organizing sections with project thumbnails, titles, descriptions, and links to your repositories or deployed applications. Consider incorporating GitHub Readme Stats or widgets to display your GitHub activity, lending credibility to your contributions. List your skills and technologies to give viewers insight into your expertise. Highlight significant achievements and contributions, and provide contact information for networking and collaboration opportunities.
-Customize the appearance with Markdown or HTML for formatting and maintain a consistent theme. Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action. Don’t hesitate to infuse creativity through GIFs, emojis, or unique design elements. Lastly, review and proofread your README for clarity and accuracy, aiming to create a lasting and positive impression for those who explore your GitHub profile.
-
-
-
-Throughout the lesson, we will explore the basic constructs of Markdown, such as headers, emphasis, lists, links, and images, which will serve as the building blocks for your profile page. You will learn how to structure content with different levels of headings and how to emphasize text using bold and italic styles to make your page more engaging.
+## What is two-factor authentication?
+Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.

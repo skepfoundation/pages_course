@@ -143,9 +143,9 @@ Remember that your GitHub profile is visible to the public, so make sure your cu
 
 In the next lesson, we'll understand markdown more so that you can format your GitHub profile readme just how you like it.
 
-<!-- Pictured below is what your github profile will be if you do everything right.
+Pictured below is what your github profile will be if you do everything right.
 
-<video width="800" height="315" autoplay loop muted>
-  <source src="./images/v1.webm" type="video/mp4">
+<!-- <video width="800" height="315" autoplay loop muted>
+  <source src="\images\v1.webm" type="video/webm">
   Your browser does not support the video tag.
 </video> -->
