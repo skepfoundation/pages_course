@@ -110,15 +110,51 @@ The rendered output looks like this:
 
 * Edit the README file in your repository using the GitHub online editor.
 
-#### Use Markdown to add the following elements:
+#### Tasks
 
-* Headings (at least two levels).
-* Emphasis (italic and bold text) the text **"Hello World"**.
-* Lists (both ordered and unordered). **(e.g., list of your favourite fruits)**
-* Links to external resources **(e.g., a link to the GitHub).**
-* An image **(you can use the GitHub logo)**.
-* A code block with a simple code snippet **(e.g., Hello World in any programming language of your choice )**.
-* A horizontal rule at the end.
+1. #### __Headings__ 
+- Create a top-level heading with the text "Hello World."
+- Add a second-level heading with the text "This is my Markdown Journey."
+- Include a third-level heading with the text "Here We Go."
+
+2. #### __Emphasize Text__
+- Write your full name in bold letters
+- Write your full name again this time in italics
+
+
+3. #### __Lists__
+
+- Create an unordered list of your favorite hobbies.(list 3 of them)
+- Create an ordered list of a simple task one can do.
+
+_Here is an example_
+
+##### How to make Peanut Butter and Jam Sandwich
+
+1.  Gather ingredients and tools: Bread, Peanut Butter, Jelly or Jam, Butter knife, Plate.
+2. Prepare the workspace: Lay out a clean surface.
+3. Spread Peanut Butter on one slice.
+4. Spread Jelly on the other slice.
+5. Combine the slices to make a sandwich.
+6. Serve and Enjoy.
+
+Do not use the example task given above find another.
+
+4. #### __Code Blocks__
+* Write a small Python code snippet inside a code block that prints "Markdown is fun!"
+
+5. #### __Links__
+* Write a small Python code snippet inside a code block that prints "Markdown is fun!"
+
+6. #### __Add an image__ 
+* Two options: save an image of your choice in the folder that you are currently working on, then add that image on your markdown, another option is to copy an image address of an image on the internet of your choice and add it to your markdown. 
+
+### Tips
+- Refer back to the lesson content for guidance on Markdown syntax.
+Test your Markdown file by previewing it locally or using online Markdown editors.
+- Feel free to explore additional Markdown features not covered in the lesson.
+
+Happy Markdowning! 🚀
 
 ## Conclusion
 
@@ -133,7 +169,6 @@ In the next lesson you will learn how to host websites on Github.
 
 ## FAQ
 
-###
 
 ## Resources
 
