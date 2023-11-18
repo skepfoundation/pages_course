@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Github Pages Training - Lesson 4: GitHub Profile Readme (Part 2)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Github Pages Training</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
+        <li>
+    <a class="dropdown-item" href="../../tools/r_installation.html" rel="" target="">
+ <span class="dropdown-text">R Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/r_studio.html" rel="" target="">
+ <span class="dropdown-text">R Studio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/git_installation.html" rel="" target="">
+ <span class="dropdown-text">Git Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/github_setup.html" rel="" target="">
+ <span class="dropdown-text">Github Setup</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../tasks_overview.html" rel="" target="">
+ <span class="menu-text">Course Tasks</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-1" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Unit 1</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-1">    
+        <li>
+    <a class="dropdown-item" href="../../lessons/lesson_01/lesson_01.html" rel="" target="">
+ <span class="dropdown-text">Lesson 1: Intro to GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../lessons/lesson_02/lesson_02.html" rel="" target="">
+ <span class="dropdown-text">Lesson 2: GitHub Profile Readme (Part 1)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../lessons/lesson_03/lesson_03.html" rel="" target="">
+ <span class="dropdown-text">Lesson 3: Markdown</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../lessons/lesson_04/lesson_04.html" rel="" target="">
+ <span class="dropdown-text">Lesson 4: GitHub Profile Readme (Part 2)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#how-to-make-a-good-github-profile-readme" id="toc-how-to-make-a-good-github-profile-readme" class="nav-link" data-scroll-target="#how-to-make-a-good-github-profile-readme">How to make a good GitHub profile README?</a></li>
+  <li><a href="#name-section" id="toc-name-section" class="nav-link" data-scroll-target="#name-section">Name Section:</a></li>
+  <li><a href="#description-section" id="toc-description-section" class="nav-link" data-scroll-target="#description-section">Description Section:</a></li>
+  <li><a href="#hard-skills-section" id="toc-hard-skills-section" class="nav-link" data-scroll-target="#hard-skills-section">Hard Skills Section</a></li>
+  <li><a href="#adding-logos-software-lanugages-companies" id="toc-adding-logos-software-lanugages-companies" class="nav-link" data-scroll-target="#adding-logos-software-lanugages-companies">Adding Logos (Software, Lanugages, Companies…)</a></li>
+  <li><a href="#adding-social-links-to-your-github-profile-readme" id="toc-adding-social-links-to-your-github-profile-readme" class="nav-link" data-scroll-target="#adding-social-links-to-your-github-profile-readme">Adding Social Links to Your Github Profile README</a></li>
+  <li><a href="#adding-gifs-to-your-github-profile-readme" id="toc-adding-gifs-to-your-github-profile-readme" class="nav-link" data-scroll-target="#adding-gifs-to-your-github-profile-readme">Adding GIFS to Your Github Profile README</a></li>
+  <li><a href="#github-profile-summary-stats-widgits" id="toc-github-profile-summary-stats-widgits" class="nav-link" data-scroll-target="#github-profile-summary-stats-widgits">Github Profile Summary Stats Widgits</a>
+  <ul class="collapse">
+  <li><a href="#option-1" id="toc-option-1" class="nav-link" data-scroll-target="#option-1">Option 1</a></li>
+  <li><a href="#option-2" id="toc-option-2" class="nav-link" data-scroll-target="#option-2">Option 2</a></li>
+  <li><a href="#option-3" id="toc-option-3" class="nav-link" data-scroll-target="#option-3">Option 3</a></li>
+  </ul></li>
+  <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lesson 4: GitHub Profile Readme (Part 2)</h1>
+<p class="subtitle lead">Profile Readme Ideas &amp; Code</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This page will help you know what to incude on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Studens will applying the previous lesson on markdown to their own GitHub profile readme</li>
+<li>Students will connect personal projects, professional networks, or external references to their profile by embedding hyperlinks.</li>
+<li>Students will be able to create a comprehensive and visually appealing GitHub profile page.</li>
+<li>Identify markdown syntax and apply those syntax to create structured and styled text documents.</li>
+<li>Emphasize key aspects of their profile using bold and italic text formatting.</li>
+<li>Embed images and links within your markdown file</li>
+<li>Create a professional Github Profile README.</li>
+</ul>
+</section>
+<section id="how-to-make-a-good-github-profile-readme" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-make-a-good-github-profile-readme">How to make a good GitHub profile README?</h2>
+<p>To create an impactful GitHub profile README, focus on an engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable. Use a professional photo to humanize your profile.</p>
+<p>Next, showcase your work by organizing sections with project thumbnails, titles, descriptions, and links to your repositories or deployed applications. Consider incorporating GitHub Readme Stats or widgets to display your GitHub activity, lending credibility to your contributions. List your skills and technologies to give viewers insight into your expertise. Highlight significant achievements and contributions, and provide contact information for networking and collaboration opportunities.</p>
+<p>Customize the appearance with Markdown or HTML for formatting and maintain a consistent theme. Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action. Don’t hesitate to infuse creativity through GIFs, emojis, or unique design elements. Lastly, review and proofread your README for clarity and accuracy, aiming to create a lasting and positive impression for those who explore your GitHub profile.</p>
+</section>
+<section id="name-section" class="level2">
+<h2 class="anchored" data-anchor-id="name-section">Name Section:</h2>
+<p>This will go best at the top of your profile readme. Paste this code at the top.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">HTML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<section id="john-doe" class="level3">
+<h3 class="anchored" data-anchor-id="john-doe">John Doe</h3>
+</section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># John Doe</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<h3 class="anchored">
+John Doe
+</h3>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb2"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h1&gt;</span> John Doe <span class="kw">&lt;/h1&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End tabset -->
+</section>
+<section id="description-section" class="level2">
+<h2 class="anchored" data-anchor-id="description-section">Description Section:</h2>
+<p>Writing a description section is very important. Here is where you can make yourself stand out from others to employers. Below are ideas of what to include. Feel free to include anything that conveys that you are a capable employee in your field.</p>
+<p>Provide a brief introduction about yourself, your current academic pursuits, and your career goals. Mention your passion for technology and the specific field you’re interested in (data science, computer science, web development).</p>
+<div class="columns">
+<div class="column" style="width:47%;">
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description:</h3>
+<ul>
+<li>🔭 I’m currently working on [Current Project/Job].</li>
+<li>🌱 I’m currently learning [What you are learning].</li>
+<li>👯 I’m looking to collaborate on [Open Source Projects or any interesting projects].</li>
+<li>🤔 I’m looking for help with [Any specific help you need].</li>
+<li>💬 Ask me about [Anything you’re open to discussions about].</li>
+<li>📫 How to reach me: [Your Email or other contact information].</li>
+<li>⚡ Fun fact: [Something interesting about yourself].</li>
+</ul>
+</section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<p><br></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Description: </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🔭 I’m currently working on <span class="co">[</span><span class="ot">Current Project/Job</span><span class="co">]</span>.</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🌱 I’m currently learning <span class="co">[</span><span class="ot">What you are learning</span><span class="co">]</span>.</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>👯 I’m looking to collaborate on <span class="co">[</span><span class="ot">Open Source Projects or any interesting projects</span><span class="co">]</span>.</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🤔 I’m looking for help with <span class="co">[</span><span class="ot">Any specific help you need</span><span class="co">]</span>.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>💬 Ask me about <span class="co">[</span><span class="ot">Anything you're open to discussions about</span><span class="co">]</span>.</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>📫 How to reach me: <span class="co">[</span><span class="ot">Your Email or other contact information</span><span class="co">]</span>.</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>⚡ Fun fact: <span class="co">[</span><span class="ot">Something interesting about yourself</span><span class="co">]</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="hard-skills-section" class="level2">
+<h2 class="anchored" data-anchor-id="hard-skills-section">Hard Skills Section</h2>
+<p>This section is where you can show what you are comfortable using. As a beginner, this section can be empty. For more experienced students, it’s a good idea to include the technology you are familiar with. Areas to include are:</p>
+<ul>
+<li><strong>programming languages</strong>: (python, JavaScript, C++…)</li>
+<li><strong>hosting services</strong>: (Heroku, GitHub Pages, AWS…)</li>
+<li><strong>frameworks/libraries</strong>: (pandas, tensorflow, ggplot2, ReactJS…)</li>
+<li><strong>databases</strong>: (MSSQL, Postgres…)</li>
+</ul>
+<p>or anything else that would help what technology you are comfotable using like Git/GitHub, Quarto which we will be learning later in this course.</p>
+<p>The example below is table showing technology a Data Science student might be familiar with.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">HTML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<section id="favorite-technology" class="level3">
+<h3 class="anchored" data-anchor-id="favorite-technology">Favorite Technology</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Python</th>
+<th style="text-align: center;">R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reading</td>
+<td style="text-align: center;">Pandas</td>
+<td style="text-align: center;">Readr</td>
+</tr>
+<tr class="even">
+<td>Wrangling</td>
+<td style="text-align: center;">Pandas</td>
+<td style="text-align: center;">Tidyr &amp; Dplyr</td>
+</tr>
+<tr class="odd">
+<td>Visualization</td>
+<td style="text-align: center;">Matplotlib</td>
+<td style="text-align: center;">ggplot2</td>
+</tr>
+<tr class="even">
+<td>Model</td>
+<td style="text-align: center;">Scitkit-Learn</td>
+<td style="text-align: center;">TidyModels</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<p><br></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Favorite Technology</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>|               | Python        | R             |</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>| ---           | :---:         | :---:         |</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>| Reading       | Pandas        | Readr         |</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>| Wrangling     | Pandas        | Tidyr &amp; Dplyr |</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>| Visualization | Matplotlib    | ggplot2       |</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>| Model         | Scitkit-Learn | TidyModels    |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<h3 class="anchored">
+Favorite Technology
+</h3>
+
+<table>
+<thead>
+<tr>
+<th>
+</th>
+<th style="text-align:center;">
+Python
+</th>
+<th style="text-align:center;">
+R
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Reading
+</td>
+<td style="text-align:center;">
+Pandas
+</td>
+<td style="text-align:center;">
+Readr
+</td>
+</tr>
+<tr>
+<td>
+Wrangling
+</td>
+<td style="text-align:center;">
+Pandas
+</td>
+<td style="text-align:center;">
+Tidyr &amp; Dplyr
+</td>
+</tr>
+<tr>
+<td>
+Visualization
+</td>
+<td style="text-align:center;">
+Matplotlib
+</td>
+<td style="text-align:center;">
+ggplot2
+</td>
+</tr>
+<tr>
+<td>
+Model
+</td>
+<td style="text-align:center;">
+Scikit-Learn
+</td>
+<td style="text-align:center;">
+TidyModels
+</td>
+</tr>
+</tbody>
+
+</table>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<p><br></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h2&gt;</span>Favorite Technology<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;table&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;thead&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th&gt;&lt;/th&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Python<span class="kw">&lt;/th&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>R<span class="kw">&lt;/th&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/thead&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;tbody&gt;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Reading<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Pandas<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Readr<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Wrangling<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Pandas<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Tidyr &amp; Dplyr<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Visualization<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Matplotlib<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>ggplot2<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Model<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Scikit-Learn<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>TidyModels<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/tbody&gt;</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/table&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End tabset -->
+</section>
+<section id="adding-logos-software-lanugages-companies" class="level2">
+<h2 class="anchored" data-anchor-id="adding-logos-software-lanugages-companies">Adding Logos (Software, Lanugages, Companies…)</h2>
+<p>Now, we will add images representing the technologies and skills you are familiar with. You can always finds free logos for many programming languages and tools in <a href="https://github.com/devicons/devicon/">DevIcons Github Repository</a>.</p>
+<p>Go to the icons foldwe and search and open the <code>Pandas</code> folder. In the folder, you’ll find images in SVG(Scaleable Vector Graphics) format. Click on any image and copy the URL shown in the browser’s address bar <img src="./images/9.png" class="img-fluid"></p>
+<p>We will make use of this URL in the <code>&lt;img /&gt;</code> tag and specify the <code>height</code> and <code>width</code> attribute accordingly. Similarly, you can search for other skills and include them in a seprate <code>&lt;img /&gt;</code> tags.</p>
+<p>Include the code below to your Github <code>README.md</code>. You can Add/Remove any skills of your choice. Ensure any skill you choose to show on your repo, they should be ones you are conversant with.</p>
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><br></p>
+<div>
+<p><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg" title="Spring" alt="Spring" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" title="Material UI" alt="Material UI" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" title="Flutter" alt="Flutter" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg" title="CSS3" alt="CSS" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gatsby/gatsby-original.svg" title="Gatsby" alt="Gatsby" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" alt="AWS" width="40" height="40"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40"></p>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/flutter/flutter-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Redux"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Redux "</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"</span>  <span class="er">title</span><span class="ot">=</span><span class="st">"CSS3"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"CSS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"HTML5"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"HTML"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/gatsby/gatsby-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Gatsby"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"Gatsby"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"MySQL"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"MySQL"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">**alt</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="adding-social-links-to-your-github-profile-readme" class="level2">
+<h2 class="anchored" data-anchor-id="adding-social-links-to-your-github-profile-readme">Adding Social Links to Your Github Profile README</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">HTML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.twitter.com"><img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:55%;">
+<div class="sourceCode" id="cb7"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white)</span><span class="co">](&lt;your-linkedin-profile-url&gt;)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](https://img.shields.io/badge/Twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white)</span><span class="co">](&lt;your-twitter-profile-URL&gt;)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="columns">
+<div class="column" style="width:40%;">
+<div id="badges" data-align="center">
+<p><a href="your-linkedin-URL"> <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn Badge"> </a> <a href="your-twitter-URL"> <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" alt="Twitter Badge"> </a></p>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:55%;">
+<div class="sourceCode" id="cb8"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">"badges"</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"your-linkedin-URL"</span><span class="kw">&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge</span><span class="er">&amp;</span><span class="st">logo=linkedin</span><span class="er">&amp;</span><span class="st">logoColor=white"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"LinkedIn Badge"</span><span class="kw">/&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"your-twitter-URL"</span><span class="kw">&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://img.shields.io/badge/Twitter-blue?style=for-the-badge</span><span class="er">&amp;</span><span class="st">logo=twitter</span><span class="er">&amp;</span><span class="st">logoColor=white"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Twitter Badge"</span><span class="kw">/&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ending Tabs -->
+</section>
+<section id="adding-gifs-to-your-github-profile-readme" class="level2">
+<h2 class="anchored" data-anchor-id="adding-gifs-to-your-github-profile-readme">Adding GIFS to Your Github Profile README</h2>
+<p>On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium (blog site), etc. But for this section, we shall only focus on two: LinkedIn and Twitter.</p>
+<p>To get the respective badges for each social networks, we’ll use <a href="https://shields.io/">shields.io</a> which provides various endpoints letting users create and customize social medial badges. We’ll use the <a href="https://img.shields.io/badge/"></a> URL and pass additional parameters to this URL to get the respective social media badges.</p>
+<p>The Gif used in this section can be found <a href="https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9">here</a>. I found this GIF on <a href="https://giphy.com/">Giphy</a>, which is full of free GIFs to use.</p>
+<p>Go to the <a href="https://giphy.com/stickers/hacktiv8-coding-codingfromhome-fromhome-M9gbBd9nbDrOTu1Mqx?utm_term=">GIF Link</a> and click on the <strong>Share</strong> button and then <strong>Copy GIF Link</strong>. We’ll add this copied link to an HTML <code>img</code> tag to display it in the Markdown file. We’re using the <code>img</code> tag as it’ll help us specify the width of the image.</p>
+<p>In the Github file editor, replace the <code>README.md</code> file content with the following code:</p>
+<ul>
+<li>The first parameter we will pass is <code>Label</code>(This represents the social network site name that will appear on the badge) and <code>Color</code> (which represents the color of the social network badge respectively). <code>Label-Color</code></li>
+</ul>
+<p>In the case of our example being <strong>LinkedIn</strong> and <strong>Twitter</strong>, their color will be <strong>blue</strong>.</p>
+<p>When the parameters listed above (Label and color) are combined with <a href="https://img.shields.io/badge/">https://img.shields.io/badge/</a>, the following URLs are created. For LinkedIn, <code>https://img.shields.io/badge/LinkedIn-blue</code>. For Twitter, <code>https://img.shields.io/badge/Twitter-blue</code>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">HTML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb9"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<center>
+<img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="200">
+</center>
+<p><br></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb10"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">"header"</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"100"</span><span class="kw">&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ending tabset -->
+</section>
+<section id="github-profile-summary-stats-widgits" class="level2">
+<h2 class="anchored" data-anchor-id="github-profile-summary-stats-widgits">Github Profile Summary Stats Widgits</h2>
+<section id="option-1" class="level3">
+<h3 class="anchored" data-anchor-id="option-1">Option 1</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">HTML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><img src="stats1.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb11"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](https://github-readme-stats.vercel.app/api?username=&lt;insert-github-username&gt;)</span><span class="co">](https://github.com/anuraghazra/github-readme-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><img src="stats1.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb12"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats"</span><span class="kw">&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github-readme-stats.vercel.app/api?username=</span><span class="er">&lt;</span><span class="st">insert_github_username&gt;</span><span class="er">&amp;</span><span class="st">theme=dark"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"GitHub profile Streak"</span> <span class="kw">/&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End tabset -->
+</section>
+<section id="option-2" class="level3">
+<h3 class="anchored" data-anchor-id="option-2">Option 2</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">HTML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><img src="stats2.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb13"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://streak-stats.demolab.com/?user=&lt;insert_github_username&gt;&amp;theme=dark)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><img src="stats2.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<pre class="{md}"><code>&lt;p align="center"&gt;
+  &lt;a href="https://git.io/streak-stats"&gt;
+    &lt;img src="https://streak-stats.demolab.com/?user=&lt;insert_github_username&gt;&amp;theme=dark" alt="GitHub Streak" /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="option-3" class="level3">
+<h3 class="anchored" data-anchor-id="option-3">Option 3</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">HTML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><img src="stats3.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<div class="sourceCode" id="cb15"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://github-readme-stats.vercel.app/api/top-langs/?username=&lt;insert_github_username&gt;&amp;theme=dark&amp;layout=compact)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<div class="columns">
+<div class="column" style="width:47%;">
+<p><img src="stats3.png" class="img-fluid"></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:47%;">
+<pre class="{md}"><code>&lt;p align= "center"&gt;
+  &lt;img src="https://github-readme-stats.vercel.app/api/top-langs/?username=&lt;insert_github_username&gt;&amp;theme=dark&amp;layout=compact" alt="top langs"/&gt;
+&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- End tabset -->
+</section>
+</section>
+<section id="practice-activity" class="level2">
+<h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
+<ol type="1">
+<li>List five texting formating markdown syntax</li>
+<li>How can you insert images and links on markdown?</li>
+<li>From what you learnt so far, create a Github Profile README file and update your profile accordingly.</li>
+<li>List 5 Markdown emojis and how to insert them in a markdown file</li>
+</ol>
+<p>You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn <strong>Github website creation.</strong></p>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<p>Remember to keep your github profile readme up to date. This is just as important to getting a job as a resume is. This is a tool for finding work. Think to yourself, “If I were an employer, what would I need in an employee?”. Whatever the answer to that is, convey it in your readme.</p>
+<!-- ## Adding Languages and Tools
+Below is the finished sample of how it will look when finished.
+![](./images/11.png)
+
+To achieve this, add the following code to your README.md file
+
+```md
+    ---
+    ### :hammer_and_wrench: Languages and Tools :
+```
+
+Now, we will add images representing the technologies and skills you are familiar with. You can always finds free logos for many programming languages and tools in 
+[DevIcons Github Repository](https://github.com/devicons/devicon/).
+
+Go to the icons foldwe and search and open the ```Pandas``` folder. In the folder, you'll find images in SVG(Scaleable Vector Graphics) format. Click on any image and copy the URL shown in the browser's address bar
+![](./images/9.png)
+
+We will make use of this URL in the ```<img />``` tag and specify the ```height``` and ```width``` attribute accordingly. Similarly, you can search for other skills and include them in a seprate ```<img />``` tags.
+
+Include the code below to your Github ```README.md```. You can Add/Remove any skills of your choice. Ensure any skill you choose to show on your repo, they should be ones you are conversant with.
+
+```html
+    <div>
+        <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" title="Spring" alt="Spring" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg" title="Material UI" alt="Material UI" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/flutter/flutter-original.svg" title="Flutter" alt="Flutter" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/gatsby/gatsby-original.svg" title="Gatsby"  alt="Gatsby" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" alt="AWS" width="40" height="40"/>&nbsp;
+        <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+    </div>
+```
+
+The picture below is an example of how it should look like if done properly. Remember, you are free to experiment on the height and width of the logos as you want. Feel free to increase and decrease them to any size of your choice.
+![](./images/10.png)
+
+## Adding Github Stats to your Github Profile
+
+Here is an image of what we will do in this section.
+![Figure XII](./images/12.png)
+
+For the stats heading, add the following code to your ```README.md``` file.
+
+```md
+    ---
+    ### :fire: My Stats:
+```
+In this section, we will be adding some stats (short for statistics) about user's Github activity. These stats will include the following:
+- Number of commits,
+- Number of PRs, etc.
+
+There are many open-source projects on Github that offers different stats for the Github profile. They are as follows:
+
+1. [Github Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+2. [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+   
+And after my research, I found out that we will be using 2 of them to achieve what we need in **Figure XII**.
+
+Now let's break down what each of the open-source projects provides.
+
+## Link 1:
+The first link which can be accessed with the following URL 
+```md 
+(https://github.com/DenverCoder1/github-readme-streak-stats)
+``` 
+provides us with the following:
+
+1. Total number of contributions by a user
+2. Longest streak of contributions for a user
+3. Current streak stat for a user.
+
+
+When you click on the link, it will direct you to a page as displayed below.
+
+![](./images/16.png)
+
+
+Then you will have to navigate to the **Quick Setup** section in the page as shown below.
+
+
+![](./images/15.png)
+
+On the **Quick Setup** section, you will do the following just as directed in the website;
+
+1. Copy-paste the markdown below into your GitHub profile README
+
+
+```md
+[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)](https://git.io/streak-stats)
+```
+The Markdown takes several parameters, but for this lesson, we shall only focus on just two which are:
+
+1. Your Github profile name. Replace the ```user = DenverCoder1``` parameter to your Github profile name.
+2. 
+3. The theme of your choice. you may include ```&theme=dark``` after the user profile name.
+
+Here is the sample of the full link 
+```md
+[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&theme=dark)](https://git.io/streak-stats)
+```
+
+For further customization, you can explore the website and tweak the parameters as you wish.
+
+Here is the preview, with ```08***005790``` as the username.
+
+![](./images/17.png)
+
+
+## Link 2:
+The second link which can be accessed with the following URL 
+```md
+https://github.com/anuraghazra/github-readme-stats
+``` 
+provides us with the following:
+
+1. Github profile summary statistics.
+
+2. Most used languages. 
+
+As shown below:
+
+![](./images/13.png)
+
+
+
+### Note:
+
+Replace the **username** to your Github profile username and **theme** any theme of your choosing. You can click on **Link 2** above to explore the site for your personal customizations.
+
+### Most used languages:
+
+To achieve number 2, as previewed in the diagram below:
+
+![](./images/14.png)
+
+Copy the markdown code 
+```md
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
+``` 
+and paste it in your Github profile ```README.md``` file. Remember to replace the ```username``` to your Github profile username.
+
+### Center Alignment of the stats:
+
+As seen in the sample, the stats were center aligned. to achieve this, you can copy the code below and paste it in your markdown.
+
+```md
+<p align="center">
+  <a href="[https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats)">
+    <img src="https://github-readme-stats.vercel.app/api?username=08168005790&theme=dark" alt="GitHub profile Streak" />
+  </a>
+</p>
+
+
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com/?user=08168005790&theme=dark" alt="GitHub Streak" />
+  </a>
+</p>
+
+<p align= "center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=08168005790&theme=dark&layout=compact" alt="top langs"/>
+</p>
+```
+
+The picture below is the preview of the setup for this section:
+
+![](./images/12.png).
+
+
+
+## Achievements:
+At the end of this lesson, you should be able to:
+- Identify markdown syntax and apply those syntax to create structured and styled text documents.
+- Emphasize key aspects of their profile using bold and italic text formatting.
+- Embed images and links within your markdown file
+- Create a professional Github Profile README.
+
+
+## Practice Activity
+
+1. List five texting formating markdown syntax
+2. How can you insert images and links on markdown?
+3. From what you learnt so far, create a Github Profile README file and update your profile accordingly.
+4. List 5 Markdown emojis and how to insert them in a markdown file
+
+
+You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn **Github website creation.**
+
+
+
+
+## How to add GitHub stats to README?
+To add GitHub stats to your README, you can utilize third-party services like GitHub Readme Stats or shields.io. With GitHub Readme Stats, you can easily embed dynamic GitHub statistics directly into your README. Start by visiting the GitHub Readme Stats repository, copying the provided code snippet, and pasting it into your README.md file. Customize the code with your GitHub username and preferred options, then commit the changes. When someone views your README on GitHub, it will automatically fetch and display your GitHub statistics, enhancing your profile’s visibility.
+Another option is to use shields.io, a versatile badge generator service. You can access shields.io and select the GitHub category to create badges showcasing various GitHub statistics, such as followers, stars, or your latest commit. After configuring your badge, shields.io will generate a URL that you can embed in your README. Simply insert an image tag with the generated URL in your README.md, and the badge will appear, offering a quick snapshot of your GitHub activity.
+
+## Adding GIFS and Social Links to your Github Profile README
+
+- ## Adding GIFS to  your Github Profile README
+
+Here's an image of the content that will be added in this section:
+[](./images/6.png)
+
+The Gif used in this section can be found [here](https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9). I found this GIF on [Giphy](https://giphy.com/), which is full of free GIFs to use.
+
+Go to the [GIF Link](https://giphy.com/stickers/hacktiv8-coding-codingfromhome-fromhome-M9gbBd9nbDrOTu1Mqx?utm_term=) and click on the **Share** button and then **Copy GIF Link**. We'll add this copied link to an HTML ``` img ``` tag to display it in the Markdown file. We're using the ``` img ``` tag as it'll help us specify the width of the image.
+
+In the Github file editor, replace the ``` README.md ``` file content with the following code:
+
+
+
+```aiblpjrhxr
+    <div id="header" align="center">
+        <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
+    </div>
+```
+
+
+
+The ```src``` attribute points to the URL we copied in the previous step. Since all the contents in this section are center-aligned, we've wrapped the image in an HTML ```div``` tag with the ```align="center"``` attribute.
+
+Note: Github converts the README Markdown to HTML and renders it on Github. After conversion, the HTML is sanitized, and for security reasons, it ignores certain HTML tags and attributes such as ```<script>, <style>, <style>``` etc. For this reason, we've used an ```align``` attribute instead of CSS.
+
+Click on the **Preview** tab, the picture below is what you will get.
+![](./images/7.png) -->
+<!-- 
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
+</div>
+
+![](https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif) 
+-->
+<!-- Note: Github converts the README Markdown to HTML and renders it on Github. After conversion, the HTML is sanitized, and for security reasons, it ignores certain HTML tags and attributes such as ```<script>, <style>, <style>``` etc. For this reason, we've used an ```align``` attribute instead of CSS. -->
+<!-- ## What is two-factor authentication?
+Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone. -->
+<!-- 
+## Adding Github Stats to your Github Profile
+
+Here is an image of what we will do in this section.
+![Figure XII](./images/12.png)
+
+For the stats heading, add the following code to your ```README.md``` file.
+
+```md
+### :fire: My Stats:
+```
+In this section, we will be adding some stats (short for statistics) about user's Github activity. These stats will include the following:
+- Number of commits,
+- Number of PRs, etc.
+
+There are many open-source projects on Github that offers different stats for the Github profile. They are as follows:
+
+1. [Github Streak Stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+2. [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+   
+And after my research, I found out that we will be using 2 of them to achieve what we need in **Figure XII**.
+
+Now let's break down what each of the open-source projects provides.
+
+**Link 1:**
+The first link which can be accessed with the following URL 
+```md 
+(https://github.com/DenverCoder1/github-readme-streak-stats)
+``` 
+provides us with the following:
+
+1. Total number of contributions by a user
+2. Longest streak of contributions for a user
+3. Current streak stat for a user.
+
+
+When you click on the link, it will direct you to a page as displayed below.
+
+![](./images/16.png)
+
+
+Then you will have to navigate to the **Quick Setup** section in the page as shown below.
+
+
+![](./images/15.png)
+
+On the **Quick Setup** section, you will do the following just as directed in the website;
+
+1. Copy-paste the markdown below into your GitHub profile README
+
+
+```md
+[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1)](https://git.io/streak-stats)
+```
+The Markdown takes several parameters, but for this lesson, we shall only focus on just two which are:
+
+1. Your Github profile name. Replace the ```user = DenverCoder1``` parameter to your Github profile name.
+2. 
+3. The theme of your choice. you may include ```&theme=dark``` after the user profile name.
+
+Here is the sample of the full link 
+```md
+[![GitHub Streak](https://streak-stats.demolab.com/?user=DenverCoder1&theme=dark)](https://git.io/streak-stats)
+```
+
+For further customization, you can explore the website and tweak the parameters as you wish.
+
+Here is the preview, with ```08***005790``` as the username.
+
+![](./images/17.png)
+
+
+**Link 2:**
+The second link which can be accessed with the following URL 
+```md
+https://github.com/anuraghazra/github-readme-stats
+``` 
+provides us with the following:
+
+1. Github profile summary statistics.
+
+2. Most used languages. 
+
+As shown below:
+
+![](./images/13.png)
+
+
+
+### Github profile summary stats:
+
+You can achieve number 1 above by copying the markdown below and pasting it in you **README.md** file.
+
+```md
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+``` 
+-->
+<!-- 
+### Note:
+
+Replace the **username** to your Github profile username and **theme** any theme of your choosing. You can click on **Link 2** above to explore the site for your personal customizations.
+
+### Most used languages:
+
+To achieve number 2, as previewed in the diagram below:
+
+![](./images/14.png)
+
+Copy the markdown code 
+```md
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
+``` 
+and paste it in your Github profile ```README.md``` file. Remember to replace the ```username``` to your Github profile username.
+
+### Center Alignment of the stats:
+
+As seen in the sample, the stats were center aligned. to achieve this, you can copy the code below and paste it in your markdown.
+
+```md
+<p align="center">
+  <a href="[https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats)">
+    <img src="https://github-readme-stats.vercel.app/api?username=08168005790&theme=dark" alt="GitHub profile Streak" />
+  </a>
+</p>
+
+
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com/?user=08168005790&theme=dark" alt="GitHub Streak" />
+  </a>
+</p>
+
+<p align= "center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=08168005790&theme=dark&layout=compact" alt="top langs"/>
+</p>
+```
+
+The picture below is the preview of the setup for this section:
+
+![](./images/12.png). 
+-->
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
