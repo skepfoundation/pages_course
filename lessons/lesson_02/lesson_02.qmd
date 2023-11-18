@@ -1,56 +1,46 @@
 ---
-title: "Lesson_02"
+title: "Lesson 2: GitHub Profile Readme (Part 1)"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc-location: left
+    code-copy: true
+    code-line-numbers: true
+    code-block-border-left: "#A9A9A9"
+    code-block-bg: true
+    code-bloc-bg-alpha: -.2
+    page-layout: full
+    grid:
+      sidebar-width: 200px
+      body-width: 1030px
+      margin-width: 70px
 ---
 
-## Creating A Github Profile README.md file
 
-In this lesson, we will embark on a journey to create your very own profile page on github using Markdown, a lightweight and easy-to-use syntax for styling all forms of writing on the web. Markdown is widely used because it allows you to maintain the readability of plain text while offering the styling capabilities of HTML. Our goal is to familiarize you with the foundational elements of Markdown to transform plain text into a rich, well-formatted document.
+### What is a Github Profile README?
+The GitHub profile README serves as a distinctive repository enabling users to augment their GitHub profiles with a personalized README file. Functioning as a customizable "about me" section, it provides an avenue for individuals to introduce themselves, exhibit their projects, and communicate details about their interests and achievements. Essentially, the content of this README defines one's GitHub profile, making it a pivotal element for creating a compelling first impression, particularly for employers seeking insights into an individual's skills and interests upon visiting their GitHub profile. By the end of this lesson, you will have crafted your own GitHub profile readme.
 
-Throughout the lesson, we will explore the basic constructs of Markdown, such as headers, emphasis, lists, links, and images, which will serve as the building blocks for your profile page. You will learn how to structure content with different levels of headings and how to emphasize text using bold and italic styles to make your page more engaging.
 
-Additionally, we will delve into creating ordered and unordered lists to organize your skills and achievements in a visually appealing manner. We will also cover the process of incorporating hyperlinks and images, enabling you to link to projects or personal works and add a personal touch with your photo.
+### What is Markdown?
+Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on the web. Markdown is widely used because it allows you to maintain the readability of plain text while offering the styling capabilities of HTML. Our goal is to familiarize you with the foundational elements of Markdown to transform plain text into a rich, well-formatted document.
 
-By the end of this lesson, you will have crafted a personal profile page that not only tells your story but also showcases your newfound Markdown skills. This profile can serve as a starting point for your portfolio, a personal webpage, or a GitHub README file, providing a snapshot of your professional persona to the world. As a hands-on approach to learning, you will actively engage in writing Markdown, receiving immediate visual feedback, and iterating on your design to create a compelling and informative profile page.
+Markdown is a lightweight markup language that is widely used for formatting text on the web. In the context of GitHub and profile READMEs, Markdown serves as a simple and intuitive way to add formatting elements to your text without needing to use complex HTML or other markup languages. With Markdown, you can easily create headers, lists, emphasize text, add links, insert images, and more, using a straightforward and human-readable syntax.
 
+This lesson will not focus on markdown. In the next two lessons, you'll learn how to use Markdown to enhance the visual appeal and structure of your profile, making it easier for others to read and understand the information you share. 
 
 
 ## Learning Objectives
-
--   Students will be able to recognize and apply markdown syntax to create structured and styled text documents.
-
--   Students will be able to organize content using headers to create clear hierarchy and flow within their profile page.
-  
-
--   Students will be able to embed hyperlinks and connect their profile to personal projects, professional networks, or external references.
-  
--   Students will be able to create a comprehensive and visually appealing profile page that can be shared and viewed on various platforms, including Github and personal blogs.
-
-## Lesson
-
-### What is a Github Profile README?
-
-Since the beginning of this lesson, we've actually made mention of github profile readme, and I believe  some of you don't really have an idea what it is all about.
-
-A GitHub profile README is a special repository that you can create to add a README file to your GitHub profile. It acts as a customizable "about me" section where you can introduce yourself, showcase your work, and share information about your interests, projects, or achievements. 
-
-When someone visits your GitHub profile, the content of this README is displayed prominently, so it's a great way to make a first impression on people who are exploring your GitHub repositories or looking to learn more about you as a developer or contributor.
-
-To create a GitHub profile README, you simply create a new repository that has the same name as your GitHub username. For example, if your username is `octocat`, you would create a repository named `octocat`. Inside this repository, you place a `README.md` file. Whatever you write in the `README.md` file using Markdown will appear on your GitHub profile.
-
-###### Pictured below is what your github profile will be if you do everything right.
-
-<video width="800" height="315" autoplay loop muted>
-  <source src="./images/v1.webm" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-**In the next section, we will look at the steps taken to create a github README file for a github profile.**
+- Understand the role of the GitHub profile readme?
+- Gain minor experience with markdown
+  - Headers and what to write in sections
+  - Students will be able to recognize and apply markdown syntax to create structured and styled text documents
+  - Students will be able to organize content using headers to create clear hierarchy and flow within their profile page 
+- Students will have implemented a basic readme by the end of the lesson
 
 
-
--------------------------------------------------------------
-## Creating a github profile README file
-
+## Let's Begin Creating a GitHub Profile README
 
 1. Log in to GitHub.
 2. Click on **+** icon at top right of the page and select **New Repository**.
@@ -58,23 +48,28 @@ To create a GitHub profile README, you simply create a new repository that has t
 ![](./images/1.png)
 
 
-3. A Create a new repository page opens. In the **Repository name** field, enter the username of your GitHub account. After entering the username, GitHub displays a message describing that you’re about to create a GitHub special repository.
-   
+3. A Create a new repository page opens. In the **Repository name** field, **enter your GitHub username**. After entering your username, GitHub displays a message describing that you’re about to create a GitHub *special repository*.
+
+For example, if your username is `octocat`, you would create a repository named `octocat`.
+
 ![](./images/2.1.png)
+
 
 4. Check the **public** checkbox under repository type to make the Github profile README visible to everyone who visits the Github profile page. If you don't want users to see your Github profile README while it's still in development, you can choose **Private**. Once done with editing the README, you can go to the repo settings to change it's visibilty to **Public**.
 
-5. Check the **Add a README file** checkbox. This will add a ```README.md``` file where we'll add the profile contents. The field values should look similar to the image below.
+
+5. Check the **Add a README file** checkbox. This will add a ```README.md``` file where we'll add the profile contents. The field values should look similar to the image below. Whatever you write in the `README.md` file using Markdown will appear on your GitHub profile.
 
 ![](./images/2.png)
+
 
 6. Click on the **Create repository** button. A special repository is created successfully. Go to the repository you just created and you'll see a **README.md** file added to the repository.
 
 ![](./images/3.png)
 
-In the next few sections, we'll add contents to our README.md file. We'll use Github's file editor to write and preview the changes. There are other text editor which you can use as well such as **Vs Code Editor**, **Sublime Text**, **Atom** etc. But making use of this editors, you will have to clone the repository on your local machine and run changes needed. You can look that up at your own free time.
+In the next few sections, we'll add contents to our README.md file. We'll use Github's file editor to write and preview the changes. There are other text editor which you can use as well such as **Vs Code Editor**, **Sublime Text**, **Atom** etc. But for this lesson, we shall be making use of Github file editor. 
 
-But for this lesson, we shall be making use of Github file editor. Open the **README.md** file and click on the Edit this file icon (a pencil icon) on the top right of the repo page. As highlighted in the image below:
+Open the **README.md** file and click on the Edit this file icon (a pencil icon) on the top right of the repo page. As highlighted in the image below:
 
 ![](./images/3.1.png)
 
@@ -91,7 +86,7 @@ Go to the [GIF Link](https://giphy.com/stickers/hacktiv8-coding-codingfromhome-f
 
 In the Github file editor, replace the ``` README.md ``` file content with the following code:
 
-```Markdown
+```{Markdown}
     <div id="header" align="center">
         <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
     </div>
@@ -116,10 +111,14 @@ In the case of our example being **LinkedIn** and **Twitter**, their color will 
 When the parameters listed above (Label and color) are combined with [https://img.shields.io/badge/](https://img.shields.io/badge/), the following URL is created.
 
 ## For LinkedIn:
-```https://img.shields.io/badge/LinkedIn-blue```
+```{html}
+  https://img.shields.io/badge/LinkedIn-blue
+```
 
 ## For Twitter:
-```https://img.shields.io/badge/Twitter-blue```
+```{html}
+  https://img.shields.io/badge/Twitter-blue
+```
 
 
 ## Adding a Banner GIF and About Me Section
@@ -352,15 +351,11 @@ Customizing your GitHub profile is a great way to personalize your presence on t
 After customizing your README.md, commit your changes to the repository. Then, navigate to your repository’s settings, specifically the “GitHub Pages” section. Here, set the branch containing your README.md as the source, and save your settings. Your customized profile will now display your README.md content, allowing you to share your story and projects with the GitHub community. If desired, you can further personalize your profile by pinning repositories that you want to feature prominently.
 Remember that your GitHub profile is visible to the public, so make sure your customization represents you and your work effectively. This customization not only adds a personal touch to your GitHub presence but also serves as a valuable portfolio for potential collaborators and employers.
 
-## How to add GitHub stats to README?
-To add GitHub stats to your README, you can utilize third-party services like GitHub Readme Stats or shields.io. With GitHub Readme Stats, you can easily embed dynamic GitHub statistics directly into your README. Start by visiting the GitHub Readme Stats repository, copying the provided code snippet, and pasting it into your README.md file. Customize the code with your GitHub username and preferred options, then commit the changes. When someone views your README on GitHub, it will automatically fetch and display your GitHub statistics, enhancing your profile’s visibility.
-Another option is to use shields.io, a versatile badge generator service. You can access shields.io and select the GitHub category to create badges showcasing various GitHub statistics, such as followers, stars, or your latest commit. After configuring your badge, shields.io will generate a URL that you can embed in your README. Simply insert an image tag with the generated URL in your README.md, and the badge will appear, offering a quick snapshot of your GitHub activity.
+In the next lesson, we'll understand markdown more so that you can format your GitHub profile readme just how you like it.
 
-## How to make a good GitHub profile README?
-To create an impactful GitHub profile README, focus on a concise yet engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable. Use a professional photo to humanize your profile.
-Next, showcase your work by organizing sections with project thumbnails, titles, descriptions, and links to your repositories or deployed applications. Consider incorporating GitHub Readme Stats or widgets to display your GitHub activity, lending credibility to your contributions. List your skills and technologies to give viewers insight into your expertise. Highlight significant achievements and contributions, and provide contact information for networking and collaboration opportunities.
-Customize the appearance with Markdown or HTML for formatting and maintain a consistent theme. Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action. Don’t hesitate to infuse creativity through GIFs, emojis, or unique design elements. Lastly, review and proofread your README for clarity and accuracy, aiming to create a lasting and positive impression for those who explore your GitHub profile.
+Pictured below is what your github profile will be if you do everything right.
 
-## What is two-factor authentication?
-
-Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
+<!-- <video width="800" height="315" autoplay loop muted>
+  <source src="\images\v1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video> -->
