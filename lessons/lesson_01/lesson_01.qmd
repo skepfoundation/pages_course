@@ -14,109 +14,138 @@ This lesson will go over the steps necessary to create a GitHub account
 
 ### Step 01: Find Github
 
-- Navigate to [Github.com](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
-- Click on the right side of the pink arrow to enter your email address.
+-   Navigate to [Github.com](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
+
+-   Click on the right side of the pink arrow to enter your email address.
+
 ![Github Homepage.](/images/step01.png)
 
 ### Step 02: Enter Email address, Password, and Username
 
-- Enter a valid email address that you have immediate access to. *Double check to make sure the email address is valid and that you have access to it*.
-- If the **continue** button turns green, tap it.
-- A new section  will appear prompting you to input a password. *Make sure to follow the password guidelines that will appear at the bottom of the password input area*.
-- Again, click on the green **continue** button.
-- A new section will appear prompting you to input a username. Follow the username guidelines that will appear at the bottom of the username input area.
-  **While you do not have to use your real name, please bear in mind that any username you enter is immutable, you *WILL NOT HAVE THE OPTION* to change it later. A good Github username is one that is easily searchable. This means it will not include long, random string of characters, it will not include overly long or complex numbers, and ideally it is easy to spell when the name is heard phonetically. The username you choose will be searchable and viewable by the public, so make sure it is a name you would like to be associated with your professional brand, now and in the future.**
+-   Enter a valid email address that you have immediate access to. *Double check to make sure the email address is valid and that you have access to it*.
 
-- Click on the green **continue** button.
-- A prompt will appear asking if you want to receive annoucements via email. If you are okay with receiving product email and announcements from Github, enter the letter **y**, if not, enter the letter **n** in the input area provided.
-- Click on the green **continue** button.
+-   If the **continue** button turns green, tap it.
+
+-   A new section will appear prompting you to input a password. *Make sure to follow the password guidelines that will appear at the bottom of the password input area*.
+
+-   Again, click on the green **continue** button.
+
+-   A new section will appear prompting you to input a username. Follow the username guidelines that will appear at the bottom of the username input area.
+
+    **While you do not have to use your real name, please bear in mind that any username you enter is immutable, you *WILL NOT HAVE THE OPTION* to change it later. A good Github username is one that is easily searchable. This means it will not include long, random string of characters, it will not include overly long or complex numbers, and ideally it is easy to spell when the name is heard phonetically. The username you choose will be searchable and viewable by the public, so make sure it is a name you would like to be associated with your professional brand, now and in the future.**
+
+-   Click on the green **continue** button.
+
+-   A prompt will appear asking if you want to receive annoucements via email. If you are okay with receiving product email and announcements from Github, enter the letter **y**, if not, enter the letter **n** in the input area provided.
+
+-   Click on the green **continue** button.
+
 ![Results of Step 02.](/images/step02.png)
 
 ### Step 03: Verifying your account
 
-- A new section will drop down asking you to verify your account. Click on the word **Verify**. *It should turn green when you hover over it*.
+-   A new section will drop down asking you to verify your account. Click on the word **Verify**. *It should turn green when you hover over it*.
+
 ![](/images/step03-verify01.png)
 
-- The verification challenge would be a picture of a pointing hand on the left, and a picture of an animal on the right. The challenge is to use the **⬅** and **➡** buttons which are below the picture of an animal to position the animal to face in the direction the hand is pointing.
+-   The verification challenge would be a picture of a pointing hand on the left, and a picture of an animal on the right. The challenge is to use the **⬅** and **➡** buttons which are below the picture of an animal to position the animal to face in the direction the hand is pointing.
+
 ![](/images/step03-verify02.png)
 
-- You may have one or two of a similar challenge.
+-   You may have one or two of a similar challenge.
+
 ![](/images/step03-verify03.png)
 
-- When you are done with the challenge a check mark ✅ will appear.
-- Now click on the green **create account** button that will be at the bottom of the screen.
+-   When you are done with the challenge a check mark ✅ will appear.
+
+-   Now click on the green **create account** button that will be at the bottom of the screen.
+
 ![](/images/step03-verify04.png)
 
-- A code will be sent to the email address you entered previously.
-- Open you email account and refresh your inbox. You should see a message from Github.
-- If after a while, you still do not see an email from Github, go back to the webpage and tap the link below the **Enter code** section. The link will be named **Resend the code**. This will prompt Github to send a new message to your email.
-- When you receive the email, open it and take note of the numbers there.
-- Return to the Github webpage and input the numbers into the boxes provided.
+-   A code will be sent to the email address you entered previously.
+
+-   Open you email account and refresh your inbox. You should see a message from Github.
+
+-   If after a while, you still do not see an email from Github, go back to the webpage and tap the link below the **Enter code** section. The link will be named **Resend the code**. This will prompt Github to send a new message to your email.
+
+-   When you receive the email, open it and take note of the numbers there.
+
+-   Return to the Github webpage and input the numbers into the boxes provided.
+
 ![](/images/step03-verify05.png)
 
-- If you have entered the numbers correctly, a new webpage will appear.
+-   If you have entered the numbers correctly, a new webpage will appear.
 
 ### Step 04: Final Setup
-- You will be asked two questions
-  - How many team members will be working with you?
-    - For this question choose the option **2-5**.
-  - Are you a student or teacher?
-    - For this question choose the option **student** if you are a student. Choose **N/A** if you are neither a student nor a teacher.
+
+-   You will be asked two questions
+
+    -   How many team members will be working with you?
+        -   For this question choose the option **2-5**.
+    -   Are you a student or teacher?
+        -   For this question choose the option **student** if you are a student. Choose **N/A** if you are neither a student nor a teacher.
 
 ![](/images/step04-final01.png)
 
-- A new webpage will appear asking you some questions. Just click the **continue** button found at the bottom of the page.
+-   A new webpage will appear asking you some questions. Just click the **continue** button found at the bottom of the page.
+
 ![](/images/step04-final02.png)
 
-- You will see a new webpage with two sections, one labelled **Free** and the other **Get Student Benefits**.
+-   You will see a new webpage with two sections, one labelled **Free** and the other **Get Student Benefits**.
+
 ![](/images/step04-final03.png)
 
-- For now, go to the bottom of the page and  click **Continue for free**, even if you are a student. *You can get student benefits later*.
+-   For now, go to the bottom of the page and click **Continue for free**, even if you are a student. *You can get student benefits later*.
+
 ![](/images/step04-final04.png)
 
-- **Woohoo!!** Your Github dashboard should now be open.
+-   **Woohoo!!** Your Github dashboard should now be open.
+
 ![](/images/dashboard.png)
 
 ### Step 05: Edit Profile Picture
+
 **Your profile picture is one of the first things visitors to your Github account will see. Make sure your picture is clean, clear, and professional. However, you do not have to dress in formal attire.**
 
 To edit your profile picture, do the following while in your github dashboard:
-- Click on the round picture frame on the top right-hand corner. A panel will open with your username at the top.
+
+-   Click on the round picture frame on the top right-hand corner. A panel will open with your username at the top.
+
 ![](/images/dashboard-profile01.png)
 
-- Click on ***Your Profile***. You will be directed to a new webpage with a bigger picture frame on the left.
+-   Click on ***Your Profile***. You will be directed to a new webpage with a bigger picture frame on the left.
+
 ![](/images/dashboard-profile02.png)
 
-- Click on the picture frame. Again you will be taken to yet another webpage but with the picture frame on the right side of the screen. Notice that the picture frame has an **edit** button on the bottom left.
+-   Click on the picture frame. Again you will be taken to yet another webpage but with the picture frame on the right side of the screen. Notice that the picture frame has an **edit** button on the bottom left.
+
 ![](/images/dashboard-profile03.png)
 
-- Click on the **edit** buttom. It will reveal an **upload button**. Click on that and it will bring up a dialog box where you can upload a profile picture that *meets the criteria discussed at the beginning of Step 05*.
-  
+-   Click on the **edit** buttom. It will reveal an **upload button**. Click on that and it will bring up a dialog box where you can upload a profile picture that *meets the criteria discussed at the beginning of Step 05*.
+
 ![](/images/dashboard-profile04.png)
 
-
-
-
-
-### Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture! 
+### Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!
 
 ## Practice Activity
 
-- Create a Github account.
-- When your dashboard opens, take a screen shot of it.
-- Upload an appropriate profile picture.
-- Take a screenshot of your profile page, showing your profile picture.
-- Post both screenshots in your group so your classmates and mentors can see.
+-   Create a Github account.
 
-## Conclusion
+-   When your dashboard opens, take a screen shot of it.
 
+-   Upload an appropriate profile picture.
 
-https://www.youtube.com/live/U9mJuUkhUzk?si=qI5LbF0BOO3LB1Zt
-U9mJuUkhUzk?si=r_9y5BSw17Fix_oT
+-   Take a screenshot of your profile page, showing your profile picture.
+
+-   Post both screenshots in your group so your classmates and mentors can see.
+
+## Video Walkthrough
 
 [![OpenAI DevDay, Opening Keynote](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FP6FORpg0KVo%3Fsi%3D0S8ziLe4j9dgbc7W)](https://youtu.be/P6FORpg0KVo?si=0S8ziLe4j9dgbc7W)
 
- You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.
+## Conclusion
+
+You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.
 
 ## FAQ
 
