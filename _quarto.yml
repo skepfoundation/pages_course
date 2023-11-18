@@ -30,7 +30,7 @@ website:
           - text: "Lesson 3: Markdown"
             href: lessons\lesson_03\lesson_03.qmd
           - text: "Lesson 4: GitHub Profile Readme (Part 2)"
-            href: lessons\lesson_04.qmd
+            href: lessons\lesson_04\lesson_04.qmd
 
 
 format:
