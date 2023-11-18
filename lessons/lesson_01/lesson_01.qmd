@@ -1,3 +1,6 @@
+format: 
+  html:
+    page-layout: full
 ---
 title: "Lesson 01: Creating a Github Account"
 ---
@@ -18,7 +21,7 @@ This lesson will go over the steps necessary to create a GitHub account
 
 -   Click on the right side of the pink arrow to enter your email address.
 
-![Github Homepage.](/images/step01.png)
+![Github Homepage.](/images/step01.png){height=300}
 
 ### Step 02: Enter Email address, Password, and Username
 
@@ -40,27 +43,40 @@ This lesson will go over the steps necessary to create a GitHub account
 
 -   Click on the green **continue** button.
 
-![Results of Step 02.](/images/step02.png)
+::: {.column-margin}
+![Results of Step 02.](/images/step02.png){height=300}
+:::
 
 ### Step 03: Verifying your account
 
--   A new section will drop down asking you to verify your account. Click on the word **Verify**. *It should turn green when you hover over it*.
+::: {.column-margin}
+![](/images/step03-verify01.png){height=300}
+:::
 
-![](/images/step03-verify01.png)
+-   A new section will drop down asking you to verify your account. Click on the word **Verify**. *It should turn green when you hover over it*.
 
 -   The verification challenge would be a picture of a pointing hand on the left, and a picture of an animal on the right. The challenge is to use the **⬅** and **➡** buttons which are below the picture of an animal to position the animal to face in the direction the hand is pointing.
 
-![](/images/step03-verify02.png)
 
 -   You may have one or two of a similar challenge.
 
-![](/images/step03-verify03.png)
+
+::: {#fig-elephants layout-ncol=2}
+
+![](/images/step03-verify03.png){width=300}
+
+![](/images/step03-verify02.png){width=300}
+
+Verification Pictures
+:::
 
 -   When you are done with the challenge a check mark ✅ will appear.
 
--   Now click on the green **create account** button that will be at the bottom of the screen.
+::: {.column-margin}
+![](/images/step03-verify04.png){height=300}
+:::
 
-![](/images/step03-verify04.png)
+-   Now click on the green **create account** button that will be at the bottom of the screen.
 
 -   A code will be sent to the email address you entered previously.
 
@@ -72,7 +88,7 @@ This lesson will go over the steps necessary to create a GitHub account
 
 -   Return to the Github webpage and input the numbers into the boxes provided.
 
-![](/images/step03-verify05.png)
+![](/images/step03-verify05.png){height=300}
 
 -   If you have entered the numbers correctly, a new webpage will appear.
 
@@ -85,23 +101,21 @@ This lesson will go over the steps necessary to create a GitHub account
     -   Are you a student or teacher?
         -   For this question choose the option **student** if you are a student. Choose **N/A** if you are neither a student nor a teacher.
 
-![](/images/step04-final01.png)
+![](/images/step04-final01.png){height=300}
 
 -   A new webpage will appear asking you some questions. Just click the **continue** button found at the bottom of the page.
 
-![](/images/step04-final02.png)
+![](/images/step04-final02.png){height=300}
 
 -   You will see a new webpage with two sections, one labelled **Free** and the other **Get Student Benefits**.
 
-![](/images/step04-final03.png)
-
 -   For now, go to the bottom of the page and click **Continue for free**, even if you are a student. *You can get student benefits later*.
 
-![](/images/step04-final04.png)
+![](/images/step04-final04.png){width=600}
 
 -   **Woohoo!!** Your Github dashboard should now be open.
 
-![](/images/dashboard.png)
+![](/images/dashboard.png){height=300}
 
 ### Step 05: Edit Profile Picture
 
@@ -111,19 +125,19 @@ To edit your profile picture, do the following while in your github dashboard:
 
 -   Click on the round picture frame on the top right-hand corner. A panel will open with your username at the top.
 
-![](/images/dashboard-profile01.png)
+![](/images/dashboard-profile01.png){width=300}
 
 -   Click on ***Your Profile***. You will be directed to a new webpage with a bigger picture frame on the left.
 
-![](/images/dashboard-profile02.png)
+![](/images/dashboard-profile02.png){width=600}
 
 -   Click on the picture frame. Again you will be taken to yet another webpage but with the picture frame on the right side of the screen. Notice that the picture frame has an **edit** button on the bottom left.
 
-![](/images/dashboard-profile03.png)
+![](/images/dashboard-profile03.png){width=600}
 
 -   Click on the **edit** buttom. It will reveal an **upload button**. Click on that and it will bring up a dialog box where you can upload a profile picture that *meets the criteria discussed at the beginning of Step 05*.
 
-![](/images/dashboard-profile04.png)
+![](/images/dashboard-profile04.png){height=300}
 
 ### Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!
 
@@ -141,7 +155,7 @@ To edit your profile picture, do the following while in your github dashboard:
 
 ## Video Walkthrough
 
-[![OpenAI DevDay, Opening Keynote](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FP6FORpg0KVo%3Fsi%3D0S8ziLe4j9dgbc7W)](https://youtu.be/P6FORpg0KVo?si=0S8ziLe4j9dgbc7W)
+[![How to Create a GitHub Account (2023) - Full Tutorial](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)](https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)
 
 ## Conclusion
 
