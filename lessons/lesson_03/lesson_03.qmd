@@ -169,7 +169,6 @@ In the next lesson you will learn how to host websites on Github.
 
 ## FAQ
 
-###
 
 ## Resources
 
