@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Github Pages Training - Lesson 3: Git and How to connect to VScode</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Github Pages Training</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
+        <li>
+    <a class="dropdown-item" href="../../tools/r_installation.html" rel="" target="">
+ <span class="dropdown-text">R Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/r_studio.html" rel="" target="">
+ <span class="dropdown-text">R Studio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/git_installation.html" rel="" target="">
+ <span class="dropdown-text">Git Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tools/github_setup.html" rel="" target="">
+ <span class="dropdown-text">Github Setup</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../tasks_overview.html" rel="" target="">
+ <span class="menu-text">Course Tasks</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-1" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Unit 1</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-1">    
+        <li>
+    <a class="dropdown-item" href="../../lessons_01_01.qmd" rel="" target="">
+ <span class="dropdown-text">Lesson 1: Intro to GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../lessons_02_02.qmd" rel="" target="">
+ <span class="dropdown-text">Lesson 2: GitHub Profile Readme (Part 1)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../lessons_03_03.qmd" rel="" target="">
+ <span class="dropdown-text">Lesson 3: Markdown</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../lessons_04_04.qmd" rel="" target="">
+ <span class="dropdown-text">Lesson 4: GitHub Profile Readme (Part 2)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-git" id="toc-introduction-to-git" class="nav-link active" data-scroll-target="#introduction-to-git">Introduction to Git</a>
+  <ul class="collapse">
+  <li><a href="#how-to-install-git" id="toc-how-to-install-git" class="nav-link" data-scroll-target="#how-to-install-git">How to Install Git</a></li>
+  <li><a href="#git-configuration" id="toc-git-configuration" class="nav-link" data-scroll-target="#git-configuration">Git configuration:</a>
+  <ul class="collapse">
+  <li><a href="#basic-concepts-of-git" id="toc-basic-concepts-of-git" class="nav-link" data-scroll-target="#basic-concepts-of-git">Basic Concepts of Git:</a></li>
+  </ul></li>
+  <li><a href="#repository-local-and-remote" id="toc-repository-local-and-remote" class="nav-link" data-scroll-target="#repository-local-and-remote">1. Repository (Local and Remote)</a>
+  <ul class="collapse">
+  <li><a href="#creation-and-usage" id="toc-creation-and-usage" class="nav-link" data-scroll-target="#creation-and-usage">Creation and Usage:</a></li>
+  <li><a href="#remote-repository" id="toc-remote-repository" class="nav-link" data-scroll-target="#remote-repository">Remote Repository</a></li>
+  <li><a href="#interaction" id="toc-interaction" class="nav-link" data-scroll-target="#interaction">Interaction:</a></li>
+  </ul></li>
+  <li><a href="#commitpush" id="toc-commitpush" class="nav-link" data-scroll-target="#commitpush">2. Commit/Push</a>
+  <ul class="collapse">
+  <li><a href="#git-push" id="toc-git-push" class="nav-link" data-scroll-target="#git-push">Git Push</a></li>
+  </ul></li>
+  <li><a href="#branch" id="toc-branch" class="nav-link" data-scroll-target="#branch">3. Branch</a>
+  <ul class="collapse">
+  <li><a href="#branch-best-practices" id="toc-branch-best-practices" class="nav-link" data-scroll-target="#branch-best-practices">Branch Best Practices:</a></li>
+  <li><a href="#good-branch-naming-convention" id="toc-good-branch-naming-convention" class="nav-link" data-scroll-target="#good-branch-naming-convention">Good Branch Naming Convention:</a></li>
+  </ul></li>
+  <li><a href="#merge" id="toc-merge" class="nav-link" data-scroll-target="#merge">4. Merge</a></li>
+  <li><a href="#pull-request" id="toc-pull-request" class="nav-link" data-scroll-target="#pull-request">5. Pull Request</a></li>
+  </ul></li>
+  <li><a href="#git-with-vscode" id="toc-git-with-vscode" class="nav-link" data-scroll-target="#git-with-vscode">Git with VSCode:</a>
+  <ul class="collapse">
+  <li><a href="#why-should-we-use-git-with-on-vscode" id="toc-why-should-we-use-git-with-on-vscode" class="nav-link" data-scroll-target="#why-should-we-use-git-with-on-vscode">Why should we use Git with on Vscode?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lesson 3: Git and How to connect to VScode</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction-to-git" class="level1">
+<h1>Introduction to Git</h1>
+<p>Git is a powerful and widely used version control system that allows developers to track changes in their code over time. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Git is designed to handle projects of all sizes with speed and efficiency.</p>
+<p>Why Use Git?</p>
+<ul>
+<li><p><strong>Collaboration:</strong> Git makes it easier for multiple people to work on the same project without interfering with each other’s work. It allows for parallel development, where team members can work on different features simultaneously.</p></li>
+<li><p><strong>History Tracking:</strong> Every change made to the files in a project is tracked. This means you can revert back to any version of a file at any point in time. Branching and Merging: Git’s branching capabilities are a standout feature. They allow you to diverge from the main line of development and experiment with new ideas without affecting the main project, then merge those changes back in when they’re ready.</p></li>
+<li><p><strong>Distributed Development:</strong> Git is a distributed version control system, meaning every developer’s working copy of the code is also a repository that can contain the full history of all changes. Basic Concepts</p></li>
+<li><p><strong>Repository:</strong> A repository (or ‘repo’) is like a project’s folder. It contains all of the project files and the history of changes made to those files.</p></li>
+<li><p><strong>Commit:</strong> A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.</p></li>
+<li><p><strong>Branch:</strong> A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named ‘master’.</p></li>
+<li><p><strong>Merge:</strong> Merging is the process of integrating changes from one branch into another. Working with Git.</p></li>
+</ul>
+<p>Git’s functionality is accessible primarily through the command line. Common commands include;</p>
+<ol type="1">
+<li><p>git clone,</p></li>
+<li><p>git pull,</p></li>
+<li><p>git push,</p></li>
+<li><p>git branch,</p></li>
+<li><p>git commit,</p></li>
+<li><p>and git merge.</p></li>
+</ol>
+<p>Git works well with various platforms like <strong>GitHub</strong>, <strong>GitLab</strong>, and <strong>Bitbucket</strong>, which provide remote repositories and additional collaboration features.</p>
+<section id="how-to-install-git" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-install-git">How to Install Git</h2>
+<p>Installing Git is a crucial step for anyone getting started with version control. Here’s a beginner friendly guide to installing Git on different operating systems.</p>
+<ol type="1">
+<li><h3 id="for-windows-user" class="anchored">For Windows User</h3>
+<p>### Download the Git Installer:</p>
+<ul>
+<li>Visit the Git website and download the latest version of Git for Windows.</li>
+<li>The download should automatically start based on your Windows version.</li>
+</ul>
+<p>#### Run the Installer: Open the downloaded file to start the installation. You will be greeted with the Git Setup wizard.</p>
+<p>#### Installation Options: Follow the setup instructions. You can leave most options at their default settings. When prompted to choose the default editor, you may select the one you’re most comfortable with (e.g., VSCode, Notepad++, etc.).</p>
+<p>#### Adjusting Your PATH Environment: During the installation, you’ll be asked to adjust your PATH environment. Select “Use Git from the Windows Command Prompt” for ease of use. Configuring the Line Ending Conversions:</p>
+<pre><code> Choose how you want Git to treat line endings in text files. The recommended setting for Windows users is "Checkout Windows-style, commit Unix-style line endings".</code></pre>
+<p>#### Completing the Installation: Proceed with the installation. Once completed, click ‘Finish’.</p>
+<p>#### Verify Installation: Open Command Prompt and type <code>git --version</code> to ensure Git is installed correctly and to see the installed version.</p></li>
+<li><h3 id="for-macos-users" class="anchored">For macOS Users</h3>
+<p>#### Install Git via Homebrew:</p>
+<pre><code> If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing ```brew install git```</code></pre>
+<p>#### Install Git from the Official Website:</p>
+<pre><code> Alternatively, you can download the macOS Git installer from Git's official site.
+ Open the downloaded file and follow the installation instructions.</code></pre>
+<p>#### Verify Installation: In the Terminal, type <code>git --version</code> to check the installation.</p></li>
+<li><h3 id="for-linux-users" class="anchored">For Linux Users</h3>
+<p>#### Install Git through Package Manager:</p>
+<ul>
+<li>For Debian/Ubuntu-based distributions, open the Terminal and type</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>   <span class="fu">sudo</span> apt-get install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>For Fedora, use</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sudo</span> dnf install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>For other distributions, use the respective package manager and the package named ‘git’.</li>
+</ul>
+<p>#### Verify Installation: Confirm the installation by typing <code>git --version</code> in the Terminal.</p></li>
+</ol>
+</section>
+<section id="git-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="git-configuration">Git configuration:</h2>
+<p>After installing Git, it’s a good practice for users to set their Git username and email address, which will be used for every Git commit. This can be done by executing the following commands in the terminal or command prompt:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.name <span class="pp">[</span><span class="ss">your</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.email <span class="pp">[</span><span class="ss">your.email@example.com</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This steps ensures that all your commits will have your identity attached to them anytime you commit and push to a repo.</p>
+<section id="basic-concepts-of-git" class="level3">
+<h3 class="anchored" data-anchor-id="basic-concepts-of-git">Basic Concepts of Git:</h3>
+<ol type="1">
+<li>Repository (Local and Remote)</li>
+<li>Commit</li>
+<li>Branch</li>
+<li>Merge</li>
+<li>Pull Request</li>
+</ol>
+</section>
+</section>
+<section id="repository-local-and-remote" class="level2">
+<h2 class="anchored" data-anchor-id="repository-local-and-remote">1. Repository (Local and Remote)</h2>
+<section id="local-repository" class="level4">
+<h4 class="anchored" data-anchor-id="local-repository">Local Repository</h4>
+<p><strong>Definition:</strong> A local repository in Git is a directory on your computer where Git stores all the files and the history of changes made to those files.</p>
+<p><strong>Function:</strong> It allows you to work on your project and make commits, branches, and other Git operations offline.</p>
+</section>
+<section id="creation-and-usage" class="level3">
+<h3 class="anchored" data-anchor-id="creation-and-usage">Creation and Usage:</h3>
+<p>Created using <code>git init</code> or <code>git clone</code> commands.</p>
+<p>Local repositories are where you’ll do most of your work, including editing, staging, and committing changes.</p>
+<p><strong>Note:</strong> When you initialize or clone a repository on your local mahcine, you will often see a <em>.Git</em> directory as shown below:</p>
+<p><img src="../Unit_2/images/1.png" class="img-fluid"></p>
+</section>
+<section id="remote-repository" class="level3">
+<h3 class="anchored" data-anchor-id="remote-repository">Remote Repository</h3>
+<p><strong>Definition:</strong> A remote repository is a version of your project hosted on the internet or a network.</p>
+<p><strong>Purpose:</strong> It facilitates collaboration, allowing multiple people to push to and pull from the same project.</p>
+<p><strong>Common Platforms:</strong> Platforms like GitHub, GitLab, and Bitbucket host remote repositories.</p>
+</section>
+<section id="interaction" class="level3">
+<h3 class="anchored" data-anchor-id="interaction">Interaction:</h3>
+<ul>
+<li>You can push your local changes to a remote repository using</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>You can also fetch and merge changes from a remote repository to your local one using</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> pull</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> fetch</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> merge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="commitpush" class="level2">
+<h2 class="anchored" data-anchor-id="commitpush">2. Commit/Push</h2>
+<p><strong>Definition:</strong> A commit in Git is a snapshot of your project’s current state, allowing you to capture the condition of your project at a specific point in time.</p>
+<p><strong>Importance:</strong> Commits serve as checkpoints where individual changes can be made permanent to the repository’s history.</p>
+<p><strong>Usage:</strong> To save your staged changes along with a descriptive message, use the code below:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"commit message"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="git-commit-messages-best-practices" class="level4">
+<h4 class="anchored" data-anchor-id="git-commit-messages-best-practices">Git commit messages best practices:</h4>
+<ul>
+<li>Commit messages should beb clear and concise</li>
+<li>commit messages should reflect the changes made. i.e <em>“updated file upload function in task.py”</em></li>
+</ul>
+</section>
+<section id="git-push" class="level3">
+<h3 class="anchored" data-anchor-id="git-push">Git Push</h3>
+<p><strong>Purpose:</strong> Git push is used whenever we want to push your current commit from your local repository to the remote repository. What this code does under the hood is to push the current state of our codes to the remote repository.</p>
+<p><strong>Syntax</strong></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Replace [branch-name] with the name of the branch in which you wish to push the changes to. By default, <code>origin</code> is the name git gives to the remote repository once initialized or cloned. And the default branch name in origin is <code>main</code></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="branch" class="level2">
+<h2 class="anchored" data-anchor-id="branch">3. Branch</h2>
+<p><strong>Definition:</strong> A branch in Git represents an independent line of development in a project.</p>
+<p><strong>Purpose:</strong> Branches allow you to work on different features or fixes without affecting the main codebase.</p>
+<p><strong>Usage:</strong></p>
+<ol type="1">
+<li>Create a new branch with git branch [branch-name].</li>
+</ol>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> branch <span class="pp">[</span><span class="ss">branch_name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Switch between branches using git checkout [branch-name].</li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> checkout <span class="pp">[</span><span class="ss">branch_name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>To view all branches available in the Remote Repository</li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> branch <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>To delete a branch on the remote repository</li>
+</ol>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push origin <span class="at">--delete</span> <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="branch-best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="branch-best-practices">Branch Best Practices:</h3>
+<p>Use descriptive names for branches. Create separate branches for different features or bug fixes.</p>
+</section>
+<section id="good-branch-naming-convention" class="level3">
+<h3 class="anchored" data-anchor-id="good-branch-naming-convention">Good Branch Naming Convention:</h3>
+<p>Clear branch names help with organization, understanding the purpose of the branch, and managing multiple branches.</p>
+<section id="common-naming-strategies" class="level4">
+<h4 class="anchored" data-anchor-id="common-naming-strategies">Common Naming Strategies:</h4>
+<ul>
+<li><p><strong>Feature Branches:</strong> Name feature branches with a prefix feature/, followed by a short desccriptor (e.g., feature/add-login).</p></li>
+<li><p><strong>Bugfix Branches:</strong> For bug fiexes, use a prefix like bugfix/ or fix/ (e.g bugfix/login-error)</p></li>
+<li><p><strong>Release Branches:</strong> Release branches can be prefixed with a release/, followed by the version number (e.g., release/1.2.0).</p></li>
+<li><p><strong>Hotfix Branches:</strong> Urgent fixes can use hotfix/ as a prefix, followed by the issue being fiexed (e.g., hotfix/memory-leak).</p></li>
+<li><p><strong>Personal/Branches for Experimentation:</strong> Include your name or initials for personal or experimental branches (e.g., jd/test-new-feature).</p></li>
+</ul>
+</section>
+<section id="tips-for-branching" class="level4">
+<h4 class="anchored" data-anchor-id="tips-for-branching">Tips for Branching</h4>
+<p><strong>Keep Branches Focused:</strong> Each branch should represent a single feature or fix. This makes it easier to review and merge.</p>
+<p><strong>Regularly Update from Main Branch:</strong> Frequently merge or rebase your branch with the main branch (like master or main) to stay up-to-date with the latest changes and avoid large merge conflicts.</p>
+<p><strong>Prune Regularly:</strong> Delete branches once they are merged and no longer needed to keep the repository clean.</p>
+</section>
+</section>
+</section>
+<section id="merge" class="level2">
+<h2 class="anchored" data-anchor-id="merge">4. Merge</h2>
+<p><strong>Definition:</strong> Merging in Git is the act of integrating changes from one branch into another.</p>
+<p><strong>Application:</strong> Commonly used to combine the development work of different branches. After testing and approving changes in a feature branch, you merge them into the main branch (often called main).</p>
+<p><strong>Process:</strong> Use</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> merge <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>to merge the changes from [branch-name] into your current branch.</p>
+<p><strong>Conflict Resolution:</strong> If there are conflicts between the branches, Git will prompt you to resolve them before completing the merge.</p>
+</section>
+<section id="pull-request" class="level2">
+<h2 class="anchored" data-anchor-id="pull-request">5. Pull Request</h2>
+<p><strong>Definition:</strong> A pull request (PR) is a method of submitting contributions to a project. It’s specific to platforms like GitHub, GitLab, or Bitbucket.</p>
+<p><strong>Purpose:</strong> PRs are a way to inform team members that changes in a branch are ready to be merged into the main branch. They provide a platform for code review and discussion about the changes.</p>
+<p><strong>Process:</strong> Once you push your branch to a remote repository, you can create a pull request through the repository’s web interface. Other team members can review the changes, provide feedback, and once approved, the changes can be merged into the main branch.</p>
+</section>
+</section>
+<section id="git-with-vscode" class="level1">
+<h1>Git with VSCode:</h1>
+<section id="why-should-we-use-git-with-on-vscode" class="level3">
+<h3 class="anchored" data-anchor-id="why-should-we-use-git-with-on-vscode">Why should we use Git with on Vscode?</h3>
+<ul>
+<li>Integrated development environment.</li>
+<li>Streamlined workflow.</li>
+</ul>
+<section id="connecting-git-to-visual-studio-code-vscode" class="level4">
+<h4 class="anchored" data-anchor-id="connecting-git-to-visual-studio-code-vscode">Connecting Git to Visual Studio Code (VSCode)</h4>
+<p><strong>VSCode Overview:</strong> Visual Studio Code is a popular, lightweight, and powerful source code editor that supports multiple programming languages and tools.</p>
+<p><strong>Integration Benefits:</strong> Integrating Git with VSCode streamlines the development workflow, allowing you to perform version control tasks directly from the editor.</p>
+<p>Step-by-Step Guide:</p>
+<ul>
+<li><p>Ensure Git is Installed: Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).</p></li>
+<li><p><strong>Open VSCode:</strong> Launch Visual Studio Code.</p></li>
+</ul>
+<p>Accessing Git: On the left sidebar, click on the Source Control icon. If Git is installed, VSCode will automatically detect and display Git functionalities. Cloning a Repository: To clone a Git repository, click on the ‘Clone Repository’ button and enter the repository URL. Viewing Changes: VSCode shows all changes you’ve made in your code in the Source Control panel. Committing Changes: You can stage, commit, and push changes from VSCode. Branch Management: VSCode also allows you to create, switch, and merge branches within the interface. Additional Tips:</p>
+<p>Install GitLens Extension: For enhanced Git capabilities in VSCode, consider installing the GitLens extension, which provides additional insights and features.</p>
+<p>Ensure Git is Installed:</p>
+<p>Before integrating Git with VSCode, you must have Git installed on your computer. To check if Git is already installed, open a terminal (Command Prompt on Windows, Terminal on macOS or Linux) and type git –version. If Git is installed, this command will return the version number. If Git is not installed, you’ll need to download and install it from Git’s official website. Open VSCode:</p>
+<p>Start by launching Visual Studio Code on your computer. If it’s not already installed, you can download it from Visual Studio Code’s official site. Accessing Git:</p>
+<p>In VSCode, locate the Source Control icon on the left sidebar (it looks like a branching tree). Clicking on this icon will open the Source Control panel. If Git is installed and configured correctly, VSCode will automatically detect and integrate Git functionalities. Cloning a Repository:</p>
+<p>To clone a Git repository, click on the ‘Clone Repository’ button in the Source Control panel. Enter the URL of the Git repository you wish to clone. This URL can be obtained from the repository page on platforms like GitHub, GitLab, or Bitbucket. Choose a location on your local machine to save the repository and click ‘Clone’. Once cloned, you can open the repository in VSCode and start working on it. Viewing Changes:</p>
+<p>VSCode tracks any changes you make to files in your repository. In the Source Control panel, you will see a list of modified files. Clicking on a file will open a diff view, showing you the changes made compared to the last commit. Committing Changes:</p>
+<p>To commit changes, first stage them by clicking the ‘+’ icon next to each changed file in the Source Control panel. Once staged, enter a commit message in the message box – this should describe what changes you have made. Press Ctrl+Enter (Cmd+Enter on Mac) to commit the staged changes. To push the changes to a remote repository, click on the ‘…’ icon in the Source Control panel and select ‘Push’. Branch Management:</p>
+<p>To manage branches, click on the branch name displayed at the bottom left of the VSCode window. This opens a menu where you can create a new branch, switch between branches, or merge branches. When creating a new branch, you will be prompted to enter a name for the branch. Choose a name that reflects the purpose of the branch. Additional Tips - Installing GitLens:</p>
+<p>GitLens is an extension for VSCode that enhances the Git capabilities of the editor. To install GitLens, go to the Extensions view by clicking on the Extensions icon on the sidebar, search for ‘GitLens’, and click ‘Install’. GitLens provides additional features like advanced blame information, file history</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

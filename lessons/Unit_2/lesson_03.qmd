@@ -1,0 +1,367 @@
+---
+title: "Lesson 3: Git and How to connect to VScode"
+format:
+    html:
+        code-copy: true
+---
+
+
+# Introduction to Git
+Git is a powerful and widely used version control system that allows developers to track changes in their code over time. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Git is designed to handle projects of all sizes with speed and efficiency.
+
+Why Use Git?
+
+- **Collaboration:** Git makes it easier for multiple people to work on the same project without interfering with each other's work. It allows for parallel development, where team members can work on different features simultaneously.
+- **History Tracking:** Every change made to the files in a project is tracked. This means you can revert back to any version of a file at any point in time.
+Branching and Merging: Git's branching capabilities are a standout feature. They allow you to diverge from the main line of development and experiment with new ideas without affecting the main project, then merge those changes back in when they're ready.
+
+- **Distributed Development:** Git is a distributed version control system, meaning every developer's working copy of the code is also a repository that can contain the full history of all changes.
+Basic Concepts
+
+- **Repository:** A repository (or 'repo') is like a project's folder. It contains all of the project files and the history of changes made to those files.
+
+- **Commit:** A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.
+
+- **Branch:** A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named 'master'.
+
+- **Merge:** Merging is the process of integrating changes from one branch into another.
+Working with Git.
+
+Git's functionality is accessible primarily through the command line. Common commands include; 
+
+1. git clone,
+   
+2. git pull, 
+
+3. git push, 
+
+4. git branch,
+
+5. git commit,
+
+6. and git merge.
+
+
+Git works well with various platforms like **GitHub**, **GitLab**, and **Bitbucket**, which provide remote repositories and additional collaboration features.
+
+
+## How to Install Git
+
+Installing Git is a crucial step for anyone getting started with version control. Here's a beginner friendly guide to installing Git on different operating systems.
+
+1. ### For Windows User
+   
+    ### Download the Git Installer:
+
+      - Visit the Git website and download the latest version of Git for Windows.
+      - The download should automatically start based on your Windows version.
+        
+    #### Run the Installer:
+        Open the downloaded file to start the installation.
+        You will be greeted with the Git Setup wizard.
+
+    #### Installation Options:
+        Follow the setup instructions. You can leave most options at their default settings.
+        When prompted to choose the default editor, you may select the one you're most comfortable with (e.g., VSCode, Notepad++, etc.).
+
+    #### Adjusting Your PATH Environment:
+        During the installation, you'll be asked to adjust your PATH environment. Select "Use Git from the Windows Command Prompt" for ease of use.
+        Configuring the Line Ending Conversions:
+
+        Choose how you want Git to treat line endings in text files. The recommended setting for Windows users is "Checkout Windows-style, commit Unix-style line endings".
+    #### Completing the Installation:
+        Proceed with the installation. Once completed, click 'Finish'.
+
+    #### Verify Installation:
+        Open Command Prompt and type ```git --version``` to ensure Git is installed correctly and to see the installed version.
+
+
+2. ### For macOS Users
+   
+    #### Install Git via Homebrew:
+
+        If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing ```brew install git```
+
+    #### Install Git from the Official Website:
+
+        Alternatively, you can download the macOS Git installer from Git's official site.
+        Open the downloaded file and follow the installation instructions.
+
+    #### Verify Installation:
+        In the Terminal, type ```git --version``` to check the installation.
+
+
+3. ### For Linux Users
+    #### Install Git through Package Manager:
+
+    - For Debian/Ubuntu-based distributions, open the Terminal and type 
+     ```bash
+        sudo apt-get install git
+    ```
+
+    - For Fedora, use 
+    ```bash
+        sudo dnf install git
+    ```
+
+    - For other distributions, use the respective package manager and the package named 'git'.
+ 
+    #### Verify Installation:
+        Confirm the installation by typing ```git --version``` in the Terminal.
+
+## Git configuration:
+
+After installing Git, it's a good practice for users to set their Git username and email address, which will be used for every Git commit. This can be done by executing the following commands in the terminal or command prompt:
+
+```bash
+    git config --global user.name [your-name]
+```
+
+```bash
+    git config --global user.email [your.email@example.com]
+```
+
+This steps ensures that all your commits will have your identity attached to them anytime you commit and push to a repo.
+
+
+### Basic Concepts of Git:
+
+1. Repository (Local and Remote)
+2. Commit
+3. Branch
+4. Merge
+5. Pull Request
+
+## 1. Repository (Local and Remote)
+
+#### Local Repository
+
+**Definition:** A local repository in Git is a directory on your computer where Git stores all the files and the history of changes made to those files.
+
+**Function:** It allows you to work on your project and make commits, branches, and other Git operations offline.
+
+### Creation and Usage:
+
+Created using ```git init``` or ```git clone``` commands.
+
+Local repositories are where you'll do most of your work, including editing, staging, and committing changes.
+
+**Note:** When you initialize or clone a repository on your local mahcine, you will often see a *.Git* directory as shown below:
+
+![](../Unit_2/images/1.png)
+
+### Remote Repository
+
+**Definition:** A remote repository is a version of your project hosted on the internet or a network.
+
+**Purpose:** It facilitates collaboration, allowing multiple people to push to and pull from the same project.
+
+**Common Platforms:** Platforms like GitHub, GitLab, and Bitbucket host remote repositories.
+
+### Interaction:
+- You can push your local changes to a remote repository using 
+  
+```bash 
+    git push
+```
+
+
+- You can also fetch and merge changes from a remote repository to your local one using 
+
+```bash 
+    git pull
+    git fetch
+    git merge
+```
+
+
+## 2. Commit/Push
+**Definition:** A commit in Git is a snapshot of your project's current state, allowing you to capture the condition of your project at a specific point in time.
+
+**Importance:** Commits serve as checkpoints where individual changes can be made permanent to the repository's history.
+
+**Usage:**
+To save your staged changes along with a descriptive message, use the code below:
+
+```bash 
+    git commit -m "commit message" 
+``` 
+
+#### Git commit messages best practices:
+- Commit messages should beb clear and concise
+- commit messages should reflect the changes made. i.e *"updated file upload function in task.py"*
+
+### Git Push
+**Purpose:** Git push is used whenever we want to push your current commit from your local repository to the remote repository. What this code does under the hood is to push the current state of our codes to the remote repository. 
+
+**Syntax**
+
+```bash
+    git push [branch-name]
+
+```
+Replace [branch-name] with the name of the branch in which you wish to push the changes to.
+By default, ```origin``` is the name git gives to the remote repository once initialized or cloned. And the default branch name in origin is ```main```
+
+```bash
+    git push -u origin main
+```
+
+
+
+## 3. Branch
+
+**Definition:** A branch in Git represents an independent line of development in a project.
+
+**Purpose:** Branches allow you to work on different features or fixes without affecting the main codebase.
+
+**Usage:**
+
+1. Create a new branch with git branch [branch-name].
+```bash
+    git branch [branch_name]
+```
+
+2. Switch between branches using git checkout [branch-name].
+
+```bash
+    git checkout [branch_name]
+```
+
+3. To view all branches available in the Remote Repository
+
+```bash
+    git branch -a
+```
+
+4. To delete a branch on the remote repository
+   
+```bash
+    git push origin --delete [branch-name]
+```
+
+
+### Branch Best Practices:
+Use descriptive names for branches. Create separate branches for different features or bug fixes.
+
+### Good Branch Naming Convention:
+Clear branch names help with organization, understanding the purpose of the branch, and managing multiple branches.
+
+#### Common Naming Strategies:
+- **Feature Branches:** Name feature branches with a prefix feature/, followed by a short desccriptor (e.g., feature/add-login).
+
+- **Bugfix Branches:** For bug fiexes, use a prefix like bugfix/ or fix/ (e.g bugfix/login-error)
+
+- **Release Branches:** Release branches can be prefixed with a release/, followed by the version number (e.g., release/1.2.0).
+
+- **Hotfix Branches:** Urgent fixes can use hotfix/ as a prefix, followed by the issue being fiexed (e.g., hotfix/memory-leak).
+
+- **Personal/Branches for Experimentation:** Include your name or initials for personal or experimental branches (e.g., jd/test-new-feature).
+
+
+#### Tips for Branching
+**Keep Branches Focused:** Each branch should represent a single feature or fix. This makes it easier to review and merge.
+
+**Regularly Update from Main Branch:** Frequently merge or rebase your branch with the main branch (like master or main) to stay up-to-date with the latest changes and avoid large merge conflicts.
+
+**Prune Regularly:** Delete branches once they are merged and no longer needed to keep the repository clean.
+
+
+
+## 4. Merge
+
+**Definition:** Merging in Git is the act of integrating changes from one branch into another.
+
+**Application:** Commonly used to combine the development work of different branches. After testing and approving changes in a feature branch, you merge them into the main branch (often called main).
+
+**Process:** Use 
+```bash
+    git merge [branch-name]
+``` 
+to merge the changes from [branch-name] into your current branch.
+
+**Conflict Resolution:** If there are conflicts between the branches, Git will prompt you to resolve them before completing the merge.
+
+
+## 5. Pull Request
+
+**Definition:** A pull request (PR) is a method of submitting contributions to a project. It's specific to platforms like GitHub, GitLab, or Bitbucket.
+
+**Purpose:** PRs are a way to inform team members that changes in a branch are ready to be merged into the main branch. They provide a platform for code review and discussion about the changes.
+
+**Process:**
+Once you push your branch to a remote repository, you can create a pull request through the repository's web interface.
+Other team members can review the changes, provide feedback, and once approved, the changes can be merged into the main branch.
+
+
+
+# Git with VSCode:
+
+### Why should we use Git with on Vscode?
+
+- Integrated development environment.
+- Streamlined workflow.
+
+
+#### Connecting Git to Visual Studio Code (VSCode)
+
+**VSCode Overview:** Visual Studio Code is a popular, lightweight, and powerful source code editor that supports multiple programming languages and tools.
+
+**Integration Benefits:** Integrating Git with VSCode streamlines the development workflow, allowing you to perform version control tasks directly from the editor.
+
+Step-by-Step Guide:
+
+- Ensure Git is Installed: Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).
+  
+
+- **Open VSCode:** Launch Visual Studio Code.
+
+Accessing Git: On the left sidebar, click on the Source Control icon. If Git is installed, VSCode will automatically detect and display Git functionalities.
+Cloning a Repository: To clone a Git repository, click on the 'Clone Repository' button and enter the repository URL.
+Viewing Changes: VSCode shows all changes you've made in your code in the Source Control panel.
+Committing Changes: You can stage, commit, and push changes from VSCode.
+Branch Management: VSCode also allows you to create, switch, and merge branches within the interface.
+Additional Tips:
+
+Install GitLens Extension: For enhanced Git capabilities in VSCode, consider installing the GitLens extension, which provides additional insights and features.
+
+Ensure Git is Installed:
+
+Before integrating Git with VSCode, you must have Git installed on your computer.
+To check if Git is already installed, open a terminal (Command Prompt on Windows, Terminal on macOS or Linux) and type git --version. If Git is installed, this command will return the version number.
+If Git is not installed, you'll need to download and install it from Git's official website.
+Open VSCode:
+
+Start by launching Visual Studio Code on your computer.
+If it’s not already installed, you can download it from Visual Studio Code's official site.
+Accessing Git:
+
+In VSCode, locate the Source Control icon on the left sidebar (it looks like a branching tree).
+Clicking on this icon will open the Source Control panel. If Git is installed and configured correctly, VSCode will automatically detect and integrate Git functionalities.
+Cloning a Repository:
+
+To clone a Git repository, click on the 'Clone Repository' button in the Source Control panel.
+Enter the URL of the Git repository you wish to clone. This URL can be obtained from the repository page on platforms like GitHub, GitLab, or Bitbucket.
+Choose a location on your local machine to save the repository and click 'Clone'.
+Once cloned, you can open the repository in VSCode and start working on it.
+Viewing Changes:
+
+VSCode tracks any changes you make to files in your repository.
+In the Source Control panel, you will see a list of modified files.
+Clicking on a file will open a diff view, showing you the changes made compared to the last commit.
+Committing Changes:
+
+To commit changes, first stage them by clicking the '+' icon next to each changed file in the Source Control panel.
+Once staged, enter a commit message in the message box – this should describe what changes you have made.
+Press Ctrl+Enter (Cmd+Enter on Mac) to commit the staged changes.
+To push the changes to a remote repository, click on the '...' icon in the Source Control panel and select 'Push'.
+Branch Management:
+
+To manage branches, click on the branch name displayed at the bottom left of the VSCode window.
+This opens a menu where you can create a new branch, switch between branches, or merge branches.
+When creating a new branch, you will be prompted to enter a name for the branch. Choose a name that reflects the purpose of the branch.
+Additional Tips - Installing GitLens:
+
+GitLens is an extension for VSCode that enhances the Git capabilities of the editor.
+To install GitLens, go to the Extensions view by clicking on the Extensions icon on the sidebar, search for 'GitLens', and click 'Install'.
+GitLens provides additional features like advanced blame information, file history
