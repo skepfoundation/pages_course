@@ -212,6 +212,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#git-with-vscode" id="toc-git-with-vscode" class="nav-link" data-scroll-target="#git-with-vscode">Git with VSCode:</a>
   <ul class="collapse">
   <li><a href="#why-should-we-use-git-with-on-vscode" id="toc-why-should-we-use-git-with-on-vscode" class="nav-link" data-scroll-target="#why-should-we-use-git-with-on-vscode">Why should we use Git with on Vscode?</a></li>
+  <li><a href="#accessing-git" id="toc-accessing-git" class="nav-link" data-scroll-target="#accessing-git">Accessing Git:</a></li>
+  <li><a href="#the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding." id="toc-the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding." class="nav-link" data-scroll-target="#the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding.">The installation and configuration of Git was treated in the previous lesson. Revert to it for better understanding.</a></li>
+  <li><a href="#open-vscode" id="toc-open-vscode" class="nav-link" data-scroll-target="#open-vscode">Open VSCode:</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -262,47 +265,87 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="how-to-install-git" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-install-git">How to Install Git</h2>
 <p>Installing Git is a crucial step for anyone getting started with version control. Here’s a beginner friendly guide to installing Git on different operating systems.</p>
+<h3 class="anchored">
 <ol type="1">
-<li><h3 id="for-windows-user" class="anchored">For Windows User</h3>
-<p>### Download the Git Installer:</p>
+<li>For Windows User
+</li></ol></h3>
+<h4 class="anchored">
+Download the Git Installer:
+</h4>
+
 <ul>
 <li>Visit the Git website and download the latest version of Git for Windows.</li>
 <li>The download should automatically start based on your Windows version.</li>
 </ul>
-<p>#### Run the Installer: Open the downloaded file to start the installation. You will be greeted with the Git Setup wizard.</p>
-<p>#### Installation Options: Follow the setup instructions. You can leave most options at their default settings. When prompted to choose the default editor, you may select the one you’re most comfortable with (e.g., VSCode, Notepad++, etc.).</p>
-<p>#### Adjusting Your PATH Environment: During the installation, you’ll be asked to adjust your PATH environment. Select “Use Git from the Windows Command Prompt” for ease of use. Configuring the Line Ending Conversions:</p>
-<pre><code> Choose how you want Git to treat line endings in text files. The recommended setting for Windows users is "Checkout Windows-style, commit Unix-style line endings".</code></pre>
-<p>#### Completing the Installation: Proceed with the installation. Once completed, click ‘Finish’.</p>
-<p>#### Verify Installation: Open Command Prompt and type <code>git --version</code> to ensure Git is installed correctly and to see the installed version.</p></li>
-<li><h3 id="for-macos-users" class="anchored">For macOS Users</h3>
-<p>#### Install Git via Homebrew:</p>
-<pre><code> If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing ```brew install git```</code></pre>
-<p>#### Install Git from the Official Website:</p>
-<pre><code> Alternatively, you can download the macOS Git installer from Git's official site.
- Open the downloaded file and follow the installation instructions.</code></pre>
-<p>#### Verify Installation: In the Terminal, type <code>git --version</code> to check the installation.</p></li>
-<li><h3 id="for-linux-users" class="anchored">For Linux Users</h3>
-<p>#### Install Git through Package Manager:</p>
+<h4 class="anchored">
+Run the Installer:
+</h4>
+<p>Open the downloaded file to start the installation. You will be greeted with the Git Setup wizard.</p>
+<h4 class="anchored">
+Installation Options:
+</h4>
+<p>Follow the setup instructions. You can leave most options at their default settings. When prompted to choose the default editor, you may select the one you’re most comfortable with (e.g., VSCode, Notepad++, etc.).</p>
+<h4 class="anchored">
+Adjusting Your PATH Environment:
+</h4>
+<p>During the installation, you’ll be asked to adjust your PATH environment. Select “Use Git from the Windows Command Prompt” for ease of use.</p>
+<p><strong>Configuring the Line Ending Conversions:</strong></p>
+<p>Choose how you want Git to treat line endings in text files. The recommended setting for Windows users is “Checkout Windows-style, commit Unix-style line endings”.</p>
+<p><strong>Completing the Installation:</strong> Proceed with the installation. Once completed, click ‘Finish’.</p>
+<h4 class="anchored">
+Verify Installation:
+</h4>
+<p>Open Command Prompt and type</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>to ensure Git is installed correctly and to see the installed version.</p>
+<h3 class="anchored">
+<ol type="1">
+<li>For macOS Users
+</li></ol></h3>
+
+<h4 class="anchored">
+Install Git via Homebrew:
+</h4>
+<p>If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    <span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h4 class="anchored">
+Install Git from the Official Website:
+</h4>
+<p>Alternatively, you can download the macOS Git installer from Git’s official site. Open the downloaded file and follow the installation instructions.</p>
+<section id="verify-installation" class="level4">
+<h4 class="anchored">Verify Installation:</h4>
+<p>In the Terminal, type</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>to check the installation.</p>
+<h3 class="anchored" data-anchor-id="verify-installation">
+For Linux Users
+</h3>
+<h4 class="anchored">
+Install Git through Package Manager:
+</h4>
 <ul>
 <li>For Debian/Ubuntu-based distributions, open the Terminal and type</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>   <span class="fu">sudo</span> apt-get install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sudo</span> apt-get install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>For Fedora, use</li>
+<li>For Fedora, users</li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sudo</span> dnf install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>For other distributions, use the respective package manager and the package named ‘git’.</li>
 </ul>
-<p>#### Verify Installation: Confirm the installation by typing <code>git --version</code> in the Terminal.</p></li>
-</ol>
+</section>
+<section id="verify-installation-1" class="level4">
+<h4 class="anchored" data-anchor-id="verify-installation-1">Verify Installation:</h4>
+<p>Confirm the installation by typing in the terminal.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 <section id="git-configuration" class="level2">
 <h2 class="anchored" data-anchor-id="git-configuration">Git configuration:</h2>
 <p>After installing Git, it’s a good practice for users to set their Git username and email address, which will be used for every Git commit. This can be done by executing the following commands in the terminal or command prompt:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.name <span class="pp">[</span><span class="ss">your</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.email <span class="pp">[</span><span class="ss">your.email@example.com</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.name <span class="pp">[</span><span class="ss">your</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.email <span class="pp">[</span><span class="ss">your.email@example.com</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This steps ensures that all your commits will have your identity attached to them anytime you commit and push to a repo.</p>
 <section id="basic-concepts-of-git" class="level3">
 <h3 class="anchored" data-anchor-id="basic-concepts-of-git">Basic Concepts of Git:</h3>
@@ -340,13 +383,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>You can push your local changes to a remote repository using</li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>You can also fetch and merge changes from a remote repository to your local one using</li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> pull</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> fetch</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> merge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> pull</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> fetch</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> merge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="commitpush" class="level2">
@@ -354,7 +397,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Definition:</strong> A commit in Git is a snapshot of your project’s current state, allowing you to capture the condition of your project at a specific point in time.</p>
 <p><strong>Importance:</strong> Commits serve as checkpoints where individual changes can be made permanent to the repository’s history.</p>
 <p><strong>Usage:</strong> To save your staged changes along with a descriptive message, use the code below:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"commit message"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"commit message"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="git-commit-messages-best-practices" class="level4">
 <h4 class="anchored" data-anchor-id="git-commit-messages-best-practices">Git commit messages best practices:</h4>
 <ul>
@@ -366,9 +409,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="git-push">Git Push</h3>
 <p><strong>Purpose:</strong> Git push is used whenever we want to push your current commit from your local repository to the remote repository. What this code does under the hood is to push the current state of our codes to the remote repository.</p>
 <p><strong>Syntax</strong></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Replace [branch-name] with the name of the branch in which you wish to push the changes to. By default, <code>origin</code> is the name git gives to the remote repository once initialized or cloned. And the default branch name in origin is <code>main</code></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="branch" class="level2">
@@ -379,19 +422,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Create a new branch with git branch [branch-name].</li>
 </ol>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> branch <span class="pp">[</span><span class="ss">branch_name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> branch <span class="pp">[</span><span class="ss">branch_name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li>Switch between branches using git checkout [branch-name].</li>
 </ol>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> checkout <span class="pp">[</span><span class="ss">branch_name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> checkout <span class="pp">[</span><span class="ss">branch_name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="3" type="1">
 <li>To view all branches available in the Remote Repository</li>
 </ol>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> branch <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> branch <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="4" type="1">
 <li>To delete a branch on the remote repository</li>
 </ol>
-<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push origin <span class="at">--delete</span> <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push origin <span class="at">--delete</span> <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="branch-best-practices" class="level3">
 <h3 class="anchored" data-anchor-id="branch-best-practices">Branch Best Practices:</h3>
 <p>Use descriptive names for branches. Create separate branches for different features or bug fixes.</p>
@@ -422,7 +465,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Definition:</strong> Merging in Git is the act of integrating changes from one branch into another.</p>
 <p><strong>Application:</strong> Commonly used to combine the development work of different branches. After testing and approving changes in a feature branch, you merge them into the main branch (often called main).</p>
 <p><strong>Process:</strong> Use</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> merge <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> merge <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>to merge the changes from [branch-name] into your current branch.</p>
 <p><strong>Conflict Resolution:</strong> If there are conflicts between the branches, Git will prompt you to resolve them before completing the merge.</p>
 </section>
@@ -447,23 +490,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Integration Benefits:</strong> Integrating Git with VSCode streamlines the development workflow, allowing you to perform version control tasks directly from the editor.</p>
 <p>Step-by-Step Guide:</p>
 <ul>
-<li><p>Ensure Git is Installed: Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).</p></li>
+<li><p><strong>Ensure Git is Installed:</strong> Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).</p></li>
 <li><p><strong>Open VSCode:</strong> Launch Visual Studio Code.</p></li>
 </ul>
-<p>Accessing Git: On the left sidebar, click on the Source Control icon. If Git is installed, VSCode will automatically detect and display Git functionalities. Cloning a Repository: To clone a Git repository, click on the ‘Clone Repository’ button and enter the repository URL. Viewing Changes: VSCode shows all changes you’ve made in your code in the Source Control panel. Committing Changes: You can stage, commit, and push changes from VSCode. Branch Management: VSCode also allows you to create, switch, and merge branches within the interface. Additional Tips:</p>
-<p>Install GitLens Extension: For enhanced Git capabilities in VSCode, consider installing the GitLens extension, which provides additional insights and features.</p>
-<p>Ensure Git is Installed:</p>
-<p>Before integrating Git with VSCode, you must have Git installed on your computer. To check if Git is already installed, open a terminal (Command Prompt on Windows, Terminal on macOS or Linux) and type git –version. If Git is installed, this command will return the version number. If Git is not installed, you’ll need to download and install it from Git’s official website. Open VSCode:</p>
-<p>Start by launching Visual Studio Code on your computer. If it’s not already installed, you can download it from Visual Studio Code’s official site. Accessing Git:</p>
-<p>In VSCode, locate the Source Control icon on the left sidebar (it looks like a branching tree). Clicking on this icon will open the Source Control panel. If Git is installed and configured correctly, VSCode will automatically detect and integrate Git functionalities. Cloning a Repository:</p>
-<p>To clone a Git repository, click on the ‘Clone Repository’ button in the Source Control panel. Enter the URL of the Git repository you wish to clone. This URL can be obtained from the repository page on platforms like GitHub, GitLab, or Bitbucket. Choose a location on your local machine to save the repository and click ‘Clone’. Once cloned, you can open the repository in VSCode and start working on it. Viewing Changes:</p>
-<p>VSCode tracks any changes you make to files in your repository. In the Source Control panel, you will see a list of modified files. Clicking on a file will open a diff view, showing you the changes made compared to the last commit. Committing Changes:</p>
-<p>To commit changes, first stage them by clicking the ‘+’ icon next to each changed file in the Source Control panel. Once staged, enter a commit message in the message box – this should describe what changes you have made. Press Ctrl+Enter (Cmd+Enter on Mac) to commit the staged changes. To push the changes to a remote repository, click on the ‘…’ icon in the Source Control panel and select ‘Push’. Branch Management:</p>
-<p>To manage branches, click on the branch name displayed at the bottom left of the VSCode window. This opens a menu where you can create a new branch, switch between branches, or merge branches. When creating a new branch, you will be prompted to enter a name for the branch. Choose a name that reflects the purpose of the branch. Additional Tips - Installing GitLens:</p>
-<p>GitLens is an extension for VSCode that enhances the Git capabilities of the editor. To install GitLens, go to the Extensions view by clicking on the Extensions icon on the sidebar, search for ‘GitLens’, and click ‘Install’. GitLens provides additional features like advanced blame information, file history</p>
-
-
 </section>
+</section>
+<section id="accessing-git" class="level3">
+<h3 class="anchored" data-anchor-id="accessing-git">Accessing Git:</h3>
+<p>On the left sidebar, click on the Source Control icon. If Git is installed, VSCode will automatically detect and display Git functionalities.</p>
+<p><strong>Ensure Git is Installed:</strong></p>
+<p>Before integrating Git with VSCode, you must have Git installed on your computer. To check if Git is already installed, open a terminal (Command Prompt on Windows, Terminal on macOS or Linux) and type git –version. If Git is installed, this command will return the version number. If Git is not installed, you’ll need to download and install it from Git’s official website.</p>
+</section>
+<section id="the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding." class="level3">
+<h3 class="anchored" data-anchor-id="the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding.">The installation and configuration of Git was treated in the previous lesson. Revert to it for better understanding.</h3>
+</section>
+<section id="open-vscode" class="level3">
+<h3 class="anchored" data-anchor-id="open-vscode">Open VSCode:</h3>
+<p>Start by launching Visual Studio Code on your computer. If it’s not already installed, you can download it from Visual Studio Code’s official site.</p>
+<p><strong>Accessing Git:</strong></p>
+<p>In VSCode, Git can be accessed by two methods:</p>
+<ol type="1">
+<li>Via the Source Control: Locate the source control icon on the left sidebar (it looks like a branching tree).</li>
+</ol>
+<p>Clicking on this icon will open the Source Control panel. If Git is installed and configured correctly, VSCode will automatically detect and integrate Git functionalities.</p>
+<ol start="2" type="1">
+<li>Via the command line. Which is what we are focusing on in this lesson.</li>
+</ol>
+
+
 </section>
 </section>
 

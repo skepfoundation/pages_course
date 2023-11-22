@@ -49,65 +49,84 @@ Git works well with various platforms like **GitHub**, **GitLab**, and **Bitbuck
 
 Installing Git is a crucial step for anyone getting started with version control. Here's a beginner friendly guide to installing Git on different operating systems.
 
-1. ### For Windows User
-   
-    ### Download the Git Installer:
+<h3> 1. For Windows User </h3>  
+<h4> Download the Git Installer: </h4>
 
-      - Visit the Git website and download the latest version of Git for Windows.
-      - The download should automatically start based on your Windows version.
+- Visit the Git website and download the latest version of Git for Windows.
+- The download should automatically start based on your Windows version.
         
-    #### Run the Installer:
-        Open the downloaded file to start the installation.
-        You will be greeted with the Git Setup wizard.
+<h4>Run the Installer:</h4> 
 
-    #### Installation Options:
-        Follow the setup instructions. You can leave most options at their default settings.
-        When prompted to choose the default editor, you may select the one you're most comfortable with (e.g., VSCode, Notepad++, etc.).
+Open the downloaded file to start the installation. You will be greeted with the Git Setup wizard.
 
-    #### Adjusting Your PATH Environment:
-        During the installation, you'll be asked to adjust your PATH environment. Select "Use Git from the Windows Command Prompt" for ease of use.
-        Configuring the Line Ending Conversions:
+<h4>Installation Options:</h4> 
+Follow the setup instructions. You can leave most options at their default settings.
+When prompted to choose the default editor, you may select the one you're most comfortable with (e.g., VSCode, Notepad++, etc.).
 
-        Choose how you want Git to treat line endings in text files. The recommended setting for Windows users is "Checkout Windows-style, commit Unix-style line endings".
-    #### Completing the Installation:
-        Proceed with the installation. Once completed, click 'Finish'.
+<h4>Adjusting Your PATH Environment:</h4> 
+During the installation, you'll be asked to adjust your PATH environment. Select "Use Git from the Windows Command Prompt" for ease of use.
 
-    #### Verify Installation:
-        Open Command Prompt and type ```git --version``` to ensure Git is installed correctly and to see the installed version.
+**Configuring the Line Ending Conversions:**
+
+Choose how you want Git to treat line endings in text files. The recommended setting for Windows users is "Checkout Windows-style, commit Unix-style line endings".
+
+**Completing the Installation:**
+Proceed with the installation. Once completed, click 'Finish'.
+
+<h4>Verify Installation:</h4>
+
+Open Command Prompt and type 
+```bash
+    git --version
+``` 
+to ensure Git is installed correctly and to see the installed version.
 
 
-2. ### For macOS Users
+<h3>1. For macOS Users</h3> 
    
-    #### Install Git via Homebrew:
+<h4>Install Git via Homebrew:</h4> 
+If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing
 
-        If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing ```brew install git```
+```bash
+    brew install git
+```
 
-    #### Install Git from the Official Website:
+<h4>Install Git from the Official Website:</h4>
 
-        Alternatively, you can download the macOS Git installer from Git's official site.
-        Open the downloaded file and follow the installation instructions.
+Alternatively, you can download the macOS Git installer from Git's official site.
+Open the downloaded file and follow the installation instructions.
 
-    #### Verify Installation:
-        In the Terminal, type ```git --version``` to check the installation.
+#### Verify Installation:
+In the Terminal, type 
+```bash
+    git --version
+``` 
+to check the installation.
 
 
-3. ### For Linux Users
-    #### Install Git through Package Manager:
+<h3>For Linux Users</h3>
+<h4>Install Git through Package Manager:</h4> 
 
-    - For Debian/Ubuntu-based distributions, open the Terminal and type 
-     ```bash
-        sudo apt-get install git
-    ```
+- For Debian/Ubuntu-based distributions, open the Terminal and type 
 
-    - For Fedora, use 
-    ```bash
-        sudo dnf install git
-    ```
+```bash
+    sudo apt-get install git
+```
 
-    - For other distributions, use the respective package manager and the package named 'git'.
+- For Fedora, users
+
+```bash
+    sudo dnf install git
+```
+
+- For other distributions, use the respective package manager and the package named 'git'.
  
-    #### Verify Installation:
-        Confirm the installation by typing ```git --version``` in the Terminal.
+#### Verify Installation:
+Confirm the installation by typing in the terminal.
+
+```bash
+    git --version
+```
 
 ## Git configuration:
 
@@ -311,57 +330,35 @@ Other team members can review the changes, provide feedback, and once approved, 
 
 Step-by-Step Guide:
 
-- Ensure Git is Installed: Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).
+- **Ensure Git is Installed:** Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).
   
 
 - **Open VSCode:** Launch Visual Studio Code.
 
-Accessing Git: On the left sidebar, click on the Source Control icon. If Git is installed, VSCode will automatically detect and display Git functionalities.
-Cloning a Repository: To clone a Git repository, click on the 'Clone Repository' button and enter the repository URL.
-Viewing Changes: VSCode shows all changes you've made in your code in the Source Control panel.
-Committing Changes: You can stage, commit, and push changes from VSCode.
-Branch Management: VSCode also allows you to create, switch, and merge branches within the interface.
-Additional Tips:
+### Accessing Git: 
+On the left sidebar, click on the Source Control icon. If Git is installed, VSCode will automatically detect and display Git functionalities.
 
-Install GitLens Extension: For enhanced Git capabilities in VSCode, consider installing the GitLens extension, which provides additional insights and features.
 
-Ensure Git is Installed:
+**Ensure Git is Installed:**
 
 Before integrating Git with VSCode, you must have Git installed on your computer.
 To check if Git is already installed, open a terminal (Command Prompt on Windows, Terminal on macOS or Linux) and type git --version. If Git is installed, this command will return the version number.
 If Git is not installed, you'll need to download and install it from Git's official website.
-Open VSCode:
+
+### The installation and configuration of Git was treated in the previous lesson. Revert to it for better understanding.
+
+### Open VSCode:
 
 Start by launching Visual Studio Code on your computer.
 If it’s not already installed, you can download it from Visual Studio Code's official site.
-Accessing Git:
 
-In VSCode, locate the Source Control icon on the left sidebar (it looks like a branching tree).
+**Accessing Git:**
+
+In VSCode, Git can be accessed by two methods:
+
+1. Via the Source Control: Locate the source control icon on the left sidebar (it looks like a branching tree).
+
+
 Clicking on this icon will open the Source Control panel. If Git is installed and configured correctly, VSCode will automatically detect and integrate Git functionalities.
-Cloning a Repository:
 
-To clone a Git repository, click on the 'Clone Repository' button in the Source Control panel.
-Enter the URL of the Git repository you wish to clone. This URL can be obtained from the repository page on platforms like GitHub, GitLab, or Bitbucket.
-Choose a location on your local machine to save the repository and click 'Clone'.
-Once cloned, you can open the repository in VSCode and start working on it.
-Viewing Changes:
-
-VSCode tracks any changes you make to files in your repository.
-In the Source Control panel, you will see a list of modified files.
-Clicking on a file will open a diff view, showing you the changes made compared to the last commit.
-Committing Changes:
-
-To commit changes, first stage them by clicking the '+' icon next to each changed file in the Source Control panel.
-Once staged, enter a commit message in the message box – this should describe what changes you have made.
-Press Ctrl+Enter (Cmd+Enter on Mac) to commit the staged changes.
-To push the changes to a remote repository, click on the '...' icon in the Source Control panel and select 'Push'.
-Branch Management:
-
-To manage branches, click on the branch name displayed at the bottom left of the VSCode window.
-This opens a menu where you can create a new branch, switch between branches, or merge branches.
-When creating a new branch, you will be prompted to enter a name for the branch. Choose a name that reflects the purpose of the branch.
-Additional Tips - Installing GitLens:
-
-GitLens is an extension for VSCode that enhances the Git capabilities of the editor.
-To install GitLens, go to the Extensions view by clicking on the Extensions icon on the sidebar, search for 'GitLens', and click 'Install'.
-GitLens provides additional features like advanced blame information, file history
+2. Via the command line. Which is what we are focusing on in this lesson.
