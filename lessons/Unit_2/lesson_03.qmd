@@ -3,6 +3,8 @@ title: "Lesson 3: Git and How to connect to VScode"
 format:
     html:
         code-copy: true
+        mermaid: 
+            theme: dark
 ---
 
 
@@ -43,6 +45,21 @@ Git's functionality is accessible primarily through the command line. Common com
 
 
 Git works well with various platforms like **GitHub**, **GitLab**, and **Bitbucket**, which provide remote repositories and additional collaboration features.
+
+### Git usuage flow chart
+
+```{mermaid}
+%%| fig-width: 13
+flowchart LR
+    A(Git Clone/Git Init) --> B{Is there branch?}
+    B --> C[Git pull branch-name]
+    B --> D[Git pull main]
+    C --> E[work on changes]
+    D --> E[work on changes]
+    E --> F[Git Add changes]
+    F --> G[Git commit changes]
+    G --> H[git push changes]
+```
 
 
 ## How to Install Git

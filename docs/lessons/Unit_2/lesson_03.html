@@ -92,6 +92,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="dark">
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -186,6 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction-to-git" id="toc-introduction-to-git" class="nav-link active" data-scroll-target="#introduction-to-git">Introduction to Git</a>
   <ul class="collapse">
+  <li><a href="#git-usuage-flow-chart" id="toc-git-usuage-flow-chart" class="nav-link" data-scroll-target="#git-usuage-flow-chart">Git usuage flow chart</a></li>
   <li><a href="#how-to-install-git" id="toc-how-to-install-git" class="nav-link" data-scroll-target="#how-to-install-git">How to Install Git</a></li>
   <li><a href="#git-configuration" id="toc-git-configuration" class="nav-link" data-scroll-target="#git-configuration">Git configuration:</a>
   <ul class="collapse">
@@ -262,6 +267,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>and git merge.</p></li>
 </ol>
 <p>Git works well with various platforms like <strong>GitHub</strong>, <strong>GitLab</strong>, and <strong>Bitbucket</strong>, which provide remote repositories and additional collaboration features.</p>
+<section id="git-usuage-flow-chart" class="level3">
+<h3 class="anchored" data-anchor-id="git-usuage-flow-chart">Git usuage flow chart</h3>
+<div class="cell" data-fig-width="13">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A(Git Clone/Git Init) --&gt; B{Is there branch?}
+    B --&gt; C[Git pull branch-name]
+    B --&gt; D[Git pull main]
+    C --&gt; E[work on changes]
+    D --&gt; E[work on changes]
+    E --&gt; F[Git Add changes]
+    F --&gt; G[Git commit changes]
+    G --&gt; H[git push changes]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="how-to-install-git" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-install-git">How to Install Git</h2>
 <p>Installing Git is a crucial step for anyone getting started with version control. Here’s a beginner friendly guide to installing Git on different operating systems.</p>
