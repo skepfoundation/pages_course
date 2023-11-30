@@ -20,15 +20,32 @@ format:
 
 ## Overview
 
-This lesson will go over the steps necessary to create a install quarto in vscode
+This lesson will briefly explain Quarto and  go over the steps necessary to create a install Quarto in Visual Studio Code (VScode)
 
 ## Learning Objectives
 
+-   Students will have a general idea of what quarto is.
 -   Students will be able to download quarto.
 -   Students will be able to install quarto.
 -   Students will be able to preview quarto documents.
 
 ## Lesson
+
+### A Quarto Overview
+
+Quarto is a dynamic open-source publishing system made to simplify the process of creating easily reproducible reports, articles, research,HTML, and other print and non-print documents. It is built on top of the exceptionally powerful [Pandoc converter](https://pandoc.org/) and uses a language syntax very similar to [R markdown](https://rmarkdown.rstudio.com/) and other flavours of markdown.
+
+Unlike R markdown, Quarto is not tied to a specific language, infact it was made to be multi-lingual. As such, it supports Python, Julia, and Observable among others. The benefits of Quarto can be summarized as:
+
+1.  Dynamic Documents: Like R Markdown, Quarto allows you to create dynamic documents where you can embed code, text, and visualizations.
+
+2.  Multilingual Support: Quarto supports multiple programming languages, making it versatile for different types of analysis. It's not limited to R; you can use Python, Julia, and more.
+
+3.  Interactive Documents: Quarto supports interactive documents with features like interactive graphics and code blocks. The document output can be PDF, EPUB, HTML, DOC, etcetera.
+
+4.  Reproducibility and Collaboration: Quarto emphasizes reproducibility by capturing the code, data, and dependencies needed to reproduce the document's content. This makes it a powerful way for people to collaborate on projects as everyone can view everything about a report on a single doument.
+
+#### **Links**
 
 ### Step 01: Find and Download Quarto
 
@@ -109,18 +126,16 @@ format: html
 
 ## Installing Quarto - Video Walkthrough (For MacOS Users)
 
-[![Downloading and Installing Quarto on MacOS](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)](https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)
+<!-- [![Downloading and Installing Quarto on MacOS](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)](https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)-->
+
+{{< video https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb >}}
 
 ## Conclusion
 
-You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.
+You should now have a basic understanding of the capabilities and use cases of Quarto. In future lessons you will utilize markdown to create web content and other documents.
 
 ## FAQ
 
-#### What is two-factor authentication?
+#### I cannot access the quarto download. What do I do?
 
-Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
-
-#### What if I fail the picture challenge?
-
-Don't stress. Refresh the webpage and try again.
+Use a free VPN on your device and change the location to somewhere in the United States. You can also use the static download availabel at the top of this webpage.

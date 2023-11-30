@@ -150,7 +150,9 @@ To edit your profile picture, do the following while in your github dashboard:
 
 ## Video Walkthrough
 
-[![How to Create a GitHub Account (2023) - Full Tutorial](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)](https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)
+<!-- [![How to Create a GitHub Account (2023) - Full Tutorial](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)](https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R) -->
+
+{{< video https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R >}}
 
 ## Conclusion
 
