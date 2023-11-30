@@ -32,28 +32,41 @@ This lesson will go over the steps necessary to create a install quarto in vscod
 
 ### Step 01: Find and Download Quarto
 
+![Quarto Download Page](images/quarto_download.PNG){height="300"}
+
 -   Navigate to the Quarto [download](https://quarto.org/docs/download/) page.
 
 -   Or use this [link](assets/quarto-1.3.450-win.msi) to access a static download.
 
--   For windows, click on the large blus link at the top of the page and the download should start.
+-   For windows, click on the large blue link at the top of the page and the download should start.
 
 -   For Mac OS, scroll down and click on the download link for Mac OS.
 
-![Github Homepage.](images/step01.png){height="300"}
 
 ### Step 02: Install Quarto (For Windows)
 -   Click on the downloaded msi file. The setup wizard will start.
 
+![](images/install_01.png){height="300"}
+
 -   Click **next**.
 
 -   If you want all users on your computer to have access to Quarto select the radio button beside **Install for all users of this machine**, else, change nothing and just click **next**.
+
+![](images/install_02.png){height="300"}
+
+-   Click **next**.
+
+-   Leave the install path as the default.
+
+![](images/install_03.png){height="300"}
 
 -   Click **next**.
 
 -   The installation will start. Wait for it to complete (*Please do not turn of your system*)
 
 -   When a message comes up, click on **Finish**.
+
+![](images/install_04.png){height="300"}
 
 ### Congratulations 🎉😎
 **You have successfully installed Quarto**
@@ -63,7 +76,11 @@ This lesson will go over the steps necessary to create a install quarto in vscod
 
 -   Open vscode and click on the **Extensions** widget on the left panel of vscode.
 
+![](images/ext_01.png){height="200"}
+
 -   Search for *Quarto* and click on the blue **install** button.
+
+![](images/ext_02.png){width="600"}
 
 ### Step 4: Rendering/Previewing Quarto files
 
@@ -90,9 +107,9 @@ format: html
 
 -   Post both screenshots in your group so your classmates and mentors can see.
 
-## Video Walkthrough
+## Installing Quarto - Video Walkthrough (For MacOS Users)
 
-[![How to Create a GitHub Account (2023) - Full Tutorial](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)](https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)
+[![Downloading and Installing Quarto on MacOS](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)](https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)
 
 ## Conclusion
 

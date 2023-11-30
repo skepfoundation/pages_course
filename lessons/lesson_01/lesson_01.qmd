@@ -41,17 +41,14 @@ This lesson will go over the steps necessary to create a GitHub account
 
 -   A prompt will appear asking if you want to receive annoucements via email. If you are okay with receiving product email and announcements from Github, enter the letter **y**, if not, enter the letter **n** in the input area provided.
 
--   Click on the green **continue** button.
+-   Click on the green **continue** button
 
-::: {.column-margin}
 ![Results of Step 02.](/images/step02.png){height=300}
-:::
 
 ### Step 03: Verifying your account
 
-::: {.column-margin}
 ![](/images/step03-verify01.png){height=300}
-:::
+
 
 -   A new section will drop down asking you to verify your account. Click on the word **Verify**. *It should turn green when you hover over it*.
 
@@ -61,7 +58,7 @@ This lesson will go over the steps necessary to create a GitHub account
 -   You may have one or two of a similar challenge.
 
 
-::: {#fig-elephants layout-ncol=2}
+::: {#fig-verification layout-ncol=2}
 
 ![](/images/step03-verify03.png){width=300}
 
@@ -72,9 +69,7 @@ Verification Pictures
 
 -   When you are done with the challenge a check mark ✅ will appear.
 
-::: {.column-margin}
 ![](/images/step03-verify04.png){height=300}
-:::
 
 -   Now click on the green **create account** button that will be at the bottom of the screen.
 
