@@ -24,7 +24,7 @@ This lesson will briefly explain Quarto and  go over the steps necessary to crea
 
 ## Learning Objectives
 
--   Students will have a general idea of what quarto is.
+-   Students will have a general idea of what quarto is and its uses.
 -   Students will be able to download quarto.
 -   Students will be able to install quarto.
 -   Students will be able to preview quarto documents.
@@ -46,6 +46,10 @@ Unlike R markdown, Quarto is not tied to a specific language, infact it was made
 4.  Reproducibility and Collaboration: Quarto emphasizes reproducibility by capturing the code, data, and dependencies needed to reproduce the document's content. This makes it a powerful way for people to collaborate on projects as everyone can view everything about a report on a single doument.
 
 #### **Links**
+- [ https://quarto.org/](https://quarto.org/#:~:text=Quarto%20is%20a%20multi%2Dlanguage,existing%20Rmd%20files%20without%20modification.)
+- [https://www.infoworld.com/article/3666743/](https://www.infoworld.com/article/3666743/what-is-quarto-rstudio-quietly-rolls-out-next-generation-r-markdown.html)
+- [https://aeturrell.github.io/coding-for-economists/](https://aeturrell.github.io/coding-for-economists/wrkflow-quarto.html)
+- [https://appsilon.com/interactive-clinical-reports-shiny-and-quarto/](https://appsilon.com/interactive-clinical-reports-shiny-and-quarto/)
 
 ### Step 01: Find and Download Quarto
 
@@ -112,21 +116,40 @@ format: html
 ---
 ```
 
+
+-   Edit and add content to your quarto file to make it look like this:
+```
+---
+title: "My First Quarto Code"
+format: html
+---
+
+### My name is {type your name here}
+I just finished installing quarto on **{input the date here}**
+```
+
+-   Click on the **preview** button on the top-right of vscode. A dialog will pop up.
+
+-   Name your file **test.qmd** (qmd is the file extension name for a quarto file) and click on **save**.
+
+-   Click the **preview** button again. A few things will run in the terminal. A preview panel will open on the right of vscode. The result should resemble the picture below (Except the name and date will be different).
+
 ## Practice Activity
 
--   Download.
+-   Make a video explaining what you know about quarto and share your video with a classmate.
 
--   When your dashboard opens, take a screen shot of it.
+-   Download and install Quarto.
 
--   Upload an appropriate profile picture.
+-   Create a new Quarto (**.qmd**) file and preview it.
 
--   Take a screenshot of your profile page, showing your profile picture.
+-   Take a screenshot of your screen (with the preview) and share to your group.
 
--   Post both screenshots in your group so your classmates and mentors can see.
+
+## Conclusion
+
+You should now have quarto installed and should have created a new quarto document. Quarto is a quick way to create a static webpage without having to understand HTML in detail.
 
 ## Installing Quarto - Video Walkthrough (For MacOS Users)
-
-<!-- [![Downloading and Installing Quarto on MacOS](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)](https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb)-->
 
 {{< video https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb >}}
 
