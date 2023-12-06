@@ -5,6 +5,10 @@ format:
         code-copy: true
         mermaid: 
             theme: dark
+        page-layout: full
+        grid: 
+            body-width: 1500px
+            margin-width: 200px
 ---
 
 
@@ -29,6 +33,12 @@ Basic Concepts
 - **Merge:** Merging is the process of integrating changes from one branch into another.
 Working with Git.
 
+-----------------
+
+::: {.grid}
+
+::: {.g-col-6}
+
 Git's functionality is accessible primarily through the command line. Common commands include; 
 
 1. git clone,
@@ -45,7 +55,9 @@ Git's functionality is accessible primarily through the command line. Common com
 
 
 Git works well with various platforms like **GitHub**, **GitLab**, and **Bitbucket**, which provide remote repositories and additional collaboration features.
+:::
 
+::: {.g-col-6}
 ### Git usuage flow chart
 
 ```{mermaid}
@@ -61,6 +73,15 @@ flowchart LR
     F --> G[Git commit changes]
     G --> H[git push changes]
 ```
+
+:::
+
+:::
+
+
+
+
+
 
 
 ## How to Install Git
@@ -146,6 +167,8 @@ Confirm the installation by typing in the terminal.
     git --version
 ```
 
+--------------------------------
+
 ## Git configuration:
 
 After installing Git, it's a good practice for users to set their Git username and email address, which will be used for every Git commit. This can be done by executing the following commands in the terminal or command prompt:
@@ -211,6 +234,9 @@ Local repositories are where you'll do most of your work, including editing, sta
     git merge
 ```
 
+::: {.grid}
+
+:::{.g-col-6}
 
 ## 2. Commit/Push
 **Definition:** A commit in Git is a snapshot of your project's current state, allowing you to capture the condition of your project at a specific point in time.
@@ -224,8 +250,17 @@ To save your staged changes along with a descriptive message, use the code below
     git commit -m "commit message" 
 ``` 
 
+:::
+
+:::{.g-col-6}
+![](./images/git%20commit.png)
+
+:::
+
+:::
+
 #### Git commit messages best practices:
-- Commit messages should beb clear and concise
+- Commit messages should be clear and concise
 - commit messages should reflect the changes made. i.e *"updated file upload function in task.py"*
 
 ### Git Push
@@ -243,6 +278,7 @@ By default, ```origin``` is the name git gives to the remote repository once ini
 ```bash
     git push -u origin main
 ```
+
 
 
 

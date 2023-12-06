@@ -180,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -190,7 +190,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction-to-git" id="toc-introduction-to-git" class="nav-link active" data-scroll-target="#introduction-to-git">Introduction to Git</a>
   <ul class="collapse">
-  <li><a href="#git-usuage-flow-chart" id="toc-git-usuage-flow-chart" class="nav-link" data-scroll-target="#git-usuage-flow-chart">Git usuage flow chart</a></li>
   <li><a href="#how-to-install-git" id="toc-how-to-install-git" class="nav-link" data-scroll-target="#how-to-install-git">How to Install Git</a></li>
   <li><a href="#git-configuration" id="toc-git-configuration" class="nav-link" data-scroll-target="#git-configuration">Git configuration:</a>
   <ul class="collapse">
@@ -202,10 +201,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#remote-repository" id="toc-remote-repository" class="nav-link" data-scroll-target="#remote-repository">Remote Repository</a></li>
   <li><a href="#interaction" id="toc-interaction" class="nav-link" data-scroll-target="#interaction">Interaction:</a></li>
   </ul></li>
-  <li><a href="#commitpush" id="toc-commitpush" class="nav-link" data-scroll-target="#commitpush">2. Commit/Push</a>
-  <ul class="collapse">
   <li><a href="#git-push" id="toc-git-push" class="nav-link" data-scroll-target="#git-push">Git Push</a></li>
-  </ul></li>
   <li><a href="#branch" id="toc-branch" class="nav-link" data-scroll-target="#branch">3. Branch</a>
   <ul class="collapse">
   <li><a href="#branch-best-practices" id="toc-branch-best-practices" class="nav-link" data-scroll-target="#branch-best-practices">Branch Best Practices:</a></li>
@@ -225,7 +221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -257,6 +253,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>Branch:</strong> A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named ‘master’.</p></li>
 <li><p><strong>Merge:</strong> Merging is the process of integrating changes from one branch into another. Working with Git.</p></li>
 </ul>
+<hr>
+<div class="grid">
+<div class="g-col-6">
 <p>Git’s functionality is accessible primarily through the command line. Common commands include;</p>
 <ol type="1">
 <li><p>git clone,</p></li>
@@ -267,7 +266,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>and git merge.</p></li>
 </ol>
 <p>Git works well with various platforms like <strong>GitHub</strong>, <strong>GitLab</strong>, and <strong>Bitbucket</strong>, which provide remote repositories and additional collaboration features.</p>
-<section id="git-usuage-flow-chart" class="level3">
+</div>
+<section id="git-usuage-flow-chart" class="level3 g-col-6">
 <h3 class="anchored" data-anchor-id="git-usuage-flow-chart">Git usuage flow chart</h3>
 <div class="cell" data-fig-width="10" data-fig-height="2">
 <div class="cell-output-display">
@@ -288,6 +288,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
+</div>
 <section id="how-to-install-git" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-install-git">How to Install Git</h2>
 <p>Installing Git is a crucial step for anyone getting started with version control. Here’s a beginner friendly guide to installing Git on different operating systems.</p>
@@ -367,6 +368,7 @@ Install Git through Package Manager:
 <h4 class="anchored" data-anchor-id="verify-installation-1">Verify Installation:</h4>
 <p>Confirm the installation by typing in the terminal.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
 </section>
 </section>
 <section id="git-configuration" class="level2">
@@ -420,16 +422,22 @@ Install Git through Package Manager:
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> merge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="commitpush" class="level2">
+<div class="grid">
+<section id="commitpush" class="level2 g-col-6">
 <h2 class="anchored" data-anchor-id="commitpush">2. Commit/Push</h2>
 <p><strong>Definition:</strong> A commit in Git is a snapshot of your project’s current state, allowing you to capture the condition of your project at a specific point in time.</p>
 <p><strong>Importance:</strong> Commits serve as checkpoints where individual changes can be made permanent to the repository’s history.</p>
 <p><strong>Usage:</strong> To save your staged changes along with a descriptive message, use the code below:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"commit message"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<div class="g-col-6">
+<p><img src="./images/git commit.png" class="img-fluid"></p>
+</div>
+</div>
 <section id="git-commit-messages-best-practices" class="level4">
 <h4 class="anchored" data-anchor-id="git-commit-messages-best-practices">Git commit messages best practices:</h4>
 <ul>
-<li>Commit messages should beb clear and concise</li>
+<li>Commit messages should be clear and concise</li>
 <li>commit messages should reflect the changes made. i.e <em>“updated file upload function in task.py”</em></li>
 </ul>
 </section>
@@ -440,7 +448,6 @@ Install Git through Package Manager:
 <div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Replace [branch-name] with the name of the branch in which you wish to push the changes to. By default, <code>origin</code> is the name git gives to the remote repository once initialized or cloned. And the default branch name in origin is <code>main</code></p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>    <span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
 </section>
 <section id="branch" class="level2">
 <h2 class="anchored" data-anchor-id="branch">3. Branch</h2>
