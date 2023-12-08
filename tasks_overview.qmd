@@ -10,4 +10,4 @@ Github is a free web service for storing your version controlled code in the clo
 
 In this task you will create a github account, create a repository, and clone that repository onto your local machine in Rstudio.
 
--   [Details](lessons/lesson_01/lesson_01.qmd)
+
