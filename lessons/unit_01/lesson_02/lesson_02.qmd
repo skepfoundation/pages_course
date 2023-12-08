@@ -18,15 +18,11 @@ format:
       margin-width: 70px
 ---
 
-### What is a Github Profile README?
+## Overview
 
-The GitHub profile README serves as a distinctive profile page showcasing who you are and what you do. Functioning as a customizable "about me" section, it provides an avenue for individuals to introduce themselves, exhibit their projects, and communicate details about their interests and achievements. Essentially, the content of this README defines one's GitHub profile, making it a pivotal element for creating a compelling first impression, particularly for employers seeking insights into an individual's skills and interests upon visiting their GitHub profile. By the end of this lesson, you will have crafted your own GitHub profile readme.
-
-### What is Markdown?
+The GitHub profile README serves as a distinctive profile page showcasing who you are and what you do. Functioning as a customizable "about me" section, it provides an avenue for individuals to introduce themselves, exhibit their projects, and communicate details about their interests and achievements. Essentially, the content of this README defines one's GitHub profile, making it a pivotal element for creating a compelling first impression, particularly for employers seeking insights into an individual's skills and interests upon visiting their GitHub profile. By the end of this lesson, you will have crafted your own GitHub profile readme using markdown.
 
 Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on the web. Markdown is widely used because it allows you to maintain the readability of plain text while offering the styling capabilities of HTML. Our goal is to familiarize you with the foundational elements of Markdown to transform plain text into a rich, well-formatted document.
-
-Markdown is a lightweight markup language that is widely used for formatting text on the web. In the context of GitHub and profile READMEs, Markdown serves as a simple and intuitive way to add formatting elements to your text without needing to use complex HTML or other markup languages. With Markdown, you can easily create headers, lists, emphasize text, add links, insert images, and more, using a straightforward and human-readable syntax.
 
 This lesson will be but a brief introduction of markdown. In the next two lessons, you'll learn how to use Markdown to enhance the visual appeal and structure of your profile, making it easier for others to read and understand the information you share.
 
@@ -35,7 +31,9 @@ This lesson will be but a brief introduction of markdown. In the next two lesson
 -   Students will be able to create their own GitHUb profile README
 -   Students will be able to recognize and apply markdown syntax to create structured and styled text documents
 
-## Let's Begin Creating a GitHub Profile README
+## Lesson
+
+### Let's Begin Creating a GitHub Profile README
 
 1.  Log in to GitHub.
 2.  Click on **+** icon at top right of the page and select **New Repository**.
@@ -66,11 +64,11 @@ Open the **README.md** file and click on the Edit this file icon (a pencil icon)
 
 <br>
 
-## Profile README Template
+### Profile README Template
 
 Copy and paste this into your GitHub profile readme. Fill out the areas to make it relate to you.
 
-```md
+``` md
 # <Your Name Here>
 
 Hello, GitHub! 👋
@@ -93,50 +91,52 @@ I'm <Your Name Here>, a student interested in <Your Profession/Interests such as
 - Here is my [Twitter](Your Twitter Profile Link) profile
 
 Feel free to explore my repositories and don't hesitate to reach out. Happy coding! 🚀
-
 ```
 
 <br>
 
 If your name is Chidi Anagonye, a web developer from Senegal, this is what yours would look like:
 
-<div style="border: 2px solid #000; padding: 10px; border-radius: 10px;">
+::: {style="border: 2px solid #000; padding: 10px; border-radius: 10px;"}
+<h1>Chidi Anagonye</h1>
 
-  <h1> Chidi Anagonye </h1>
+Hello, GitHub! 👋
 
-  Hello, GitHub! 👋
+I'm Chidi Anagonye, a student interested in web develpoment. Welcome to my GitHub profile!
 
-  I'm Chidi Anagonye, a student interested in web develpoment. Welcome to my GitHub profile!
+<h3>About Me</h3>
 
-  <h3> About Me </h3>
+-   🌱 I'm currently learning the ins and outs of front-end web development, focusing on HTML, CSS, and JavaScript.
+-   👯 I'm eager to to learn new technologies and apply them in web projects!
+-   💬 Ask me about my journey into coding, the latest web technologies, or anything tech-related that you find exciting.
 
-  - 🌱 I'm currently learning the ins and outs of front-end web development, focusing on HTML, CSS, and JavaScript.
-  - 👯 I'm eager to to learn new technologies and apply them in web projects!
-  - 💬 Ask me about my journey into coding, the latest web technologies, or anything tech-related that you find exciting.
+<h3>Technologies and Tools</h3>
 
-  <h3> Technologies and Tools </h3>
+-   💻 Proficient in: HTML, CSS, JavaScript
+-   🚀 Skills: Responsive Web Design & Basic Command Line
 
-  -  💻 Proficient in: HTML, CSS, JavaScript
-  - 🚀 Skills: Responsive Web Design & Basic Command Line
+<h3>Let's Connect!</h3>
 
-  <h3> Let's Connect! </h3>
+-   Here is my [LinkedIn](Your%20LinkedIn%20Profile%20Link) profile
+-   Here is my [Twitter](Your%20Twitter%20Profile%20Link) profile
 
-  - Here is my [LinkedIn](Your LinkedIn Profile Link) profile
-  - Here is my [Twitter](Your Twitter Profile Link) profile
-
-  Feel free to reach out to me. Happy coding! 🚀
-
-</div>
+Feel free to reach out to me. Happy coding! 🚀
+:::
 
 
-## Notes
 Remember that your GitHub profile is visible to the public, so make sure your customization represents you and your work effectively. This customization not only adds a personal touch to your GitHub presence but also serves as a valuable portfolio for potential collaborators and employers.
 
 In the next lesson, we'll understand markdown more so that you can format your GitHub profile readme just how you like it.
 
 Pictured below is what your github profile will be if you do everything right.
 
+```{=html}
 <!-- <video width="800" height="315" autoplay loop muted>
   <source src="\images\v1.webm" type="video/webm">
   Your browser does not support the video tag.
 </video> -->
+```
+
+## Conclusion
+
+You should now have a basic profile README that employers and collaborators can find to netwrok with you. In the next lessons you'll learn how to write your own documents from scratch in amrkdown and how to further imrpove your profile page.
