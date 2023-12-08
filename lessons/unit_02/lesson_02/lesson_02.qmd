@@ -1,0 +1,164 @@
+---
+title: "Lesson 2: Installing Quarto"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc-location: left
+    code-copy: true
+    code-line-numbers: true
+    code-block-border-left: "#A9A9A9"
+    code-block-bg: true
+    code-bloc-bg-alpha: -.2
+    page-layout: full
+    grid:
+      sidebar-width: 200px
+      body-width: 1030px
+      margin-width: 70px
+---
+
+## Overview
+
+This lesson will briefly explain Quarto and go over the steps necessary to create a install Quarto in Visual Studio Code (VScode)
+
+## Learning Objectives
+
+-   Students will have a general idea of what quarto is and its uses.
+-   Students will be able to download quarto.
+-   Students will be able to install quarto.
+-   Students will be able to preview quarto documents.
+
+## Lesson
+
+### A Quarto Overview
+
+Quarto is a dynamic open-source publishing system made to simplify the process of creating easily reproducible reports, articles, research,HTML, and other print and non-print documents. It is built on top of the exceptionally powerful [Pandoc converter](https://pandoc.org/) and uses a language syntax very similar to [R markdown](https://rmarkdown.rstudio.com/) and other flavours of markdown.
+
+Unlike R markdown, Quarto is not tied to a specific language, infact it was made to be multi-lingual. As such, it supports Python, Julia, and Observable among others. The benefits of Quarto can be summarized as:
+
+1.  Dynamic Documents: Like R Markdown, Quarto allows you to create dynamic documents where you can embed code, text, and visualizations.
+
+2.  Multilingual Support: Quarto supports multiple programming languages, making it versatile for different types of analysis. It's not limited to R; you can use Python, Julia, and more.
+
+3.  Interactive Documents: Quarto supports interactive documents with features like interactive graphics and code blocks. The document output can be PDF, EPUB, HTML, DOC, etcetera.
+
+4.  Reproducibility and Collaboration: Quarto emphasizes reproducibility by capturing the code, data, and dependencies needed to reproduce the document's content. This makes it a powerful way for people to collaborate on projects as everyone can view everything about a report on a single doument.
+
+#### **Links**
+
+-   [https://quarto.org/](https://quarto.org/#:~:text=Quarto%20is%20a%20multi%2Dlanguage,existing%20Rmd%20files%20without%20modification.)
+-   [https://www.infoworld.com/article/3666743/](https://www.infoworld.com/article/3666743/what-is-quarto-rstudio-quietly-rolls-out-next-generation-r-markdown.html)
+-   [https://aeturrell.github.io/coding-for-economists/](https://aeturrell.github.io/coding-for-economists/wrkflow-quarto.html)
+-   <https://appsilon.com/interactive-clinical-reports-shiny-and-quarto/>
+
+### Step 01: Find and Download Quarto
+
+![Quarto Download Page](images/quarto_download.PNG){height="300"}
+
+-   Navigate to the Quarto [download](https://quarto.org/docs/download/) page.
+
+-   Or use this [link](assets/quarto-1.3.450-win.msi) to access a static download.
+
+-   For windows, click on the large blue link at the top of the page and the download should start.
+
+-   For Mac OS, scroll down and click on the download link for Mac OS.
+
+### Step 02: Install Quarto (For Windows)
+
+-   Click on the downloaded msi file. The setup wizard will start.
+
+![](images/install_01.png){height="300"}
+
+-   Click **next**.
+
+-   If you want all users on your computer to have access to Quarto select the radio button beside **Install for all users of this machine**, else, change nothing and just click **next**.
+
+![](images/install_02.png){height="300"}
+
+-   Click **next**.
+
+-   Leave the install path as the default.
+
+![](images/install_03.png){height="300"}
+
+-   Click **next**.
+
+-   The installation will start. Wait for it to complete (*Please do not turn of your system*)
+
+-   When a message comes up, click on **Finish**.
+
+![](images/install_04.png){height="300"}
+
+### Congratulations 🎉😎
+
+**You have successfully installed Quarto**
+
+### Step 3: Enable Quarto Extension in VScode
+
+-   Open vscode and click on the **Extensions** widget on the left panel of vscode.
+
+![](images/ext_01.png){height="200"}
+
+-   Search for *Quarto* and click on the blue **install** button.
+
+![](images/ext_02.png){width="600"}
+
+### Step 4: Rendering/Previewing Quarto files
+
+-   Create a quarto file by clicking the **file** at the top-left in vscode and then selecting **New File..** from the drop-down.
+
+-   From the new drop-down, select **Quarto Document**. A new untitled quarto document will be created with the following content:
+
+```         
+---
+title: "Untitled"
+format: html
+---
+```
+
+-   Edit and add content to your quarto file to make it look like this:
+
+```         
+---
+title: "My First Quarto Code"
+format: html
+---
+
+### My name is {type your name here}
+I just finished installing quarto on **{input the date here}**
+```
+
+-   Click on the **preview** button on the top-right of vscode. A dialog will pop up.
+
+-   Name your file **test.qmd** (qmd is the file extension name for a quarto file) and click on **save**.
+
+-   Click the **preview** button again. A few things will run in the terminal. A preview panel will open on the right of vscode. The result should resemble the picture below (Except the name and date will be different).
+
+## Practice Activity
+
+-   Make a video explaining what you know about quarto and share your video with a classmate.
+
+-   Download and install Quarto.
+
+-   Create a new Quarto (**.qmd**) file and preview it.
+
+-   Take a screenshot of your screen (with the preview) and share to your group.
+
+## Conclusion
+
+You should now have quarto installed and should have created a new quarto document. Quarto is a quick way to create a static webpage without having to understand HTML in detail.
+
+## Installing Quarto - Video Walkthrough (For MacOS Users)
+
+{{< video https://youtu.be/786TihPpw-g?si=Eghr-ubclNr-fXVb >}}
+
+## Conclusion
+
+You should now have a basic understanding of the capabilities and use cases of Quarto. In future lessons you will utilize markdown to create web content and other documents.
+
+## FAQ
+
+#### I cannot access the quarto download. What do I do?
+
+Use a free VPN on your device and change the location to somewhere in the United States. You can also use the static download availabel at the top of this webpage.
