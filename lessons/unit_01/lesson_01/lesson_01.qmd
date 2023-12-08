@@ -1,20 +1,9 @@
 ---
-<<<<<<< HEAD
 title: "Lesson 01: Creating a Github Account"
-=======
-title: "Lesson 01: Creating a GitHub Account"
->>>>>>> 63bd6fef8bffba9f70824128cb4d4a9b7d51e0de
 ---
 
 ## Overview
 
-<<<<<<< HEAD
-This lesson will go over the steps necessary to create a GitHub account
-
-## Learning Objectives
-
--   Students will be able to set up a github profile.
-=======
 This lesson will go over the steps necessary to create a GitHub account. GitHub is a site that will host repositories fo code for free. It's an industry standard tool used by most programmers. In this course it has the added benefit of being the place where we will host the websites we create.
 
 In future lessons you will even make a profile page where employers can find you and see what you are working on.
@@ -22,13 +11,11 @@ In future lessons you will even make a profile page where employers can find you
 ## Learning Objectives
 
 -   Students will be able to set up a github profile
->>>>>>> 63bd6fef8bffba9f70824128cb4d4a9b7d51e0de
 
 ## Lesson
 
 ### Step 01: Find Github
 
-<<<<<<< HEAD
 - Navigate to [Github.com](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 - Click on the right side of the pink arrow to enter your email address.
 ![Github Homepage.](/images/step01.png)
@@ -275,13 +262,6 @@ You should now have your own Github account/profile and should be equipped to he
 
 #### What is two-factor authentication?
 
-<<<<<<< HEAD
-Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authenticator app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authenticator app on your cell-phone.
-
-#### What if I fail the picture challenge?
-
-Don't stress. Refresh the webpage and try again.
-=======
 Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authentication app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authentication app on your cell-phone.
 
 #### What if I fail the picture challenge?
@@ -289,4 +269,3 @@ Two-factor authentication is when you use an additional tool to sign into your a
 Don't stress. Refresh the webpage and try again.
 
 Unless you are a robot. Then do stress...
->>>>>>> 63bd6fef8bffba9f70824128cb4d4a9b7d51e0de
