@@ -1,0 +1,166 @@
+---
+title: "Lesson 01: Creating a GitHub Account"
+---
+
+## Overview
+
+This lesson will go over the steps necessary to create a GitHub account. GitHub is a site that will host repositories fo code for free. It's an industry standard tool used by most programmers. In this course it has the added benefit of being the place where we will host the websites we create.
+
+In future lessons you will even make a profile page where employers can find you and see what you are working on.
+
+## Learning Objectives
+
+-   Students will be able to set up a github profile
+
+## Lesson
+
+### Step 01: Find Github
+
+-   Navigate to [Github.com](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
+
+-   Click on the right side of the pink arrow to enter your email address.
+
+![Github Homepage.](/images/step01.png){height="300"}
+
+### Step 02: Enter Email address, Password, and Username
+
+-   Enter a valid email address that you have immediate access to. *Double check to make sure the email address is valid and that you have access to it*. It is reccomended that you do not use a business or school email that you wll lose access to in the future. Pick an email address that you can access for years to come.
+
+-   When the **continue** button turns green, tap it.
+
+-   A new section will appear prompting you to input a password. *Make sure to follow the password guidelines that will appear at the bottom of the password input area*.
+
+-   Again, click on the green **continue** button.
+
+-   A new section will appear prompting you to input a username. Follow the username guidelines that will appear at the bottom of the username input area.
+
+    **While you do not have to use your real name, please bear in mind that any username you enter is immutable, you *WILL NOT HAVE THE OPTION* to change it later. A good Github username is one that is easily searchable. This means it should not include long, random strings of characters, include overly long or complex numbers, and ideally it is easy to spell when the name is heard phonetically. The username you choose will be searchable and viewable by the public, so make sure it is a name you would like to be associated with your professional brand, now and in the future.**
+
+-   Click on the green **continue** button.
+
+-   A prompt will appear asking if you want to receive announcements via email. If you are okay with receiving product emails and announcements from GitHub, enter the letter **y**, if not, enter the letter **n** in the input area provided.
+
+-   Click on the green **continue** button
+
+![Results of Step 02.](/images/step02.png){height="300"}
+
+### Step 03: Verifying your account
+
+![](/images/step03-verify01.png){height="300"}
+
+-   A new section will drop down asking you to verify your account. Click on the word **Verify**. *It should turn green when you hover over it*.
+
+-   You will be given a verification puzzle to make sure you are not a robot. The verification challenge will likely be a picture of a pointing hand on the left, and a picture of an object on the right. The challenge is to use the **⬅** and **➡** buttons which are below the picture of the object to position it to face in the direction the hand is pointing.
+
+-   You may have one or two more similar challenges.
+
+::: {#fig-verification layout-ncol="2"}
+![](/images/step03-verify03.png){width="300"}
+
+![](/images/step03-verify02.png){width="300"}
+
+Verification Pictures
+:::
+
+-   When you are done with the challenges a check mark ✅ will appear.
+
+![](/images/step03-verify04.png){height="300"}
+
+-   Now click on the green **create account** button that will be at the bottom of the screen.
+
+-   A code will be sent to the email address you entered previously.
+
+-   Open you email account and refresh your inbox. You should see a message from GitHub.
+
+-   If after a while, you still do not see an email from GitHub, go back to the webpage and tap the link below the **Enter code** section labeled **Resend the code**. This will prompt Github to send a new message to your email.
+
+-   When you receive the email, open it and take note of the numbers there.
+
+-   Return to the Github webpage and input the numbers into the boxes provided.
+
+![](/images/step03-verify05.png){height="300"}
+
+-   If you have entered the numbers correctly, a new webpage will appear.
+
+### Step 04: Final Setup
+
+-   You may be asked two questions:
+
+    -   How many team members will be working with you?
+        -   For this question choose the option **2-5**.
+    -   Are you a student or teacher?
+        -   For this question choose the option **student** if you are a student. Choose **N/A** if you are neither a student nor a teacher.
+
+![](/images/step04-final01.png){height="300"}
+
+-   A new webpage will appear asking you some questions. Just click the **continue** button found at the bottom of the page.
+
+![](/images/step04-final02.png){height="300"}
+
+-   You may see a new webpage with two sections, one labelled **Free** and the other **Get Student Benefits**.
+
+-   For now, go to the bottom of the page and click **Continue for free**, even if you are a student. *You can get student benefits later*.
+
+![](/images/step04-final04.png){width="600"}
+
+-   **Woohoo!!** Your Github dashboard should now be open.
+
+![](/images/dashboard.png){height="300"}
+
+### Step 05: Edit Profile Picture
+
+**Your profile picture is one of the first things visitors to your Github account will see. Make sure your picture is clean, clear, and professional. However, you do not have to dress in formal attire.**
+
+To edit your profile picture, do the following while in your github dashboard:
+
+-   Click on the round picture frame on the top right-hand corner. A panel will open with your username at the top.
+
+![](/images/dashboard-profile01.png){width="300"}
+
+-   Click on ***Your Profile***. You will be directed to a new webpage with a bigger picture frame on the left.
+
+![](/images/dashboard-profile02.png){width="600"}
+
+-   Click on the picture frame. Again you will be taken to yet another webpage but with the picture frame on the right side of the screen. Notice that the picture frame has an **edit** button on the bottom left.
+
+![](/images/dashboard-profile03.png){width="600"}
+
+-   Click on the **edit** buttom. It will reveal an **upload button**. Click on that and it will bring up a dialog box where you can upload a profile picture that *meets the criteria discussed at the beginning of Step 05*.
+
+![](/images/dashboard-profile04.png){height="300"}
+
+### Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!
+
+## Practice Activity
+
+-   Create a Github account. (Don't crate a new one if you already have one or created one during the course of the lesson.)
+
+-   When your dashboard opens, take a screen shot of it.
+
+-   Upload an appropriate profile picture.
+
+-   Take a screenshot of your profile page, showing your profile picture.
+
+-   Post both screenshots in your group channel so your classmates and mentors can see.
+
+## Video Walkthrough
+
+<!-- [![How to Create a GitHub Account (2023) - Full Tutorial](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)](https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R) -->
+
+{{< video https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R >}}
+
+## Conclusion
+
+You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what makes you unique and what particular skills you have.
+
+## FAQ
+
+#### What is two-factor authentication?
+
+Two-factor authentication is when you use an additional tool to sign into your account such as a text message or an authentication app. Two factor authentication helps provide an extra layer of security when signing in to keep your data safe. The first factor is almost always your password. The second factor is usually something that a hacker is unlikely to have access to like an authentication app on your cell-phone.
+
+#### What if I fail the picture challenge?
+
+Don't stress. Refresh the webpage and try again.
+
+Unless you are a robot. Then do stress...
