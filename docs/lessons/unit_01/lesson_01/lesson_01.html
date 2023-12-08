@@ -34,10 +34,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -63,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -122,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_02/lesson_02.html" rel="" target="">
- <span class="dropdown-text">Lesson 2: GitHub Profile Readme (Part 1)</span></a>
+ <span class="dropdown-text">Lesson 2: Creating your GitHub Profile README</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_03/lesson_03.html" rel="" target="">
@@ -130,23 +132,23 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_04/lesson_04.html" rel="" target="">
- <span class="dropdown-text">Lesson 4: GitHub Profile Readme (Part 2)</span></a>
+ <span class="dropdown-text">Lesson 4: Additional Profile README Features</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -159,27 +161,20 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-03-verifying-your-account" id="toc-step-03-verifying-your-account" class="nav-link" data-scroll-target="#step-03-verifying-your-account">Step 03: Verifying your account</a></li>
   <li><a href="#step-04-final-setup" id="toc-step-04-final-setup" class="nav-link" data-scroll-target="#step-04-final-setup">Step 04: Final Setup</a></li>
   <li><a href="#step-05-edit-profile-picture" id="toc-step-05-edit-profile-picture" class="nav-link" data-scroll-target="#step-05-edit-profile-picture">Step 05: Edit Profile Picture</a></li>
-  <li><a href="#congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture" id="toc-congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture" class="nav-link" data-scroll-target="#congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture">Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!</a></li>
   </ul></li>
   <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#you-should-now-have-your-own-github-accountprofile-and-should-be-equipped-to-help-others-make-one-as-well.-in-the-next-lesson-you-will-learn-how-to-add-a-profile-page-to-your-profile-that-shows-others-what-make-you-unique-and-what-particular-skills-you-have." id="toc-you-should-now-have-your-own-github-accountprofile-and-should-be-equipped-to-help-others-make-one-as-well.-in-the-next-lesson-you-will-learn-how-to-add-a-profile-page-to-your-profile-that-shows-others-what-make-you-unique-and-what-particular-skills-you-have." class="nav-link" data-scroll-target="#you-should-now-have-your-own-github-accountprofile-and-should-be-equipped-to-help-others-make-one-as-well.-in-the-next-lesson-you-will-learn-how-to-add-a-profile-page-to-your-profile-that-shows-others-what-make-you-unique-and-what-particular-skills-you-have.">You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.</a>
-  <ul class="collapse">
-  <li><a href="#step-02-enter-email-address-password-and-username-1" id="toc-step-02-enter-email-address-password-and-username-1" class="nav-link" data-scroll-target="#step-02-enter-email-address-password-and-username-1">Step 02: Enter Email address, Password, and Username</a></li>
-  <li><a href="#step-03-verifying-your-account-1" id="toc-step-03-verifying-your-account-1" class="nav-link" data-scroll-target="#step-03-verifying-your-account-1">Step 03: Verifying your account</a></li>
-  <li><a href="#step-04-final-setup-1" id="toc-step-04-final-setup-1" class="nav-link" data-scroll-target="#step-04-final-setup-1">Step 04: Final Setup</a></li>
-  <li><a href="#step-05-edit-profile-picture-1" id="toc-step-05-edit-profile-picture-1" class="nav-link" data-scroll-target="#step-05-edit-profile-picture-1">Step 05: Edit Profile Picture</a></li>
-  <li><a href="#congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture-1" id="toc-congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture-1" class="nav-link" data-scroll-target="#congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture-1">Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!</a></li>
-  <li><a href="#practice-activity-1" id="toc-practice-activity-1" class="nav-link" data-scroll-target="#practice-activity-1">Practice Activity</a></li>
   <li><a href="#video-walkthrough" id="toc-video-walkthrough" class="nav-link" data-scroll-target="#video-walkthrough">Video Walkthrough</a></li>
-  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1">Conclusion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
-  </ul></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -215,8 +210,14 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="step-01-find-github">Step 01: Find Github</h3>
 <ul>
 <li>Navigate to <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">Github.com</a>.</li>
-<li>Click on the right side of the pink arrow to enter your email address. <img src="../../..\images/step01.png" class="img-fluid" alt="Github Homepage."></li>
+<li>Click on the right side of the pink arrow to enter your email address.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../..\images/step01.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Github Homepage.</figcaption>
+</figure>
+</div>
 </section>
 <section id="step-02-enter-email-address-password-and-username" class="level3">
 <h3 class="anchored" data-anchor-id="step-02-enter-email-address-password-and-username">Step 02: Enter Email address, Password, and Username</h3>
@@ -225,26 +226,48 @@ ul.task-list li input[type="checkbox"] {
 <li><p>If the <strong>continue</strong> button turns green, tap it.</p></li>
 <li><p>A new section will appear prompting you to input a password. <em>Make sure to follow the password guidelines that will appear at the bottom of the password input area</em>.</p></li>
 <li><p>Again, click on the green <strong>continue</strong> button.</p></li>
-<li><p>A new section will appear prompting you to input a username. Follow the username guidelines that will appear at the bottom of the username input area. <strong>While you do not have to use your real name, please bear in mind that any username you enter is immutable, you <em>WILL NOT HAVE THE OPTION</em> to change it later. A good Github username is one that is easily searchable. This means it will not include long, random string of characters, it will not include overly long or complex numbers, and ideally it is easy to spell when the name is heard phonetically. The username you choose will be searchable and viewable by the public, so make sure it is a name you would like to be associated with your professional brand, now and in the future.</strong></p></li>
+<li><p>A new section will appear prompting you to input a username. Follow the username guidelines that will appear at the bottom of the username input area.</p>
+<p><strong>While you do not have to use your real name, please bear in mind that any username you enter is immutable, you <em>WILL NOT HAVE THE OPTION</em> to change it later. A good Github username is one that is easily searchable. This means it will not include long, random string of characters, it will not include overly long or complex numbers, and ideally it is easy to spell when the name is heard phonetically. The username you choose will be searchable and viewable by the public, so make sure it is a name you would like to be associated with your professional brand, now and in the future.</strong></p></li>
 <li><p>Click on the green <strong>continue</strong> button.</p></li>
 <li><p>A prompt will appear asking if you want to receive annoucements via email. If you are okay with receiving product email and announcements from Github, enter the letter <strong>y</strong>, if not, enter the letter <strong>n</strong> in the input area provided.</p></li>
-<li><p>Click on the green <strong>continue</strong> button. <img src="../../..\images/step02.png" class="img-fluid" alt="Results of Step 02."></p></li>
+<li><p>Click on the green <strong>continue</strong> button.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../..\images/step02.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Results of Step 02.</figcaption>
+</figure>
+</div>
 </section>
 <section id="step-03-verifying-your-account" class="level3">
 <h3 class="anchored" data-anchor-id="step-03-verifying-your-account">Step 03: Verifying your account</h3>
 <ul>
-<li><p>A new section will drop down asking you to verify your account. Click on the word <strong>Verify</strong>. <em>It should turn green when you hover over it</em>. <img src="../../..\images/step03-verify01.png" class="img-fluid"></p></li>
-<li><p>The verification challenge would be a picture of a pointing hand on the left, and a picture of an animal on the right. The challenge is to use the <strong>⬅</strong> and <strong>➡</strong> buttons which are below the picture of an animal to position the animal to face in the direction the hand is pointing. <img src="../../..\images/step03-verify02.png" class="img-fluid"></p></li>
-<li><p>You may have one or two of a similar challenge. <img src="../../..\images/step03-verify03.png" class="img-fluid"></p></li>
+<li>A new section will drop down asking you to verify your account. Click on the word <strong>Verify</strong>. <em>It should turn green when you hover over it</em>.</li>
+</ul>
+<p><img src="../../..\images/step03-verify01.png" class="img-fluid"></p>
+<ul>
+<li>The verification challenge would be a picture of a pointing hand on the left, and a picture of an animal on the right. The challenge is to use the <strong>⬅</strong> and <strong>➡</strong> buttons which are below the picture of an animal to position the animal to face in the direction the hand is pointing.</li>
+</ul>
+<p><img src="../../..\images/step03-verify02.png" class="img-fluid"></p>
+<ul>
+<li>You may have one or two of a similar challenge.</li>
+</ul>
+<p><img src="../../..\images/step03-verify03.png" class="img-fluid"></p>
+<ul>
 <li><p>When you are done with the challenge a check mark ✅ will appear.</p></li>
-<li><p>Now click on the green <strong>create account</strong> button that will be at the bottom of the screen. <img src="../../..\images/step03-verify04.png" class="img-fluid"></p></li>
-<li><p>A code will be sent to the email address you entered previously.</p></li>
-<li><p>Open you email account and refresh your inbox. You should see a message from Github.</p></li>
-<li><p>If after a while, you still do not see an email from Github, go back to the webpage and tap the link below the <strong>Enter code</strong> section. The link will be named <strong>Resend the code</strong>. This will prompt Github to send a new message to your email.</p></li>
-<li><p>When you receive the email, open it and take note of the numbers there.</p></li>
-<li><p>Return to the Github webpage and input the numbers into the boxes provided. <img src="../../..\images/step03-verify05.png" class="img-fluid"></p></li>
-<li><p>If you have entered the numbers correctly, a new webpage will appear.</p></li>
+<li><p>Now click on the green <strong>create account</strong> button that will be at the bottom of the screen.</p></li>
+</ul>
+<p><img src="../../..\images/step03-verify04.png" class="img-fluid"></p>
+<ul>
+<li>A code will be sent to the email address you entered previously.</li>
+<li>Open you email account and refresh your inbox. You should see a message from Github.</li>
+<li>If after a while, you still do not see an email from Github, go back to the webpage and tap the link below the <strong>Enter code</strong> section. The link will be named <strong>Resend the code</strong>. This will prompt Github to send a new message to your email.</li>
+<li>When you receive the email, open it and take note of the numbers there.</li>
+<li>Return to the Github webpage and input the numbers into the boxes provided.</li>
+</ul>
+<p><img src="../../..\images/step03-verify05.png" class="img-fluid"></p>
+<ul>
+<li>If you have entered the numbers correctly, a new webpage will appear.</li>
 </ul>
 </section>
 <section id="step-04-final-setup" class="level3">
@@ -265,24 +288,36 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="../../..\images/step04-final01.png" class="img-fluid"></p>
 <ul>
 <li><p>A new webpage will appear asking you some questions. Just click the <strong>continue</strong> button found at the bottom of the page. <img src="../../..\images/step04-final02.png" class="img-fluid"></p></li>
-<li><p>You will see a new webpage with two sections, one labelled <strong>Free</strong> and the other <strong>Get Student Benefits</strong>. <img src="../../..\images/step04-final03.png" class="img-fluid"></p></li>
-<li><p>For now, go to the bottom of the page and click <strong>Continue for free</strong>, even if you are a student. <em>You can get student benefits later</em>. <img src="../../..\images/step04-final04.png" class="img-fluid"></p></li>
-<li><p><strong>Woohoo!!</strong> Your Github dashboard should now be open. <img src="../../..\images/dashboard.png" class="img-fluid"></p></li>
+<li><p>You will see a new webpage with two sections, one labelled <strong>Free</strong> and the other <strong>Get Student Benefits</strong>.</p></li>
 </ul>
+<p><img src="../../..\images/step04-final03.png" class="img-fluid"></p>
+<ul>
+<li>For now, go to the bottom of the page and click <strong>Continue for free</strong>, even if you are a student. <em>You can get student benefits later</em>.</li>
+</ul>
+<p><img src="../../..\images/step04-final04.png" class="img-fluid"></p>
+<ul>
+<li><strong>Woohoo!!</strong> Your Github dashboard should now be open.</li>
+</ul>
+<p><img src="../../..\images/dashboard.png" class="img-fluid"></p>
 </section>
 <section id="step-05-edit-profile-picture" class="level3">
 <h3 class="anchored" data-anchor-id="step-05-edit-profile-picture">Step 05: Edit Profile Picture</h3>
 <p><strong>Your profile picture is one of the first things visitors to your Github account will see. Make sure your picture is clean, clear, and professional. However, you do not have to dress in formal attire.</strong></p>
-<p>To edit your profile picture, do the following while in your github dashboard: - Click on the round picture frame on the top right-hand corner. A panel will open with your username at the top. <img src="../../..\images/dashboard-profile01.png" class="img-fluid"></p>
+<p>To edit your profile picture, do the following while in your github dashboard: - Click on the round picture frame on the top right-hand corner. A panel will open with your username at the top.</p>
+<p><img src="../../..\images/dashboard-profile01.png" class="img-fluid"></p>
 <ul>
-<li><p>Click on <strong><em>Your Profile</em></strong>. You will be directed to a new webpage with a bigger picture frame on the left. <img src="../../..\images/dashboard-profile02.png" class="img-fluid"></p></li>
-<li><p>Click on the picture frame. Again you will be taken to yet another webpage but with the picture frame on the right side of the screen. Notice that the picture frame has an <strong>edit</strong> button on the bottom left. <img src="../../..\images/dashboard-profile03.png" class="img-fluid"></p></li>
-<li><p>Click on the <strong>edit</strong> buttom. It will reveal an <strong>upload button</strong>. Click on that and it will bring up a dialog box where you can upload a profile picture that <em>meets the criteria discussed at the beginning of Step 05</em>.</p></li>
+<li>Click on <strong><em>Your Profile</em></strong>. You will be directed to a new webpage with a bigger picture frame on the left.</li>
+</ul>
+<p><img src="../../..\images/dashboard-profile02.png" class="img-fluid"></p>
+<ul>
+<li>Click on the picture frame. Again you will be taken to yet another webpage but with the picture frame on the right side of the screen. Notice that the picture frame has an <strong>edit</strong> button on the bottom left.</li>
+</ul>
+<p><img src="../../..\images/dashboard-profile03.png" class="img-fluid"></p>
+<ul>
+<li>Click on the <strong>edit</strong> buttom. It will reveal an <strong>upload button</strong>. Click on that and it will bring up a dialog box where you can upload a profile picture that <em>meets the criteria discussed at the beginning of Step 05</em>.</li>
 </ul>
 <p><img src="../../..\images/dashboard-profile04.png" class="img-fluid"></p>
-</section>
-<section id="congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture" class="level3">
-<h3 class="anchored" data-anchor-id="congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture">Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!</h3>
+<p>Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!</p>
 </section>
 </section>
 <section id="practice-activity" class="level2">
@@ -295,158 +330,13 @@ ul.task-list li input[type="checkbox"] {
 <li>Post both screenshots in your group so your classmates and mentors can see.</li>
 </ul>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>https://www.youtube.com/live/U9mJuUkhUzk?si=qI5LbF0BOO3LB1Zt U9mJuUkhUzk?si=r_9y5BSw17Fix_oT</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://youtu.be/P6FORpg0KVo?si=0S8ziLe4j9dgbc7W"><img src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FP6FORpg0KVo%3Fsi%3D0S8ziLe4j9dgbc7W" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">OpenAI DevDay, Opening Keynote</figcaption>
-</figure>
-</div>
-</section>
-<section id="you-should-now-have-your-own-github-accountprofile-and-should-be-equipped-to-help-others-make-one-as-well.-in-the-next-lesson-you-will-learn-how-to-add-a-profile-page-to-your-profile-that-shows-others-what-make-you-unique-and-what-particular-skills-you-have." class="level1">
-<h1>You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.</h1>
-<ul>
-<li><p>Navigate to <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">Github.com</a>.</p></li>
-<li><p>Click on the right side of the pink arrow to enter your email address.</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../..\images/step01.png" height="300" class="figure-img"></p>
-<figcaption class="figure-caption">Github Homepage.</figcaption>
-</figure>
-</div>
-<section id="step-02-enter-email-address-password-and-username-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-02-enter-email-address-password-and-username-1">Step 02: Enter Email address, Password, and Username</h3>
-<ul>
-<li><p>Enter a valid email address that you have immediate access to. <em>Double check to make sure the email address is valid and that you have access to it</em>. It is reccomended that you do not use a business or school email that you wll lose access to in the future. Pick an email address that you can access for years to come.</p></li>
-<li><p>When the <strong>continue</strong> button turns green, tap it.</p></li>
-<li><p>A new section will appear prompting you to input a password. <em>Make sure to follow the password guidelines that will appear at the bottom of the password input area</em>.</p></li>
-<li><p>Again, click on the green <strong>continue</strong> button.</p></li>
-<li><p>A new section will appear prompting you to input a username. Follow the username guidelines that will appear at the bottom of the username input area.</p>
-<p><strong>While you do not have to use your real name, please bear in mind that any username you enter is immutable, you <em>WILL NOT HAVE THE OPTION</em> to change it later. A good Github username is one that is easily searchable. This means it should not include long, random strings of characters, include overly long or complex numbers, and ideally it is easy to spell when the name is heard phonetically. The username you choose will be searchable and viewable by the public, so make sure it is a name you would like to be associated with your professional brand, now and in the future.</strong></p></li>
-<li><p>Click on the green <strong>continue</strong> button.</p></li>
-<li><p>A prompt will appear asking if you want to receive announcements via email. If you are okay with receiving product emails and announcements from GitHub, enter the letter <strong>y</strong>, if not, enter the letter <strong>n</strong> in the input area provided.</p></li>
-<li><p>Click on the green <strong>continue</strong> button</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../..\images/step02.png" height="300" class="figure-img"></p>
-<figcaption class="figure-caption">Results of Step 02.</figcaption>
-</figure>
-</div>
-</section>
-<section id="step-03-verifying-your-account-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-03-verifying-your-account-1">Step 03: Verifying your account</h3>
-<p><img src="../../..\images/step03-verify01.png" height="300"></p>
-<ul>
-<li><p>A new section will drop down asking you to verify your account. Click on the word <strong>Verify</strong>. <em>It should turn green when you hover over it</em>.</p></li>
-<li><p>You will be given a verification puzzle to make sure you are not a robot. The verification challenge will likely be a picture of a pointing hand on the left, and a picture of an object on the right. The challenge is to use the <strong>⬅</strong> and <strong>➡</strong> buttons which are below the picture of the object to position it to face in the direction the hand is pointing.</p></li>
-<li><p>You may have one or two more similar challenges.</p></li>
-</ul>
-<div id="fig-verification" class="quarto-layout-panel">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../..\images/step03-verify03.png" class="img-fluid figure-img" width="300"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../..\images/step03-verify02.png" class="img-fluid figure-img" width="300"></p>
-</div>
-</div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Verification Pictures</figcaption><p></p>
-</figure>
-</div>
-<ul>
-<li>When you are done with the challenges a check mark ✅ will appear.</li>
-</ul>
-<p><img src="../../..\images/step03-verify04.png" height="300"></p>
-<ul>
-<li><p>Now click on the green <strong>create account</strong> button that will be at the bottom of the screen.</p></li>
-<li><p>A code will be sent to the email address you entered previously.</p></li>
-<li><p>Open you email account and refresh your inbox. You should see a message from GitHub.</p></li>
-<li><p>If after a while, you still do not see an email from GitHub, go back to the webpage and tap the link below the <strong>Enter code</strong> section labeled <strong>Resend the code</strong>. This will prompt Github to send a new message to your email.</p></li>
-<li><p>When you receive the email, open it and take note of the numbers there.</p></li>
-<li><p>Return to the Github webpage and input the numbers into the boxes provided.</p></li>
-</ul>
-<p><img src="../../..\images/step03-verify05.png" height="300"></p>
-<ul>
-<li>If you have entered the numbers correctly, a new webpage will appear.</li>
-</ul>
-</section>
-<section id="step-04-final-setup-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-04-final-setup-1">Step 04: Final Setup</h3>
-<ul>
-<li><p>You may be asked two questions:</p>
-<ul>
-<li>How many team members will be working with you?
-<ul>
-<li>For this question choose the option <strong>2-5</strong>.</li>
-</ul></li>
-<li>Are you a student or teacher?
-<ul>
-<li>For this question choose the option <strong>student</strong> if you are a student. Choose <strong>N/A</strong> if you are neither a student nor a teacher.</li>
-</ul></li>
-</ul></li>
-</ul>
-<p><img src="../../..\images/step04-final01.png" height="300"></p>
-<ul>
-<li>A new webpage will appear asking you some questions. Just click the <strong>continue</strong> button found at the bottom of the page.</li>
-</ul>
-<p><img src="../../..\images/step04-final02.png" height="300"></p>
-<ul>
-<li><p>You may see a new webpage with two sections, one labelled <strong>Free</strong> and the other <strong>Get Student Benefits</strong>.</p></li>
-<li><p>For now, go to the bottom of the page and click <strong>Continue for free</strong>, even if you are a student. <em>You can get student benefits later</em>.</p></li>
-</ul>
-<p><img src="../../..\images/step04-final04.png" class="img-fluid" width="600"></p>
-<ul>
-<li><strong>Woohoo!!</strong> Your Github dashboard should now be open.</li>
-</ul>
-<p><img src="../../..\images/dashboard.png" height="300"></p>
-</section>
-<section id="step-05-edit-profile-picture-1" class="level3">
-<h3 class="anchored" data-anchor-id="step-05-edit-profile-picture-1">Step 05: Edit Profile Picture</h3>
-<p><strong>Your profile picture is one of the first things visitors to your Github account will see. Make sure your picture is clean, clear, and professional. However, you do not have to dress in formal attire.</strong></p>
-<p>To edit your profile picture, do the following while in your github dashboard:</p>
-<ul>
-<li>Click on the round picture frame on the top right-hand corner. A panel will open with your username at the top.</li>
-</ul>
-<p><img src="../../..\images/dashboard-profile01.png" class="img-fluid" width="300"></p>
-<ul>
-<li>Click on <strong><em>Your Profile</em></strong>. You will be directed to a new webpage with a bigger picture frame on the left.</li>
-</ul>
-<p><img src="../../..\images/dashboard-profile02.png" class="img-fluid" width="600"></p>
-<ul>
-<li>Click on the picture frame. Again you will be taken to yet another webpage but with the picture frame on the right side of the screen. Notice that the picture frame has an <strong>edit</strong> button on the bottom left.</li>
-</ul>
-<p><img src="../../..\images/dashboard-profile03.png" class="img-fluid" width="600"></p>
-<ul>
-<li>Click on the <strong>edit</strong> buttom. It will reveal an <strong>upload button</strong>. Click on that and it will bring up a dialog box where you can upload a profile picture that <em>meets the criteria discussed at the beginning of Step 05</em>.</li>
-</ul>
-<p><img src="../../..\images/dashboard-profile04.png" height="300"></p>
-</section>
-<section id="congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture-1" class="level3">
-<h3 class="anchored" data-anchor-id="congratulations-you-have-successfully-created-a-github-account-and-uploaded-an-appropriate-profile-picture-1">Congratulations 🎉😎, You have successfully created a GitHub Account and uploaded an appropriate Profile picture!</h3>
-</section>
-<section id="practice-activity-1" class="level2">
-<h2 class="anchored" data-anchor-id="practice-activity-1">Practice Activity</h2>
-<ul>
-<li><p>Create a Github account. (Don’t crate a new one if you already have one or created one during the course of the lesson.)</p></li>
-<li><p>When your dashboard opens, take a screen shot of it.</p></li>
-<li><p>Upload an appropriate profile picture.</p></li>
-<li><p>Take a screenshot of your profile page, showing your profile picture.</p></li>
-<li><p>Post both screenshots in your group channel so your classmates and mentors can see.</p></li>
-</ul>
-</section>
 <section id="video-walkthrough" class="level2">
 <h2 class="anchored" data-anchor-id="video-walkthrough">Video Walkthrough</h2>
-<!-- [![How to Create a GitHub Account (2023) - Full Tutorial](https://markdown-videos-api.jorgenkh.no/url?url=https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R)](https://youtu.be/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R) -->
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Gn3w1UvTx0A?si=G5p4GfyYo25kT79R" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="conclusion-1" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-1">Conclusion</h2>
-<p>You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what makes you unique and what particular skills you have. &gt;&gt;&gt;&gt;&gt;&gt;&gt; 63bd6fef8bffba9f70824128cb4d4a9b7d51e0de</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>You should now have your own Github account/profile and should be equipped to help others make one as well. In the next lesson you will learn how to add a profile page to your profile that shows others what make you unique and what particular skills you have.</p>
 </section>
 <section id="faq" class="level2">
 <h2 class="anchored" data-anchor-id="faq">FAQ</h2>
@@ -460,7 +350,6 @@ ul.task-list li input[type="checkbox"] {
 <p>Unless you are a robot. Then do stress…</p>
 
 
-</section>
 </section>
 </section>
 
@@ -485,6 +374,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

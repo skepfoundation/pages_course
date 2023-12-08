@@ -16,6 +16,8 @@ You will learn the basics of Markdown, a lightweight markup language that is wid
 
 ### Why Markdown Matters ?
 
+Markdown is an incredibly important yet incredibly basic formatting language. Here are a few of the reasons why it matters:
+
 -   Markdown can be used for basically everything. It's used to create websites, documents, notes, presentations and technical documentation.
 
 -   Markdown is as beginner-friendly as it's powerful, portable and platform independent. It can be created on any device running any operating system, using virtually any application.
@@ -24,15 +26,15 @@ You will learn the basics of Markdown, a lightweight markup language that is wid
 
 -   Markdown is future proof. Even if the application you're using stops working at some point in the future, you'll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to milestone documents that need to be preserved indefinitely.
 
-In short, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you'll be using throughout your data science journey. Knowing how to use it will prove essential as you kickstart your journey.
+In short, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other text-based documents, which you'll be using throughout your computer science journey. Knowing how to use it will prove essential as you kickstart your journey.
 
 ### Emphasizing text in Markdown
 
 -   In Markdown, the use of asterisks (\*) or underscores (\_) allows you to emphasize text by making it either *italic* or **bold**.
 
--   To make text italic, wrap it with a single asterisk or underscore on both sides: `*italic* or _italic_.`
+-   To make text italic, wrap it with a single asterisk or underscore on both sides: `*italic*` or `_italic_`.
 
--   For bold text, wrap it with double asterisks or underscores: `**bold** or __bold__.`
+-   For bold text, wrap it with double asterisks or underscores: `**bold**` or `__bold__`.
 
 ### Headings in Markdown
 
@@ -62,12 +64,16 @@ In short, Markdown is a handy, versatile text-formatting tool that you can use t
 
 ### Code blocks in Markdown
 
--   To indicate code blocks, use three backticks before and after the block of code. As such: ```` ```python "insert python code" ``` ````
+-   To indicate code blocks, use three backticks before and after the block of code. As such: 
+```` 
+``` python 
+"insert python code" 
+``` 
+````
 
 You can do this with any coding language. The output will look like this:
 
 ``` python
-
 print("Hello World")
 ```
 
@@ -79,9 +85,13 @@ print("Hello World")
 
 `--- or ***`
 
+This will produce a horizontal line break in your text like the following:
+
+***
+
 #### Links
 
--   To create a link, enclose the link text in square brackets and then follow it immediately with the URL in parentheses. As such: `[link text](https://www.example.com)`
+-   To create a link, enclose the link text in square brackets and then follow it immediately with the URL in parentheses. As such: `[example](https://www.example.com)`
 
 The rendered output looks like this: My example link is [example](https://www.example.com)
 

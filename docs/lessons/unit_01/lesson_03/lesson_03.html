@@ -68,10 +68,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,7 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -156,7 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_02/lesson_02.html" rel="" target="">
- <span class="dropdown-text">Lesson 2: GitHub Profile Readme (Part 1)</span></a>
+ <span class="dropdown-text">Lesson 2: Creating your GitHub Profile README</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_03/lesson_03.html" rel="" target="">
@@ -164,23 +166,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_04/lesson_04.html" rel="" target="">
- <span class="dropdown-text">Lesson 4: GitHub Profile Readme (Part 2)</span></a>
+ <span class="dropdown-text">Lesson 4: Additional Profile README Features</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -206,9 +208,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -242,20 +248,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
 <section id="why-markdown-matters" class="level3">
 <h3 class="anchored" data-anchor-id="why-markdown-matters">Why Markdown Matters ?</h3>
+<p>Markdown is an incredibly important yet incredibly basic formatting language. Here are a few of the reasons why it matters:</p>
 <ul>
 <li><p>Markdown can be used for basically everything. It’s used to create websites, documents, notes, presentations and technical documentation.</p></li>
 <li><p>Markdown is as beginner-friendly as it’s powerful, portable and platform independent. It can be created on any device running any operating system, using virtually any application.</p></li>
 <li><p>Markdown is everywhere. It’s supported on GitHub, and lots of desktop and web-based applications.</p></li>
 <li><p>Markdown is future proof. Even if the application you’re using stops working at some point in the future, you’ll still be able to read your Markdown-formatted text using a text editing application. This is an important consideration when it comes to milestone documents that need to be preserved indefinitely.</p></li>
 </ul>
-<p>In short, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other textbased documents, which you’ll be using throughout your data science journey. Knowing how to use it will prove essential as you kickstart your journey.</p>
+<p>In short, Markdown is a handy, versatile text-formatting tool that you can use to create websites and other text-based documents, which you’ll be using throughout your computer science journey. Knowing how to use it will prove essential as you kickstart your journey.</p>
 </section>
 <section id="emphasizing-text-in-markdown" class="level3">
 <h3 class="anchored" data-anchor-id="emphasizing-text-in-markdown">Emphasizing text in Markdown</h3>
 <ul>
 <li><p>In Markdown, the use of asterisks (*) or underscores (_) allows you to emphasize text by making it either <em>italic</em> or <strong>bold</strong>.</p></li>
-<li><p>To make text italic, wrap it with a single asterisk or underscore on both sides: <code>*italic* or _italic_.</code></p></li>
-<li><p>For bold text, wrap it with double asterisks or underscores: <code>**bold** or __bold__.</code></p></li>
+<li><p>To make text italic, wrap it with a single asterisk or underscore on both sides: <code>*italic*</code> or <code>_italic_</code>.</p></li>
+<li><p>For bold text, wrap it with double asterisks or underscores: <code>**bold**</code> or <code>__bold__</code>.</p></li>
 </ul>
 </section>
 <section id="headings-in-markdown" class="level3">
@@ -286,11 +293,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="code-blocks-in-markdown" class="level3">
 <h3 class="anchored" data-anchor-id="code-blocks-in-markdown">Code blocks in Markdown</h3>
 <ul>
-<li>To indicate code blocks, use three backticks before and after the block of code. As such: <code>```python "insert python code" ```</code></li>
+<li>To indicate code blocks, use three backticks before and after the block of code. As such:</li>
 </ul>
+<pre><code>``` python 
+"insert python code" 
+``` </code></pre>
 <p>You can do this with any coding language. The output will look like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="other-common-rules" class="level3">
 <h3 class="anchored" data-anchor-id="other-common-rules">Other common rules</h3>
@@ -300,11 +309,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>You can create a horizontal rule by using three consecutive hyphens (—) or three consecutive asterisks (***).</li>
 </ul>
 <p><code>--- or ***</code></p>
+<p>This will produce a horizontal line break in your text like the following:</p>
+<hr>
 </section>
 <section id="links" class="level4">
 <h4 class="anchored" data-anchor-id="links">Links</h4>
 <ul>
-<li>To create a link, enclose the link text in square brackets and then follow it immediately with the URL in parentheses. As such: <code>[link text](https://www.example.com)</code></li>
+<li>To create a link, enclose the link text in square brackets and then follow it immediately with the URL in parentheses. As such: <code>[example](https://www.example.com)</code></li>
 </ul>
 <p>The rendered output looks like this: My example link is <a href="https://www.example.com">example</a></p>
 </section>
@@ -445,6 +456,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

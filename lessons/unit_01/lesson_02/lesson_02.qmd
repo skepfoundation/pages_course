@@ -1,24 +1,8 @@
 ---
-title: "Lesson 2: Creating your GitHub Profile Readme"
-format:
-  html:
-    theme:
-      light: flatly
-      dark: darkly
-    toc-location: left
-    code-copy: true
-    code-line-numbers: true
-    code-block-border-left: "#A9A9A9"
-    code-block-bg: true
-    code-bloc-bg-alpha: -.2
-    page-layout: full
-    grid:
-      sidebar-width: 200px
-      body-width: 1030px
-      margin-width: 70px
+title: "Lesson 2: Creating your GitHub Profile README"
 ---
 
-<<<<<<< HEAD
+
 ## Overview
 
 The GitHub profile README serves as a distinctive profile page showcasing who you are and what you do. Functioning as a customizable "about me" section, it provides an avenue for individuals to introduce themselves, exhibit their projects, and communicate details about their interests and achievements. Essentially, the content of this README defines one's GitHub profile, making it a pivotal element for creating a compelling first impression, particularly for employers seeking insights into an individual's skills and interests upon visiting their GitHub profile. By the end of this lesson, you will have crafted your own GitHub profile readme using markdown.
@@ -32,7 +16,6 @@ This lesson will be but a brief introduction of markdown. In the next two lesson
 -   Students will be able to create their own GitHUb profile README
 -   Students will be able to recognize and apply markdown syntax to create structured and styled text documents
 
-<<<<<<< HEAD
 ## Lesson
 
 ### Let's Begin Creating a GitHub Profile README
@@ -64,7 +47,6 @@ Open the **README.md** file and click on the Edit this file icon (a pencil icon)
 
 ![](./images/3.1.png)
 
-<<<<<<< HEAD
 <br>
 
 ### Profile README Template
@@ -129,18 +111,8 @@ Feel free to reach out to me. Happy coding! 🚀
 
 Remember that your GitHub profile is visible to the public, so make sure your customization represents you and your work effectively. This customization not only adds a personal touch to your GitHub presence but also serves as a valuable portfolio for potential collaborators and employers.
 
-In the next lesson, we'll understand markdown more so that you can format your GitHub profile readme just how you like it.
-
-Pictured below is what your github profile will be if you do everything right.
-
-```{=html}
-<!-- <video width="800" height="315" autoplay loop muted>
-  <source src="\images\v1.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video> -->
-```
 
 ## Conclusion
 
-You should now have a basic profile README that employers and collaborators can find to netwrok with you. In the next lessons you'll learn how to write your own documents from scratch in amrkdown and how to further improve your profile page.
+You should now have a basic profile README that employers and collaborators can find to network with you. In the next lessons you'll learn how to write your own documents from scratch in markdown and how to further improve your profile page.
 

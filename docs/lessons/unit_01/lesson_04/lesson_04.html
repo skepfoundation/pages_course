@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Github Pages Training - Lesson 4: GitHub Profile Readme (Part 2)</title>
+<title>Github Pages Training - Lesson 4: Additional Profile README Features</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,10 +68,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,7 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -156,7 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_02/lesson_02.html" rel="" target="">
- <span class="dropdown-text">Lesson 2: GitHub Profile Readme (Part 1)</span></a>
+ <span class="dropdown-text">Lesson 2: Creating your GitHub Profile README</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_03/lesson_03.html" rel="" target="">
@@ -164,29 +166,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="../../../lessons/unit_01/lesson_04/lesson_04.html" rel="" target="">
- <span class="dropdown-text">Lesson 4: GitHub Profile Readme (Part 2)</span></a>
+ <span class="dropdown-text">Lesson 4: Additional Profile README Features</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
+  <ul class="collapse">
   <li><a href="#how-to-make-a-good-github-profile-readme" id="toc-how-to-make-a-good-github-profile-readme" class="nav-link" data-scroll-target="#how-to-make-a-good-github-profile-readme">How to make a good GitHub profile README?</a></li>
   <li><a href="#name-section" id="toc-name-section" class="nav-link" data-scroll-target="#name-section">Name Section:</a></li>
+  </ul></li>
   <li><a href="#description-section" id="toc-description-section" class="nav-link" data-scroll-target="#description-section">Description Section:</a></li>
   <li><a href="#hard-skills-section" id="toc-hard-skills-section" class="nav-link" data-scroll-target="#hard-skills-section">Hard Skills Section</a></li>
   <li><a href="#adding-logos-software-lanugages-companies" id="toc-adding-logos-software-lanugages-companies" class="nav-link" data-scroll-target="#adding-logos-software-lanugages-companies">Adding Logos (Software, Lanugages, Companies…)</a></li>
@@ -202,14 +208,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 4: GitHub Profile Readme (Part 2)</h1>
-<p class="subtitle lead">Profile Readme Ideas &amp; Code</p>
+<h1 class="title">Lesson 4: Additional Profile README Features</h1>
 </div>
 
 
@@ -224,30 +233,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This page will help you know what to incude on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This page will help you know what to include on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.</p>
+</section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li>Studens will applying the previous lesson on markdown to their own GitHub profile readme</li>
-<li>Students will connect personal projects, professional networks, or external references to their profile by embedding hyperlinks.</li>
-<li>Students will be able to create a comprehensive and visually appealing GitHub profile page.</li>
-<li>Identify markdown syntax and apply those syntax to create structured and styled text documents.</li>
-<li>Emphasize key aspects of their profile using bold and italic text formatting.</li>
-<li>Embed images and links within your markdown file</li>
-<li>Create a professional Github Profile README.</li>
+<li>Students will be able to create a GitHUb Profile README customized to their unique sensibilities and needs</li>
 </ul>
 </section>
-<section id="how-to-make-a-good-github-profile-readme" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-make-a-good-github-profile-readme">How to make a good GitHub profile README?</h2>
-<p>To create an impactful GitHub profile README, focus on an engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable. Use a professional photo to humanize your profile.</p>
+<section id="lesson" class="level2">
+<h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
+<section id="how-to-make-a-good-github-profile-readme" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-make-a-good-github-profile-readme">How to make a good GitHub profile README?</h3>
+<p>To create an impactful GitHub profile README, focus on an engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable.</p>
 <p>Next, showcase your work by organizing sections with project thumbnails, titles, descriptions, and links to your repositories or deployed applications. Consider incorporating GitHub Readme Stats or widgets to display your GitHub activity, lending credibility to your contributions. List your skills and technologies to give viewers insight into your expertise. Highlight significant achievements and contributions, and provide contact information for networking and collaboration opportunities.</p>
-<p>Customize the appearance with Markdown or HTML for formatting and maintain a consistent theme. Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action. Don’t hesitate to infuse creativity through GIFs, emojis, or unique design elements. Lastly, review and proofread your README for clarity and accuracy, aiming to create a lasting and positive impression for those who explore your GitHub profile.</p>
+<p>Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action.</p>
 </section>
-<section id="name-section" class="level2">
-<h2 class="anchored" data-anchor-id="name-section">Name Section:</h2>
+<section id="name-section" class="level3">
+<h3 class="anchored" data-anchor-id="name-section">Name Section:</h3>
 <p>This will go best at the top of your profile readme. Paste this code at the top.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">HTML</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Markdown</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="columns">
@@ -258,11 +266,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># John Doe</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu"># John Doe</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<section id="html" class="level3">
+<h3 class="anchored" data-anchor-id="html">HTML</h3>
 <div class="columns">
 <div class="column" style="width:47%;">
 <h3 class="anchored">
@@ -271,13 +279,15 @@ John Doe
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb2"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h1&gt;</span> John Doe <span class="kw">&lt;/h1&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;h1&gt;</span> John Doe <span class="kw">&lt;/h1&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
+</section>
 </div>
 </div>
 </div>
 <!-- End tabset -->
+</section>
 </section>
 <section id="description-section" class="level2">
 <h2 class="anchored" data-anchor-id="description-section">Description Section:</h2>
@@ -301,15 +311,15 @@ John Doe
 
 </div><div class="column" style="width:47%;">
 <p><br></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Description: </span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🔭 I’m currently working on <span class="co">[</span><span class="ot">Current Project/Job</span><span class="co">]</span>.</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🌱 I’m currently learning <span class="co">[</span><span class="ot">What you are learning</span><span class="co">]</span>.</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>👯 I’m looking to collaborate on <span class="co">[</span><span class="ot">Open Source Projects or any interesting projects</span><span class="co">]</span>.</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>🤔 I’m looking for help with <span class="co">[</span><span class="ot">Any specific help you need</span><span class="co">]</span>.</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>💬 Ask me about <span class="co">[</span><span class="ot">Anything you're open to discussions about</span><span class="co">]</span>.</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>📫 How to reach me: <span class="co">[</span><span class="ot">Your Email or other contact information</span><span class="co">]</span>.</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>⚡ Fun fact: <span class="co">[</span><span class="ot">Something interesting about yourself</span><span class="co">]</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">## Description: </span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="ss">- </span>🔭 I’m currently working on <span class="co">[</span><span class="ot">Current Project/Job</span><span class="co">]</span>.</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="ss">- </span>🌱 I’m currently learning <span class="co">[</span><span class="ot">What you are learning</span><span class="co">]</span>.</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="ss">- </span>👯 I’m looking to collaborate on <span class="co">[</span><span class="ot">Open Source Projects or any interesting projects</span><span class="co">]</span>.</span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="ss">- </span>🤔 I’m looking for help with <span class="co">[</span><span class="ot">Any specific help you need</span><span class="co">]</span>.</span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="ss">- </span>💬 Ask me about <span class="co">[</span><span class="ot">Anything you're open to discussions about</span><span class="co">]</span>.</span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="ss">- </span>📫 How to reach me: <span class="co">[</span><span class="ot">Your Email or other contact information</span><span class="co">]</span>.</span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="ss">- </span>⚡ Fun fact: <span class="co">[</span><span class="ot">Something interesting about yourself</span><span class="co">]</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -368,14 +378,14 @@ John Doe
 
 </div><div class="column" style="width:47%;">
 <p><br></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Favorite Technology</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>|               | Python        | R             |</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>| ---           | :---:         | :---:         |</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>| Reading       | Pandas        | Readr         |</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>| Wrangling     | Pandas        | Tidyr &amp; Dplyr |</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>| Visualization | Matplotlib    | ggplot2       |</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>| Model         | Scitkit-Learn | TidyModels    |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">## Favorite Technology</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a>|               | Python        | R             |</span>
+<span id="cb4-4"><a href="#cb4-4"></a>| ---           | :---:         | :---:         |</span>
+<span id="cb4-5"><a href="#cb4-5"></a>| Reading       | Pandas        | Readr         |</span>
+<span id="cb4-6"><a href="#cb4-6"></a>| Wrangling     | Pandas        | Tidyr &amp; Dplyr |</span>
+<span id="cb4-7"><a href="#cb4-7"></a>| Visualization | Matplotlib    | ggplot2       |</span>
+<span id="cb4-8"><a href="#cb4-8"></a>| Model         | Scitkit-Learn | TidyModels    |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -385,105 +395,79 @@ John Doe
 <h3 class="anchored">
 Favorite Technology
 </h3>
-
-<table>
+<table class="table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 20%">
+<col style="width: 22%">
+</colgroup>
 <thead>
-<tr>
-<th>
-</th>
-<th style="text-align:center;">
-Python
-</th>
-<th style="text-align:center;">
-R
-</th>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Python</th>
+<th style="text-align: center;">R</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>
-Reading
-</td>
-<td style="text-align:center;">
-Pandas
-</td>
-<td style="text-align:center;">
-Readr
-</td>
+<tr class="odd">
+<td>Reading</td>
+<td style="text-align: center;">Pandas</td>
+<td style="text-align: center;">Readr</td>
 </tr>
-<tr>
-<td>
-Wrangling
-</td>
-<td style="text-align:center;">
-Pandas
-</td>
-<td style="text-align:center;">
-Tidyr &amp; Dplyr
-</td>
+<tr class="even">
+<td>Wrangling</td>
+<td style="text-align: center;">Pandas</td>
+<td style="text-align: center;">Tidyr &amp; Dplyr</td>
 </tr>
-<tr>
-<td>
-Visualization
-</td>
-<td style="text-align:center;">
-Matplotlib
-</td>
-<td style="text-align:center;">
-ggplot2
-</td>
+<tr class="odd">
+<td>Visualization</td>
+<td style="text-align: center;">Matplotlib</td>
+<td style="text-align: center;">ggplot2</td>
 </tr>
-<tr>
-<td>
-Model
-</td>
-<td style="text-align:center;">
-Scikit-Learn
-</td>
-<td style="text-align:center;">
-TidyModels
-</td>
+<tr class="even">
+<td>Model</td>
+<td style="text-align: center;">Scikit-Learn</td>
+<td style="text-align: center;">TidyModels</td>
 </tr>
 </tbody>
-
 </table>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
 <p><br></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;h2&gt;</span>Favorite Technology<span class="kw">&lt;/h2&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;table&gt;</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;thead&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th&gt;&lt;/th&gt;</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Python<span class="kw">&lt;/th&gt;</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;th</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>R<span class="kw">&lt;/th&gt;</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/thead&gt;</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;tbody&gt;</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Reading<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Pandas<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Readr<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Wrangling<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Pandas<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Tidyr &amp; Dplyr<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Visualization<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Matplotlib<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>ggplot2<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td&gt;</span>Model<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Scikit-Learn<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>TidyModels<span class="kw">&lt;/td&gt;</span></span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/tbody&gt;</span></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/table&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">&lt;h2&gt;</span>Favorite Technology<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">&lt;table&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="kw">&lt;thead&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>      <span class="kw">&lt;th&gt;&lt;/th&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>      <span class="kw">&lt;th</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Python<span class="kw">&lt;/th&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a>      <span class="kw">&lt;th</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>R<span class="kw">&lt;/th&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a>  <span class="kw">&lt;/thead&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a>  <span class="kw">&lt;tbody&gt;</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a>      <span class="kw">&lt;td&gt;</span>Reading<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Pandas<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Readr<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a>      <span class="kw">&lt;td&gt;</span>Wrangling<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Pandas<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Tidyr &amp; Dplyr<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-21"><a href="#cb5-21"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-22"><a href="#cb5-22"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-23"><a href="#cb5-23"></a>      <span class="kw">&lt;td&gt;</span>Visualization<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-24"><a href="#cb5-24"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Matplotlib<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-25"><a href="#cb5-25"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>ggplot2<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-26"><a href="#cb5-26"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-27"><a href="#cb5-27"></a>    <span class="kw">&lt;tr&gt;</span></span>
+<span id="cb5-28"><a href="#cb5-28"></a>      <span class="kw">&lt;td&gt;</span>Model<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-29"><a href="#cb5-29"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>Scikit-Learn<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-30"><a href="#cb5-30"></a>      <span class="kw">&lt;td</span> <span class="er">style</span><span class="ot">=</span><span class="st">"text-align:center;"</span><span class="kw">&gt;</span>TidyModels<span class="kw">&lt;/td&gt;</span></span>
+<span id="cb5-31"><a href="#cb5-31"></a>    <span class="kw">&lt;/tr&gt;</span></span>
+<span id="cb5-32"><a href="#cb5-32"></a>  <span class="kw">&lt;/tbody&gt;</span></span>
+<span id="cb5-33"><a href="#cb5-33"></a><span class="kw">&lt;/table&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -494,7 +478,7 @@ TidyModels
 <section id="adding-logos-software-lanugages-companies" class="level2">
 <h2 class="anchored" data-anchor-id="adding-logos-software-lanugages-companies">Adding Logos (Software, Lanugages, Companies…)</h2>
 <p>Now, we will add images representing the technologies and skills you are familiar with. You can always finds free logos for many programming languages and tools in <a href="https://github.com/devicons/devicon/">DevIcons Github Repository</a>.</p>
-<p>Go to the icons foldwe and search and open the <code>Pandas</code> folder. In the folder, you’ll find images in SVG(Scaleable Vector Graphics) format. Click on any image and copy the URL shown in the browser’s address bar <img src="./images/9.png" class="img-fluid"></p>
+<p>Go to the icons folder and search and open the <code>Pandas</code> folder. In the folder, you’ll find images in SVG(Scaleable Vector Graphics) format. Click on any image and copy the URL shown in the browser’s address bar <img src="./images/9.png" class="img-fluid"></p>
 <p>We will make use of this URL in the <code>&lt;img /&gt;</code> tag and specify the <code>height</code> and <code>width</code> attribute accordingly. Similarly, you can search for other skills and include them in a seprate <code>&lt;img /&gt;</code> tags.</p>
 <p>Include the code below to your Github <code>README.md</code>. You can Add/Remove any skills of your choice. Ensure any skill you choose to show on your repo, they should be ones you are conversant with.</p>
 <div class="columns">
@@ -506,23 +490,23 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div&gt;</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/flutter/flutter-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Redux"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Redux "</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"</span>  <span class="er">title</span><span class="ot">=</span><span class="st">"CSS3"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"CSS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"HTML5"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"HTML"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/gatsby/gatsby-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Gatsby"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"Gatsby"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"MySQL"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"MySQL"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">**alt</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">&lt;div&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Java"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"React"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Spring"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Material UI"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/flutter/flutter-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Flutter"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Redux"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Redux "</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"</span>  <span class="er">title</span><span class="ot">=</span><span class="st">"CSS3"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"CSS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"HTML5"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"HTML"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"JavaScript"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Firebase"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/gatsby/gatsby-original.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Gatsby"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"Gatsby"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"MySQL"</span>  <span class="er">alt</span><span class="ot">=</span><span class="st">"MySQL"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-14"><a href="#cb6-14"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"NodeJS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"AWS"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span><span class="dv">&amp;nbsp;</span></span>
+<span id="cb6-16"><a href="#cb6-16"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg"</span> <span class="er">title</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">**alt</span><span class="ot">=</span><span class="st">"Git"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"40"</span> <span class="er">height</span><span class="ot">=</span><span class="st">"40"</span><span class="kw">/&gt;</span></span>
+<span id="cb6-17"><a href="#cb6-17"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -547,9 +531,9 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:55%;">
-<div class="sourceCode" id="cb7"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white)</span><span class="co">](&lt;your-linkedin-profile-url&gt;)</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](https://img.shields.io/badge/Twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white)</span><span class="co">](&lt;your-twitter-profile-URL&gt;)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">[</span><span class="al">![](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white)</span><span class="co">](&lt;your-linkedin-profile-url&gt;)</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co">[</span><span class="al">![](https://img.shields.io/badge/Twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white)</span><span class="co">](&lt;your-twitter-profile-URL&gt;)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -562,14 +546,14 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:55%;">
-<div class="sourceCode" id="cb8"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">"badges"</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"your-linkedin-URL"</span><span class="kw">&gt;</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge</span><span class="er">&amp;</span><span class="st">logo=linkedin</span><span class="er">&amp;</span><span class="st">logoColor=white"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"LinkedIn Badge"</span><span class="kw">/&gt;</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"your-twitter-URL"</span><span class="kw">&gt;</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://img.shields.io/badge/Twitter-blue?style=for-the-badge</span><span class="er">&amp;</span><span class="st">logo=twitter</span><span class="er">&amp;</span><span class="st">logoColor=white"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Twitter Badge"</span><span class="kw">/&gt;</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">"badges"</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"your-linkedin-URL"</span><span class="kw">&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge</span><span class="er">&amp;</span><span class="st">logo=linkedin</span><span class="er">&amp;</span><span class="st">logoColor=white"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"LinkedIn Badge"</span><span class="kw">/&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"your-twitter-URL"</span><span class="kw">&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://img.shields.io/badge/Twitter-blue?style=for-the-badge</span><span class="er">&amp;</span><span class="st">logo=twitter</span><span class="er">&amp;</span><span class="st">logoColor=white"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Twitter Badge"</span><span class="kw">/&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -588,7 +572,7 @@ TidyModels
 <li>The first parameter we will pass is <code>Label</code>(This represents the social network site name that will appear on the badge) and <code>Color</code> (which represents the color of the social network badge respectively). <code>Label-Color</code></li>
 </ul>
 <p>In the case of our example being <strong>LinkedIn</strong> and <strong>Twitter</strong>, their color will be <strong>blue</strong>.</p>
-<p>When the parameters listed above (Label and color) are combined with <a href="https://img.shields.io/badge/">https://img.shields.io/badge/</a>, the following URLs are created. For LinkedIn, <code>https://img.shields.io/badge/LinkedIn-blue</code>. For Twitter, <code>https://img.shields.io/badge/Twitter-blue</code>.</p>
+<p>When the parameters listed above (Label and color) are combined with <a href="https://img.shields.io/badge/" class="uri">https://img.shields.io/badge/</a>, the following URLs are created. For LinkedIn, <code>https://img.shields.io/badge/LinkedIn-blue</code>. For Twitter, <code>https://img.shields.io/badge/Twitter-blue</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Markdown</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">HTML</a></li></ul>
 <div class="tab-content">
@@ -599,7 +583,7 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb9"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a><span class="al">![](https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -613,9 +597,9 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb10"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">"header"</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"100"</span><span class="kw">&gt;</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">"header"</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"100"</span><span class="kw">&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -637,7 +621,7 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb11"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](https://github-readme-stats.vercel.app/api?username=&lt;insert-github-username&gt;)</span><span class="co">](https://github.com/anuraghazra/github-readme-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a><span class="co">[</span><span class="al">![](https://github-readme-stats.vercel.app/api?username=&lt;insert-github-username&gt;)</span><span class="co">](https://github.com/anuraghazra/github-readme-stats)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -648,11 +632,11 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb12"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats"</span><span class="kw">&gt;</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github-readme-stats.vercel.app/api?username=</span><span class="er">&lt;</span><span class="st">insert_github_username&gt;</span><span class="er">&amp;</span><span class="st">theme=dark"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"GitHub profile Streak"</span> <span class="kw">/&gt;</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/a&gt;</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="kw">&lt;p</span> <span class="er">align</span><span class="ot">=</span><span class="st">"center"</span><span class="kw">&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>  <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats"</span><span class="kw">&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a>    <span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://github-readme-stats.vercel.app/api?username=</span><span class="er">&lt;</span><span class="st">insert_github_username&gt;</span><span class="er">&amp;</span><span class="st">theme=dark"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"GitHub profile Streak"</span> <span class="kw">/&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>  <span class="kw">&lt;/a&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -672,7 +656,7 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb13"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://streak-stats.demolab.com/?user=&lt;insert_github_username&gt;&amp;theme=dark)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="al">![](https://streak-stats.demolab.com/?user=&lt;insert_github_username&gt;&amp;theme=dark)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -683,11 +667,11 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<pre class="{md}"><code>&lt;p align="center"&gt;
-  &lt;a href="https://git.io/streak-stats"&gt;
-    &lt;img src="https://streak-stats.demolab.com/?user=&lt;insert_github_username&gt;&amp;theme=dark" alt="GitHub Streak" /&gt;
-  &lt;/a&gt;
-&lt;/p&gt;</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource {md} number-lines code-with-copy"><code class="sourceCode"><span id="cb14-1"><a href="#cb14-1"></a>&lt;p align="center"&gt;</span>
+<span id="cb14-2"><a href="#cb14-2"></a>  &lt;a href="https://git.io/streak-stats"&gt;</span>
+<span id="cb14-3"><a href="#cb14-3"></a>    &lt;img src="https://streak-stats.demolab.com/?user=&lt;insert_github_username&gt;&amp;theme=dark" alt="GitHub Streak" /&gt;</span>
+<span id="cb14-4"><a href="#cb14-4"></a>  &lt;/a&gt;</span>
+<span id="cb14-5"><a href="#cb14-5"></a>&lt;/p&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -706,7 +690,7 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<div class="sourceCode" id="cb15"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://github-readme-stats.vercel.app/api/top-langs/?username=&lt;insert_github_username&gt;&amp;theme=dark&amp;layout=compact)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a><span class="al">![](https://github-readme-stats.vercel.app/api/top-langs/?username=&lt;insert_github_username&gt;&amp;theme=dark&amp;layout=compact)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -717,9 +701,9 @@ TidyModels
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:47%;">
-<pre class="{md}"><code>&lt;p align= "center"&gt;
-  &lt;img src="https://github-readme-stats.vercel.app/api/top-langs/?username=&lt;insert_github_username&gt;&amp;theme=dark&amp;layout=compact" alt="top langs"/&gt;
-&lt;/p&gt;</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource {md} number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a href="#cb16-1"></a>&lt;p align= "center"&gt;</span>
+<span id="cb16-2"><a href="#cb16-2"></a>  &lt;img src="https://github-readme-stats.vercel.app/api/top-langs/?username=&lt;insert_github_username&gt;&amp;theme=dark&amp;layout=compact" alt="top langs"/&gt;</span>
+<span id="cb16-3"><a href="#cb16-3"></a>&lt;/p&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -731,7 +715,7 @@ TidyModels
 <section id="practice-activity" class="level2">
 <h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
 <ol type="1">
-<li>List five texting formating markdown syntax</li>
+<li>List five texting formatting markdown syntax</li>
 <li>How can you insert images and links on markdown?</li>
 <li>From what you learnt so far, create a Github Profile README file and update your profile accordingly.</li>
 <li>List 5 Markdown emojis and how to insert them in a markdown file</li>
@@ -740,7 +724,7 @@ TidyModels
 </section>
 <section id="notes" class="level2">
 <h2 class="anchored" data-anchor-id="notes">Notes</h2>
-<p>Remember to keep your github profile readme up to date. This is just as important to getting a job as a resume is. This is a tool for finding work. Think to yourself, “If I were an employer, what would I need in an employee?”. Whatever the answer to that is, convey it in your readme.</p>
+<p>Remember to keep your github profile readme up to date. Treat this page like a resume and portal to your portfolio for employers to find. This is a tool for finding work. Think to yourself, “If I were an employer, what would I need in an employee?”. Whatever the answer to that is, convey it in your README.</p>
 <!-- ## Adding Languages and Tools
 Below is the finished sample of how it will look when finished.
 ![](./images/11.png)
@@ -751,6 +735,8 @@ To achieve this, add the following code to your README.md file
     ---
     ### :hammer_and_wrench: Languages and Tools :
 ```
+
+
 
 Now, we will add images representing the technologies and skills you are familiar with. You can always finds free logos for many programming languages and tools in 
 [DevIcons Github Repository](https://github.com/devicons/devicon/).
@@ -959,7 +945,7 @@ In the Github file editor, replace the ``` README.md ``` file content with the f
 
 
 
-```pgbjfsehxh
+```jpgpcealtv
     <div id="header" align="center">
         <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100" />
     </div>
@@ -1095,6 +1081,8 @@ Copy the markdown code
 ```md
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
 ``` 
+
+
 and paste it in your Github profile ```README.md``` file. Remember to replace the ```username``` to your Github profile username.
 
 ### Center Alignment of the stats:
@@ -1149,6 +1137,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
