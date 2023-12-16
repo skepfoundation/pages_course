@@ -2,17 +2,133 @@
 title: "Lesson 4: Additional Profile README Features"
 ---
 
-## Overview 
+# Overview 
 
 This page will help you know what to include on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.
 
-## Learning Objectives
+# 1. Introduction to Github README
+### Definition of Github README
+Generally, A GitHub README is a document that typically accompanies a GitHub repository, providing essential information about the repository and its contents. It's named "README" because it's often the first thing a visitor should read to understand what the project is about. The importance of a GitHub README cannot be overstated, as it serves several critical functions, there are alot of importance of Github Readme, but I will only talk about 3 in this lesson.
 
--   Students will be able to create a GitHUb Profile README customized to their unique sensibilities and needs
+**Key Features and Importance of a GitHub README:**
 
-## Lesson
+- Project Introduction: It introduces the project to users, developers, or potential contributors. This is where you provide an overview of what the project does and its purpose.
 
-### How to make a good GitHub profile README?
+- Documentation: The README often contains documentation on how to install, configure, and use the project. This can include code examples, configuration settings, and command-line instructions.
+
+- Technical Details: It may provide technical details such as the technology stack, dependencies, and system requirements.
+
+### Definition of Github Profile README
+In the context of creating a GitHub profile, a GitHub README serves as a personalized introduction and overview of a user's GitHub presence. Unlike a repository-specific README that focuses on a particular project, a GitHub profile README provides a broader view of the user, their interests, skills, and contributions.
+
+**Key Features and Importance of a Github Profile README:**
+
+- Personal Introduction: A brief section about who you are, what you do, and your interests. This can include your professional role, educational background, or areas of expertise.
+
+- Skills and Technologies: Highlight the programming languages, tools, and technologies you are proficient in. This can be done through text, badges, or icons.
+
+- Projects and Work: Showcase your significant or favorite projects. You can include links to repositories, descriptions of what each project entails, and any notable achievements.
+
+- GitHub Statistics: Some users include dynamic GitHub stats like their number of contributions, most used languages, or streaks. This can be done using GitHub widgets and badges.
+
+
+
+# 2. Learning Objectives
+
+-   Students will be able to create a GitHUb Profile README customized to their unique sensibilities and needs.
+
+# 3. Basic Markdown For Github Profile README
+#### Baisc Text Formatting(Bold, Italics and Lists) in Markdown
+1. **Headers**
+
+Headers are created using the # symbol. The number of # symbols before the text determines the level of the header.
+For example:
+***# Header 1 for the largest header size.***
+and ***## Header 2 for the second-largest, and so on.***
+
+```md
+  # Header 1
+  ## Header 2
+```
+
+1. **Bold Text**
+
+To make text bold, wrap it in two asterisks ** or two underscores __.
+For example: **bold text** or __bold text__.
+
+```md
+  **bold text**
+  __bold text__
+```
+
+3. **Italic Text**
+
+To italicize text, wrap it in one asterisk * or one underscore _.
+For example: *italic text* or _italic text_.
+
+```md
+*italic text*
+_italic text_
+```
+
+4. **Bold and Italic**
+
+Combine both formats for bold and italic text.
+For example: **_bold and italic_** or __*bold and italic*__.
+
+```md
+  **_bold and italic_**
+  __*bold and italic*__
+```
+
+5. **Bulleted Lists**
+
+Use asterisks *, plus +, or minus - for bulleted lists.
+For example:
+```markdown
+  * Item 1
+  * Item 2
+```
+
+6. **Numbered Lists**
+
+Simply number with a period at the end of the number for each line for a numbered list (1. 2.).
+For example:
+```md
+  1. First item
+  2. Second item
+```
+
+#### Adding images and links in Markdown
+1. **Links**
+
+To create a hyperlink, enclose the link text in square brackets [], followed by the URL in parentheses ().
+For example: [Google](https://www.google.com)
+```md
+  [Google](https://www.google.com)
+```
+
+2. **Images**
+
+Similar to links, but with an exclamation mark ! in front. Include the alt text in square brackets and the image URL in parentheses. Image URL usually referes to the image directory on your local machine. It is always safe to move the images you wish to use in a particular project to a folder in which the project is.
+For example: ![Alt text](image-url.jpg)
+
+```md
+  ![Alt text](image-url.jpg)
+```
+
+# 4. Tools And Links
+There are a list of tools and links which we will make use of in this Lesson to enhance our Github Profile Readme. They are as follows;
+
+1. **Devicons:** [DevIcons Github Repository](https://github.com/devicons/devicon/) This link can be used to integrate logos(images) of any programming language you are conversant with to you Github profile. You shall learn how to do this in the ***Adding logos*** in ***Enhancing Your Github Profile***  section below.
+
+2. **Shields.io:** [shields.io](https://shields.io/) This link is used to include social media badges on your profile. This is to provide a gateway for possible recruiters to connect with you on any platform you provide.
+
+3. **Gifs:** [GIF Link](https://giphy.com/stickers/) Thus link can be used to include Gifs on your profile README. You may be wondering what gifs has to do with profile images, but when you look at how appealing most gifs are, you tend to see how much estatic it provides to your profile. You will learn how to go about this in the next section.
+
+4. **Vscode:** Vscode is a code editor, and this is basically what we will be using to edit our github profile readme file.
+
+# 5. Enhancing Your Github Profile README
 
 To create an impactful GitHub profile README, focus on an engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable.
 
@@ -62,7 +178,7 @@ This will go best at the top of your profile readme. Paste this code at the top.
 
 <!-- End tabset -->
 
-## Description Section:
+### Description Section:
 
 Writing a description section is very important. Here is where you can make yourself stand out from others to employers. Below are ideas of what to include. Feel free to include anything that conveys that you are a capable employee in your field.
 
@@ -86,6 +202,7 @@ Provide a brief introduction about yourself, your current academic pursuits, and
 
 ::: {.column width="47%"}
 <br>
+
 
 ``` md
 ## Description: 
@@ -114,8 +231,6 @@ or anything else that would help what technology you are comfotable using like G
 
 The example below is table showing technology a Data Science student might be familiar with.
 
-::: panel-tabset
-## Markdown
 
 ::: columns
 ::: {.column width="47%"}
@@ -148,73 +263,11 @@ The example below is table showing technology a Data Science student might be fa
 :::
 :::
 
-## HTML
 
-::: columns
-::: {.column width="47%"}
-<h3>Favorite Technology</h3>
-
-+---------------+--------------+---------------+
-|               | Python       | R             |
-+===============+:============:+:=============:+
-| Reading       | Pandas       | Readr         |
-+---------------+--------------+---------------+
-| Wrangling     | Pandas       | Tidyr & Dplyr |
-+---------------+--------------+---------------+
-| Visualization | Matplotlib   | ggplot2       |
-+---------------+--------------+---------------+
-| Model         | Scikit-Learn | TidyModels    |
-+---------------+--------------+---------------+
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="47%"}
-<br>
-
-``` md
-<h2>Favorite Technology</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th style="text-align:center;">Python</th>
-      <th style="text-align:center;">R</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Reading</td>
-      <td style="text-align:center;">Pandas</td>
-      <td style="text-align:center;">Readr</td>
-    </tr>
-    <tr>
-      <td>Wrangling</td>
-      <td style="text-align:center;">Pandas</td>
-      <td style="text-align:center;">Tidyr & Dplyr</td>
-    </tr>
-    <tr>
-      <td>Visualization</td>
-      <td style="text-align:center;">Matplotlib</td>
-      <td style="text-align:center;">ggplot2</td>
-    </tr>
-    <tr>
-      <td>Model</td>
-      <td style="text-align:center;">Scikit-Learn</td>
-      <td style="text-align:center;">TidyModels</td>
-    </tr>
-  </tbody>
-</table>
-```
-:::
-:::
-:::
 
 <!-- End tabset -->
 
-## Adding Logos (Software, Lanugages, Companies...)
+# 6. Adding Logos (Software, Lanugages, Companies...)
 
 Now, we will add images representing the technologies and skills you are familiar with. You can always finds free logos for many programming languages and tools in [DevIcons Github Repository](https://github.com/devicons/devicon/).
 
@@ -261,10 +314,8 @@ Include the code below to your Github `README.md`. You can Add/Remove any skills
 :::
 :::
 
-## Adding Social Links to Your Github Profile README
+# 7. Adding Social Links to Your Github Profile README
 
-::: panel-tabset
-## Markdown
 
 ::: columns
 ::: {.column width="40%"}
@@ -285,40 +336,14 @@ Include the code below to your Github `README.md`. You can Add/Remove any skills
 :::
 :::
 
-## HTML
-
-::: columns
-::: {.column width="40%"}
-::: {#badges align="center"}
-<a href="your-linkedin-URL"> <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn Badge"/> </a> <a href="your-twitter-URL"> <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" alt="Twitter Badge"/> </a>
-:::
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="55%"}
-``` md
-<div id="badges" align="center">
-  <a href="your-linkedin-URL">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-  <a href="your-twitter-URL">
-    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
-  </a>
-</div>
-```
-:::
-:::
-:::
 
 <!-- Ending Tabs -->
 
-## Adding GIFS to Your Github Profile README
+# 8. Adding GIFS to Your Github Profile README
 
 On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium (blog site), etc. But for this section, we shall only focus on two: LinkedIn and Twitter.
 
-To get the respective badges for each social networks, we'll use [shields.io](https://shields.io/) which provides various endpoints letting users create and customize social medial badges. We'll use the [ ](https://img.shields.io/badge/) URL and pass additional parameters to this URL to get the respective social media badges.
+To get the respective badges for each social networks, we'll use [shields.io](https://shields.io/) which provides various endpoints letting users create and customize social media badges. We'll use the [ ](https://img.shields.io/badge/) URL and pass additional parameters to this URL to get the respective social media badges.
 
 The Gif used in this section can be found [here](https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9). I found this GIF on [Giphy](https://giphy.com/), which is full of free GIFs to use.
 
@@ -374,7 +399,7 @@ When the parameters listed above (Label and color) are combined with <https://im
 
 <!-- Ending tabset -->
 
-## Github Profile Summary Stats Widgits
+# 9. Adding Github Profile Summary Stats Widgets
 
 ### Option 1
 
@@ -504,12 +529,16 @@ When the parameters listed above (Label and color) are combined with <https://im
 
 <!-- End tabset -->
 
-## Practice Activity
 
-1.  List five texting formatting markdown syntax
-2.  How can you insert images and links on markdown?
-3.  From what you learnt so far, create a Github Profile README file and update your profile accordingly.
-4.  List 5 Markdown emojis and how to insert them in a markdown file
+# 10. Hands-On Practice Activity
+1. Update Your GitHub Profile README
+
+- Using the tools and examples provided, update your GitHub profile README.
+- Include at least one widget, a skills section, and a personal introduction.
+
+2. Share for Feedback
+
+- Post your updated README in your team channel to receive feedback from peers.
 
 You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn **Github website creation.**
 
