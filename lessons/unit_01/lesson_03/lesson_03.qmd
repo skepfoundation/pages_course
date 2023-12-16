@@ -103,7 +103,15 @@ The rendered output looks like this:
 
 ![A River](./image/lake-8305673_1280.webp)
 
-## Practice Activity
+# Hands On Practice Activity
+
+For this lesson, you will be doing two(2) tasks.
+
+### Task 1:
+
+1. For the first taks, you shall be recreating this documents--> [document](https://www.dropbox.com/scl/fi/urdglf9eg5kt9o0n4m05p/My-Favorite-Hobby_-Photography.pdf?rlkey=9nbv8ly365uzej9ymm0yjwjmm&dl=0) 
+The image link for this task can be gotten here:
+ [image](https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=600)
 
 ### GitHub Profile Setup:
 
@@ -115,7 +123,8 @@ The rendered output looks like this:
 
 -   Edit the README file in your repository using the GitHub online editor.
 
-#### Tasks
+### Task 2:
+For the second task, you are to carry out the following.
 
 1.  
 
@@ -170,7 +179,18 @@ Do not use the example task given above find another.
 
 -   Two options: save an image of your choice in the folder that you are currently working on, then add that image on your markdown, another option is to copy an image address of an image on the internet of your choice and add it to your markdown.
 
-### Tips
+## Instructions
+
+- Please make use of this link: [dilinger](https://dillinger.io/) to perform the tasks given to you. When you are done, click on the export button at the top right corner of the website and export your markdown file into a pdf format for submission. Submissions for all tasks should be done in your team channel.
+  
+- You can click on ***Create New Document*** on the left pane of the website to create new document. Be advised that the document created comes with a default code template, feel free to delete them and type in your codes to create a new markdown document.
+![](./image1.png)
+  
+- When you are done Editing, save the document with your name and task number. In this format **"James_task01"**. That can be done by clicking on the file name at the top of the document, as shown in the image below.
+
+![](./image2.png)
+
+## Tips
 
 -   Refer back to the lesson content for guidance on Markdown syntax. Test your Markdown file by previewing it locally or using online Markdown editors.
 -   Feel free to explore additional Markdown features not covered in the lesson.
