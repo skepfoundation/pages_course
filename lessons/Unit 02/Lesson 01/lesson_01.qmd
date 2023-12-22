@@ -1,4 +1,3 @@
-
 ---
 title: "Lesson 01 : Introduction to Visual Studio Code"
 ---
@@ -11,7 +10,7 @@ In this lesson, we'll go over an Integrated Development Enviroment (IDE) known a
 
 -   Students will understand what VS Code is and why they should use it.
 
--   Students will know how to download extensions use VS Code to write source code.
+-   Students will know how to download extensions and use VS Code to write source code.
 
 ## Lesson
 
@@ -156,9 +155,13 @@ Mac OS will prompt to confirm that opening a program downloaded from the interne
 This is an extension with rich support for the Python programming language,  including features such as IntelliSense (Pylance), linting, debugging, code navigation, code formatting, refactoring, and more! 
 
 * Open VS Code and navigate to the extention icon on the left pane
-* Click on it and search "Python" in the search box.
-* Select the first item that says "Python" in the search result and click on install
+![](./Images/VS_Code_Extension_01.png)
+
+* Search "Python" in the search box and select the first item that says "Python" in the search result and click on install
+![](./Images/VS_Code_Extension_02.png)
+
 * Once it's done installing, your python extension should be good to go. 
+![](./Images/VS_Code_Extension_03.png)
 
 
 ## Conclusion
