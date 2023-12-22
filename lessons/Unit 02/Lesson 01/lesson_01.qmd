@@ -154,13 +154,16 @@ Mac OS will prompt to confirm that opening a program downloaded from the interne
 
 This is an extension with rich support for the Python programming language,  including features such as IntelliSense (Pylance), linting, debugging, code navigation, code formatting, refactoring, and more! 
 
-* Open VS Code and navigate to the extention icon on the left pane
+* Open VS Code and navigate to the extention icon on the left pane.
+
 ![](./Images/VS_Code_Extension_01.png)
 
-* Search "Python" in the search box and select the first item that says "Python" in the search result and click on install
+* Search "Python" in the search box and select the first item that says "Python" in the search result and click on install.
+
 ![](./Images/VS_Code_Extension_02.png)
 
-* Once it's done installing, your python extension should be good to go. 
+* Once it's done installing, your python extension should be good to go.
+
 ![](./Images/VS_Code_Extension_03.png)
 
 
