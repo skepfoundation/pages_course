@@ -190,31 +190,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction-to-git" id="toc-introduction-to-git" class="nav-link active" data-scroll-target="#introduction-to-git">Introduction to Git</a>
+  <li><a href="#introduction-to-git" id="toc-introduction-to-git" class="nav-link active" data-scroll-target="#introduction-to-git">Introduction to Git</a></li>
+  <li><a href="#why-use-git" id="toc-why-use-git" class="nav-link" data-scroll-target="#why-use-git">Why Use Git?</a></li>
+  <li><a href="#working-with-git" id="toc-working-with-git" class="nav-link" data-scroll-target="#working-with-git">Working with Git</a></li>
+  <li><a href="#how-to-install-git" id="toc-how-to-install-git" class="nav-link" data-scroll-target="#how-to-install-git">How to Install Git</a>
   <ul class="collapse">
-  <li><a href="#how-to-install-git" id="toc-how-to-install-git" class="nav-link" data-scroll-target="#how-to-install-git">How to Install Git</a></li>
-  <li><a href="#git-configuration" id="toc-git-configuration" class="nav-link" data-scroll-target="#git-configuration">Git configuration:</a>
-  <ul class="collapse">
-  <li><a href="#basic-concepts-of-git" id="toc-basic-concepts-of-git" class="nav-link" data-scroll-target="#basic-concepts-of-git">Basic Concepts of Git:</a></li>
+  <li><a href="#for-windows-users" id="toc-for-windows-users" class="nav-link" data-scroll-target="#for-windows-users">1. For Windows Users</a></li>
+  <li><a href="#for-macos-users" id="toc-for-macos-users" class="nav-link" data-scroll-target="#for-macos-users">2. For MacOS Users</a></li>
+  <li><a href="#for-linux-users" id="toc-for-linux-users" class="nav-link" data-scroll-target="#for-linux-users">3. For Linux Users</a></li>
   </ul></li>
+  <li><a href="#git-configuration" id="toc-git-configuration" class="nav-link" data-scroll-target="#git-configuration">Git configuration:</a></li>
+  <li><a href="#basic-concepts-of-git" id="toc-basic-concepts-of-git" class="nav-link" data-scroll-target="#basic-concepts-of-git">Basic Concepts of Git</a></li>
   <li><a href="#repository-local-and-remote" id="toc-repository-local-and-remote" class="nav-link" data-scroll-target="#repository-local-and-remote">1. Repository (Local and Remote)</a>
   <ul class="collapse">
+  <li><a href="#local-repository" id="toc-local-repository" class="nav-link" data-scroll-target="#local-repository">Local Repository</a>
+  <ul class="collapse">
   <li><a href="#creation-and-usage" id="toc-creation-and-usage" class="nav-link" data-scroll-target="#creation-and-usage">Creation and Usage:</a></li>
-  <li><a href="#remote-repository" id="toc-remote-repository" class="nav-link" data-scroll-target="#remote-repository">Remote Repository</a></li>
+  </ul></li>
+  <li><a href="#remote-repository" id="toc-remote-repository" class="nav-link" data-scroll-target="#remote-repository">Remote Repository</a>
+  <ul class="collapse">
   <li><a href="#interaction" id="toc-interaction" class="nav-link" data-scroll-target="#interaction">Interaction:</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#git-push" id="toc-git-push" class="nav-link" data-scroll-target="#git-push">Git Push</a></li>
   <li><a href="#branch" id="toc-branch" class="nav-link" data-scroll-target="#branch">3. Branch</a>
   <ul class="collapse">
   <li><a href="#branch-best-practices" id="toc-branch-best-practices" class="nav-link" data-scroll-target="#branch-best-practices">Branch Best Practices:</a></li>
   <li><a href="#good-branch-naming-convention" id="toc-good-branch-naming-convention" class="nav-link" data-scroll-target="#good-branch-naming-convention">Good Branch Naming Convention:</a></li>
+  <li><a href="#tips-for-branching" id="toc-tips-for-branching" class="nav-link" data-scroll-target="#tips-for-branching">Tips for Branching</a></li>
   </ul></li>
   <li><a href="#merge" id="toc-merge" class="nav-link" data-scroll-target="#merge">4. Merge</a></li>
   <li><a href="#pull-request" id="toc-pull-request" class="nav-link" data-scroll-target="#pull-request">5. Pull Request</a></li>
-  </ul></li>
   <li><a href="#git-with-vscode" id="toc-git-with-vscode" class="nav-link" data-scroll-target="#git-with-vscode">Git with VSCode:</a>
   <ul class="collapse">
   <li><a href="#why-should-we-use-git-with-on-vscode" id="toc-why-should-we-use-git-with-on-vscode" class="nav-link" data-scroll-target="#why-should-we-use-git-with-on-vscode">Why should we use Git with on Vscode?</a></li>
+  <li><a href="#connecting-git-to-visual-studio-code-vscode" id="toc-connecting-git-to-visual-studio-code-vscode" class="nav-link" data-scroll-target="#connecting-git-to-visual-studio-code-vscode">Connecting Git to Visual Studio Code (VSCode)</a></li>
   <li><a href="#accessing-git" id="toc-accessing-git" class="nav-link" data-scroll-target="#accessing-git">Accessing Git:</a></li>
   <li><a href="#the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding." id="toc-the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding." class="nav-link" data-scroll-target="#the-installation-and-configuration-of-git-was-treated-in-the-previous-lesson.-revert-to-it-for-better-understanding.">The installation and configuration of Git was treated in the previous lesson. Revert to it for better understanding.</a></li>
   <li><a href="#open-vscode" id="toc-open-vscode" class="nav-link" data-scroll-target="#open-vscode">Open VSCode:</a></li>
@@ -249,17 +259,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction-to-git" class="level1">
 <h1>Introduction to Git</h1>
 <p>Git is a powerful and widely used version control system that allows developers to track changes in their code over time. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Git is designed to handle projects of all sizes with speed and efficiency.</p>
-<p>Why Use Git?</p>
-<ul>
+</section>
+<section id="why-use-git" class="level1">
+<h1>Why Use Git?</h1>
+<ol type="1">
 <li><p><strong>Collaboration:</strong> Git makes it easier for multiple people to work on the same project without interfering with each other’s work. It allows for parallel development, where team members can work on different features simultaneously.</p></li>
 <li><p><strong>History Tracking:</strong> Every change made to the files in a project is tracked. This means you can revert back to any version of a file at any point in time. Branching and Merging: Git’s branching capabilities are a standout feature. They allow you to diverge from the main line of development and experiment with new ideas without affecting the main project, then merge those changes back in when they’re ready.</p></li>
 <li><p><strong>Distributed Development:</strong> Git is a distributed version control system, meaning every developer’s working copy of the code is also a repository that can contain the full history of all changes. Basic Concepts</p></li>
-<li><p><strong>Repository:</strong> A repository (or ‘repo’) is like a project’s folder. It contains all of the project files and the history of changes made to those files.</p></li>
-<li><p><strong>Commit:</strong> A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.</p></li>
-<li><p><strong>Branch:</strong> A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named ‘master’.</p></li>
-<li><p><strong>Merge:</strong> Merging is the process of integrating changes from one branch into another. Working with Git.</p></li>
-</ul>
+</ol>
 <hr>
+</section>
+<section id="working-with-git" class="level1">
+<h1>Working with Git</h1>
 <div class="grid">
 <div class="g-col-6">
 <p>Git’s functionality is accessible primarily through the command line. Common commands include;</p>
@@ -295,69 +306,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </div>
-<section id="how-to-install-git" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-install-git">How to Install Git</h2>
+</section>
+<section id="how-to-install-git" class="level1">
+<h1>How to Install Git</h1>
 <p>Installing Git is a crucial step for anyone getting started with version control. Here’s a beginner friendly guide to installing Git on different operating systems.</p>
-<h3 class="anchored">
-<ol type="1">
-<li>For Windows User
-</li></ol></h3>
-<h4 class="anchored">
-Download the Git Installer:
-</h4>
-
+<section id="for-windows-users" class="level2">
+<h2 class="anchored" data-anchor-id="for-windows-users">1. For Windows Users</h2>
+<p><strong>Download the Git Installer:</strong></p>
 <ul>
 <li>Visit the Git website and download the latest version of Git for Windows.</li>
 <li>The download should automatically start based on your Windows version.</li>
 </ul>
-<h4 class="anchored">
-Run the Installer:
-</h4>
+<p><strong>Run the Installer:</strong></p>
 <p>Open the downloaded file to start the installation. You will be greeted with the Git Setup wizard.</p>
-<h4 class="anchored">
-Installation Options:
-</h4>
-<p>Follow the setup instructions. You can leave most options at their default settings. When prompted to choose the default editor, you may select the one you’re most comfortable with (e.g., VSCode, Notepad++, etc.).</p>
-<h4 class="anchored">
-Adjusting Your PATH Environment:
-</h4>
-<p>During the installation, you’ll be asked to adjust your PATH environment. Select “Use Git from the Windows Command Prompt” for ease of use.</p>
+<p><strong>Installation Options:</strong> Follow the setup instructions. You can leave most options at their default settings. When prompted to choose the default editor, you may select the one you’re most comfortable with (e.g., VSCode, Notepad++, etc.).</p>
+<p><strong>Adjusting Your PATH Environment:</strong> During the installation, you’ll be asked to adjust your PATH environment. Select “Use Git from the Windows Command Prompt” for ease of use.</p>
 <p><strong>Configuring the Line Ending Conversions:</strong></p>
 <p>Choose how you want Git to treat line endings in text files. The recommended setting for Windows users is “Checkout Windows-style, commit Unix-style line endings”.</p>
 <p><strong>Completing the Installation:</strong> Proceed with the installation. Once completed, click ‘Finish’.</p>
-<h4 class="anchored">
-Verify Installation:
-</h4>
+<p><strong>Verify Installation:</strong></p>
 <p>Open Command Prompt and type</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a>    <span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>to ensure Git is installed correctly and to see the installed version.</p>
-<h3 class="anchored">
-<ol start="2" type="1">
-<li>For macOS Users
-</li></ol></h3>
-
-<h4 class="anchored">
-Install Git via Homebrew:
-</h4>
-<p>If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing</p>
+</section>
+<section id="for-macos-users" class="level2">
+<h2 class="anchored" data-anchor-id="for-macos-users">2. For MacOS Users</h2>
+<p><strong>Install Git via Homebrew:</strong> If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a>    <span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<h4 class="anchored">
-Install Git from the Official Website:
-</h4>
+<p><strong>Install Git from the Official Website:</strong></p>
 <p>Alternatively, you can download the macOS Git installer from Git’s official site. Open the downloaded file and follow the installation instructions.</p>
-<section id="verify-installation" class="level4">
-<h4 class="anchored">Verify Installation:</h4>
-<p>In the Terminal, type</p>
+<p><strong>Verify Installation:</strong> In the Terminal, type</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a>    <span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>to check the installation.</p>
-<h3 class="anchored" data-anchor-id="verify-installation">
-<ol start="3" type="1">
-<li>For Linux Users
-</li></ol></h3>
-<h4 class="anchored">
-Install Git through Package Manager:
-</h4>
-
+</section>
+<section id="for-linux-users" class="level2">
+<h2 class="anchored" data-anchor-id="for-linux-users">3. For Linux Users</h2>
+<p><strong>Install Git through Package Manager:</strong></p>
 <ul>
 <li>For Debian/Ubuntu-based distributions, open the Terminal and type</li>
 </ul>
@@ -369,38 +353,34 @@ Install Git through Package Manager:
 <ul>
 <li>For other distributions, use the respective package manager and the package named ‘git’.</li>
 </ul>
-</section>
-<section id="verify-installation-1" class="level4">
-<h4 class="anchored" data-anchor-id="verify-installation-1">Verify Installation:</h4>
-<p>Confirm the installation by typing in the terminal.</p>
+<p><strong>Verify Installation:</strong> Confirm the installation by typing in the terminal.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a>    <span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
 </section>
-<section id="git-configuration" class="level2">
-<h2 class="anchored" data-anchor-id="git-configuration">Git configuration:</h2>
+<section id="git-configuration" class="level1">
+<h1>Git configuration:</h1>
 <p>After installing Git, it’s a good practice for users to set their Git username and email address, which will be used for every Git commit. This can be done by executing the following commands in the terminal or command prompt:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.name <span class="pp">[</span><span class="ss">your</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a>    <span class="fu">git</span> config <span class="at">--global</span> user.email <span class="pp">[</span><span class="ss">your.email@example.com</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This steps ensures that all your commits will have your identity attached to them anytime you commit and push to a repo.</p>
-<section id="basic-concepts-of-git" class="level3">
-<h3 class="anchored" data-anchor-id="basic-concepts-of-git">Basic Concepts of Git:</h3>
+</section>
+<section id="basic-concepts-of-git" class="level1">
+<h1>Basic Concepts of Git</h1>
 <ol type="1">
-<li>Repository (Local and Remote)</li>
-<li>Commit</li>
-<li>Branch</li>
-<li>Merge</li>
-<li>Pull Request</li>
+<li><p><strong>Repository(Local and Remote):</strong> A repository (or ‘repo’) is like a project’s folder. It contains all of the project files and the history of changes made to those files.</p></li>
+<li><p><strong>Commit:</strong> A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.</p></li>
+<li><p><strong>Branch:</strong> A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named ‘master’.</p></li>
+<li><p><strong>Merge:</strong> Merging is the process of integrating changes from one branch into another. Working with Git.</p></li>
+<li><p><strong>Pull Request:</strong> Is a feature in Git that allows developers working on a project collaboratively to propose changes to a codebase. It is a way to initiate a discussion and review process</p></li>
 </ol>
 </section>
-</section>
-<section id="repository-local-and-remote" class="level2">
-<h2 class="anchored" data-anchor-id="repository-local-and-remote">1. Repository (Local and Remote)</h2>
-<section id="local-repository" class="level4">
-<h4 class="anchored" data-anchor-id="local-repository">Local Repository</h4>
+<section id="repository-local-and-remote" class="level1">
+<h1>1. Repository (Local and Remote)</h1>
+<section id="local-repository" class="level2">
+<h2 class="anchored" data-anchor-id="local-repository">Local Repository</h2>
 <p><strong>Definition:</strong> A local repository in Git is a directory on your computer where Git stores all the files and the history of changes made to those files.</p>
 <p><strong>Function:</strong> It allows you to work on your project and make commits, branches, and other Git operations offline.</p>
-</section>
 <section id="creation-and-usage" class="level3">
 <h3 class="anchored" data-anchor-id="creation-and-usage">Creation and Usage:</h3>
 <p>Created using <code>git init</code> or <code>git clone</code> commands.</p>
@@ -408,12 +388,12 @@ Install Git through Package Manager:
 <p><strong>Note:</strong> When you initialize or clone a repository on your local mahcine, you will often see a <em>.Git</em> directory as shown below:</p>
 <p><img src="../Unit_2/images/1.png" class="img-fluid"></p>
 </section>
-<section id="remote-repository" class="level3">
-<h3 class="anchored" data-anchor-id="remote-repository">Remote Repository</h3>
+</section>
+<section id="remote-repository" class="level2">
+<h2 class="anchored" data-anchor-id="remote-repository">Remote Repository</h2>
 <p><strong>Definition:</strong> A remote repository is a version of your project hosted on the internet or a network.</p>
 <p><strong>Purpose:</strong> It facilitates collaboration, allowing multiple people to push to and pull from the same project.</p>
 <p><strong>Common Platforms:</strong> Platforms like GitHub, GitLab, and Bitbucket host remote repositories.</p>
-</section>
 <section id="interaction" class="level3">
 <h3 class="anchored" data-anchor-id="interaction">Interaction:</h3>
 <ul>
@@ -428,9 +408,10 @@ Install Git through Package Manager:
 <span id="cb10-3"><a href="#cb10-3"></a>    <span class="fu">git</span> merge</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
+</section>
 <div class="grid">
-<section id="commitpush" class="level2 g-col-6">
-<h2 class="anchored" data-anchor-id="commitpush">2. Commit/Push</h2>
+<section id="commitpush" class="level1 g-col-6">
+<h1>2. Commit/Push</h1>
 <p><strong>Definition:</strong> A commit in Git is a snapshot of your project’s current state, allowing you to capture the condition of your project at a specific point in time.</p>
 <p><strong>Importance:</strong> Commits serve as checkpoints where individual changes can be made permanent to the repository’s history.</p>
 <p><strong>Usage:</strong> To save your staged changes along with a descriptive message, use the code below:</p>
@@ -440,23 +421,17 @@ Install Git through Package Manager:
 <p><img src="./images/git commit.png" class="img-fluid"></p>
 </div>
 </div>
-<section id="git-commit-messages-best-practices" class="level4">
-<h4 class="anchored" data-anchor-id="git-commit-messages-best-practices">Git commit messages best practices:</h4>
-<ul>
-<li>Commit messages should be clear and concise</li>
-<li>commit messages should reflect the changes made. i.e <em>“updated file upload function in task.py”</em></li>
-</ul>
-</section>
-<section id="git-push" class="level3">
-<h3 class="anchored" data-anchor-id="git-push">Git Push</h3>
+<p>!!! info “Git commit messages best practices” - Commit messages should be clear and concise - commit messages should reflect the changes made. i.e <em>“updated file upload function in task.py”</em></p>
+<section id="git-push" class="level2">
+<h2 class="anchored" data-anchor-id="git-push">Git Push</h2>
 <p><strong>Purpose:</strong> Git push is used whenever we want to push your current commit from your local repository to the remote repository. What this code does under the hood is to push the current state of our codes to the remote repository.</p>
 <p><strong>Syntax</strong></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a>    <span class="fu">git</span> push <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Replace [branch-name] with the name of the branch in which you wish to push the changes to. By default, <code>origin</code> is the name git gives to the remote repository once initialized or cloned. And the default branch name in origin is <code>main</code></p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a>    <span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="branch" class="level2">
-<h2 class="anchored" data-anchor-id="branch">3. Branch</h2>
+<section id="branch" class="level1">
+<h1>3. Branch</h1>
 <p><strong>Definition:</strong> A branch in Git represents an independent line of development in a project.</p>
 <p><strong>Purpose:</strong> Branches allow you to work on different features or fixes without affecting the main codebase.</p>
 <p><strong>Usage:</strong></p>
@@ -476,33 +451,30 @@ Install Git through Package Manager:
 <li>To delete a branch on the remote repository</li>
 </ol>
 <div class="sourceCode" id="cb17"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a>    <span class="fu">git</span> push origin <span class="at">--delete</span> <span class="pp">[</span><span class="ss">branch</span><span class="pp">-</span><span class="ss">name</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="branch-best-practices" class="level3">
-<h3 class="anchored" data-anchor-id="branch-best-practices">Branch Best Practices:</h3>
+<section id="branch-best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="branch-best-practices">Branch Best Practices:</h2>
 <p>Use descriptive names for branches. Create separate branches for different features or bug fixes.</p>
 </section>
-<section id="good-branch-naming-convention" class="level3">
-<h3 class="anchored" data-anchor-id="good-branch-naming-convention">Good Branch Naming Convention:</h3>
+<section id="good-branch-naming-convention" class="level2">
+<h2 class="anchored" data-anchor-id="good-branch-naming-convention">Good Branch Naming Convention:</h2>
 <p>Clear branch names help with organization, understanding the purpose of the branch, and managing multiple branches.</p>
-<section id="common-naming-strategies" class="level4">
-<h4 class="anchored" data-anchor-id="common-naming-strategies">Common Naming Strategies:</h4>
+<p><strong>Common Naming Strategies</strong> - <strong>Feature Branches:</strong> Name feature branches with a prefix feature/, followed by a short desccriptor (e.g., feature/add-login).</p>
 <ul>
-<li><p><strong>Feature Branches:</strong> Name feature branches with a prefix feature/, followed by a short desccriptor (e.g., feature/add-login).</p></li>
 <li><p><strong>Bugfix Branches:</strong> For bug fiexes, use a prefix like bugfix/ or fix/ (e.g bugfix/login-error)</p></li>
 <li><p><strong>Release Branches:</strong> Release branches can be prefixed with a release/, followed by the version number (e.g., release/1.2.0).</p></li>
 <li><p><strong>Hotfix Branches:</strong> Urgent fixes can use hotfix/ as a prefix, followed by the issue being fiexed (e.g., hotfix/memory-leak).</p></li>
 <li><p><strong>Personal/Branches for Experimentation:</strong> Include your name or initials for personal or experimental branches (e.g., jd/test-new-feature).</p></li>
 </ul>
 </section>
-<section id="tips-for-branching" class="level4">
-<h4 class="anchored" data-anchor-id="tips-for-branching">Tips for Branching</h4>
+<section id="tips-for-branching" class="level2">
+<h2 class="anchored" data-anchor-id="tips-for-branching">Tips for Branching</h2>
 <p><strong>Keep Branches Focused:</strong> Each branch should represent a single feature or fix. This makes it easier to review and merge.</p>
 <p><strong>Regularly Update from Main Branch:</strong> Frequently merge or rebase your branch with the main branch (like master or main) to stay up-to-date with the latest changes and avoid large merge conflicts.</p>
 <p><strong>Prune Regularly:</strong> Delete branches once they are merged and no longer needed to keep the repository clean.</p>
 </section>
 </section>
-</section>
-<section id="merge" class="level2">
-<h2 class="anchored" data-anchor-id="merge">4. Merge</h2>
+<section id="merge" class="level1">
+<h1>4. Merge</h1>
 <p><strong>Definition:</strong> Merging in Git is the act of integrating changes from one branch into another.</p>
 <p><strong>Application:</strong> Commonly used to combine the development work of different branches. After testing and approving changes in a feature branch, you merge them into the main branch (often called main).</p>
 <p><strong>Process:</strong> Use</p>
@@ -510,12 +482,11 @@ Install Git through Package Manager:
 <p>to merge the changes from [branch-name] into your current branch.</p>
 <p><strong>Conflict Resolution:</strong> If there are conflicts between the branches, Git will prompt you to resolve them before completing the merge.</p>
 </section>
-<section id="pull-request" class="level2">
-<h2 class="anchored" data-anchor-id="pull-request">5. Pull Request</h2>
+<section id="pull-request" class="level1">
+<h1>5. Pull Request</h1>
 <p><strong>Definition:</strong> A pull request (PR) is a method of submitting contributions to a project. It’s specific to platforms like GitHub, GitLab, or Bitbucket.</p>
 <p><strong>Purpose:</strong> PRs are a way to inform team members that changes in a branch are ready to be merged into the main branch. They provide a platform for code review and discussion about the changes.</p>
 <p><strong>Process:</strong> Once you push your branch to a remote repository, you can create a pull request through the repository’s web interface. Other team members can review the changes, provide feedback, and once approved, the changes can be merged into the main branch.</p>
-</section>
 </section>
 <section id="git-with-vscode" class="level1">
 <h1>Git with VSCode:</h1>
@@ -525,8 +496,9 @@ Install Git through Package Manager:
 <li>Integrated development environment.</li>
 <li>Streamlined workflow.</li>
 </ul>
-<section id="connecting-git-to-visual-studio-code-vscode" class="level4">
-<h4 class="anchored" data-anchor-id="connecting-git-to-visual-studio-code-vscode">Connecting Git to Visual Studio Code (VSCode)</h4>
+</section>
+<section id="connecting-git-to-visual-studio-code-vscode" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-git-to-visual-studio-code-vscode">Connecting Git to Visual Studio Code (VSCode)</h3>
 <p><strong>VSCode Overview:</strong> Visual Studio Code is a popular, lightweight, and powerful source code editor that supports multiple programming languages and tools.</p>
 <p><strong>Integration Benefits:</strong> Integrating Git with VSCode streamlines the development workflow, allowing you to perform version control tasks directly from the editor.</p>
 <p>Step-by-Step Guide:</p>
@@ -534,7 +506,6 @@ Install Git through Package Manager:
 <li><p><strong>Ensure Git is Installed:</strong> Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).</p></li>
 <li><p><strong>Open VSCode:</strong> Launch Visual Studio Code.</p></li>
 </ul>
-</section>
 </section>
 <section id="accessing-git" class="level3">
 <h3 class="anchored" data-anchor-id="accessing-git">Accessing Git:</h3>
