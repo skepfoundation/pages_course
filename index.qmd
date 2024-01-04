@@ -48,7 +48,7 @@ By the end of this course you should know how to build a basic, static website u
 
 While we hope you feel you can create a custom website from scratch by the end of this course, there will still be some things you won't be able to do by the end.
 
--   You won't be able to create a dynamic website. A dynamic website is where he contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
+-   You won't be able to create a dynamic website. A dynamic website is where the contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
 
 -   You won't known the ins and outs of data science skills like data wrangling or machine learning. (These are saved for future courses)
 
