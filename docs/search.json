@@ -361,7 +361,7 @@
     "href": "lessons/Unit_2/lesson_03.html",
     "title": "Lesson 3: Git and How to connect to VScode",
     "section": "",
-    "text": "Git is a powerful and widely used version control system that allows developers to track changes in their code over time. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Git is designed to handle projects of all sizes with speed and efficiency.\n!!! info “Git commit messages best practices” - Commit messages should be clear and concise - commit messages should reflect the changes made. i.e “updated file upload function in task.py”"
+    "text": "Understand the concepts of Git and its functionality.\nLearn the benefits of using Git for version control.\nIdentify the basic Git workflows, including cloning, committing, pushing, branching, and merging.\nGain practical knowledge of setting up and using Git within VScode.\n!!! info “Git commit messages best practices” - Commit messages should be clear and concise - commit messages should reflect the changes made. i.e “updated file upload function in task.py”"
   },
   {
     "objectID": "lessons/Unit_2/lesson_03.html#how-to-install-git",
@@ -523,5 +523,12 @@
     "title": "Lesson 3: Git and How to connect to VScode",
     "section": "Tips for Branching",
     "text": "Tips for Branching\nKeep Branches Focused: Each branch should represent a single feature or fix. This makes it easier to review and merge.\nRegularly Update from Main Branch: Frequently merge or rebase your branch with the main branch (like master or main) to stay up-to-date with the latest changes and avoid large merge conflicts.\nPrune Regularly: Delete branches once they are merged and no longer needed to keep the repository clean."
+  },
+  {
+    "objectID": "lessons/Unit_2/lesson_03.html#git-simulation-game",
+    "href": "lessons/Unit_2/lesson_03.html#git-simulation-game",
+    "title": "Lesson 3: Git and How to connect to VScode",
+    "section": "1. Git Simulation Game:",
+    "text": "1. Git Simulation Game:\nTutors should divide students into pairs and provide each pair with a set of files representing a small project. Students will take turns making changes to the files, simulating working on the project collaboratively.\nTask: Each pair will perform the following actions using Git commands in a terminal:\n\nInitialize a local repository for the project files.\nMake changes to the files and stage them for commit.\nWrite clear commit messages describing the changes.\nCreate a new branch to work on a specific feature.\nMake further changes on the feature branch and commit them.\nSwitch back to the main branch and merge the feature branch.\nResolve any potential merge conflicts.\n\nBonus: For advanced learners, introduce concepts like pull requests and remote repositories. Students can simulate pushing their changes to a remote repository and creating pull requests for review and merging."
   }
 ]

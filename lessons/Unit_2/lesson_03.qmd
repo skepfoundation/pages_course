@@ -12,6 +12,13 @@ format:
 ---
 
 
+# Learning Objectives:
+
+1. Understand the concepts of Git and its functionality.
+2. Learn the benefits of using Git for version control.
+3. Identify the basic Git workflows, including cloning, committing, pushing, branching, and merging.
+4. Gain practical knowledge of setting up and using Git within VScode.
+
 # Introduction to Git
 Git is a powerful and widely used version control system that allows developers to track changes in their code over time. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Git is designed to handle projects of all sizes with speed and efficiency.
 
@@ -415,3 +422,31 @@ In VSCode, Git can be accessed by two methods:
 Clicking on this icon will open the Source Control panel. If Git is installed and configured correctly, VSCode will automatically detect and integrate Git functionalities.
 
 2. Via the command line. Which is what we are focusing on in this lesson.
+
+
+# Practice Activity
+
+
+
+### 1. Git Simulation Game:
+
+Tutors should divide students into pairs and provide each pair with a set of files representing a small project. Students will take turns making changes to the files, simulating working on the project collaboratively.
+
+Task: Each pair will perform the following actions using Git commands in a terminal:
+
+1. Initialize a local repository for the project files.
+2. Make changes to the files and stage them for commit.
+3. Write clear commit messages describing the changes.
+4. Create a new branch to work on a specific feature.
+5. Make further changes on the feature branch and commit them.
+6. Switch back to the main branch and merge the feature branch.
+7. Resolve any potential merge conflicts.
+   
+Bonus: For advanced learners, introduce concepts like pull requests and remote repositories. Students can simulate pushing their changes to a remote repository and creating pull requests for review and merging.
+
+# Conclusion
+With the basics of Git under your belt and VScode's integrated power at your fingertips, you're well on your way to mastering version control and boosting your development workflow. Remember, the more you practice, the smoother your project journeys will become. Keep exploring, keep learning, and keep pushing your code horizons!
+
+This concise yet impactful conclusion retains the key takeaways while encouraging continued learning and development.
+
+Feel free to customize it further based on your specific lesson and audience. Happy teaching!
