@@ -126,7 +126,8 @@ There are a list of tools and links which we will make use of in this Lesson to 
 
 3. **Gifs:** [GIF Link](https://giphy.com/stickers/) Thus link can be used to include Gifs on your profile README. You may be wondering what gifs has to do with profile images, but when you look at how appealing most gifs are, you tend to see how much estatic it provides to your profile. You will learn how to go about this in the next section.
 
-4. **Vscode:** Vscode is a code editor, and this is basically what we will be using to edit our github profile readme file.
+4. **Github's built in text Editor:** Github comes with a built in code editor, and this is basically what we will be using to edit our github profile readme file. You can click on the "Pen" icon on the top right conrner of your profile to edit your profile using Github built in text editor. 
+![](./github_annotated.png)
 
 # 5. Enhancing Your Github Profile README
 
@@ -140,7 +141,7 @@ Keep your README updated as you embark on new projects or attain milestones, and
 
 This will go best at the top of your profile readme. Paste this code at the top.
 
-::: panel-tabset
+:::panel-tabset
 ## Markdown
 
 ::: columns
@@ -158,22 +159,6 @@ This will go best at the top of your profile readme. Paste this code at the top.
 :::
 :::
 
-### HTML
-
-::: columns
-::: {.column width="47%"}
-<h3>John Doe</h3>
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="47%"}
-``` md
-<h1> John Doe </h1>
-```
-:::
-:::
 :::
 
 <!-- End tabset -->
@@ -375,26 +360,7 @@ When the parameters listed above (Label and color) are combined with <https://im
 :::
 :::
 
-## HTML
 
-::: columns
-::: {.column width="47%"}
-<center><img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="200"/></center>
-
-<br>
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="47%"}
-``` md
-<div id="header" align="center">
-    <img src="https://media.giphy.com/media/hpXdHPfFI5wTABdDx9/giphy.gif" width="100">
-</div>
-```
-:::
-:::
 :::
 
 <!-- Ending tabset -->
@@ -421,26 +387,7 @@ When the parameters listed above (Label and color) are combined with <https://im
 :::
 :::
 
-## HTML
 
-::: columns
-::: {.column width="47%"}
-![](stats1.png)
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="47%"}
-``` md
-<p align="center">
-  <a href="https://git.io/streak-stats](https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=<insert_github_username>&theme=dark" alt="GitHub profile Streak" />
-  </a>
-</p>
-```
-:::
-:::
 :::
 
 <!-- End tabset -->
@@ -465,26 +412,7 @@ When the parameters listed above (Label and color) are combined with <https://im
 :::
 :::
 
-## HTML
 
-::: columns
-::: {.column width="47%"}
-![](stats2.png)
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="47%"}
-```{md}
-<p align="center">
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com/?user=<insert_github_username>&theme=dark" alt="GitHub Streak" />
-  </a>
-</p>
-```
-:::
-:::
 :::
 
 ### Option 3
@@ -507,24 +435,7 @@ When the parameters listed above (Label and color) are combined with <https://im
 :::
 :::
 
-## HTML
 
-::: columns
-::: {.column width="47%"}
-![](stats3.png)
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="47%"}
-```{md}
-<p align= "center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=<insert_github_username>&theme=dark&layout=compact" alt="top langs"/>
-</p>
-```
-:::
-:::
 :::
 
 <!-- End tabset -->
