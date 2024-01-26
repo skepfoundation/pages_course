@@ -6,9 +6,8 @@ title: "Lesson 4: Additional Profile README Features"
 
 This page will help you know what to include on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.
 
-# 1. Introduction to Github README
 ### Definition of Github README
-Generally, A GitHub README is a document that typically accompanies a GitHub repository, providing essential information about the repository and its contents. It's named "README" because it's often the first thing a visitor should read to understand what the project is about. The importance of a GitHub README cannot be overstated, as it serves several critical functions, there are alot of importance of Github Readme, but I will only talk about 3 in this lesson.
+Generally, A GitHub README is a document that typically accompanies a GitHub repository, providing essential information about the repository and its contents. It's named "README" because it's often the first thing a visitor should read to understand what the project is about. The importance of a GitHub README cannot be overstated, as it serves several critical functions, but we will only talk about 3 in this lesson.
 
 **Key Features and Importance of a GitHub README:**
 
@@ -33,11 +32,11 @@ In the context of creating a GitHub profile, a GitHub README serves as a persona
 
 
 
-# 2. Learning Objectives
+# Learning Objectives
 
 -   Students will be able to create a GitHUb Profile README customized to their unique sensibilities and needs.
 
-# 3. Basic Markdown For Github Profile README
+# Basic Markdown For Github Profile README
 #### Baisc Text Formatting(Bold, Italics and Lists) in Markdown
 1. **Headers**
 
@@ -124,7 +123,7 @@ There are a list of tools and links which we will make use of in this Lesson to 
 
 2. **Shields.io:** [shields.io](https://shields.io/) This link is used to include social media badges on your profile. This is to provide a gateway for possible recruiters to connect with you on any platform you provide.
 
-3. **Gifs:** [GIF Link](https://giphy.com/stickers/) Thus link can be used to include Gifs on your profile README. You may be wondering what gifs has to do with profile images, but when you look at how appealing most gifs are, you tend to see how much estatic it provides to your profile. You will learn how to go about this in the next section.
+3. **Gifs:** [GIF Link](https://giphy.com/stickers/) Thus link can be used to include Gifs on your profile README. You may be wondering what gifs have to do with profile images, but when you look at how appealing most gifs are, you tend to see how much aesthetic it provides to your profile. You will learn how to go about this in the next section.
 
 4. **Github's built in text Editor:** Github comes with a built in code editor, and this is basically what we will be using to edit our github profile readme file. You can click on the "Pen" icon on the top right conrner of your profile to edit your profile using Github built in text editor. 
 ![](./github_annotated.png)
