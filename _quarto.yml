@@ -40,7 +40,7 @@ website:
           - text: "Lesson 3: Git in VSCode"
             href: lessons\unit_02\lesson_03\lesson_03.qmd
           - text: "Lesson 4: Websites with Quarto"
-            href: lessons\unit_02\lesson_04\quarto_website.qmd
+            href: lessons\unit_02\Lesson_04\quarto_website.qmd
       - text: "Unit 3"
         menu: 
           - text: "Lesson 1"

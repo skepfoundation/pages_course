@@ -525,52 +525,10 @@
     "text": "What is R?\nR is a programming language developed by Ross Ihaka and Robert Gentleman designed for statistical programming. It is primarily focused on data wrangling and visualization.\nAs the phrase “programming language” suggests, R is a language used to instruct a computer to carry out complex commands. Like most any other language you will need to understand its grammar and syntax in order to fluently “speak” it. The more fluent you become in it, the easier it will be for you to communicate your wants and desires to it.\n\n\nInstalling R\n\nGo to cloud.r-project.org\nClick on the download link for your computer system. For example if you are using a windows computer click “Download R for Windows”\nClick on “base”\nClick on the download version for the current version of R. (At time of writing the button says “Download R-4.3.1 for Windows” on a windows computer.) Make sure you know where you save the downloaded file so that you can run the installer.\nNavigate to the downloaded file and run the installer by double clicking. (Usually it is title something like “R-4.3.1-win”) Follow the steps for the installation wizard. It is highly recommended you just keep the recommended installation settings especially if you haven’t done this before.\nR should now be properly installed. We’ll show you how to check it properly in the next tutorial “Installing R Studio”"
   },
   {
-    "objectID": "lessons/unit_02/lesson_03/lesson_03.html#source-control",
-    "href": "lessons/unit_02/lesson_03/lesson_03.html#source-control",
-    "title": "Lesson 3: Git and How to connect to VScode",
+    "objectID": "lessons/unit_02/lesson_05/lesson_05.html",
+    "href": "lessons/unit_02/lesson_05/lesson_05.html",
+    "title": "Github Pages Training",
     "section": "",
-    "text": "Source Control\n\nTo make a git repository from an existing folder on your"
-  },
-  {
-    "objectID": "lessons/unit_02/lesson_03/lesson_03.html#command-line-2",
-    "href": "lessons/unit_02/lesson_03/lesson_03.html#command-line-2",
-    "title": "Lesson 3: Git and How to connect to VScode",
-    "section": "",
-    "text": "Definition: A branch in Git represents an independent line of development in a project.\nPurpose: Branches allow you to work on different features or fixes without affecting the main codebase.\nUsage:\n\nCreate a new branch with git branch [branch-name].\n\n    git branch [branch_name]\n\nSwitch between branches using git checkout [branch-name].\n\n    git checkout [branch_name]\n\nTo view all branches available in the Remote Repository\n\n    git branch -a\n\nTo delete a branch on the remote repository\n\n    git push origin --delete [branch-name]\n\n\nUse descriptive names for branches. Create separate branches for different features or bug fixes.\n\n\n\nClear branch names help with organization, understanding the purpose of the branch, and managing multiple branches.\n\n\n\nFeature Branches: Name feature branches with a prefix feature/, followed by a short desccriptor (e.g., feature/add-login).\nBugfix Branches: For bug fiexes, use a prefix like bugfix/ or fix/ (e.g bugfix/login-error)\nRelease Branches: Release branches can be prefixed with a release/, followed by the version number (e.g., release/1.2.0).\nHotfix Branches: Urgent fixes can use hotfix/ as a prefix, followed by the issue being fiexed (e.g., hotfix/memory-leak).\nPersonal/Branches for Experimentation: Include your name or initials for personal or experimental branches (e.g., jd/test-new-feature).\n\n\n\n\nKeep Branches Focused: Each branch should represent a single feature or fix. This makes it easier to review and merge.\nRegularly Update from Main Branch: Frequently merge or rebase your branch with the main branch (like master or main) to stay up-to-date with the latest changes and avoid large merge conflicts.\nPrune Regularly: Delete branches once they are merged and no longer needed to keep the repository clean."
-  },
-  {
-    "objectID": "lessons/unit_02/lesson_03/lesson_03.html#source-control-2",
-    "href": "lessons/unit_02/lesson_03/lesson_03.html#source-control-2",
-    "title": "Lesson 3: Git and How to connect to VScode",
-    "section": "",
-    "text": "To add your changes to a repository without making it the main version of the code, you can create a “branch”.\n\nSteps:"
-  },
-  {
-    "objectID": "lessons/unit_02/lesson_03/lesson_03.html#section",
-    "href": "lessons/unit_02/lesson_03/lesson_03.html#section",
-    "title": "Lesson 3: Git and How to connect to VScode",
-    "section": "",
-    "text": "Definition: A pull request (PR) is a method of submitting contributions to a project. It’s specific to platforms like GitHub, GitLab, or Bitbucket.\nPurpose: PRs are a way to inform team members that changes in a branch are ready to be merged into the main branch. They provide a platform for code review and discussion about the changes.\nProcess: Once you push your branch to a remote repository, you can create a pull request through the repository’s web interface. Other team members can review the changes, provide feedback, and once approved, the changes can be merged into the main branch."
-  },
-  {
-    "objectID": "lessons/unit_02/lesson_03/lesson_03.html#command-line-3",
-    "href": "lessons/unit_02/lesson_03/lesson_03.html#command-line-3",
-    "title": "Lesson 3: Git and How to connect to VScode",
-    "section": "",
-    "text": "Definition: Merging in Git is the act of integrating changes from one branch into another.\nApplication: Commonly used to combine the development work of different branches. After testing and approving changes in a feature branch, you merge them into the main branch (often called main).\nProcess: Use\n    git merge [branch-name]\nto merge the changes from [branch-name] into your current branch.\nConflict Resolution: If there are conflicts between the branches, Git will prompt you to resolve them before completing the merge."
-  },
-  {
-    "objectID": "lessons/unit_02/lesson_03/lesson_03.html#command-line-4",
-    "href": "lessons/unit_02/lesson_03/lesson_03.html#command-line-4",
-    "title": "Lesson 3: Git and How to connect to VScode",
-    "section": "",
-    "text": "Definition: A pull request (PR) is a method of submitting contributions to a project. It’s specific to platforms like GitHub, GitLab, or Bitbucket.\nPurpose: PRs are a way to inform team members that changes in a branch are ready to be merged into the main branch. They provide a platform for code review and discussion about the changes.\nProcess: Once you push your branch to a remote repository, you can create a pull request through the repository’s web interface. Other team members can review the changes, provide feedback, and once approved, the changes can be merged into the main branch."
-  },
-  {
-    "objectID": "lessons/unit_02/lesson_03/lesson_03.html#source-control-4",
-    "href": "lessons/unit_02/lesson_03/lesson_03.html#source-control-4",
-    "title": "Lesson 3: Git and How to connect to VScode",
-    "section": "",
-    "text": ":::"
+    "text": "this is how you use CSS in Quarto\n\n---\ntitle: \"My document\"\nformat:\n  html:\n    css: styles.css\n---"
   }
 ]
