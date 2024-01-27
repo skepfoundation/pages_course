@@ -527,8 +527,8 @@
   {
     "objectID": "lessons/unit_02/lesson_05/lesson_05.html",
     "href": "lessons/unit_02/lesson_05/lesson_05.html",
-    "title": "Github Pages Training",
+    "title": "Lesson 05: CSS",
     "section": "",
-    "text": "this is how you use CSS in Quarto\n\n---\ntitle: \"My document\"\nformat:\n  html:\n    css: styles.css\n---"
+    "text": "Brigham Work Here\nIntroduction\nBefore we get into CSS, let’s take a step back. In web development there are three major languages: HTML, CSS, and JavaScript HTML (HyperText Markup Language):\nHTML is like the skeleton of a website. Imagine your body without any skin, just bones. HTML gives structure to web pages, like how bones give shape to your body. It tells the web browser what each part of the webpage is, like headings, paragraphs, images, and links. These parts are wrapped in tags, like labels, so the browser knows how to show them.\nCSS (Cascading Style Sheets):\nNow, think of CSS as the clothes and colors you put on the skeleton to make it look cool! CSS adds style and design to the webpage. It decides how things look, like the colors, fonts, spacing, and layout. It’s like magic paint that changes how the webpage appears, making it look pretty and interesting.\nSo, HTML sets up the structure, and CSS makes it look awesome! They work together to create websites that are both organized and cool-looking, just like putting together a fun puzzle!\n\nthis is how you use CSS in Quarto\n\n---\ntitle: \"My Document\"\nformat:\n  html:\n    css: styles.css\n---\n\nmaking one off tweaks like changing background color or a single font style\nThe theme lesson will incorporate all of these to make a theme template used for future projects\nThe CSS one can be introducing common tags like\n\nand\n\n, and how to use their attributes? Then the theme lesson will get in to how to write CSS and make it useful?\nThe css lesson should look at how to adjust the style.css file that gets created when building a quarto website\n\n\n\nMfon Work Here"
   }
 ]
