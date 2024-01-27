@@ -52,7 +52,12 @@ Short recap:
 - JavaScript: Adds interactivity and dynamic behavior to web pages.
 
 
-### Markdown VS HTML & CSS
+### CSS Cascades
+
+CSS stands for "Cascading Styling Sheets", what does this mean? It's built on the idea that you can have a blank statement that all font should be size 12 across a website. This will be true for the entire website, until a more specific rule is applied. While that rule is still in effect, another rule can be applied for a section of the website, like the customer support section, that all the background colors should be light yellow. This means that this section of the website will have size 12 font and a light yellow background. 
+
+Now, say we're editing a specific line in this section with 12 point font and a yellow background. If we apply a more specific rule that the font should be size 16 in this specific area, this most specific rule overrides the existing rules for this area.
+
 
 ### How to Use CSS in Quarto 
 
