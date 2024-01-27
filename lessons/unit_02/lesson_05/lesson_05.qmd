@@ -116,8 +116,171 @@ title: "CSS Selectors Table"
 format: html
 ---
 
-| Header 1 | Header 2 | Header3
 
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Selector</th>
+      <th>Meaning</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Universal Selector</td>
+      <td>Applies to all elements in the document</td>
+      <td><code>* {}</code><br>Targets all elements on the page</td>
+    </tr>
+    <tr>
+      <td>2. Type Selector</td>
+      <td>Matches element names</td>
+      <td><code>h1, h2, h3 {}</code><br>Targets the &lt;h1&gt;, &lt;h2&gt;, and &lt;h3&gt; elements</td>
+    </tr>
+    <tr>
+      <td>3. Class Selector</td>
+      <td>Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol</td>
+      <td><code>.note {}</code><br>Targets any element whose class attribute has a value of note</td>
+    </tr>
+    <tr>
+      <td>4. ID Selector</td>
+      <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
+      <td><code>#introduction {}</code><br>Targets the element whose id attribute has a value of introduction</td>
+    </tr>
+    <tr>
+      <td>5. Child Selector</td>
+      <td>Matches an element that is a direct child of another</td>
+      <td><code>li&gt;a {}</code><br>Targets any &lt;a&gt; elements that are children of an &lt;li&gt; element</td>
+    </tr>
+    <tr>
+      <td>6. Descendant Selector</td>
+      <td>Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
+      <td><code>p a {}</code><br>Targets any &lt;a&gt; elements that sit inside a &lt;p&gt; element, even if there are other elements nested between them</td>
+    </tr>
+    <tr>
+      <td>7. Adjacent Sibling Selector</td>
+      <td>Matches an element that is the next sibling of another</td>
+      <td><code>h1+p {}</code><br>Targets the first &lt;p&gt; element after any &lt;h1&gt; element</td>
+    </tr>
+    <tr>
+      <td>8. General Sibling Selector</td>
+      <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+      <td><code>h1~p {}</code><br>If you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element, this rule would apply to both</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### CSS Properties and Values
+Text styling is one of the fundamental aspects of web design. It not only improves readability but also enhances the overall aesthestics of a webpage.
+
+In brief, a CSS property affects how elements are displayed in a webpage.
+
+CSS declarations sit inside curly brackets and each is made up of two
+parts: a ***property*** and a ***value***, separated by a colon. You can specify
+several properties in one declaration, each separated by a semi-colon. As shown in the image below;
+
+![](./Pasted%20image.png)
+
+This rule indicates that all  ```<h1>, <h2> and <h3>```
+ elements should be shown in the Arial typeface, in a yellow color.
+
+**Properties** indicate the aspects of the element you want to change. For example, color, font, width, height and border.
+
+**Values** specify the settings you want to use for the chosen properties. For example, if you want to specify a color property then the value is the color you want the text in these elements to be.
+
+ In this lesson, we will explore various CSS properties that can be used to style text and fonts. Some of those properties are as follows;
+
+1. Color: The color property specifies the color of the text inside an element. It can accept various formats, including keywords like
+    - red,
+    - HEX (#ff0000),
+    - RGB (rgb(255, 0, 0)), etc...
+  
+Example: 
+```css
+    color: blue; #will set the text color to blue.
+``` 
+
+
+2. Font-Family: This property specifies the font for the text. It can be a specific font **(e.g., Arial)**, a generic family **(e.g., sans-serif)**, or a list of fonts, known as a ***"font stack,"*** where the browser will use the first available font.
+
+Example:
+```css
+    font-family: "Times New Roman", serif;
+```
+uses "Times New ROman" if available, otherwise falls back to any available serif font.
+
+3. Font-Size: font-size determines the size of the font. Font-size can be specified in different units, such as;
+  - Pixels (px),
+  - Oiubts (pt),
+  - ems (em),
+  - Percentages (%)
+
+Example:
+```css
+    font-size: 16px; #Sets the font size to 16 pixels.
+```
+
+
+4. Font-Weight: Controls the thickness of the text. Some font-weight include;
+  - normal
+  - bold
+  - bolder
+  - lighter
+  - or numerical values ranging from 100-900.
+
+Example:
+```css
+    font-weight: bold; #makes the text bold.
+```
+
+
+5. Text-Align: This Css property aligns text horizontally within it's containing element. Possible values are
+  - left,
+  - right,
+  - center,
+  - justify
+
+Example:
+```css
+    text-align: center; #this centers the text.
+```
+
+6. Text-Decoration: Adds decorative elements to text, such as;
+    -  underlines,
+    -  overlines,
+    -  line-throughs,
+    -  or a combination of the ones listed above
+
+Example:
+```css
+    text-decoration: underline; #underlines the text.
+```
+
+7. Text-Transform: Text Transform controls the capitalization of text. The values includes the following;
+  - none,
+  - capitalize (first letter of each word is capitalized),
+  - uppercase (all letters are uppercase),
+  - lowercase (all letters are lowercase). etc.
+
+
+8. Line-Height: Sets the height of a line of text, affecting the space between the lines in a paragraph. Line height 
+  - Can be a number (without units, which acts as a multiplier to the font size)
+  - length (px, em, etc.),
+  - or precentage.
+
+Example:
+```css
+    line-height: 1.5; #sets the line height to 1.5 times the font size.
+```
+The purpose of line-height is to enhance readability.
+
+9. Letter-Spacing and Word-Spacing: These properties control the space between letters and words, respectively. They can accept values like normal or lengths (e.g., 2px).
+  
+Example:
+```css
+    letter-spacing: 1px; #increases the space between letters by 1 pixel.
+```
 
 
 ## Practice Activity
