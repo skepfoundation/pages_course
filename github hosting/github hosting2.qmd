@@ -1,0 +1,71 @@
+---
+title: "Hosting Your Website On Github"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc-location: left
+    code-copy: true
+    code-line-numbers: true
+    code-block-border-left: "#A9A9A9"
+    code-block-bg: true
+    code-bloc-bg-alpha: -.2
+    page-layout: full
+    grid:
+      sidebar-width: 200px
+      body-width: 1030px
+      margin-width: 70px
+---
+
+## Overview
+
+By the end of this lesson, students will be able to create a GitHub repository for their website and configure the basic settings for hosting on GitHub Pages \## Learning Objectives
+
+-   Students will be able to Create a repository for website and initialize a GitHub Pages branch.
+
+-   Students will be able Upload Your Website Files
+
+-   Students will be able to view website
+
+## links
+
+https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
+
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
+## Lesson
+
+hosting on github Hosting on GitHub typically refers to using GitHub Pages, a built-in service provided by GitHub for hosting static websites directly from your GitHub repository. GitHub Pages is a convenient and free way to showcase your projects, portfolio, documentation, or any other static content.
+
+### Let begin
+
+1.  Log in to GitHub.
+
+2.  Create a Repository: Go to your GitHub profile and click on the "+" sign to create a new repository. Name your repository(choose any preferred name).
+
+3.  Add Your Website Files: Upload your website files to the repository by highlighting and dragging and dropping into your repository
+
+![](images/highlight%20files.png){height="300"}
+
+![](images/drag%20and%20drop.png){height="300"}
+
+4.  commit changes
+
+5.  Enable GitHub Pages: In your repository, go to the "Settings" tab. Scroll down to the "GitHub Pages" section and click 'check out here'
+
+![](images/check%20out%20here.png){height="300"}
+
+Under "Source," select the branch you want to use (usually main or master). file should be /docs\* Click "Save."
+
+![](images/main.png){height="300"}
+
+![](images/save.png){height="300"}
+
+6.  click on the link attached 'your site is ready to be published' to veiw your site ![](images/veiw%20websitee.png){height="300"}
+
+## Conclusion
+
+you should be able to veiw and share your website with everyone
+
+## FAQ
