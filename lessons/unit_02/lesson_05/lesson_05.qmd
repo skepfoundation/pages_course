@@ -13,7 +13,7 @@ Say we have a basic paragraph, like the one below. The boring gray text isn't ve
 Instead of this gray text, let's theme our appearance to more of a "dracula" color theme. Compare the paragraph below to the paragraph above. 
 
 <p style="background-color: #282a36; color: #f8f8f2; border: 6px solid #6d78f9; padding: 10px;">
-    This is a Dracula-themed paragraph with colored text, a darker background, and a purple border. 
+    This is a Dracula-themed paragraph with colored text, a darker background, and a purple border.
     <span style="color: #50fa7b;">You can add some green, </span>
     <span style="color: #f1fa81;">some yellow, </span> 
     <span style="color: #ff79c6;">and even some pink</span> 
@@ -99,6 +99,25 @@ format:
     css: styles.css
 ---
 ```
+
+
+### CSS Selectors
+
+**What is a CSS Selector?**
+Now, let's imagine you are building a website like a big playground! Each element on the page, like pictures, buttons, or text, is like a building block. CSS Selectors are like special tools that let you point and say, "Hey, you in a blue shirt and red hat, I want you to do THIS!".
+
+Using this scenario, it is safe to say that css selectors help us identify and interact with html tags.
+The knowledge of the tags, will enable us use css selectors and apply a set of rules and styling to the HTML element tag.
+
+There are many different types of CSS selector that allow you to target rules to specific elements in an HTML document as shown in the table below.
+
+---
+title: "CSS Selectors Table"
+format: html
+---
+
+| Header 1 | Header 2 | Header3
+
 
 
 ## Practice Activity
