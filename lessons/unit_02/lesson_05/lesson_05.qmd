@@ -3,23 +3,93 @@ title: "Lesson 05: CSS"
 format: html
 ---
 
-# Brigham Work Here
+## Overview
 
-Introduction
+Say we have a basic paragraph, like the one below. The boring gray text isn't very exciting. With CSS, there is a better way. 
 
-Before we get into CSS, let's take a step back. In web development there are three major languages: HTML, CSS, and JavaScript
-HTML (HyperText Markup Language):
+> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta lorem mollis aliquam ut. Quam id leo in vitae turpis massa sed elementum tempus. Ullamcorper malesuada proin libero nunc. Morbi blandit cursus risus at ultrices mi. Ultrices gravida dictum fusce ut placerat. Vitae tortor condimentum lacinia quis... </p>
 
-HTML is like the skeleton of a website. Imagine your body without any skin, just bones. HTML gives structure to web pages, like how bones give shape to your body. It tells the web browser what each part of the webpage is, like headings, paragraphs, images, and links. These parts are wrapped in tags, like labels, so the browser knows how to show them.
 
-CSS (Cascading Style Sheets):
+Instead of this gray text, let's theme our appearance to more of a "dracula" color theme. Compare the paragraph below to the paragraph above. 
+
+<p style="background-color: #282a36; color: #f8f8f2; border: 6px solid #6d78f9; padding: 10px;">
+    This is a Dracula-themed paragraph with colored text, a darker background, and a purple border. 
+    <span style="color: #50fa7b;">You can add some green, </span>
+    <span style="color: #f1fa81;">some yellow, </span> 
+    <span style="color: #ff79c6;">and even some pink</span> 
+    accents for a better theme!
+</p>
+
+## Learning Objectives 
+
+- Students will understand the use of CSS
+- Students will learn how to use CSS for basic styling such as font sizes, font color, background colors, and more
+- Students will understand the *cascading* element of CSS  
+
+## Lesson
+
+Before we get into CSS, let's take a step back. What is it used for? When is it used? How is it used? In web development there are three major languages: HTML, CSS, and JavaScript. Let's briefly discuss these.
+
+### HTML (HyperText Markup Language):
+
+In unit one of the course, you learned about Markdown. HTML is similar. They effectively do the same thing. Their difference is markdown is easier to write but less capable than HTML. HTML is more difficult to write but is far more capable. 
+
+Think of HTML as the skeleton of a website. Imagine your body without any skin, just bones. HTML gives structure to web pages, like how bones give shape to your body. It tells the web browser what each part of the webpage is, like headings, paragraphs, images, and links. These parts are wrapped in tags, like labels, so the browser knows how to show them.
+
+### CSS (Cascading Style Sheets):
 
 Now, think of CSS as the clothes and colors you put on the skeleton to make it look cool! CSS adds style and design to the webpage. It decides how things look, like the colors, fonts, spacing, and layout. It's like magic paint that changes how the webpage appears, making it look pretty and interesting.
 
 So, HTML sets up the structure, and CSS makes it look awesome! They work together to create websites that are both organized and cool-looking, just like putting together a fun puzzle!
 
+### JavaScript 
 
-- this is how you use CSS in Quarto 
+JavaScript is like the brain of a website. Imagine your body with a brain that makes decisions and does things. JavaScript adds life, interactivity, and intelligence to web pages. It's like the brain that makes things happen and responds to what you do, making websites more engaging and fun to use. 
+
+Short recap:
+- HTML: Provides the structure and content of a webpage.
+- CSS: Enhances the appearance and styling of HTML elements.
+- JavaScript: Adds interactivity and dynamic behavior to web pages.
+
+
+### CSS Cascades
+
+CSS stands for "Cascading Styling Sheets", what does this mean? It's built on the idea that you can have a blank statement that all font should be size 12 across a website. This will be true for the entire website, until a more specific rule is applied. While that rule is still in effect, another rule can be applied for a section of the website, like the customer support section, that all the background colors should be light yellow. This means that this section of the website will have size 12 font and a light yellow background. 
+
+Now, say we're editing a specific line in this section with 12 point font and a yellow background. If we apply a more specific rule that the font should be size 16 in this specific area, this most specific rule overrides the existing rules for this area.
+
+
+### How to Use CSS in Quarto 
+
+There are three standard ways to write CSS: inline, embedded in head tag, and external. We will only cover inline and external. 
+
+#### Inline
+
+Imagine you're drawing a picture, and you want to color one part of it differently from the rest. You could take a colored marker and draw over that part directly, right? That's similar to how inline CSS works.
+
+With inline CSS, you add styling directly to individual HTML elements using the "style" attribute. Here's an example:
+
+```html
+<p style="color: blue; font-size: 18px;">This text is blue and bigger!</p>
+```
+
+In this example, the style attribute is added to the <p> tag, and it contains CSS rules (like color: blue; and font-size: 18px;) that specify how the text inside the paragraph should look. This way, you're directly applying styling to that specific paragraph.
+
+
+#### External
+
+Now, let's say you're drawing a big picture with lots of different parts, and you want them all to have the same style. Instead of coloring each part individually, you could prepare a set of colored markers and use them whenever needed. That's similar to how external CSS works.
+
+With external CSS, you create a separate CSS file that contains all your styling rules. Here's an example:
+
+```html
+p {
+    color: blue;
+    font-size: 18px;
+}
+```
+
+In this CSS file, we've defined styling rules for <p> elements to make their text blue and bigger. Now, to apply these styles to our quarto document, we link the CSS file using under html in the yaml header as shown below
 
 ```yaml
 ---
@@ -31,16 +101,9 @@ format:
 ```
 
 
+## Practice Activity
 
+## Conclusion
 
+## FAQ
 
-- making one off tweaks like changing background color or a single font style
-- The theme lesson will incorporate all of these to make a theme template used for future projects
-- The CSS one can be introducing common tags like <div> and <p>, and how to use their attributes? Then the theme lesson will get in to how to write CSS and make it useful?
-- The css lesson should look at how to adjust the style.css file that gets created when building a quarto website
-
-
-
-
-
-# Mfon Work Here
