@@ -283,6 +283,137 @@ Example:
 ```
 
 
+
+### Text
+Text styling and formatting plays an important role on the appearances and structure of texts in a website. We'll explore how to control the appearance of your text, adding personality and impact to your web pages. Buckle up, and let's dive into the world of font properties!
+
+**1. Coloring Your Words: The Magic of ```color```**
+
+Imagine writing with a rainbow of colors instead of a plain black ink! The ```color``` property lets you do just that! You can apply an color imaginable using either it color-name(red, blue) or HEX values(#FF0000) just as we discussed in the ***CSS Properties and Values*** section.
+
+The Example below will change the text color to Red;
+
+```html
+  <p style="color: #FF0000;">This text is a red color!</p>
+```
+
+**Outcome:**
+<div style="border: 1px solid green; padding: 10px;">
+  <p style="color: #FF0000;">This text is a red color!</p>
+</div>
+
+
+**Bonus Tips:** You can use this link [color_wheel](https://www.canva.com/colors/color-wheel/) to choose colors for your web page styling.
+
+
+
+**2. Sizing Up: The ```font-size``` Property**
+
+DO you want your text to whisper softly or shout out from the rooftops? The ```font-size``` property controls the size of your font. Fonts sizes are measured in various units like pixels, point, or even relative sizes like larger(em) or smaller(rem). This was discussed in the ***CSS properties and values section above.***
+
+
+**Image of Units Of Type Size**
+![unit type size](./units_of_type_size.png)
+
+**Example:**
+
+```html
+  <h1>This heading is big and bold!</h1>
+  <p style="font-size: 1.5em;">This paragraph is slightly larger than the default size.</p>
+```
+**Outcome:**
+<div style="border: 1px solid green; padding: 10px;">
+  <h1>This heading is big and bold!</h1>
+  <p style="font-size: 1.5em;">This paragraph is slightly larger than the default size.</p>
+</div>
+
+
+
+**3. Font Family: The Power of ```font-family```**
+
+The world has more than just **Times New Roman!** Use the font-family prperty to choose from a wide variety of fonts installed on the user's system. Remember, you have to specify multiple options as a fallback in case the user's systems doesn't have your first choice.
+
+**Example:**
+
+```html
+  <p style="font-family: 'Courier New', monospace;">This text uses a typewriter-like font style.</p>
+<p style="font-family: 'Playfair Display', serif;">This one uses a fancy serif font.</p>
+```
+
+**Image of Typeface Terminology**
+![An Image of Typeface Terminology](./typeface_terminology.jpeg)
+
+
+**Outcome:**
+<div style="border: 1px solid green; padding: 10px;">
+  <p style="font-family: 'Courier New', monospace;">This text uses a typewriter-like font style.</p>
+  <p style="font-family: 'Playfair Display', serif;">This one uses a fancy serif font.</p>
+</div>
+
+
+
+**4. Fine-Tuning Your Font: ```font-style```, ```font-weight```, and ```font-variant```**
+
+Do you want your text to be italic, bold, or even underlined? Explore the possibilities with these properties:
+
+- ```font-style```: Choose between normal, italic, or oblique styles.
+- ```font-weight```: Make your text light, bold, or even heavier with iptions like 400, 700 etc.
+- ```font-variant```: Apply decorative effects like small-caps or superscript/subscript.
+
+**Example:**
+```html
+  <p style="font-style: italic;">This text is italicized.</p>
+  <p style="font-weight: bold;">This one is bold and strong!</p>
+  <p style="font-variant: small-caps;">This text uses small caps.</p>
+```
+
+
+**Outcome:**
+<div style="border: 1px solid green; padding: 5px;">
+  <p style="font-style: italic;">This text is italicized.</p>
+  <p style="font-weight: bold;">This one is bold and strong!</p>
+  <p style="font-variant: small-caps;">This text uses small caps.</p>
+</div>
+
+
+### Styling Background
+
+In this section we will explore how to add colors, images and control their positioning to create visually stunning and engaging layout.
+
+**1. Painting the Backgorund: The Magic of ```background-color```**
+Imagine giving your web page a whole new look with just one brushstroke! The ```backgorund-color``` property let's you set a solid color for the entire background. Choose any color using it's name(e.g ```blue```) or it's hexadecimal code (e.g., ```#0000FF``` for blue).
+
+**Example:**
+
+```html
+    body {
+    background-color: #F0F0F0; /* Light gray background for the whole page */
+  }
+```
+
+**2. Bringing Pictures to Life: The Power of ```background-image```**
+
+With the ```background-image``` property, you can showcase a beautiful image as your background. Enter the background-image property! Specify the image path, and your chosen image will grace your web page.
+
+**Example:**
+```html
+  <div class="hero-section" style="background-image: url('images/hero-banner.jpg');">
+  <h1>Welcome to Our Website!</h1>
+  </div>
+```
+
+**3. Positioning and Repeating Images: ```background-position``` and ```background-repeat```**
+
+Don't let your background image sit awkwardly! Use these properties to fine-tune its placement and behavior:
+
+**background-position:** Control the X and Y coordinates of the image or use keywords like ```center```, ```top```, etc.
+
+**background-repeat:** Decide whether the image repeats itself (e.g., ```repeat```) or covers the area once (```no-repeat```).
+
+
+
+**Bonus Tip:** Explore online resources like Google Fonts and Font Awesome for more font options and inspiration!
+
 ## Practice Activity
 
 ## Conclusion
