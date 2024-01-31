@@ -1,6 +1,7 @@
 ---
 title: "Lesson 05: CSS"
 format: html
+css: ["./styles.css"]
 ---
 
 ## Overview
@@ -384,7 +385,6 @@ In this section we will explore how to add colors, images and control their posi
 Imagine giving your web page a whole new look with just one brushstroke! The ```backgorund-color``` property let's you set a solid color for the entire background. Choose any color using it's name(e.g ```blue```) or it's hexadecimal code (e.g., ```#0000FF``` for blue).
 
 **Example:**
-
 ```html
     body {
     background-color: #F0F0F0; /* Light gray background for the whole page */
@@ -413,6 +413,72 @@ Don't let your background image sit awkwardly! Use these properties to fine-tune
 
 
 **Bonus Tip:** Explore online resources like Google Fonts and Font Awesome for more font options and inspiration!
+
+**4. Defining Boundaries and Dimension: Borders and Box Shadows**
+
+Welcome to the realm of visual definition! In this section, we will explore how to add borders and box shadows to your web elements, enchancing their visual hierarchy and creating a sense of depth and dimension.
+
+- Drawing Lines: The Power of ```border```
+
+Imagine building walls around your elements to seperate and define them. The ```border``` property let's you do just that, creating a single line border around an html element. You can customize it's width, style, and color to achieve the desired visual effect.
+**Example:**
+```css
+  h2 {
+    border: 5px solid #ccc; /* 3px wide solid border in light gray */
+}
+.button {
+    border: 5px dashed #333; /* 2px dashed border in dark gray */
+}
+```
+
+**Outcome:**
+
+![](./styles.png)
+
+
+**5. Beyond Lines: Fine-Tuning with ```border-width```, ```border-style```, and ```border-color```**
+
+Want to control the thickness, pattern, and color of your borders individually? Enter these properties:
+
+- ```border-width```: Set the thickness in pixels (px) or other units.
+- ```border-style```: Choose from styles like ```solid```, ```dashed```, ```dotted```, etc.
+- ```border-color```: Apply any color using names or hex values.
+
+**Example:**
+```css
+  p.one {
+  border-top: 5px solid #FF0000; /* Thick red border on top only */
+}
+  p.two {
+    border: 5px solid #ddd; /* Thin gray border all around */
+    border-right-color: #000; /* Change right border color */
+}
+```
+
+**Outcome:**
+
+![](./border-styling.png)
+
+
+**6. Adding Depth: The Magic of box-shadow**
+
+Want to elevate your elements and create a sense of dimension? The box-shadow property allows you to add shadows around elements, mimicking real-life light and depth perception.
+
+**Example:**
+```css
+.card {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow below the card */
+}
+.button:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5); /* Grow shadow on hover */
+}
+```
+
+**Outcome:**
+![](./box-shadow.png)
+
+
+
 
 ## Practice Activity
 
