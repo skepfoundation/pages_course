@@ -34,11 +34,14 @@ Basic Concepts
 
 -----------------
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
 # Working with Git
 
 ::: {.grid}
 
 ::: {.g-col-6}
+=======
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 
 Git's functionality is accessible primarily through the command line. Common commands include; 
 
@@ -56,9 +59,7 @@ Git's functionality is accessible primarily through the command line. Common com
 
 
 Git works well with various platforms like **GitHub**, **GitLab**, and **Bitbucket**, which provide remote repositories and additional collaboration features.
-:::
 
-::: {.g-col-6}
 ### Git usuage flow chart
 
 ```{mermaid}
@@ -75,9 +76,7 @@ flowchart LR
     G --> H[git push changes]
 ```
 
-:::
 
-:::
 
 
 
@@ -189,6 +188,7 @@ This steps ensures that all your commits will have your identity attached to the
 
 2. **Commit:** A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
 3. **Branch:** A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named 'master'.
 
 4. **Merge:** Merging is the process of integrating changes from one branch into another.
@@ -199,12 +199,23 @@ Working with Git.
 # 1. Repository (Local and Remote)
 
 ## Local Repository
+=======
+::: {.panel-tabset}
+
+## Command Line
+
+#### Local Repository
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 
 **Definition:** A local repository in Git is a directory on your computer where Git stores all the files and the history of changes made to those files.
 
 **Function:** It allows you to work on your project and make commits, branches, and other Git operations offline.
 
 ### Creation and Usage:
+
+
+
+<center><strong>Command Line</strong></center>
 
 Created using ```git init``` or ```git clone``` commands.
 
@@ -214,7 +225,15 @@ Local repositories are where you'll do most of your work, including editing, sta
 
 ![](../Unit_2/images/1.png)
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
 ## Remote Repository
+=======
+
+
+
+
+### Remote Repository
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 
 **Definition:** A remote repository is a version of your project hosted on the internet or a network.
 
@@ -238,11 +257,46 @@ Local repositories are where you'll do most of your work, including editing, sta
     git merge
 ```
 
-::: {.grid}
 
-:::{.g-col-6}
+## Source Control
 
+### Clone a Repository
+To get a repository from GitHub onto your computer, the repository on GitHub needs to be "cloned" on to your computer. Open a new window in VSCode, source control will look like this. 
+
+![](source_control_clone_repo.png)
+
+Steps:
+- open new window for VSCode
+- copy the github url for the desired repository
+- click "Clone Repository" and paste in there
+
+
+### Initialize a Repository
+To put an existing project of yours onto GitHub, you'll need to "initialize a repository". Open VSCode in that existing project's folder, source code will look like this. 
+
+![](source_control_init_repo.png)
+
+Steps: 
+
+1) click "Initialize Repository"
+
+:::
+
+
+
+
+
+
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
 # 2. Commit/Push
+=======
+## 2. Commit/Push
+
+::: {.panel-tabset}
+
+## Command Line
+
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 **Definition:** A commit in Git is a snapshot of your project's current state, allowing you to capture the condition of your project at a specific point in time.
 
 **Importance:** Commits serve as checkpoints where individual changes can be made permanent to the repository's history.
@@ -254,14 +308,10 @@ To save your staged changes along with a descriptive message, use the code below
     git commit -m "commit message" 
 ``` 
 
-:::
 
-:::{.g-col-6}
 ![](./images/git%20commit.png)
 
-:::
 
-:::
 
 !!! info "Git commit messages best practices"
 - Commit messages should be clear and concise
@@ -284,10 +334,29 @@ By default, ```origin``` is the name git gives to the remote repository once ini
     git push -u origin main
 ```
 
+## Source Control
+
+To get your changes from your computer to GitHub, you'll need to commit and push your changes. 
+
+![](source_control_commit.png)
+
+To commit and push your most recent changes to your files: 
+
+1) save your file
+2) type out a message that reflects your how this version of your code is different from the previous version 
+3) click "Commit"
+4) click "Sync Changes"
+
+:::
+
 
 
 
 # 3. Branch
+
+::: {.panel-tabset}
+
+## Command Line
 
 **Definition:** A branch in Git represents an independent line of development in a project.
 
@@ -346,8 +415,27 @@ Clear branch names help with organization, understanding the purpose of the bran
 **Prune Regularly:** Delete branches once they are merged and no longer needed to keep the repository clean.
 
 
+## Source Control
+
+To add your changes to a repository without making it the main version of the code, you can create a "branch". 
+
+![](source_control_create_branch.png)
+
+Steps:
+
+1) Save work, stage file(s), write commit message, and click commit
+2) Click on the three dots at the top right of the source control pane
+3) Click "Branch"
+4) Click "Create Branch"  
+
+
+:::
 
 # 4. Merge
+
+::: {.panel-tabset}
+
+## Command Line 
 
 **Definition:** Merging in Git is the act of integrating changes from one branch into another.
 
@@ -360,6 +448,21 @@ Clear branch names help with organization, understanding the purpose of the bran
 to merge the changes from [branch-name] into your current branch.
 
 **Conflict Resolution:** If there are conflicts between the branches, Git will prompt you to resolve them before completing the merge.
+
+## Source Control
+
+To make your branch part of the main version of the code, you'll have to "merge" your branch.
+
+![](source_control_merge_branch.png)
+
+Steps:
+
+1) Save, stage, commit, pull, and push to your work to your branch
+2) Click on the three dots at the top right of the source control pane
+3) Click "Branch"
+4) Click "Merge Branch"
+
+:::
 
 
 # 5. Pull Request
@@ -423,6 +526,7 @@ Clicking on this icon will open the Source Control panel. If Git is installed an
 
 2. Via the command line. Which is what we are focusing on in this lesson.
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
 
 # Practice Activity
 
@@ -450,3 +554,5 @@ With the basics of Git under your belt and VScode's integrated power at your fin
 This concise yet impactful conclusion retains the key takeaways while encouraging continued learning and development.
 
 Feel free to customize it further based on your specific lesson and audience. Happy teaching!
+=======
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
