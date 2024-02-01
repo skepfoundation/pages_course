@@ -12,29 +12,36 @@ format:
 ---
 
 
+# Learning Objectives:
+
+1. Understand the concepts of Git and its functionality.
+2. Learn the benefits of using Git for version control.
+3. Identify the basic Git workflows, including cloning, committing, pushing, branching, and merging.
+4. Gain practical knowledge of setting up and using Git within VScode.
+
 # Introduction to Git
 Git is a powerful and widely used version control system that allows developers to track changes in their code over time. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Git is designed to handle projects of all sizes with speed and efficiency.
 
-Why Use Git?
+# Why Use Git?
 
-- **Collaboration:** Git makes it easier for multiple people to work on the same project without interfering with each other's work. It allows for parallel development, where team members can work on different features simultaneously.
-- **History Tracking:** Every change made to the files in a project is tracked. This means you can revert back to any version of a file at any point in time.
+1. **Collaboration:** Git makes it easier for multiple people to work on the same project without interfering with each other's work. It allows for parallel development, where team members can work on different features simultaneously.
+2. **History Tracking:** Every change made to the files in a project is tracked. This means you can revert back to any version of a file at any point in time.
 Branching and Merging: Git's branching capabilities are a standout feature. They allow you to diverge from the main line of development and experiment with new ideas without affecting the main project, then merge those changes back in when they're ready.
 
-- **Distributed Development:** Git is a distributed version control system, meaning every developer's working copy of the code is also a repository that can contain the full history of all changes.
+3. **Distributed Development:** Git is a distributed version control system, meaning every developer's working copy of the code is also a repository that can contain the full history of all changes.
 Basic Concepts
 
-- **Repository:** A repository (or 'repo') is like a project's folder. It contains all of the project files and the history of changes made to those files.
-
-- **Commit:** A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.
-
-- **Branch:** A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named 'master'.
-
-- **Merge:** Merging is the process of integrating changes from one branch into another.
-Working with Git.
 
 -----------------
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
+# Working with Git
+
+::: {.grid}
+
+::: {.g-col-6}
+=======
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 
 Git's functionality is accessible primarily through the command line. Common commands include; 
 
@@ -75,27 +82,25 @@ flowchart LR
 
 
 
-
-
-## How to Install Git
+# How to Install Git
 
 Installing Git is a crucial step for anyone getting started with version control. Here's a beginner friendly guide to installing Git on different operating systems.
 
-<h3> 1. For Windows User </h3>  
-<h4> Download the Git Installer: </h4>
+## 1. For Windows Users 
+**Download the Git Installer:**
 
 - Visit the Git website and download the latest version of Git for Windows.
 - The download should automatically start based on your Windows version.
         
-<h4>Run the Installer:</h4> 
+**Run the Installer:**
 
 Open the downloaded file to start the installation. You will be greeted with the Git Setup wizard.
 
-<h4>Installation Options:</h4> 
+**Installation Options:** 
 Follow the setup instructions. You can leave most options at their default settings.
 When prompted to choose the default editor, you may select the one you're most comfortable with (e.g., VSCode, Notepad++, etc.).
 
-<h4>Adjusting Your PATH Environment:</h4> 
+**Adjusting Your PATH Environment:**
 During the installation, you'll be asked to adjust your PATH environment. Select "Use Git from the Windows Command Prompt" for ease of use.
 
 **Configuring the Line Ending Conversions:**
@@ -105,7 +110,7 @@ Choose how you want Git to treat line endings in text files. The recommended set
 **Completing the Installation:**
 Proceed with the installation. Once completed, click 'Finish'.
 
-<h4>Verify Installation:</h4>
+**Verify Installation:**
 
 Open Command Prompt and type 
 ```bash
@@ -114,21 +119,21 @@ Open Command Prompt and type
 to ensure Git is installed correctly and to see the installed version.
 
 
-<h3>2. For macOS Users</h3> 
+## 2. For MacOS Users
    
-<h4>Install Git via Homebrew:</h4> 
+**Install Git via Homebrew:** 
 If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing
 
 ```bash
     brew install git
 ```
 
-<h4>Install Git from the Official Website:</h4>
+**Install Git from the Official Website:**
 
 Alternatively, you can download the macOS Git installer from Git's official site.
 Open the downloaded file and follow the installation instructions.
 
-#### Verify Installation:
+**Verify Installation:**
 In the Terminal, type 
 ```bash
     git --version
@@ -136,8 +141,8 @@ In the Terminal, type
 to check the installation.
 
 
-<h3>3. For Linux Users</h3>
-<h4>Install Git through Package Manager:</h4> 
+## 3. For Linux Users
+**Install Git through Package Manager:** 
 
 - For Debian/Ubuntu-based distributions, open the Terminal and type 
 
@@ -153,7 +158,7 @@ to check the installation.
 
 - For other distributions, use the respective package manager and the package named 'git'.
  
-#### Verify Installation:
+**Verify Installation:**
 Confirm the installation by typing in the terminal.
 
 ```bash
@@ -162,7 +167,7 @@ Confirm the installation by typing in the terminal.
 
 --------------------------------
 
-## Git configuration:
+# Git configuration:
 
 After installing Git, it's a good practice for users to set their Git username and email address, which will be used for every Git commit. This can be done by executing the following commands in the terminal or command prompt:
 
@@ -177,21 +182,30 @@ After installing Git, it's a good practice for users to set their Git username a
 This steps ensures that all your commits will have your identity attached to them anytime you commit and push to a repo.
 
 
-### Basic Concepts of Git:
+# Basic Concepts of Git
 
-1. Repository (Local and Remote)
-2. Commit
-3. Branch
-4. Merge
-5. Pull Request
+1. **Repository(Local and Remote):** A repository (or 'repo') is like a project's folder. It contains all of the project files and the history of changes made to those files.
 
-## 1. Repository (Local and Remote)
+2. **Commit:** A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
+3. **Branch:** A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named 'master'.
+
+4. **Merge:** Merging is the process of integrating changes from one branch into another.
+Working with Git.
+
+5. **Pull Request:** Is a feature in Git that allows developers working on a project collaboratively to propose changes to a codebase. It is a way to initiate a discussion and review process
+
+# 1. Repository (Local and Remote)
+
+## Local Repository
+=======
 ::: {.panel-tabset}
 
 ## Command Line
 
 #### Local Repository
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 
 **Definition:** A local repository in Git is a directory on your computer where Git stores all the files and the history of changes made to those files.
 
@@ -211,11 +225,15 @@ Local repositories are where you'll do most of your work, including editing, sta
 
 ![](../Unit_2/images/1.png)
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
+## Remote Repository
+=======
 
 
 
 
 ### Remote Repository
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 
 **Definition:** A remote repository is a version of your project hosted on the internet or a network.
 
@@ -269,12 +287,16 @@ Steps:
 
 
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
+# 2. Commit/Push
+=======
 ## 2. Commit/Push
 
 ::: {.panel-tabset}
 
 ## Command Line
 
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
 **Definition:** A commit in Git is a snapshot of your project's current state, allowing you to capture the condition of your project at a specific point in time.
 
 **Importance:** Commits serve as checkpoints where individual changes can be made permanent to the repository's history.
@@ -291,11 +313,12 @@ To save your staged changes along with a descriptive message, use the code below
 
 
 
-#### Git commit messages best practices:
+!!! info "Git commit messages best practices"
 - Commit messages should be clear and concise
 - commit messages should reflect the changes made. i.e *"updated file upload function in task.py"*
 
-### Git Push
+
+## Git Push
 **Purpose:** Git push is used whenever we want to push your current commit from your local repository to the remote repository. What this code does under the hood is to push the current state of our codes to the remote repository. 
 
 **Syntax**
@@ -329,7 +352,7 @@ To commit and push your most recent changes to your files:
 
 
 
-## 3. Branch
+# 3. Branch
 
 ::: {.panel-tabset}
 
@@ -365,13 +388,13 @@ To commit and push your most recent changes to your files:
 ```
 
 
-### Branch Best Practices:
+## Branch Best Practices:
 Use descriptive names for branches. Create separate branches for different features or bug fixes.
 
-### Good Branch Naming Convention:
+## Good Branch Naming Convention:
 Clear branch names help with organization, understanding the purpose of the branch, and managing multiple branches.
 
-#### Common Naming Strategies:
+**Common Naming Strategies**
 - **Feature Branches:** Name feature branches with a prefix feature/, followed by a short desccriptor (e.g., feature/add-login).
 
 - **Bugfix Branches:** For bug fiexes, use a prefix like bugfix/ or fix/ (e.g bugfix/login-error)
@@ -383,7 +406,8 @@ Clear branch names help with organization, understanding the purpose of the bran
 - **Personal/Branches for Experimentation:** Include your name or initials for personal or experimental branches (e.g., jd/test-new-feature).
 
 
-#### Tips for Branching
+## Tips for Branching
+
 **Keep Branches Focused:** Each branch should represent a single feature or fix. This makes it easier to review and merge.
 
 **Regularly Update from Main Branch:** Frequently merge or rebase your branch with the main branch (like master or main) to stay up-to-date with the latest changes and avoid large merge conflicts.
@@ -407,7 +431,7 @@ Steps:
 
 :::
 
-## 4. Merge
+# 4. Merge
 
 ::: {.panel-tabset}
 
@@ -441,7 +465,7 @@ Steps:
 :::
 
 
-## 5. Pull Request
+# 5. Pull Request
 
 **Definition:** A pull request (PR) is a method of submitting contributions to a project. It's specific to platforms like GitHub, GitLab, or Bitbucket.
 
@@ -461,7 +485,7 @@ Other team members can review the changes, provide feedback, and once approved, 
 - Streamlined workflow.
 
 
-#### Connecting Git to Visual Studio Code (VSCode)
+### Connecting Git to Visual Studio Code (VSCode)
 
 **VSCode Overview:** Visual Studio Code is a popular, lightweight, and powerful source code editor that supports multiple programming languages and tools.
 
@@ -502,3 +526,33 @@ Clicking on this icon will open the Source Control panel. If Git is installed an
 
 2. Via the command line. Which is what we are focusing on in this lesson.
 
+<<<<<<< HEAD:lessons/Unit_2/lesson_03.qmd
+
+# Practice Activity
+
+
+
+### 1. Git Simulation Game:
+
+Tutors should divide students into pairs and provide each pair with a set of files representing a small project. Students will take turns making changes to the files, simulating working on the project collaboratively.
+
+Task: Each pair will perform the following actions using Git commands in a terminal:
+
+1. Initialize a local repository for the project files.
+2. Make changes to the files and stage them for commit.
+3. Write clear commit messages describing the changes.
+4. Create a new branch to work on a specific feature.
+5. Make further changes on the feature branch and commit them.
+6. Switch back to the main branch and merge the feature branch.
+7. Resolve any potential merge conflicts.
+   
+Bonus: For advanced learners, introduce concepts like pull requests and remote repositories. Students can simulate pushing their changes to a remote repository and creating pull requests for review and merging.
+
+# Conclusion
+With the basics of Git under your belt and VScode's integrated power at your fingertips, you're well on your way to mastering version control and boosting your development workflow. Remember, the more you practice, the smoother your project journeys will become. Keep exploring, keep learning, and keep pushing your code horizons!
+
+This concise yet impactful conclusion retains the key takeaways while encouraging continued learning and development.
+
+Feel free to customize it further based on your specific lesson and audience. Happy teaching!
+=======
+>>>>>>> b2da726dc33ee9b82c30e4b24857a95e2ee3ad1b:lessons/unit_02/lesson_03/lesson_03.qmd
