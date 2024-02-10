@@ -480,9 +480,49 @@ Want to elevate your elements and create a sense of dimension? The box-shadow pr
 
 
 
-## Practice Activity
+## Practice Activity: Stylish Web Page Creation
+
+Objective:
+Create a stylish web page that incorporates various CSS styling techniques covered in the lesson. This activity will test your understanding of CSS properties, selectors, text styling, background styling, and border & shadow effects.
+
+### Requirements:
+
+Page Structure and Content:
+
+Create an HTML file with basic content including a heading ```<h1>```, a few paragraphs ```<p>```, and a list ```<ul>``` or ```<ol>```.
+Include a section that introduces a fictional character, product, or service. This section should have a title, a description, and at least one image.
+
+### Styling with CSS:
+
+1. Text Styling: Use various CSS properties to style the text in your HTML document. Experiment with different font-family, font-size, color, text-align, text-decoration, and font-weight values to achieve an aesthetically pleasing look.
+
+2. Background Styling: Apply a background-color to the body of the document and use a background-image for at least one section. Ensure the text remains readable over the background.
+
+3. Border and Shadow: Add borders to some elements like the image or the section containing it. Use border-radius to create rounded corners. Apply a box-shadow to elevate a specific element, such as a call-to-action button or the image.
 
 ## Conclusion
 
+Throughout this lesson, we've taken a deep dive into the world of CSS, learning how to manipulate the appearance and style of web pages. We started with the fundamental concepts of selectors, properties, and values, and then explored various properties for styling text, backgrounds, borders, and shadows.
+
+By now, you should be able to confidently:
+
+- Identify and target elements on a webpage using different CSS selectors.
+- Apply various CSS properties to customize the appearance of those elements.
+- Understand the cascading nature of CSS and how styles are applied.
+- Create basic visual themes and layouts using your newfound CSS skills.
+- 
+Remember, CSS is a vast and powerful tool, and this lesson has just scratched the surface. As you continue your exploration, you'll discover even more possibilities to bring your web pages to life and express your unique design vision. Here are some additional resources to fuel your journey:
+
+1. **Interactive CSS Tutorials:** Websites like Codecademy and Khan Academy offer interactive tutorials that allow you to learn CSS by doing.
+   
+2. **CSS Cheat Sheet:** Keep a quick reference sheet summarizing common CSS properties and values handy for easy lookup.
+
+3. **Online Design Tools:** Experiment with online design tools like Figma or Adobe XD to visualize your styles before coding them.
+Don't be afraid to experiment, explore, and unleash your creativity! The world of CSS awaits your unique touch.
+
 ## FAQ
+
+## Image References:
+1. [google](https://google.com)
+2. HTML & CSS Design and Build Websites by Jon Duckett
 
