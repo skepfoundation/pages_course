@@ -1,0 +1,95 @@
+---
+title: "Lesson 05: Organizing Your Github Repository"
+---
+
+## Overview
+
+This lesson will equip you with the most important principles to follow to organize your github repository in a way that makes the most impact.
+
+## Learning Objectives
+
+-   Students will be able to effectively organize their github repository, irrespective of the project.
+
+## Lesson
+
+### What is a Github Repository and What Makes It Special?
+
+Imagine a GitHub repository like a toolbox for coders. Instead of physical tools, it stores all the digital "tools" you will use to build projects, like code, instructions, and notes. Think of it like a box that holds one project like a website, game, or data analysis program. Inside the box are smaller boxes (folders) which organize different, and smaller, parts of the overall program like: main code, images, or data files.
+
+Github repositories have version control. This means that it remembers every change made to the file and by whom, enabling you as a coder to go back to a previous version if needed. It also presents the capability of collaborating, or working together,  with other coders on the same project. Finally Github repositories provide the ability to share your project with the world. It is like putting all you tools, designs and plans on a workbench for others to see and learn from. 
+
+When you make your GitHub repository public, it gives anyone the ability to view your entire project. This innovation means that prospective employers or clients can, not only see your finished work, but can also see the efficiency of your code and how your work is organized. In the past, to get a programming position only interviews and maybe a little code writing was required but now employers want to see what sought of projects interest you and how you write and organize your code. Therefore, understanding the principles that will make your github projects easier to understand is very crucial.
+
+### Principles of Organizing a GitHub Repository.
+
+Because there are innumerable kinds of projects that can utilize github repositories, we will not focus on specific types of projects rather we will focus on general principles that should guide you regardless of what type of project you are embarking on.
+
+1. Create a clear and intuitive directory structure. Divide your project into logical sections, such as "src" for source code, "docs" for documentation, and "tests" for test cases.
+Avoid clutter by keeping unrelated files out of the main project directory.
+Separation of Concerns:
+
+2. Group related files together. For example, place source code files in one directory, documentation in another, and tests in a separate directory.
+Use subdirectories for different modules or components of your project.
+Descriptive File and Folder Names:
+
+3. Choose descriptive and meaningful names for your files and folders. This helps others quickly understand the purpose of each file or directory.
+Avoid generic names like "temp" or "misc" that don't provide any insight into the content.
+README.md:
+
+4. Include a well-written README.md at the root of your repository. This file should provide a high-level overview of your project, installation instructions, usage examples, and any other relevant information.
+Use markdown formatting to make your README visually appealing and easy to read.
+.gitignore:
+
+5. Create a .gitignore file to specify files and directories that should be excluded from version control. This helps avoid unnecessary clutter and ensures that sensitive information (e.g., API keys) is not exposed.
+Documentation:
+
+6. Keep documentation in a separate "docs" directory or a dedicated documentation file. Use consistent and clear language to explain your code's functionality, structure, and usage.
+Consider generating documentation using tools like Doxygen, Javadoc, or Sphinx.
+Versioning:
+
+7. If your project evolves over time, consider using version numbers or tags to indicate significant releases.
+Use a version control system (like Git) to track changes and maintain a clear history of your codebase.
+Consistent Naming Conventions:
+
+8. Adopt consistent naming conventions for files, folders, and code variables. This enhances readability and makes it easier for others to navigate your code.
+
+9. Include a license file (e.g., LICENSE.txt) to define the terms under which your code can be used, modified, and distributed. Choose a license that aligns with your intentions for sharing the code.
+Build and Configuration Files:
+
+10. Place build scripts, configuration files, and other setup-related files in a dedicated directory. This ensures that they are separate from your source code.
+
+#### Additional Tips:
+
+- Maintain Activity: Keep your repositories updated with new commits and improvements. This shows employers you're actively engaged in your code.
+  
+- Community Engagement: Respond to issues and pull requests promptly. Demonstrate your ability to collaborate and communicate effectively.
+  
+- **Tailor Your Profile: Consider showcasing projects relevant to the types of positions you're applying for. Tailor your repository selection and descriptions accordingly.**
+  
+- Pin Your Best: GitHub allows pinning up to six repositories to the top of your profile. Choose your most impressive and relevant projects to showcase your skills.
+
+
+By following these principles, you can create a well-organized and accessible GitHub repository that showcases your coding skills and makes it easier forpotential employees or clients  to understand and contribute to your projects. 
+
+## Practice Activity
+
+-   Create a Github repository.
+  
+-   Instantiate a small project using the principles outlined above. The project can be any of your choice.
+
+
+## Conclusion
+
+You should now understand what a github repository is and how it can help you to land positions in tech. You should also have understood the principles that lead to an accesible github project. These principles may be difficult to learn and implement at once, hence, it is important that you start creating your own projects and attempting to implement the principles taught in this lesson a little at a time till they become second nature.
+
+Happy Coding 😎🎊🎊
+
+## FAQ
+
+#### What kind of project should I experiment with?
+
+Any one you want! Feel free to experiment. You can search for project ideas on the internet.
+
+#### What if I get stuck and don't know how a principle applies to the particular project I chose?
+
+Don't stress. A lot of this comes with consistently doing projects. You can also look at big open-source projects to learn how the repositories are organized.
