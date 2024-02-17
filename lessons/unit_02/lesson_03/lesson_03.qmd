@@ -34,14 +34,12 @@ Basic Concepts
 
 -----------------
 
-<<<<<<< HEAD:lessons/unit_02/lesson_03/lesson_03.qmd
-=======
 # Working with Git
 
 ::: {.grid}
 
 ::: {.g-col-6}
->>>>>>> 6ff6d016b27084362771dba1fcc35450c43499be:lessons/Unit_2/lesson_03.qmd
+
 
 Git's functionality is accessible primarily through the command line. Common commands include; 
 
@@ -184,17 +182,12 @@ This steps ensures that all your commits will have your identity attached to the
 
 # Basic Concepts of Git
 
+
 1. **Repository(Local and Remote):** A repository (or 'repo') is like a project's folder. It contains all of the project files and the history of changes made to those files.
 
 2. **Commit:** A commit is like a snapshot of your repository at a specific point in time. Commits include a message describing what changes were made.
 
-<<<<<<< HEAD:lessons/unit_02/lesson_03/lesson_03.qmd
-::: {.panel-tabset}
 
-## Command Line
-
-#### Local Repository
-=======
 3. **Branch:** A branch in Git is a lightweight, movable pointer to one of these commits. The default branch is named 'master'.
 
 4. **Merge:** Merging is the process of integrating changes from one branch into another.
@@ -205,7 +198,8 @@ Working with Git.
 # 1. Repository (Local and Remote)
 
 ## Local Repository
->>>>>>> 6ff6d016b27084362771dba1fcc35450c43499be:lessons/Unit_2/lesson_03.qmd
+
+
 
 **Definition:** A local repository in Git is a directory on your computer where Git stores all the files and the history of changes made to those files.
 
@@ -225,15 +219,10 @@ Local repositories are where you'll do most of your work, including editing, sta
 
 ![](../Unit_2/images/1.png)
 
-<<<<<<< HEAD:lessons/unit_02/lesson_03/lesson_03.qmd
-
 
 
 
 ### Remote Repository
-=======
-## Remote Repository
->>>>>>> 6ff6d016b27084362771dba1fcc35450c43499be:lessons/Unit_2/lesson_03.qmd
 
 **Definition:** A remote repository is a version of your project hosted on the internet or a network.
 
@@ -287,16 +276,9 @@ Steps:
 
 
 
-<<<<<<< HEAD:lessons/unit_02/lesson_03/lesson_03.qmd
-## 2. Commit/Push
 
-::: {.panel-tabset}
-
-## Command Line
-
-=======
 # 2. Commit/Push
->>>>>>> 6ff6d016b27084362771dba1fcc35450c43499be:lessons/Unit_2/lesson_03.qmd
+
 **Definition:** A commit in Git is a snapshot of your project's current state, allowing you to capture the condition of your project at a specific point in time.
 
 **Importance:** Commits serve as checkpoints where individual changes can be made permanent to the repository's history.
@@ -526,8 +508,6 @@ Clicking on this icon will open the Source Control panel. If Git is installed an
 
 2. Via the command line. Which is what we are focusing on in this lesson.
 
-<<<<<<< HEAD:lessons/unit_02/lesson_03/lesson_03.qmd
-=======
 
 # Practice Activity
 
@@ -555,4 +535,3 @@ With the basics of Git under your belt and VScode's integrated power at your fin
 This concise yet impactful conclusion retains the key takeaways while encouraging continued learning and development.
 
 Feel free to customize it further based on your specific lesson and audience. Happy teaching!
->>>>>>> 6ff6d016b27084362771dba1fcc35450c43499be:lessons/Unit_2/lesson_03.qmd
