@@ -31,6 +31,8 @@ website:
             href: lessons/unit_01/lesson_03/lesson_03.qmd
           - text: "Lesson 4: Additional Profile README Features"
             href: lessons/unit_01/lesson_04/lesson_04.qmd
+          - text: "Lesson 5: Organizing Your Github Repository"
+            href: lessons/unit_01/lesson_05/lesson_05.qmd
       - text: "Unit 2"
         menu: 
           - text: "Lesson 1: Intro to VSCode"
@@ -39,29 +41,19 @@ website:
             href: lessons/unit_02/lesson_02/lesson_02.qmd
           - text: "Lesson 3: Git in VSCode"
             href: lessons/unit_02/lesson_03/lesson_03.qmd
-          - text: "Lesson 4: Websites with Quarto"
-            href: lessons/unit_02/lesson_04/quarto_website.qmd
-
+            
       - text: "Unit 3"
-        menu: 
-          - text: "Lesson 1"
+        menu:
+          - text: "Lesson 1: Create Your First Website"
             href: lessons/unit_03/lesson_01/lesson_01.qmd
-          - text: "Lesson 2"
+          - text: "Lesson 2: Hosting Your Website on GitHub Pages"
             href: lessons/unit_03/lesson_02/lesson_02.qmd
-          - text: "Lesson 3"
-            href: lessons/unit_03/lesson_03/lesson_03.qmd
-          - text: "Lesson 4"
-            href: lessons/unit_03/lesson_04/lesson_04.qmd
       - text: "Unit 4"
-        menu: 
-          - text: "Lesson 1"
-            href: lessons/unit_04/lesson_01/lesson_01.qmd
-          - text: "Lesson 2"
-            href: lessons/unit_04/lesson_02/lesson_02.qmd
-          - text: "Lesson 3"
-            href: lessons/unit_04/lesson_03/lesson_03.qmd
-          - text: "Lesson 4"
-            href: lessons/unit_04/lesson_04/lesson_04.qmd
+      - text: "Bonus Lessons"
+        menu:
+          - text: "Customizing Website Appearance with CSS"
+            href: lessons/unit_bonus/css/customizing_css.qmd
+
 
 format:
   html:
