@@ -1,0 +1,110 @@
+---
+title: "Quarto Themimg"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc-location: left
+    code-copy: true
+    code-line-numbers: true
+    code-block-border-left: "#A9A9A9"
+    code-block-bg: true
+    code-bloc-bg-alpha: -.2
+    page-layout: full
+    grid:
+      sidebar-width: 200px
+      body-width: 1030px
+      margin-width: 70px
+---
+
+## Overview
+
+In this lesson, we'll go through using Quarto's support for building a website theme and implement it throughout your site.
+
+
+## Learning Objectives
+
+-   Students will be able to apply their own theme on existing Quarto website.
+
+## Lesson
+
+
+### Quarto Theming
+
+Themes can be used to change the default color and style of a Quarto website,
+
+Quarto has more than 20 pre-built themes provided by Bootswatch.com - A free theming platform for the Bootstrap web development framework. Some of those themes include:
+
+* flatly
+* lumen
+* quartz
+* sandstone
+* cosmo
+
+You can find a complete list of available themes at [Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html)
+
+These themes provide several default options to change the main website font, standard font size, font color, color of hyperlinks and other customization.
+
+Quarto allows for further customization of the prebuilt themes to fit your style and even adding entirely custom themes. This would require editing the appropriate section of the ```_quarto.yml```.
+
+
+### Quarto Yaml Editing
+
+To change your website theme, we go into the *_quarto.yml* file, navigate to the *theme* option, and change it to any of the prebuilt themes we want.
+``` yaml
+format:
+    html:
+        theme: cosmo
+```
+Here the theme is set to *cosmo*.
+
+
+Theme options can be used to further customize a theme and set the default choice for the entire document. These options include:
+
+* ```max-width```: Sets the maximum width occupied by page content. 
+* ```mainfont```: Sets the font-family property for the document.
+* ```fontsize```: Sets the base CSS font-size for the document.
+* ```fontcolor```: Sets the default text color for the document. 
+* ```linkcolor```: 	Sets the default text color for hyperlinks.. 
+* ```backgroundcolor```: Sets the background-color for the document.. 
+* ```monobackgroundcolor```: Sets the background-color property for ```<code>``` elements.. 
+* ```monofont```: Sets the font-family property for ```<code>``` elements.. 
+* ```margin-left, margin-right, margin-top, margin-bottom```: Sets the CSS margin properties for the document body.
+* ```linestretch```: Sets the CSS line-height property (affects distance between lines of text, defaults to 1.5).
+
+For Example :
+
+``` yaml
+format:
+  html: 
+    theme: cosmo
+    fontsize: 1.1em
+    linestretch: 1.7
+```
+
+You can naturally also create an entirely custom theme and provide only that (in this case you will inherit from the default Bootstrap theme):
+
+``` yaml
+theme: custom.scss
+```
+You can read more about the custom theming design on Quarto [here](https://quarto.org/docs/output-formats/html-themes-more.html).
+
+In addition to providing a single theme for your html output, you may also provide a light and dark theme. For example:
+
+``` yaml
+theme:
+  light: flatly
+  dark: darkly
+```
+
+
+## Conclusion
+
+Nice work completing this lesson! By now you should:
+
+-  Know about various themes available in Quarto.
+
+-  Know how to apply customization to your website from the _quarto.yml.
+
+
