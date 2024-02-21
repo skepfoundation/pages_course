@@ -1,0 +1,116 @@
+---
+title: "Embedding Inline Frames (IFrames)"
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc-location: left
+    code-copy: true
+    code-line-numbers: true
+    code-block-border-left: "#A9A9A9"
+    code-block-bg: true
+    code-bloc-bg-alpha: -.2
+    page-layout: full
+    grid:
+      sidebar-width: 200px
+      body-width: 1030px
+      margin-width: 70px
+---
+
+
+## Overview
+
+In this lesson, we'll discover how to add Inline Frames (IFrames) to your Quarto Website to be able to pull content from multiple servers to make a more coherent user experience.
+
+
+
+## Learning Objectives
+
+-   Students will understand what Inline Frames are and when to use them.
+
+-   Students will be able to add Inline Frames to their Quarto website to be able to build a coherent site experience.
+
+
+## Lesson
+
+### What is an Inline Frame ?
+
+An Inline Frame (IFrame) is an HTML element that contains another HTML document within it. It can be placed anywhere on a webpage and can most often used to embed specific content like videos, documents, slides, and even a full webpage, within a different webpage.
+It's a powerful HTML capability, that can be used in your Quarto website to take any content from any website (with permission) and place it on your own site to enhance your content.
+
+
+### Embedding Inline Frames in Quarto
+
+To Embed an IFrame within Quarto, firstly:
+
+-   We create a HTML block within your Markdown.  As such:
+
+````html
+```{=html}
+
+```
+````
+
+-   We add the ``` <iframe> ``` HTML tag. This tag requires a src (source) attribute, which specifies the URL of the HTML file to be embedded on the page.  As such:
+
+````html
+```{=html}
+<iframe src="URL of HTML file"></iframe>
+```
+````
+
+-   A simple piece of functional embedded IFrame code looks like this:
+
+````html
+```{=html}
+<iframe src="https://www.example.com/" width="1500px" height="500px"></iframe>
+```
+````
+
+-   The code above will embed the webpage onto the parent page (your quarto page) and will look like this:
+
+```{=html}
+<iframe src="https://www.example.com/" width="600px" height="200px"></iframe>
+```
+
+-   This embedded page exists separately from the parent page in terms of its HTML and styling
+
+
+You'll notice that the code snippet above has some extra attribute, __width__ and __height__. These set the dimensions of the region that displays the embedded content.
+Inline frames can be customised with other attributes as well. These attributes include:
+
+* ```src```:  The URL of the content included in the iframe.
+* ```allow```:  Indicates what features the iframe is allowed to use (e.g. __autoplay__, __fullscreen__, __camera__).
+* ```allowfullscreen```:    Grants or denies permission for the iframe to appear in full-screen.
+* ```height```:  Sets the height of the iframe (defaults to 150 pixels if not specified).
+* ```width```:  Sets the width of the iframe (defaults to 300 pixels if not specified).
+* ```referrerpolicy```: Sets what referrer information should be sent in the request for the iframe.
+* ```loading```:    Sets [lazy loading or eager loading](https://blog.hubspot.com/website/lazy-loading-eager-loading?hubs_content=blog.hubspot.com/website/what-is-an-iframe&hubs_content-cta=lazy%20loading%20or%20eager%20loading) for the iframe.
+
+
+
+## Practice Activity
+
+For this lesson, your task will be to:
+
+-   Embed the official Quarto website homepage on your webpage.
+
+-   Follow the steps above, using this URL - _https://quarto.org/_ - as the ``` src ```.
+
+-   Set the ``` width ``` and ``` height ``` as __780__ and __500__ respectively.
+
+-   The result should look like this when you're done;
+
+```{=html}
+<iframe src="https://quarto.org/" width="780px" height="500px"></iframe>
+```
+
+
+## Conclusion
+
+Good Job completing this lesson! By now you should:
+
+-   Know when to embed an Inline Frame in your webpage.
+
+-   Know how to make your website content richer by adding Inline Frames.
