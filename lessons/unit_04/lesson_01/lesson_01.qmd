@@ -1,5 +1,5 @@
 ---
-title: "Hosting Your Website On Github"
+title: "Quarto Theming"
 format:
   html:
     theme:
