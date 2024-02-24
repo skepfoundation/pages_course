@@ -108,7 +108,11 @@ git diff <branch1> -- <branch2>
 
 If you wanted to merge all your commits in a feature branch to the main branch, what probably comes to mind is using the ```git merge``` command. This will take all of the changes in the featured branch and stuff it into one merge commit and then put that merge commit into the main branch. After those changes are combined into that merge commit, it looks scattered, especially when you have a bunch of people working on the featured branch and pushing changes almost every time.
 
+![Git Merge](./git_rebase1.jpeg)
+
 The ```git rebase``` command can solve that for us. It takes all of your commits from a featured branch and moves them on top of the main commit.
+
+![Git Rebase](./git_rebase2.jpeg)
 
 
 A major advantage is that it easily traces your commits inside the main branch. You should use the ```git rebase``` command to consolidate into a single branch when you have multiple private branches. This will display the commit history in a linear form, which makes it easy to see the progression of changes because they are all applied one after the other, without any branches or merge commits. This can make it easier to understand how the code evolved over time.
