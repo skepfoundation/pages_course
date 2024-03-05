@@ -48,6 +48,8 @@ website:
             href: lessons/unit_03/lesson_01/lesson_01.qmd
           - text: "Lesson 2: Hosting Your Website on GitHub Pages"
             href: lessons/unit_03/lesson_02/lesson_02.qmd
+          - text: "Lesson 3: Subpages and Nav Bars"
+            href: lessons/unit_03/lesson_03/lesson_03.qmd
       - text: "Unit 4"
       - text: "Bonus Lessons"
         menu:
