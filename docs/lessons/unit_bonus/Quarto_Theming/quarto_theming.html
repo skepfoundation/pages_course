@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Github Pages Training – Lesson 01 : Introduction to Visual Studio Code</title>
+<title>Github Pages Training – Quarto Themimg</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -218,15 +252,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
   <ul class="collapse">
-  <li><a href="#what-is-visual-studio-code" id="toc-what-is-visual-studio-code" class="nav-link" data-scroll-target="#what-is-visual-studio-code">What is Visual Studio Code ?</a></li>
-  </ul></li>
-  <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a>
-  <ul class="collapse">
-  <li><a href="#download-and-install-visual-studio-code" id="toc-download-and-install-visual-studio-code" class="nav-link" data-scroll-target="#download-and-install-visual-studio-code">Download and Install Visual Studio Code</a></li>
-  <li><a href="#install-vs-codes-python-extension" id="toc-install-vs-codes-python-extension" class="nav-link" data-scroll-target="#install-vs-codes-python-extension">Install VS Code’s Python Extension</a></li>
+  <li><a href="#quarto-theming" id="toc-quarto-theming" class="nav-link" data-scroll-target="#quarto-theming">Quarto Theming</a></li>
+  <li><a href="#quarto-yaml-editing" id="toc-quarto-yaml-editing" class="nav-link" data-scroll-target="#quarto-yaml-editing">Quarto Yaml Editing</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
   </ul>
 </nav>
 </nav>
@@ -239,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 01 : Introduction to Visual Studio Code</h1>
+<h1 class="title">Quarto Themimg</h1>
 </div>
 
 
@@ -258,154 +287,73 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>In this lesson, we’ll go over an Integrated Development Enviroment (IDE) known as <strong>Visual Studio Code</strong>, also commonly referred to as <strong>VS Code</strong>. We’ll explore what an IDE - such as Visual Studio Code - is, benefits of using it, and in and out’s of using Visual Studio Code.</p>
+<p>In this lesson, we’ll go through using Quarto’s support for building a website theme and implement it throughout your site.</p>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li><p>Students will understand what VS Code is and why they should use it.</p></li>
-<li><p>Students will know how to download extensions and use VS Code to write source code.</p></li>
+<li>Students will be able to apply their own theme on existing Quarto website.</li>
 </ul>
 </section>
 <section id="lesson" class="level2">
 <h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
-<section id="what-is-visual-studio-code" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-visual-studio-code">What is Visual Studio Code ?</h3>
-<p><img src="./Images/visual-studio-code.jpg" class="img-fluid"></p>
-<p>Visual Studio Code is a <strong>Integrated Development Enviroment (IDE)</strong> developed by Microsoft for Windows, Linux and macOS. An integrated development environment or IDE is a software for building applications. An IDE is just like a text editor except instead of writing documents you’re writing source-code. Visual Studio Code includes features such as <strong>syntax highlighting, error highlighting, intelligent code completion, snippets, code refactoring</strong>, and embedded <strong>Git</strong>. Users can change the theme, keyboard shortcuts, preferences, install extensions that add functionality, and has support for different programming languages.</p>
-<section id="syntax-highlighting" class="level4">
-<h4 class="anchored" data-anchor-id="syntax-highlighting">Syntax Highlighting</h4>
-<p>To improve readability for developers, VS Code has syntax highlighting. What this means, is that special keywords of the programming language are highlighted in different colors so that the developer can quickly differentiate these keywords from other texts. For example, if you’re writing Python code without syntax highlighting, it could be harder to identify keywords from other texts. With syntax highlighting, that gets much easier because the Python keywords and variables are colored differently.</p>
-<p><img src="./Images/syntax-highlighting.png" class="img-fluid"></p>
+<section id="quarto-theming" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-theming">Quarto Theming</h3>
+<p>Themes can be used to change the default color and style of a Quarto website,</p>
+<p>Quarto has more than 20 pre-built themes provided by Bootswatch.com - A free theming platform for the Bootstrap web development framework. Some of those themes include:</p>
+<ul>
+<li>flatly</li>
+<li>lumen</li>
+<li>quartz</li>
+<li>sandstone</li>
+<li>cosmo</li>
+</ul>
+<p>You can find a complete list of available themes at <a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto Themes</a></p>
+<p>These themes provide several default options to change the main website font, standard font size, font color, color of hyperlinks and other customization.</p>
+<p>Quarto allows for further customization of the prebuilt themes to fit your style and even adding entirely custom themes. This would require editing the appropriate section of the <code>_quarto.yml</code>.</p>
 </section>
-<section id="error-highlighting" class="level4">
-<h4 class="anchored" data-anchor-id="error-highlighting">Error Highlighting</h4>
-<p>Just like checking spelling in a text document, IDEs can highlight mistakes you make in your programming code. For example, if I delete the equal symbol where it’s needed, my IDE will highlight the error.</p>
-</section>
-<section id="intelligent-code-completion" class="level4">
-<h4 class="anchored" data-anchor-id="intelligent-code-completion">Intelligent Code Completion</h4>
-<p>When you’re typing a message on your phone, it suggests words as you type. Visual Studio Code’s code completion is a similar feature. Since programming languages have special keywords, it can offer suggestions to autocomplete words as you start typing them. Together with IntelliSense, this makes the IDE smart and even able to understand your code. They can detect variables and functions and offer them as suggestions during autocomplete. For example, if I have a Python function named <em>myFunction</em> defined at the top of the Python file, then as soon as I start typing the letter <em>m</em> my IDE suggest this function as an autocompletion. This speeds up the process of coding applications by reducing typos and other common mistakes.</p>
-<p><img src="./Images/code-completion.png" class="img-fluid"></p>
-</section>
-<section id="code-refactoring" class="level4">
-<h4 class="anchored" data-anchor-id="code-refactoring">Code Refactoring</h4>
-<p>Since IDEs understand your code, they can help you if you need to change it. To demonstrate how refactoring works, let’s continue with the <em>myFunction</em> function that I defined a moment ago. In the code, the function is then called multiple times. It can also be called in the code of other files too. But what if you need to rename this function? You would need to rename it in every file that uses the function ensuring that you update those files to use the new name. This process is known as refactoring, changing the structure of the code without changing the functionality. Doing this manually is very time consuming and prone to error. If you mistyped the new function name in one place, the application will break. Since the IDE understand your code, it can assist with refactoring and automatically update the function name across all files.</p>
-</section>
-<section id="snippets" class="level4">
-<h4 class="anchored" data-anchor-id="snippets">Snippets</h4>
-<p>Code snippets are small blocks of reusable code that you can add to a code file by using the right-click context menu command or a combination of hotkeys. This saves time and ensures consistency on routine operations. Snippets make it easier to remember specific formatting for functions and can be shared amomg a team to ensure no one is doubling down on the same work.</p>
-<p><img src="./Images/snippet-demo.gif" class="img-fluid"></p>
-</section>
-<section id="git" class="level4">
-<h4 class="anchored" data-anchor-id="git">Git</h4>
-<p>Git is a version control system that tracks changes in any set of computer files, usually used for coordinating work among developers who are collaboratively developing source code during software development. You’ll learn more on Git in Lesson 3. For now, it’s good to know that Visual Studio code has built-in support for Git through Source Control and the terminal.</p>
-<p><img src="./Images/git.png" class="img-fluid"></p>
-<p>VS Code has a host of extensions and plugins that add various functionality to aid rapid software development.</p>
-</section>
-</section>
-</section>
-<section id="practice-activity" class="level2">
-<h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
-<section id="download-and-install-visual-studio-code" class="level3">
-<h3 class="anchored" data-anchor-id="download-and-install-visual-studio-code">Download and Install Visual Studio Code</h3>
-<section id="prerequisites" class="level4">
-<h4 class="anchored" data-anchor-id="prerequisites">Prerequisites</h4>
+<section id="quarto-yaml-editing" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-yaml-editing">Quarto Yaml Editing</h3>
+<p>To change your website theme, we go into the *_quarto.yml* file, navigate to the <em>theme</em> option, and change it to any of the prebuilt themes we want.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="at">    </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="at">        </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here the theme is set to <em>cosmo</em>.</p>
+<p>Theme options can be used to further customize a theme and set the default choice for the entire document. These options include:</p>
 <ul>
-<li>VS Code is lightweight and should run on most available hardware and platform versions. You can review the <a href="https://code.visualstudio.com/docs/supporting/requirements">System Requirements</a> to check if your computer configuration is supported.</li>
+<li><code>max-width</code>: Sets the maximum width occupied by page content.</li>
+<li><code>mainfont</code>: Sets the font-family property for the document.</li>
+<li><code>fontsize</code>: Sets the base CSS font-size for the document.</li>
+<li><code>fontcolor</code>: Sets the default text color for the document.</li>
+<li><code>linkcolor</code>: Sets the default text color for hyperlinks..</li>
+<li><code>backgroundcolor</code>: Sets the background-color for the document..</li>
+<li><code>monobackgroundcolor</code>: Sets the background-color property for <code>&lt;code&gt;</code> elements..</li>
+<li><code>monofont</code>: Sets the font-family property for <code>&lt;code&gt;</code> elements..</li>
+<li><code>margin-left, margin-right, margin-top, margin-bottom</code>: Sets the CSS margin properties for the document body.</li>
+<li><code>linestretch</code>: Sets the CSS line-height property (affects distance between lines of text, defaults to 1.5).</li>
 </ul>
-</section>
-<section id="for-windows-pc" class="level4">
-<h4 class="anchored" data-anchor-id="for-windows-pc">For Windows PC</h4>
-<ul>
-<li>Visit the <a href="https://code.visualstudio.com/download">official website</a> of Visual Studio Code using any web browser like Google Chrome, Microsoft Edge, etc.</li>
-<li>Click the “Windows” button under the Windows logo on the website to start the download of the Visual Studio Code Application.</li>
-</ul>
-<p><img src="./Images/installing-vscode-win01.png" class="img-fluid"></p>
-<ul>
-<li>When the download finishes, click on the installer icon in the downloads folder to start the installation process of the Visual Studio Code.</li>
-</ul>
-<p><img src="./Images/installing-vscode-win03.png" class="img-fluid"></p>
-<ul>
-<li>After the Installer opens, it will ask you for accepting the terms and conditions of the Visual Studio Code. Click on I accept the agreement and then click the <code>Next&gt;</code> button.</li>
-</ul>
-<p><img src="./Images/installing-vscode-win04.png" class="img-fluid"></p>
-<ul>
-<li>Proceed through the installation process by clicking on the “next” button at each prompt.</li>
-<li>At this prompt, optionally check the boxes for “Creating a desktop icon”, and adding VS Code to the Right-Click menu functionality of Windows File Explorer, then click <code>Next &gt;</code>.</li>
-</ul>
-<p><img src="./Images/installing-vscode-win07.png" class="img-fluid"></p>
-<ul>
-<li>Confirm the installation options, then click <code>Install</code>. The installation will proceed.</li>
-</ul>
-<p><img src="./Images/installing-vscode-win08.png" class="img-fluid"></p>
-<ul>
-<li>Click <code>Finish</code> to exit the installation and (by default) launch Visual Studio Code.</li>
-</ul>
-<p><img src="./Images/installing-vscode-win10.png" class="img-fluid"></p>
-<p>Your VS Code is installed on your PC and ready for you to start coding away with it.</p>
-<p><img src="./Images/installing-vscode-win12.png" class="img-fluid"></p>
-<p>You can always launch it by clicking on the Desktop Icon (if you selected that option during the installation process) or by searching it in the <code>⊞ Start Menu</code>.</p>
-<p><img src="./Images/installing-vscode-win11.png" class="img-fluid"></p>
-</section>
-<section id="for-mac-os" class="level4">
-<h4 class="anchored" data-anchor-id="for-mac-os">For Mac OS</h4>
-<ul>
-<li>Navigate to the <a href="https://code.visualstudio.com/download">official website</a> of Visual Studio Code using any web browser like Safari, Google Chrome etc.</li>
-<li>Click the “Mac” button under the Apple logo on the website to start the download of the Visual Studio Code Application</li>
-</ul>
-<p><img src="./Images/installing-vscode-mac01.png" class="img-fluid"></p>
-<ul>
-<li>Depending on the browser used and security settings within, there may be prompts to allow access to the Download folder or similar. Allow any prompts that are generated.</li>
-</ul>
-<p><img src="./Images/installing-vscode-mac02.png" class="img-fluid"></p>
-<ul>
-<li>Hold down the <code>Command ⌘</code> key on your keyboard and press the <code>Space Bar</code> and type ‘Downloads’ in the search field, click on the Downloads Finder icon.</li>
-</ul>
-<p><img src="./Images/installing-vscode-mac03.png" class="img-fluid"></p>
-<ul>
-<li>Click on “Downloads” on the left side of the Finder window then locate the Visual Studio Code application file. You can click on the Date Added column to sort by newest to help you find the VS Code file.</li>
-<li>Click and drag the Visual Studio Code application to the Applications folder on the left.</li>
-</ul>
-<p><img src="./Images/installing-vscode-mac04.png" class="img-fluid"></p>
-<p>Your VS Code is installed on your Mac and ready for you to start coding away with it.</p>
-<p><img src="./Images/installing-vscode-mac09.png" class="img-fluid"></p>
-<p>You can launch it by clicking on the Launchpad Icon in the Mac OS dock and then either look for the Visual Studio Code icon, or use the Search bar at the top of the Launchpad.</p>
-<p><img src="./Images/installing-vscode-mac06.png" class="img-fluid"></p>
-<p>Click on the Visual Studio Code icon once it has been located.</p>
-<p><img src="./Images/installing-vscode-mac07.png" class="img-fluid"></p>
-<p>Mac OS will prompt to confirm that opening a program downloaded from the internet was an intended action. Click <code>Open</code></p>
-<p><img src="./Images/installing-vscode-mac08.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="install-vs-codes-python-extension" class="level3">
-<h3 class="anchored" data-anchor-id="install-vs-codes-python-extension">Install VS Code’s Python Extension</h3>
-<p>This is an extension with rich support for the Python programming language, including features such as IntelliSense (Pylance), linting, debugging, code navigation, code formatting, refactoring, and more!</p>
-<ul>
-<li>Open VS Code and navigate to the extention icon on the left pane.</li>
-</ul>
-<p><img src="./Images/VS_Code_Extension_01.png" class="img-fluid"></p>
-<ul>
-<li>Search “Python” in the search box and select the first item that says “Python” in the search result and click on install.</li>
-</ul>
-<p><img src="./Images/VS_Code_Extension_02.png" class="img-fluid"></p>
-<ul>
-<li>Once it’s done installing, your python extension should be good to go.</li>
-</ul>
-<p><img src="./Images/VS_Code_Extension_03.png" class="img-fluid"></p>
+<p>For Example :</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="at">    </span><span class="fu">fontsize</span><span class="kw">:</span><span class="at"> 1.1em</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="at">    </span><span class="fu">linestretch</span><span class="kw">:</span><span class="at"> </span><span class="fl">1.7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can naturally also create an entirely custom theme and provide only that (in this case you will inherit from the default Bootstrap theme):</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">theme</span><span class="kw">:</span><span class="at"> custom.scss</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can read more about the custom theming design on Quarto <a href="https://quarto.org/docs/output-formats/html-themes-more.html">here</a>.</p>
+<p>In addition to providing a single theme for your html output, you may also provide a light and dark theme. For example:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="at">  </span><span class="fu">light</span><span class="kw">:</span><span class="at"> flatly</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> darkly</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>Nice work completing this lesson! By now you should:</p>
 <ul>
-<li><p>Know what Visual Studio Code is, and IDE’s in general.</p></li>
-<li><p>Know how to and have VS Code installed on your computer.</p></li>
-<li><p>Know how to install and have an extension installed in VS Code.</p></li>
+<li><p>Know about various themes available in Quarto.</p></li>
+<li><p>Know how to apply customization to your website from the _quarto.yml.</p></li>
 </ul>
-<p>In the next lesson, you will learn how to use Quarto - an open-source publishing system, and have the extension installed in VS Code.</p>
-</section>
-<section id="faq" class="level2">
-<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
 
 
 </section>
