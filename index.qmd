@@ -2,13 +2,44 @@
 title: "Welcome!"
 ---
 
+![](/images/home-banner-png.png)
+
 # Introduction
 
-Welcome to GitHub Pages Training, a course designed to take you from complete beginner to a website creating machine! In this course we will walk through the basics of using Github, R, and Quarto for website development. If you don't know what any of those are, that is OK. We'll teach you! Just know this, we will collectively use those tools to develop free websites. Along the way you will pick up the fundamental data science skills used by professionals every day.
+Welcome to GitHub For The Real World, a course designed to take you from complete beginner to a website creating machine! In this course we will walk through the basics of using Github, Visual Studio Code, and Quarto for website development. If you don't know what any of those are, that is OK. We'll teach you! Just know this, we will collectively use those tools to develop free websites. Along the way you will pick up some fundamental HTML and CSS skills.
+
+
+
+::: {.grid}
+::: {.g-col-4}
+![](images/github.png){height=200}
+
+# GitHub
+
+GitHub is a web-based platform for storing and sharing code. It lets developers work together on projects, track changes, and control who can access the code. Think of it as a social network for code!
+:::
+
+::: {.g-col-4}
+![](images/visual-studio-code-icon.png){width=200 height=200}
+
+# Visual Studio Code
+
+Visual Studio Code (VS Code) is a free, open-source code editor for writing computer programs. It's popular for its features like syntax highlighting, code completion, and debugging tools, making it easier and faster to write code.
+:::
+
+::: {.g-col-4}
+![](images/quarto-logo.png){width=200 height=200}
+
+# Quarto
+
+Quarto is a document creation framework that allows you to write content using familiar markdown syntax and generate various output formats like reports, presentations, websites, and more. It combines the readability of markdown with the power to programmatically generate content.
+:::
+
+:::
 
 # Required Experience
 
-This course assumes that you have no technical experience with website creation, programming, or using GitHub. It does however assume that you have a basic understanding of how to navigate a computer and its file management system.
+If you are just starting in tech you might be a little apprehensive about taking this course, don't stress too much, that is completely normal. This course assumes that you have no technical experience with website creation, programming, or using GitHub. It does however assume that you have a basic understanding of how to navigate a computer and its file management system.
 
 You will be well served by knowing how to find answers to your questions through a search engine like [Google](google.com). Many say that the best programmers are really just the best googlers.
 
