@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Github Pages Training"
+  title: "GitHub For The Real World"
   navbar:
     pinned: true
     left:
@@ -77,3 +77,9 @@ format:
       margin-width: 70px
 
 editor: visual
+
+markdown:
+  class: center-header  # Assuming you want to center-align
+  # Add styling within the markdown configuration
+  style:
+    text-align: center;  # Centers the text

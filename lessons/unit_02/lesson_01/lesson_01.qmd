@@ -11,7 +11,7 @@ In this lesson, we'll go over an Integrated Development Enviroment (IDE) known a
 -   Students will understand what VS Code is and why they should use it.
 
 -   Students will know how to download extensions and use VS Code to write source code.
-
+s
 ## Lesson
 
 ### What is Visual Studio Code ?
