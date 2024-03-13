@@ -63,7 +63,7 @@ You can always launch it by clicking on the Desktop Icon (if you selected that o
 
 * Hold down the ```Command ⌘``` key on your keyboard and press the ```Space Bar``` and type 'Downloads' in the search field, click on the Downloads Finder icon.
 
-![](./Images/installing-vscode-mac03.png){height="150" width="500"}
+![](./Images/installing-vscode-mac03.png){height="140" width="600"}
 
 * Click on "Downloads" on the left side of the Finder window then locate the Visual Studio Code application file. You can click on the Date Added column to sort by newest to help you find the VS Code file.
 * Click and drag the Visual Studio Code application to the Applications folder on the left.
