@@ -1,5 +1,5 @@
 ---
-title: "Advanced Git Concepts and Troubleshooting"
+title: "Advanced Git Concepts"
 format:
   html:
     theme:
