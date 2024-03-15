@@ -51,56 +51,56 @@
   {
     "objectID": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html",
     "href": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html",
-    "title": "Advanced Git Concepts and Troubleshooting",
+    "title": "Advanced Git Concepts",
     "section": "",
     "text": "In the previous lesson on Git, we learned of foundational git concepts and commands using the terminal and directly from VS code. In this lesson, we’ll explore some advanced git concepts and how to troubleshoot issues, when things are not working properly."
   },
   {
     "objectID": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#overview",
     "href": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#overview",
-    "title": "Advanced Git Concepts and Troubleshooting",
+    "title": "Advanced Git Concepts",
     "section": "",
     "text": "In the previous lesson on Git, we learned of foundational git concepts and commands using the terminal and directly from VS code. In this lesson, we’ll explore some advanced git concepts and how to troubleshoot issues, when things are not working properly."
   },
   {
     "objectID": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#learning-objectives",
     "href": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#learning-objectives",
-    "title": "Advanced Git Concepts and Troubleshooting",
+    "title": "Advanced Git Concepts",
     "section": "Learning Objectives",
     "text": "Learning Objectives\n\nStudents will understand and be able to run some advanced Git functions using the terminal.\nStudents will be able to resolve common conflicts that come up while using Git."
   },
   {
     "objectID": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#lesson",
     "href": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#lesson",
-    "title": "Advanced Git Concepts and Troubleshooting",
+    "title": "Advanced Git Concepts",
     "section": "Lesson",
     "text": "Lesson\nGit provides developers with some powerful features and has become the standard tool for version control. Using its advanced features can seem intimidating at first, but with regular practice, they can become second nature and can greatly improve your workflow. If you’re feeling motivated, here are some advanced Git concepts and commands to enhance your productivity :\n\nGit Stash\ngit stash\nYou may have noticed that while working on a branch locally, you won’t be able to checkout (switch) to another branch and pull in upstream (remote repo) changes without making a commit of the changes made to your current branch. With git stash you can temporarily save changes made on your working branch so you can switch to a different branch, pull in upstream changes, and switch back to your original branch, at which point you can apply the saved changes. It works by keeping or saving all of your uncommitted changes locally, but doesn’t commit them, while also cleaning up your working tree. Stashing can come in handy if you need to move away from what you are doing, say to fix an urgent bug, but aren’t quite ready to commit what you’ve done so far.\ngit stash pop\nWhen you’re ready to continue, you can pull your changes from the stash with the command above.\n\n\nGit Revert\nGit revert is a command that allows you to undo a previous commit without deleting it entirely. It creates a new commit that reverses the changes made in the previous commit, making it easy to fix mistakes or roll back to a previous version of your project. You can use git revert when you want to undo changes that have already been pushed to a shared repository or when you need to fix a bug without affecting other parts of your code. To use git revert, you need to identify the commit you want to undo and run the command:\ngit revert &lt;commit-hash&gt;\nThis will create a new commit that reverses the changes introduced by the previous commit. It’s important to note that git revert doesn’t delete any commits or rewrite the commit history, which makes it a safer option compared to other undo methods. You can also use this if you want to revert the latest commit:\ngit revert HEAD\n\n\nGit Grep\nGit grep is a command that lets you search for specific text or patterns within your repository. This can be helpful when you need to find all instances of a particular function, variable, or string across your project. It searches through the tracked files in the current branch of a Git repository and returns a list of files that match the specified text or pattern, along with the line numbers where it appears. This can be particularly helpful when working on large projects with many files and lines of code.\nTo use git grep, simply run the command followed by the search term:\ngit grep &lt;search-term&gt;\n\n\nGit Diff\nGit diff allows you to compare file changes between the working directory and the latest commit in the local repository, two commits or two branches. It shows the differences between the files, highlighting the lines that were added or removed. This command is useful when you want to review your changes before committing them, or when you want to see the changes made by someone else on your team. It’s also helpful when you want to troubleshoot issues by comparing different versions of your code.\nTo compare file changes between the working directory and the local repository, simply type:\ngit diff\nTo compare two commits:\ngit diff &lt;commit1&gt;&lt;commit2&gt;\nTo compare two branches:\ngit diff &lt;branch1&gt; -- &lt;branch2&gt;\n\n\nGit Rebase\nIf you wanted to merge all your commits in a feature branch to the main branch, what probably comes to mind is using the git merge command. This will take all of the changes in the featured branch and stuff it into one merge commit and then put that merge commit into the main branch. After those changes are combined into that merge commit, it looks scattered, especially when you have a bunch of people working on the featured branch and pushing changes almost every time.\n\n\n\nGit Merge\n\n\nThe git rebase command can solve that for us. It takes all of your commits from a featured branch and moves them on top of the main commit.\n\n\n\nGit Rebase\n\n\nA major advantage is that it easily traces your commits inside the main branch. You should use the git rebase command to consolidate into a single branch when you have multiple private branches. This will display the commit history in a linear form, which makes it easy to see the progression of changes because they are all applied one after the other, without any branches or merge commits. This can make it easier to understand how the code evolved over time.\nAdditionally, a linear history can make it easier to track down bugs because you can more easily see when a particular change was introduced, and to revert changes since you can simply revert a single commit rather than dealing with the complexity of merging branches.\nTo use the rebase command, simply type:\ngit rebase &lt;base&gt;\nWhere &lt;base&gt; is the branch you want to move your current branch to.\n\n\nGit Clean\nIf you have files in your working directory that you don’t want or need, git clean can help you out. Git Clean is a command that allows you to remove untracked files from your working directory. These could be temporary files, build artifacts, or other files that you don’t need. To use git clean - just navigate to the directory where you want to clean up and run the command:\ngit clean\nYou can also use options like -n to preview which files will be deleted before actually deleting them, and -d to delete untracked directories as well as files. Git Clean is useful for keeping your working directory clean and organized. Just be careful not to accidentally delete any important files!"
   },
   {
     "objectID": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#conclusion",
     "href": "lessons/unit_bonus/Advanced_Git/Advanced_Git.html#conclusion",
-    "title": "Advanced Git Concepts and Troubleshooting",
+    "title": "Advanced Git Concepts",
     "section": "Conclusion",
     "text": "Conclusion\nGood Job completing this lesson! By now you should:\n\nUnderstand some advanced Git concepts and know how to run Git commands using the terminal.\nKnow how to troubleshoot conflicts that may arise while using Git."
   },
   {
     "objectID": "lessons/unit_03/lesson_02/lesson_02.html",
     "href": "lessons/unit_03/lesson_02/lesson_02.html",
-    "title": "Hosting Your Website On Github",
+    "title": "Lesson 2: Hosting Your Website On Github",
     "section": "",
     "text": "By the end of this lesson, students will be able to create a GitHub repository for their website and configure the basic settings for hosting on GitHub Pages"
   },
   {
     "objectID": "lessons/unit_03/lesson_02/lesson_02.html#overview",
     "href": "lessons/unit_03/lesson_02/lesson_02.html#overview",
-    "title": "Hosting Your Website On Github",
+    "title": "Lesson 2: Hosting Your Website On Github",
     "section": "",
     "text": "By the end of this lesson, students will be able to create a GitHub repository for their website and configure the basic settings for hosting on GitHub Pages"
   },
   {
     "objectID": "lessons/unit_03/lesson_02/lesson_02.html#learning-objectives",
     "href": "lessons/unit_03/lesson_02/lesson_02.html#learning-objectives",
-    "title": "Hosting Your Website On Github",
+    "title": "Lesson 2: Hosting Your Website On Github",
     "section": "Learning Objectives",
     "text": "Learning Objectives\n\nStudents will be able to Create a repository for website and initialize a GitHub Pages branch.\nStudents will be able Upload Your Website Files\nStudents will be able to view website"
   },
@@ -114,21 +114,21 @@
   {
     "objectID": "lessons/unit_03/lesson_02/lesson_02.html#lesson",
     "href": "lessons/unit_03/lesson_02/lesson_02.html#lesson",
-    "title": "Hosting Your Website On Github",
+    "title": "Lesson 2: Hosting Your Website On Github",
     "section": "Lesson",
-    "text": "Lesson\nHosting on GitHub typically refers to using GitHub Pages, a built-in service provided by GitHub for hosting static websites directly from your GitHub repository. GitHub Pages is a convenient and free way to showcase your projects, portfolio, documentation, or any other static content.\n\nLet begin\n\nLog in to GitHub.\nCreate a Repository: Go to your GitHub profile and click on the “+” sign to create a new repository. Name your repository(choose any preferred name).\nAdd Your Website Files: Upload your website files to the repository by highlighting and dragging and dropping into your repository\n\n\n\n\ncommit changes\nEnable GitHub Pages: In your repository, go to the “Settings” tab. Scroll down to the “GitHub Pages” section and click ‘check out here’\n\n\nUnder “Source,” select the branch you want to use (usually main or master). file should be /docs* Click “Save.”\n\n\n\nclick on the link attached ‘your site is ready to be published’ to veiw your site"
+    "text": "Lesson\n\nBackground\nHosting on GitHub typically refers to using GitHub Pages, a built-in service provided by GitHub for hosting static websites directly from your GitHub repository. GitHub Pages is a convenient and free way to showcase your projects, portfolio, documentation, or any other static content.\n\n\nLets begin\n\nLog in to GitHub.\nCreate a Repository: Go to your GitHub profile and click on the “+” sign to create a new repository. Name your repository(choose any preferred name but note this name will show up in your site URL address).\n\n\n\nAdd Your Website Files: In your repo select the add file drop down and then select upload files. Next upload your website files that you created in Unit 3 Lesson 1 to the repository by highlighting and dragging and dropping into your repository.\n\n\n\n\nCommit changes\n\n\n\nIn your repository, go to the “Settings” tab and on the left nav bar select the “GitHub Pages” section. Under “Branch,” select the branch you want to use for our case main Then select where the html files will be read in our case /docs. Then click Save.\n\n\n\nThe reason we will choose docs is because our .html files are not located at the root folder they are in the default folder _site. So in order for github to publish our site we simply need to change the name of our folder from _site to docs. There are many approches to this. You could open the web editor by cliking . in your repo and change it in vscode for the web. You could clone the repo and change in vscode desktop app. Or you could change it before you even drag and drop the files in github in your computers file explorer. How you do it doesn’t really matter as long as your file structure in github looks like this:\n\n\nAnd if you want your code to always render the html files into the docs folder the best way is to adress this problem is change the out put directory in your YAML as shown below. This will ensure everytime you render or preview your qmd file the html file will be ouput in the docs folder.\nproject:\n  type: website\n  output-dir: docs\n\nOnce this is done and commited to github go back to settings then to github pages and click on the view your site button. Note sometimes it takes Github a while to provide this link so be patient and refresh the page every now and then.\n\n\n\nThe link should take you to your basic site that you created in Unit 3 Lesson 1, but now it is own the web for everyone to see!\n\n\n\n\nlinks\nHere are some links to extra help and information if you are curious or in need.\nhttps://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages\nhttps://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"
   },
   {
     "objectID": "lessons/unit_03/lesson_02/lesson_02.html#conclusion",
     "href": "lessons/unit_03/lesson_02/lesson_02.html#conclusion",
-    "title": "Hosting Your Website On Github",
+    "title": "Lesson 2: Hosting Your Website On Github",
     "section": "Conclusion",
-    "text": "Conclusion\nyou should be able to veiw and share your website with everyone"
+    "text": "Conclusion\nYou should now be able to veiw and share your website with everyone!"
   },
   {
     "objectID": "lessons/unit_03/lesson_02/lesson_02.html#faq",
     "href": "lessons/unit_03/lesson_02/lesson_02.html#faq",
-    "title": "Hosting Your Website On Github",
+    "title": "Lesson 2: Hosting Your Website On Github",
     "section": "FAQ",
     "text": "FAQ"
   },
@@ -576,44 +576,44 @@
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html",
     "href": "lessons/unit_03/lesson_01/lesson_01.html",
-    "title": "Lesson 01: Creating Your First Website with Quarto",
+    "title": "Lesson 1: Creating Your First Website with Quarto",
     "section": "",
     "text": "You will learn to create a personalized website using Quarto. You will build a foundational About Me page, add new sections like Blog Posts and Contact, and render your site with quarto render. You will also be introduced to working with to YAML files."
   },
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html#overview",
     "href": "lessons/unit_03/lesson_01/lesson_01.html#overview",
-    "title": "Lesson 01: Creating Your First Website with Quarto",
+    "title": "Lesson 1: Creating Your First Website with Quarto",
     "section": "",
     "text": "You will learn to create a personalized website using Quarto. You will build a foundational About Me page, add new sections like Blog Posts and Contact, and render your site with quarto render. You will also be introduced to working with to YAML files."
   },
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html#learning-objectives",
     "href": "lessons/unit_03/lesson_01/lesson_01.html#learning-objectives",
-    "title": "Lesson 01: Creating Your First Website with Quarto",
+    "title": "Lesson 1: Creating Your First Website with Quarto",
     "section": "Learning Objectives",
     "text": "Learning Objectives\n\nStudents will know how to create and have a basic website using Quarto\nStudents will know how to add new pages to their website and work with YAML\nStudents will be able to render the website using quarto render."
   },
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html#prerequisites",
     "href": "lessons/unit_03/lesson_01/lesson_01.html#prerequisites",
-    "title": "Lesson 01: Creating Your First Website with Quarto",
+    "title": "Lesson 1: Creating Your First Website with Quarto",
     "section": "Prerequisites",
     "text": "Prerequisites\n\nStudents should have Visual Studio Code and the Quarto extension installed on their computer. Refer to our lessons on VS Code and Quarto if you don’t have it already."
   },
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html#why-quarto-for-creating-websites",
     "href": "lessons/unit_03/lesson_01/lesson_01.html#why-quarto-for-creating-websites",
-    "title": "Lesson 01: Creating Your First Website with Quarto",
+    "title": "Lesson 1: Creating Your First Website with Quarto",
     "section": "Why Quarto for Creating Websites?",
     "text": "Why Quarto for Creating Websites?\nReproducibility: Quarto ensures reproducibility by combining content, code, and results into a single document. This is vital for maintaining consistency and transparency in web development projects.\nFlexibility with Markdown and Code: Quarto empowers users to seamlessly blend Markdown for content and code for interactivity. This flexibility allows for easy integration of data analysis, visualizations, and narrative—all within a single environment.\nEffortless Document Structuring: With Quarto’s intuitive structure, creating and organizing pages becomes straightforward. Its simplicity enables quick addition of new content, making it an ideal choice for both beginners and experienced users in the website development realm."
   },
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html#getting-started-with-building-your-first-website",
     "href": "lessons/unit_03/lesson_01/lesson_01.html#getting-started-with-building-your-first-website",
-    "title": "Lesson 01: Creating Your First Website with Quarto",
+    "title": "Lesson 1: Creating Your First Website with Quarto",
     "section": "Getting started with building your first website",
-    "text": "Getting started with building your first website\n\nOpen Visual Studio Code (VS Code)\nIn VS Code, execute the Quarto: Create Project command from the command-palette:\n\nThen, select Website Project:\n\nYou’ll be prompted to select a parent directory/folder to create the project within. Then, you’ll be asked to name the directory/folder for your website project. For example, Quarto Project:\n\nThe new website project will be created and opened within VS Code. Click the Render button to preview the website:\n\n\n\nThe quarto.yml file holds metadata such as the title of the document, author information, and other details that help describe and identify the document.\n\n\n\nYAML Navigation\n\n\nIn the above image, the left side contains a YAML file that contains the metadata.\nThe title of the website is called Quarto Website,\nThe navbar is essentially a navigation bar that helps users easily navigate through different sections or pages of the website. Each item in the left navigation specifies a page or a link, and the text attribute defines the text that will be displayed for that link.\nIf we want to add two new pages (blog_post.qmd and contact.qmd) to the main About Me page we first create the qmd files, then add the files in the navbar section in the .yml file.\n\n\n\nAdding Pages"
+    "text": "Getting started with building your first website\n\nOpen Visual Studio Code (VS Code)\nIn VS Code, execute the Quarto: Create Project command from the command-palette:\n\n\n\nExecuting the Quarto: Create Project\n\n\nThen, select Website Project:\n\n\n\nSelecting Website Project\n\n\nYou’ll be prompted to select a parent directory/folder to create the project within. Then, you’ll be asked to name the directory/folder for your website project. For example, Quarto Project:\n\n\n\nSelecting Folder\n\n\nThe new website project will be created and opened within VS Code. Click the Render button to preview the website:\n\n\n\nRendering the website\n\n\n\n\nThe quarto.yml file holds metadata such as the title of the document, author information, and other details that help describe and identify the document.\n\n\n\nYAML Navigation\n\n\nIn the above image, the left side contains a YAML file that contains the metadata.\nThe title of the website is called Quarto Website,\nThe navbar is essentially a navigation bar that helps users easily navigate through different sections or pages of the website. Each item in the left navigation specifies a page or a link, and the text attribute defines the text that will be displayed for that link.\nIf we want to add two new pages (blog_post.qmd and contact.qmd) to the main About Me page we first create the qmd files, then add the files in the navbar section in the .yml file.\n\n\n\nAdding Pages"
   },
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html#practice-activity",
@@ -625,56 +625,56 @@
   {
     "objectID": "lessons/unit_03/lesson_01/lesson_01.html#conclusion",
     "href": "lessons/unit_03/lesson_01/lesson_01.html#conclusion",
-    "title": "Lesson 01: Creating Your First Website with Quarto",
+    "title": "Lesson 1: Creating Your First Website with Quarto",
     "section": "Conclusion",
     "text": "Conclusion\nGreat job with this lesson! By now you should:\n\nKnow how to create and have your website running locally with Quarto.\nKnow how to add more pages to your website.\nKnow how to work with YAML files in Quarto."
   },
   {
     "objectID": "lessons/unit_03/lesson_03/lesson_03.html",
     "href": "lessons/unit_03/lesson_03/lesson_03.html",
-    "title": "Lesson 03: Subpages and Nav Bars",
+    "title": "Lesson 3: Subpages and Nav Bars",
     "section": "",
     "text": "This lesson will provide an overview of using subpages in Quarto and navigation options."
   },
   {
     "objectID": "lessons/unit_03/lesson_03/lesson_03.html#overview",
     "href": "lessons/unit_03/lesson_03/lesson_03.html#overview",
-    "title": "Lesson 03: Subpages and Nav Bars",
+    "title": "Lesson 3: Subpages and Nav Bars",
     "section": "",
     "text": "This lesson will provide an overview of using subpages in Quarto and navigation options."
   },
   {
     "objectID": "lessons/unit_03/lesson_03/lesson_03.html#learning-objectives",
     "href": "lessons/unit_03/lesson_03/lesson_03.html#learning-objectives",
-    "title": "Lesson 03: Subpages and Nav Bars",
+    "title": "Lesson 3: Subpages and Nav Bars",
     "section": "Learning Objectives",
     "text": "Learning Objectives\n\nStudents will understand the purpose of subpages\nStudents will understand the purpose of a Nav bar\nStudents will be able to edit the website YAML\nStudents will create a website with a nav bar and subpages"
   },
   {
     "objectID": "lessons/unit_03/lesson_03/lesson_03.html#lesson",
     "href": "lessons/unit_03/lesson_03/lesson_03.html#lesson",
-    "title": "Lesson 03: Subpages and Nav Bars",
+    "title": "Lesson 3: Subpages and Nav Bars",
     "section": "Lesson",
     "text": "Lesson\n\nBackground\nHaving multiple pages and a way to navigate them allows the developer to separate content and ideas. This benefits the user with an organizational structure that is familiar. A navigation bar is a fundamental element of website design that plays a crucial role in helping users navigate, understand, and interact with the content and features of a site or application. By default your webiste will be built with a nav bar. This lesson will teach you how to add content and customize the nav bar.\n\n\nCreating a New Page\nStep one is to create a new .qmd document that will become our new page. This should be a review from Unit 2 Lesson 2. Make sure to add this file to your already existing website that you created in a previous lesson.\n\nCreate a quarto file by clicking the new file icon at the top-left in VSCode or right-clicking in the folder and selecting new file. Give the page file a name and end with .qmd\n\n\n\nAdd a title in the YAML and some markdown content underneath like such:\n\n\n\n\nLinking the New Page to the YAML\nStep two is changing our metadata file, by default this will be named _quarto.yml. This file is referred to as a YAML. A YAML is used to specify various settings and configurations related to the document’s formatting, layout, styling, and other properties.\n\nStep three is to now render or preview your index.html file after everthing is connected and saved. This allows quarto to output the html files and all other supporting files that creates our website.\nAfter these changes push your work to git hub as shown in 3 Lesson 2 and your website should update. You have now successfully connected your new page to the website! It should look something like this:\n\nNow we will explore formatting options so you can customize your website to your personal preferences.\n\n\nFormatting\n\nNavigation Bar\nYour _quarto.yml page contains the informaiton on how you want the webite formated. By default the website uses a navigation bar oriented at the top of the page. And should look like the image on your right.\n\n\nwebsite:\n  title: \"Quarto Website\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - newpage.qmd\n\n\n\n\n\n\nMenu\nIf we don’t like the default nav bar we can do a couple things to change it. Notice in the code below I use right: this will take the contents of our nav bar and align them right. Next I added a menu item that will create a dropdown with all of our pages title Menu. Note you can create multiple menus for your website.\n\n\nwebsite:\n  title: \"Quarto Website\"\n  navbar:\n    right:\n    - text: 'Menu'\n      menu:\n        - href: index.qmd\n          text: Home\n        - about.qmd\n        - newpage.qmd\n\n\n\n\n\n\nSide Bar\nIf we want a side bar as opposed to a nav bar all we need to change is the navbar: to sidebar:. The style docked gives the navigation panel a gray background to seperate from the white page. You can remove this if you want it to blend with the page. Also not you need to specify the contents: for this code to work properly.\n\n\nwebsite:\n  title: \"Quarto Website\"\n  sidebar:\n    style: docked\n    contents: \n        - href: index.qmd\n          text: Home\n        - about.qmd\n        - newpage.qmd\n\n\n\n\n\n\nSections\nLastly If you want a similar effect like menu with the nav bar you need to use section:. Notive you can give you section a title right after the section: code, my section is titled Pages. Note you can have multiple secitons which would be beneficial to seperate your content.\n\n\nwebsite:\n  title: \"Quarto Website\"\n  sidebar:\n    style: docked\n    contents: \n      section: 'Pages'\n      contents: \n        - href: index.qmd\n          text: Home\n        - about.qmd\n        - newpage.qmd\n\n\n\n\nI recommend going to the Quarto website and seeing how you can turn the YAML parameters to continue to make your website personal.\nMore Details on navigation in quarto to be found here.\nNote: If you want to change the colors of your web page look into changing the theme: element in your YAML"
   },
   {
     "objectID": "lessons/unit_03/lesson_03/lesson_03.html#practice-activity",
     "href": "lessons/unit_03/lesson_03/lesson_03.html#practice-activity",
-    "title": "Lesson 03: Subpages and Nav Bars",
+    "title": "Lesson 3: Subpages and Nav Bars",
     "section": "Practice Activity",
-    "text": "Practice Activity\n\nAdd a New Page to your Website\n\nAdd a new Contact Page to your website.\nThe qmd file should be ‘contact.qmd’.\nAdd ‘Contact’ as the heading\nDo not forget to link to it in the YAML file\n\nYour new page should look something like this :"
+    "text": "Practice Activity\n\nAdd a New Page to your Website\n\nAdd a new Contact Page to your website.\nThe qmd file should be ‘contact.qmd’.\nAdd ‘Contact’ as the heading\nDo not forget to link to it in the YAML file\n\nYour new page should look something like this :\n\n\nFill out the ‘about.qmd’\n\nFill out the ‘About’ page with a description of yourself in the ‘about.qmd’.\nDon’t forget to add ‘About’ as the header."
   },
   {
     "objectID": "lessons/unit_03/lesson_03/lesson_03.html#conclusion",
     "href": "lessons/unit_03/lesson_03/lesson_03.html#conclusion",
-    "title": "Lesson 03: Subpages and Nav Bars",
+    "title": "Lesson 3: Subpages and Nav Bars",
     "section": "Conclusion",
     "text": "Conclusion\nWith the ability to create subpages and the flexibility to design navigation interfaces, you are capable of building an organized website. Congratulations, with Quarto on your toolbelt you can build structured and useful websites that could benefit the lives of many!"
   },
   {
     "objectID": "lessons/unit_03/lesson_03/lesson_03.html#faq",
     "href": "lessons/unit_03/lesson_03/lesson_03.html#faq",
-    "title": "Lesson 03: Subpages and Nav Bars",
+    "title": "Lesson 3: Subpages and Nav Bars",
     "section": "FAQ",
     "text": "FAQ"
   },
@@ -775,5 +775,40 @@
     "title": "R Installation",
     "section": "",
     "text": "What is R?\nR is a programming language developed by Ross Ihaka and Robert Gentleman designed for statistical programming. It is primarily focused on data wrangling and visualization.\nAs the phrase “programming language” suggests, R is a language used to instruct a computer to carry out complex commands. Like most any other language you will need to understand its grammar and syntax in order to fluently “speak” it. The more fluent you become in it, the easier it will be for you to communicate your wants and desires to it.\n\n\nInstalling R\n\nGo to cloud.r-project.org\nClick on the download link for your computer system. For example if you are using a windows computer click “Download R for Windows”\nClick on “base”\nClick on the download version for the current version of R. (At time of writing the button says “Download R-4.3.1 for Windows” on a windows computer.) Make sure you know where you save the downloaded file so that you can run the installer.\nNavigate to the downloaded file and run the installer by double clicking. (Usually it is title something like “R-4.3.1-win”) Follow the steps for the installation wizard. It is highly recommended you just keep the recommended installation settings especially if you haven’t done this before.\nR should now be properly installed. We’ll show you how to check it properly in the next tutorial “Installing R Studio”"
+  },
+  {
+    "objectID": "tools/Quarto_Installation/Quarto_Installation.html",
+    "href": "tools/Quarto_Installation/Quarto_Installation.html",
+    "title": "Quarto Installation",
+    "section": "",
+    "text": "What is Quarto?\nQuarto is a dynamic open-source publishing system made to simplify the process of creating easily reproducible reports, articles, research, HTML, and other print and non-print documents. It is built on top of the exceptionally powerful Pandoc converter and uses a flavor of markdown. Quarto includes support for Python, Julia, and Observable among others.\n\n\nInstalling Quarto\n\nStep 01: Find and Download Quarto\n\n\nNavigate to the Quarto download page.\nOr use this link to access a static download.\nFor windows, click on the large blue link at the top of the page and the download should start.\nFor Mac OS, scroll down and click on the download link for Mac OS.\n\n\n\nStep 02: Install Quarto (For Windows)\n\nClick on the downloaded msi file. The setup wizard will start.\n\n\n\nClick next.\nIf you want all users on your computer to have access to Quarto select the radio button beside Install for all users of this machine, else, change nothing and just click next.\n\n\n\nClick next.\nLeave the install path as the default.\n\n\n\nClick next.\nThe installation will start. Wait for it to complete (Please do not turn of your system)\nWhen a message comes up, click on Finish.\n\n\n\n\nCongratulations 🎉😎\nYou have successfully installed Quarto"
+  },
+  {
+    "objectID": "tools/VsCode_Installation/VSCode_Installation.html",
+    "href": "tools/VsCode_Installation/VSCode_Installation.html",
+    "title": "Installing Visual Studio Code",
+    "section": "",
+    "text": "Visual Studio Code is a Integrated Development Enviroment (IDE) developed by Microsoft for Windows, Linux and macOS. An integrated development environment or IDE is a software for building applications. An IDE is just like a text editor except instead of writing documents you’re writing source-code. Visual Studio Code includes features to aid rapid application build. Users can change the theme, keyboard shortcuts, preferences, install extensions that add functionality, and has support for different programming languages."
+  },
+  {
+    "objectID": "tools/VsCode_Installation/VSCode_Installation.html#what-is-visual-studio-code",
+    "href": "tools/VsCode_Installation/VSCode_Installation.html#what-is-visual-studio-code",
+    "title": "Installing Visual Studio Code",
+    "section": "",
+    "text": "Visual Studio Code is a Integrated Development Enviroment (IDE) developed by Microsoft for Windows, Linux and macOS. An integrated development environment or IDE is a software for building applications. An IDE is just like a text editor except instead of writing documents you’re writing source-code. Visual Studio Code includes features to aid rapid application build. Users can change the theme, keyboard shortcuts, preferences, install extensions that add functionality, and has support for different programming languages."
+  },
+  {
+    "objectID": "tools/VsCode_Installation/VSCode_Installation.html#installing-visual-studio-code",
+    "href": "tools/VsCode_Installation/VSCode_Installation.html#installing-visual-studio-code",
+    "title": "Installing Visual Studio Code",
+    "section": "Installing Visual Studio Code",
+    "text": "Installing Visual Studio Code\n\nPrerequisites\n\nVS Code is lightweight and should run on most available hardware and platform versions. You can review the System Requirements to check if your computer configuration is supported.\n\n\n\nFor Windows PC\n\nVisit the official website of Visual Studio Code using any web browser like Google Chrome, Microsoft Edge, etc.\nClick the “Windows” button under the Windows logo on the website to start the download of the Visual Studio Code Application.\n\n\n\nWhen the download finishes, click on the installer icon in the downloads folder to start the installation process of the Visual Studio Code.\n\n\n\nAfter the Installer opens, it will ask you for accepting the terms and conditions of the Visual Studio Code. Click on I accept the agreement and then click the Next&gt; button.\n\n\n\nProceed through the installation process by clicking on the “next” button at each prompt.\nAt this prompt, optionally check the boxes for “Creating a desktop icon”, and adding VS Code to the Right-Click menu functionality of Windows File Explorer, then click Next &gt;.\n\n\n\nConfirm the installation options, then click Install. The installation will proceed.\n\n\n\nClick Finish to exit the installation and (by default) launch Visual Studio Code.\n\n\nYour VS Code is installed on your PC and ready for you to start coding away with it.\n\nYou can always launch it by clicking on the Desktop Icon (if you selected that option during the installation process) or by searching it in the ⊞ Start Menu.\n\n\n\nFor Mac OS\n\nNavigate to the official website of Visual Studio Code using any web browser like Safari, Google Chrome etc.\nClick the “Mac” button under the Apple logo on the website to start the download of the Visual Studio Code Application\n\n\n\nDepending on the browser used and security settings within, there may be prompts to allow access to the Download folder or similar. Allow any prompts that are generated.\n\n\n\nHold down the Command ⌘ key on your keyboard and press the Space Bar and type ‘Downloads’ in the search field, click on the Downloads Finder icon.\n\n\n\nClick on “Downloads” on the left side of the Finder window then locate the Visual Studio Code application file. You can click on the Date Added column to sort by newest to help you find the VS Code file.\nClick and drag the Visual Studio Code application to the Applications folder on the left.\n\n\nYour VS Code is installed on your Mac and ready for you to start coding away with it.\n\nYou can launch it by clicking on the Launchpad Icon in the Mac OS dock and then either look for the Visual Studio Code icon, or use the Search bar at the top of the Launchpad.\n\nClick on the Visual Studio Code icon once it has been located.\n\nMac OS will prompt to confirm that opening a program downloaded from the internet was an intended action. Click Open\n\n\n\nCongratulations 🎉😎\nYou have successfully installed Visual Studio Code"
+  },
+  {
+    "objectID": "tools/Git/Git_Installation.html",
+    "href": "tools/Git/Git_Installation.html",
+    "title": "Git Installation",
+    "section": "",
+    "text": "What is Git?\n\nGit is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among developers who are collaboratively developing source code during software development. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel and has been maintained by Junio C Hamano since then. Its goals include speed, data integrity, and support for distributed, non-linear workflows.\n\n\nInstalling Git\n\nFor Windows\nThere are a few ways to install Git on Windows. The most official build is available for download on the Git website. Just click here and the download will start automatically from th Git website. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, click here.\nRun the Installer:\nOpen the downloaded file to start the installation. You will be greeted with the Git Setup wizard.\nInstallation Options: Follow the setup instructions. You can leave most options at their default settings. When prompted to choose the default editor, you may select the one you’re most comfortable with (e.g., VSCode, Notepad++, etc.).\nAdjusting Your PATH Environment: During the installation, you’ll be asked to adjust your PATH environment. Select “Use Git from the Windows Command Prompt” for ease of use.\nConfiguring the Line Ending Conversions:\nChoose how you want Git to treat line endings in text files. The recommended setting for Windows users is “Checkout Windows-style, commit Unix-style line endings”.\nCompleting the Installation: Proceed with the installation. Once completed, click ‘Finish’.\nVerify Installation:\nOpen Command Prompt and type\n    git --version\nto ensure Git is installed correctly and to see the installed version.\n\n\nFor MacOS\nThere are several ways to install Git on macOS. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.\n    git --version\nIf you don’t have it installed already, it will prompt you to install it.\nInstall Git from the Official Website:\nAlternatively, you can download the macOS Git installer from Git’s official site, if you want a more up to date version. Click here to get it. Open the downloaded file and follow the installation instructions.\n\nVerify Installation: In the Terminal, type\n    git --version\nto check the installation.\nInstall Git via Homebrew: If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing\n    brew install git"
   }
 ]

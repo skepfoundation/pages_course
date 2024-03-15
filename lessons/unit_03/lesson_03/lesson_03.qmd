@@ -1,5 +1,5 @@
 ---
-title: "Lesson 03: Subpages and Nav Bars"
+title: "Lesson 3: Subpages and Nav Bars"
 ---
 
 ## Overview
@@ -165,7 +165,11 @@ Your new page should look something like this :
 
 ![](images/contactpage.png)
 
+#### Fill out the 'about.qmd'
 
+-   Fill out the 'About' page with a description of yourself in the 'about.qmd'.
+
+-   Don't forget to add 'About' as the header.
 
 ## Conclusion
 
