@@ -1,36 +1,48 @@
 ---
-title: "Welcome!"
+title: "Introduction"
+format:
+  html:
+    css: styles.css
 ---
 
 ![](/images/home-banner-png.png)
 
-# Introduction
-
-Welcome to GitHub For The Real World, a course designed to take you from complete beginner to a website creating machine! In this course we will walk through the basics of using Github, Visual Studio Code, and Quarto for website development. If you don't know what any of those are, that is OK. We'll teach you! Just know this, we will collectively use those tools to develop free websites. Along the way you will pick up some fundamental HTML and CSS skills.
+<p class="para-1">Welcome to GitHub For The Real World, a course designed to take you from complete beginner to a website creating machine! In this course we will walk through the basics of using Github, Visual Studio Code, and Quarto for website development. If you don't know what any of those are, that is OK. We'll teach you! Just know this, we will collectively use those tools to develop free websites. Along the way you will pick up some fundamental HTML and CSS skills.</p>
 
 
+{{< video https://youtu.be/NpEaa2P7qZI?si=mIxmp2B40lqpStgg >}}
+
+::: {.grid}
+::: {.g-col-6}
+<a href="lessons\unit_01\lesson_01\lesson_01.qmd" target="_blank"><input class="start_btn btn" type="submit" value="Start Your Journey"></a>
+
+:::
+
+::: {.g-col-6}
+<a href=""> <input class="syllabus_btn btn" type="submit" value="View Course Syllabus"></a>
+
+:::
+
+:::
 
 ::: {.grid}
 ::: {.g-col-4}
-![](images/github.png){height=200}
-
-# GitHub
+<h3 class="tool">GitHub</h3>
+![](images/github.png){width=auto height=200}
 
 GitHub is a web-based platform for storing and sharing code. It lets developers work together on projects, track changes, and control who can access the code. Think of it as a social network for code!
 :::
 
 ::: {.g-col-4}
-![](images/visual-studio-code-icon.png){width=200 height=200}
-
-# Visual Studio Code
+<h3 class="tool">Visual Studio Code</h3>
+![](images/visual-studio-code-icon.png){width=auto height=200}
 
 Visual Studio Code (VS Code) is a free, open-source code editor for writing computer programs. It's popular for its features like syntax highlighting, code completion, and debugging tools, making it easier and faster to write code.
 :::
 
 ::: {.g-col-4}
-![](images/quarto-logo.png){width=200 height=200}
-
-# Quarto
+<h3 class="tool">Quarto</h3>
+![](images/quarto-logo.png){width=auto height=200}
 
 Quarto is a document creation framework that allows you to write content using familiar markdown syntax and generate various output formats like reports, presentations, websites, and more. It combines the readability of markdown with the power to programmatically generate content.
 :::
@@ -47,21 +59,26 @@ Some excellent websites where people post questions and answers to common progra
 
 # Required Materials
 
-You will need access to the following materials to complete this course:
+::: {.grid}
+::: {.g-col-5}
 
--   A computer with at least 8GB of RAM
+![](images/laptop.png){width="100" height="100"}
 
--   A stable internet connection
+*A reliable laptop or desktop computer*
+:::
 
--   A discord account with access to our discord server
+::: {.g-col-5}
+![](images/network.png){width="100" height="100"}
 
-# Course Structure
+*A strong internet connection*
+:::
 
-This course is designed to allow you to complete learning assignments on your own but with some healthy support from our data science team. We will meet for whole team check-ins once a week virtually through zoom. Additionally, we will have a discord server where you can post questions, pictures of your class projects, and assist other learners in our community.
+::: {.g-col-4}
+![](images/goals.png){width="100" height="100"}
 
-You are expected to interact on that discord server over the duration of the course both for your benefit and the benefit of your peers. It's also a great place to meet like-minded individuals and grow your network!
-
-You will be assigned a data science mentor who can help you with your assignments. Discord will be your primary tool for interacting.
+*Consistency and the grit to set and achieve your goals*
+:::
+:::
 
 # Course Outcomes
 
@@ -69,19 +86,19 @@ You will be assigned a data science mentor who can help you with your assignment
 
 By the end of this course you should know how to build a basic, static website using R and hosted for free on Github. You will know how to customize your website and how to add cool things like embedded pictures and videos, interactive charts, and direct links to social platforms like facebook and twitter.
 
--   You will know how to use Github for version control of future coding projects.
+✅  You will know how to use Github for version control of future coding projects.
 
--   You will know how to use the R programming language to generate plots and manage data from a variety of sources.
+✅  You will know how to use the R programming language to generate plots and manage data from a variety of sources.
 
--   You will know how to use Quarto to publish professional reports including websites.
+✅  You will know how to use Quarto to publish professional reports including websites.
 
 ### What you will *not* know by the end
 
 While we hope you feel you can create a custom website from scratch by the end of this course, there will still be some things you won't be able to do by the end.
 
--   You won't be able to create a dynamic website. A dynamic website is where the contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
+❌  You won't be able to create a dynamic website. A dynamic website is where the contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
 
--   You won't known the ins and outs of data science skills like data wrangling or machine learning. (These are saved for future courses)
+❌  You won't known the ins and outs of data science skills like data wrangling or machine learning.    (These are saved for future courses)
 
 # Conclusion
 

@@ -1,0 +1,16 @@
+---
+title: "Introduction"
+format:
+  html:
+    css: styles.css
+---
+ggggggggggg
+<div class="authors">
+    <div class="card"><h2 class="test">Eli Johnson</h2></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+</div>

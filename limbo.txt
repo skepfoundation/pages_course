@@ -1,0 +1,7 @@
+# Course Structure
+
+This course is designed to allow you to complete learning assignments on your own but with some healthy support from our data science team. We will meet for whole team check-ins once a week virtually through zoom. Additionally, we will have a discord server where you can post questions, pictures of your class projects, and assist other learners in our community.
+
+You are expected to interact on that discord server over the duration of the course both for your benefit and the benefit of your peers. It's also a great place to meet like-minded individuals and grow your network!
+
+You will be assigned a data science mentor who can help you with your assignments. Discord will be your primary tool for interacting.

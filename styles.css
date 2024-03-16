@@ -1,1 +1,47 @@
 /* css styles */
+
+.para-1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tool {
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+}
+
+a .start_btn {
+    border: 100px;
+}
+
+ a .btn {
+    margin: 1rem;
+    background-color: rgba(11, 148, 41, 0.959);
+    max-width: 25rem;
+    color: white;
+    border-radius: 15px;
+    padding: .75rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+a .syllabus_btn {
+    background-color: rgba(4, 36, 68, 0.765);
+    color: white;
+}
+
+a .btn:hover {
+    border: 1px solid;
+    background-color: white;
+}
+
+a .start_btn:hover {
+    color: rgb(11, 148, 41);
+    border-color: rgba(11, 148, 41, 0.959);
+}
+
+a .syllabus_btn:hover {
+    color: rgb(4, 36, 68);
+    border-color: rgb(4, 36, 68);
+}

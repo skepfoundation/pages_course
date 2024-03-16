@@ -4,8 +4,11 @@ project:
 
 website:
   title: "GitHub For The Real World"
+  back-to-top-navigation: true
   navbar:
     pinned: true
+    search: true
+    collapse: true
     left:
       - href: index.qmd
         text: Home
@@ -13,12 +16,6 @@ website:
         menu: 
           - href: tools/r_installation.qmd
             text: "R Installation"
-          - href: tools/r_studio.qmd
-            text: "R Studio"
-          - href: tools/git_installation.qmd
-            text: "Git Installation"
-          - href: tools/github_setup.qmd
-            text: "Github Setup"
       - href: tasks_overview.qmd
         text: Course Tasks
       - text: "Unit 1"
@@ -55,6 +52,8 @@ website:
         menu:
           - text: "Customizing Website Appearance with CSS"
             href: lessons/unit_bonus/css/customizing_css.qmd
+      - text: "About the Authors"
+        href: authors/authors.qmd
 
 
 format:
@@ -77,9 +76,3 @@ format:
       margin-width: 70px
 
 editor: visual
-
-markdown:
-  class: center-header  # Assuming you want to center-align
-  # Add styling within the markdown configuration
-  style:
-    text-align: center;  # Centers the text
