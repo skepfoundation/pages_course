@@ -1,14 +1,5 @@
 ---
-title: "Lesson 01: Creating Your First Website with Quarto"
-format:
-    html:
-        code-copy: true
-        mermaid: 
-            theme: dark
-        page-layout: full
-        grid: 
-            body-width: 1500px
-            margin-width: 200px
+title: "Lesson 1: Creating Your First Website with Quarto"
 ---
 
 ## Overview
@@ -69,29 +60,7 @@ format:
 
     ![Adding Pages](images/adding_pages.png)
 
-## Practice Activity
 
-#### Add New Page to your Website
-
--   Add a new Contact Page to your website.
-
--   The qmd file should be 'contact.qmd'.
-
--   Add 'Contact' as the heading
-
--   Do not forget to link to it in the YAML file.
-
-Your new page should look like this :
-
-*You can fill out the Contact Page if you're feeling motivated*
-
-#### Fill out the 'about.qmd'
-
--   Fill out the 'About' page with a description of yourself in the 'about.qmd'.
-
--   Don't forget to add 'About' as the header.
-
-Your About page should look like this :
 
 ## Conclusion
 

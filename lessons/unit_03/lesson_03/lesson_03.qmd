@@ -1,5 +1,5 @@
 ---
-title: "Lesson 03: Subpages and Nav Bars"
+title: "Lesson 3: Subpages and Nav Bars"
 ---
 
 ## Overview
@@ -41,7 +41,7 @@ Step two is changing our metadata file, by default this will be named _quarto.ym
 
 Step three is to now render or preview your index.html file after everthing is connected and saved. This allows quarto to output the html files and all other supporting files that creates our website.
 
-After these changes push your work to git hub as shown in Unit 2 Lesson 3 and your website should update. You have now successfully connected your new page to the website! It should look something like this:
+After these changes push your work to git hub as shown in 3 Lesson 2 and your website should update. You have now successfully connected your new page to the website! It should look something like this:
 
 ![](images/newpage_in_the_web.png)
 
@@ -148,8 +148,7 @@ website:
 
 I recommend going to the Quarto website and seeing how you can turn the YAML parameters to continue to make your website personal.
 
-More Details on navigation in quarto to be found here:
-https://quarto.org/docs/websites/website-navigation.html
+More Details on navigation in quarto to be found [here](https://quarto.org/docs/websites/website-navigation.html).
 
 Note: If you want to change the colors of your web page look into changing the `theme:` element in your YAML
 
@@ -164,9 +163,13 @@ Note: If you want to change the colors of your web page look into changing the `
 
 Your new page should look something like this :
 
-![](link)
+![](images/contactpage.png)
 
+#### Fill out the 'about.qmd'
 
+-   Fill out the 'About' page with a description of yourself in the 'about.qmd'.
+
+-   Don't forget to add 'About' as the header.
 
 ## Conclusion
 

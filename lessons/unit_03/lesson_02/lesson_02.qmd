@@ -1,21 +1,5 @@
 ---
-title: "Hosting Your Website On Github"
-format:
-  html:
-    theme:
-      light: flatly
-      dark: darkly
-    toc-location: left
-    code-copy: true
-    code-line-numbers: true
-    code-block-border-left: "#A9A9A9"
-    code-block-bg: true
-    code-bloc-bg-alpha: -.2
-    page-layout: full
-    grid:
-      sidebar-width: 200px
-      body-width: 1030px
-      margin-width: 70px
+title: "Lesson 2: Hosting Your Website On Github"
 ---
 
 ## Overview
@@ -30,44 +14,69 @@ By the end of this lesson, students will be able to create a GitHub repository f
 
 -   Students will be able to view website
 
-## links
+
+## Lesson
+
+### Background
+
+Hosting on GitHub typically refers to using GitHub Pages, a built-in service provided by GitHub for hosting static websites directly from your GitHub repository. GitHub Pages is a convenient and free way to showcase your projects, portfolio, documentation, or any other static content.
+
+### Lets begin
+
+1.  Log in to GitHub.
+
+2.  Create a Repository: Go to your GitHub profile and click on the "+" sign to create a new repository. Name your repository(choose any preferred name but note this name will show up in your site URL address).
+
+![](images/creatingrepository.png){height="500"}
+
+
+3.  Add Your Website Files: In your repo select the add file drop down and then select upload files. Next upload your website files that you created in Unit 3 Lesson 1 to the repository by highlighting and dragging and dropping into your repository.
+
+![](images/uploadfilebutton.png){height="400"}
+
+![](images/selectfiles.png){height="400"}
+
+4.  Commit changes
+
+![](images/commituploadedfiles.png){height="400"}
+
+5.  In your repository, go to the "Settings" tab and on the left nav bar select the "GitHub Pages" section.
+Under "Branch," select the branch you want to use for our case `main` Then select where the html files will be read in our case `/docs`. Then click Save.
+
+ ![](images/redbox.png){height="500"}
+
+
+6. The reason we will choose docs is because our `.html` files are not located at the root folder they are in the default folder `_site`. So in order for github to publish our site we simply need to change the name of our folder from `_site` to `docs`. There are many approches to this. You could open the web editor by cliking `.` in your repo and change it in vscode for the web. You could clone the repo and change in vscode desktop app. Or you could change it before you even drag and drop the files in github in your computers file explorer. How you do it doesn't really matter as long as your file structure in github looks like this:
+
+![](images/githubfolderstructure.png){height="300"}
+
+And if you want your code to always render the html files into the `docs` folder the best way is to adress this problem is change the out put directory in your YAML as shown below. This will ensure everytime you render or preview your qmd file the html file will be ouput in the docs folder. 
+
+```yml
+project:
+  type: website
+  output-dir: docs
+```
+
+
+7.  Once this is done and commited to github go back to settings then to github pages and click on the view your site button. Note sometimes it takes Github a while to provide this link so be patient and refresh the page every now and then. 
+
+![](images/sitelink.png){height="400"}
+
+8. The link should take you to your basic site that you created in Unit 3 Lesson 1, but now it is own the web for everyone to see!
+
+![](images/publishedwebsiteexample.png){height="300"}
+
+### links
+
+Here are some links to extra help and information if you are curious or in need. 
 
 <https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages>
 
 <https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site>
 
-## Lesson
-
-Hosting on GitHub typically refers to using GitHub Pages, a built-in service provided by GitHub for hosting static websites directly from your GitHub repository. GitHub Pages is a convenient and free way to showcase your projects, portfolio, documentation, or any other static content.
-
-### Let begin
-
-1.  Log in to GitHub.
-
-2.  Create a Repository: Go to your GitHub profile and click on the "+" sign to create a new repository. Name your repository(choose any preferred name).
-
-3.  Add Your Website Files: Upload your website files to the repository by highlighting and dragging and dropping into your repository
-
-![](images/highlight%20files.png){height="300"}
-
-![](images/drag%20and%20drop.png){height="300"}
-
-4.  commit changes
-
-5.  Enable GitHub Pages: In your repository, go to the "Settings" tab. Scroll down to the "GitHub Pages" section and click 'check out here'
-
-![](images/check%20out%20here.png){height="300"}
-
-Under "Source," select the branch you want to use (usually main or master). file should be /docs\* Click "Save."
-
-![](images/main.png){height="300"}
-
-![](images/save.png){height="300"}
-
-6.  click on the link attached 'your site is ready to be published' to veiw your site ![](images/veiw%20websitee.png){height="300"}
-
 ## Conclusion
 
-you should be able to veiw and share your website with everyone
+You should now be able to veiw and share your website with everyone!
 
 ## FAQ

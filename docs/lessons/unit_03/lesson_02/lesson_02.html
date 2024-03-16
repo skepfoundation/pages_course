@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GitHub For The Real World - Hosting Your Website On Github</title>
+<title>GitHub For The Real World - Lesson 2: Hosting Your Website On Github</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -201,10 +235,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">links</a></li>
   <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
   <ul class="collapse">
-  <li><a href="#let-begin" id="toc-let-begin" class="nav-link" data-scroll-target="#let-begin">Let begin</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#lets-begin" id="toc-lets-begin" class="nav-link" data-scroll-target="#lets-begin">Lets begin</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">links</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
@@ -220,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hosting Your Website On Github</h1>
+<h1 class="title">Lesson 2: Hosting Your Website On Github</h1>
 </div>
 
 
@@ -247,39 +282,59 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Students will be able to view website</p></li>
 </ul>
 </section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">links</h2>
-<p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" class="uri">https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages</a></p>
-<p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site" class="uri">https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site</a></p>
-</section>
 <section id="lesson" class="level2">
 <h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background</h3>
 <p>Hosting on GitHub typically refers to using GitHub Pages, a built-in service provided by GitHub for hosting static websites directly from your GitHub repository. GitHub Pages is a convenient and free way to showcase your projects, portfolio, documentation, or any other static content.</p>
-<section id="let-begin" class="level3">
-<h3 class="anchored" data-anchor-id="let-begin">Let begin</h3>
+</section>
+<section id="lets-begin" class="level3">
+<h3 class="anchored" data-anchor-id="lets-begin">Lets begin</h3>
 <ol type="1">
 <li><p>Log in to GitHub.</p></li>
-<li><p>Create a Repository: Go to your GitHub profile and click on the “+” sign to create a new repository. Name your repository(choose any preferred name).</p></li>
-<li><p>Add Your Website Files: Upload your website files to the repository by highlighting and dragging and dropping into your repository</p></li>
+<li><p>Create a Repository: Go to your GitHub profile and click on the “+” sign to create a new repository. Name your repository(choose any preferred name but note this name will show up in your site URL address).</p></li>
 </ol>
-<p><img src="images/highlight files.png" height="300"></p>
-<p><img src="images/drag and drop.png" height="300"></p>
+<p><img src="images/creatingrepository.png" height="500"></p>
+<ol start="3" type="1">
+<li>Add Your Website Files: In your repo select the add file drop down and then select upload files. Next upload your website files that you created in Unit 3 Lesson 1 to the repository by highlighting and dragging and dropping into your repository.</li>
+</ol>
+<p><img src="images/uploadfilebutton.png" height="400"></p>
+<p><img src="images/selectfiles.png" height="400"></p>
 <ol start="4" type="1">
-<li><p>commit changes</p></li>
-<li><p>Enable GitHub Pages: In your repository, go to the “Settings” tab. Scroll down to the “GitHub Pages” section and click ‘check out here’</p></li>
+<li>Commit changes</li>
 </ol>
-<p><img src="images/check out here.png" height="300"></p>
-<p>Under “Source,” select the branch you want to use (usually main or master). file should be /docs* Click “Save.”</p>
-<p><img src="images/main.png" height="300"></p>
-<p><img src="images/save.png" height="300"></p>
+<p><img src="images/commituploadedfiles.png" height="400"></p>
+<ol start="5" type="1">
+<li>In your repository, go to the “Settings” tab and on the left nav bar select the “GitHub Pages” section. Under “Branch,” select the branch you want to use for our case <code>main</code> Then select where the html files will be read in our case <code>/docs</code>. Then click Save.</li>
+</ol>
+<p><img src="images/redbox.png" height="500"></p>
 <ol start="6" type="1">
-<li>click on the link attached ‘your site is ready to be published’ to veiw your site <img src="images/veiw websitee.png" height="300"></li>
+<li>The reason we will choose docs is because our <code>.html</code> files are not located at the root folder they are in the default folder <code>_site</code>. So in order for github to publish our site we simply need to change the name of our folder from <code>_site</code> to <code>docs</code>. There are many approches to this. You could open the web editor by cliking <code>.</code> in your repo and change it in vscode for the web. You could clone the repo and change in vscode desktop app. Or you could change it before you even drag and drop the files in github in your computers file explorer. How you do it doesn’t really matter as long as your file structure in github looks like this:</li>
 </ol>
+<p><img src="images/githubfolderstructure.png" height="300"></p>
+<p>And if you want your code to always render the html files into the <code>docs</code> folder the best way is to adress this problem is change the out put directory in your YAML as shown below. This will ensure everytime you render or preview your qmd file the html file will be ouput in the docs folder.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="7" type="1">
+<li>Once this is done and commited to github go back to settings then to github pages and click on the view your site button. Note sometimes it takes Github a while to provide this link so be patient and refresh the page every now and then.</li>
+</ol>
+<p><img src="images/sitelink.png" height="400"></p>
+<ol start="8" type="1">
+<li>The link should take you to your basic site that you created in Unit 3 Lesson 1, but now it is own the web for everyone to see!</li>
+</ol>
+<p><img src="images/publishedwebsiteexample.png" height="300"></p>
+</section>
+<section id="links" class="level3">
+<h3 class="anchored" data-anchor-id="links">links</h3>
+<p>Here are some links to extra help and information if you are curious or in need.</p>
+<p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" class="uri">https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages</a></p>
+<p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site" class="uri">https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site</a></p>
 </section>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>you should be able to veiw and share your website with everyone</p>
+<p>You should now be able to veiw and share your website with everyone!</p>
 </section>
 <section id="faq" class="level2">
 <h2 class="anchored" data-anchor-id="faq">FAQ</h2>
