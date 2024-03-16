@@ -1,0 +1,23 @@
+<h1>Long Bio's</h2>
+
+## J. Hathaway
+
+## Eli Johnson
+Eli is a data scientist and co-owner of DataThink along with J. Hathaway. Eli helped lead this project under J.’s leadership. Eli loves programming with data and especially loves when he gets to tackle a new problem. Learning is a lifelong focus for Eli so the more a project pushes him to learn, the more he tends to enjoy it. He particularly loves package development for R and Python where he is driven to find general solutions for problems that can be applied in many different scenarios. Eli lives in Idaho Falls, ID with his wife and three cats. (He is aware that 3 cats are too many).
+
+## Benji Nwangele
+
+## Mfon Ekpo
+Mfon Nsikak Ekpo is a testament to the power of self-education in the ever-evolving world of data. Hailing from the vibrant city of Uyo, Nigeria, his academic background in Computer Engineering provided a solid starting point, but it was his self-driven pursuit of knowledge in data analysis and engineering that truly defined his career. This self-taught journey has imbued Mfon with qualities not often found in traditional paths: a relentless quest for knowledge, the ability to adapt to rapidly changing technologies, and a problem-solving approach that combines creativity with analytical rigor.
+
+With  two years of experience, Mfon has developed a profound understanding of data infrastructure, analysis, and visualization, mastering tools and technologies such as Apache Airflow, Kafka, and Tableau. His projects, ranging from optical character recognition to constructing ETL pipelines, are a testament to his ability to learn, innovate, and apply new concepts effectively. Mfon's self-taught background has not only made him adept at tackling challenges head-on but also equipped him with a unique blend of skills that allow him to outperform and bring fresh perspectives to the data domain. Beyond the bytes and data sets, Mfon finds solace in swimming, a metaphor for his life's approach: diving into the depths
+
+## Uchenna 
+Uchenna is a Python developer and an aspiring Data Engineer with a background in web development. He is a student of BYU-Idaho majoring in Business Management and lives in Aba, Abia State, Nigeria.
+Driven by a fascination with data and its potential to drive informed decision-making, Uchenna is currently pursuing a transition into the field of data engineering. Drawing on experience gained from various software development roles, Uchenna aims to apply Python programming skills to the manipulation, processing, and analysis of large datasets. With a solid foundation in algorithms, data structures, and database management, Uchenna is poised to tackle the challenges inherent in data engineering, contributing to the creation of efficient data pipelines and the extraction of actionable insights from complex datasets and apply them into business management processes.
+
+## Nissi Douglas
+NISSI DOUGLAS is a  self-taught female data analyst/scientist from ABUJA, NIGERIA, whose insatiable curiosity and drive for knowledge led her into the intricate world of data analytics. Her journey commenced as a personal quest, spurred by an innate fascination with numbers and patterns.  Her proficiency in programming languages such as Python and R, coupled with her adeptness at utilizing industry-standard tools like SQL, Excel, and Tableau, underscores her versatility and adaptability in handling diverse data sets. She is committed to continuous learning and staying abreast of the latest advancements in the field of data science, NISSI loves travelling and going on fun adventure
+
+## Bridger Norman
+Bridger is a student at Brigham Young University Idaho. He is majoring in Data Science with a Minor in Business Analytics and another in Finance. Bridger also has an interest in machine learning and will receive an ML certificate from his university. He will be awarded his bachelor's degree in December of 2024. He is a data enthusiast with two years of practical experience in data science and analytics roles and hopes to gain more experience in this field, specifically in consulting. His interest lies in seamlessly integrating the realms of business and data, transforming disorganized information into actionable insights. He is a driven individual who is intellectually curious and eager to take on new challenges. In the context of this course, Bridger was a content reviewer and helped with the creation of Unit 3.

@@ -27,29 +27,29 @@ format:
 
 ::: {.grid}
 ::: {.g-col-4}
+<p class="logo">![](images/github.png){width=auto height=100}</p>
 <h3 class="tool">GitHub</h3>
-![](images/github.png){width=auto height=200}
 
 GitHub is a web-based platform for storing and sharing code. It lets developers work together on projects, track changes, and control who can access the code. Think of it as a social network for code!
 :::
 
 ::: {.g-col-4}
+<p class="logo">![](images/visual-studio-code-icon.png){width=auto height=100}</p>
 <h3 class="tool">Visual Studio Code</h3>
-![](images/visual-studio-code-icon.png){width=auto height=200}
 
 Visual Studio Code (VS Code) is a free, open-source code editor for writing computer programs. It's popular for its features like syntax highlighting, code completion, and debugging tools, making it easier and faster to write code.
 :::
 
 ::: {.g-col-4}
+<p class="logo">![](images/quarto-logo.png){width=auto height=100}</p>
 <h3 class="tool">Quarto</h3>
-![](images/quarto-logo.png){width=auto height=200}
 
 Quarto is a document creation framework that allows you to write content using familiar markdown syntax and generate various output formats like reports, presentations, websites, and more. It combines the readability of markdown with the power to programmatically generate content.
 :::
 
 :::
 
-# Required Experience
+## Required Experience
 
 If you are just starting in tech you might be a little apprehensive about taking this course, don't stress too much, that is completely normal. This course assumes that you have no technical experience with website creation, programming, or using GitHub. It does however assume that you have a basic understanding of how to navigate a computer and its file management system.
 
@@ -57,7 +57,7 @@ You will be well served by knowing how to find answers to your questions through
 
 Some excellent websites where people post questions and answers to common programming questions are [Stack Overflow](stackoverflow.com) and [GitHub](github.com).
 
-# Required Materials
+## Required Materials
 
 ::: {.grid}
 ::: {.g-col-5}

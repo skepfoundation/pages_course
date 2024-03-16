@@ -7,40 +7,38 @@ format:
 
 ::: {.grid}
 ::: {.g-col-4}
-<section><h2 class="name">J. Hathaway</h2><img src="images/j.jpg" height=200px><p class="short-bio"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis</p>
+<section><h2 class="name">J. Hathaway</h2><p><img src="images/placeholder.jpg" height=200px></p><p class="short-bio"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis</p><p><a href="long_bio.qmd#Bridger Norman">Click to view full bio..</a></p>
 </section>
 
 :::
 ::: {.g-col-4}
-<section><h2 class="name">Eli Johnson</h2><img src="images/eli.jpg" height=200px><p class="short-bio">Eli is a Data Scientist and co-owner of DataThink. He loves finding the elegant, programmatic solution to organization’s unique problems primarily through package development. He lives in Idaho Falls, ID with his wife and cats. Eli was the project manager and final editor on this course.</p><p class="long-bio">Long Bio: Eli is a data scientist and co-owner of DataThink along with J. Hathaway. Eli helped lead this project under J.’s leadership. Eli loves programming with data and especially loves when he gets to tackle a new problem. Learning is a lifelong focus for Eli so the more a project pushes him to learn, the more he tends to enjoy it. He particularly loves package development for R and Python where he is driven to find general solutions for problems that can be applied in many different scenarios. Eli lives in Idaho Falls, ID with his wife and three cats. (He is aware that 3 cats are too many.)</p>
+<section><h2 class="name">Eli Johnson</h2><p><img src="images/eli.jpg" height=200px></p><p class="short-bio">Eli is a Data Scientist and co-owner of DataThink. He loves finding the elegant, programmatic solution to organization’s unique problems primarily through package development. He lives in Idaho Falls, ID with his wife and cats. Eli was the project manager and final editor on this course.</p><p><a href="long_bio.qmd#Bridger Norman">Click to view full bio..</a></p>
 </section>
 
 :::
 ::: {.g-col-4}
-<section><h2 class="name">Benji Nwangele</h2><img src="images/benji.jpg"  width=200px><p class="short-bio">hh.</p>
+<section><h2 class="name">Benji Nwangele</h2><p><img src="images/benji.jpg"  width=200px></p><p class="short-bio"></p>Benji is a student of Brigham Young University - Idaho. By 2025, he will fulfill the rquirements for a bachelor's degree in Computer Science majoring in Applied Technology. He believes that where there is a will and the desire to learn, any problem can be solved. Benji currently interns at DataThink and was actively involved in designing, fine-tuning, wrting lessons, and implementing this course</p><p><a href="long_bio.qmd#Bridger Norman">Click to view full bio..</a></p>
 </section>
 
 :::
 ::: {.g-col-4}
-<section><h2 class="name">Mfon</h2><img src="images/mfon.jpg" width=200px><p class="short-bio">Mfon Nsikak Ekpo, a self-taught data analyst and engineer from Uyo, Nigeria, embodies the spirit of self-driven learning in the dynamic world of data. With a foundation in Computer Engineering from the University of Uyo, Mfon has navigated the complexities of data with an insatiable curiosity and a hands-on approach. His expertise spans from data analytics to engineering, leveraging tools like SQL and Python. Mfon's self-taught journey highlights his adaptability, innovative problem-solving, and a continuous quest for knowledge, setting him apart in the field. Outside of data, he finds joy and balance in swimming.</p><p class="long-bio"></p>
+<section><h2 class="name">Mfon</h2><p><img src="images/mfon.jpg" width=200px></p><p class="short-bio">Mfon Nsikak Ekpo, a self-taught data analyst and engineer from Uyo, Nigeria, embodies the spirit of self-driven learning in the dynamic world of data. With a foundation in Computer Engineering from the University of Uyo, Mfon has navigated the complexities of data with an insatiable curiosity and a hands-on approach. His expertise spans from data analytics to engineering, leveraging tools like SQL and Python. Mfon's self-taught journey highlights his adaptability, innovative problem-solving, and a continuous quest for knowledge, setting him apart in the field. Outside of data, he finds joy and balance in swimming.</p><p><a href="long_bio.qmd#Bridger Norman">Click to view full bio..</a></p>
 </section>
 
 :::
 ::: {.g-col-4}
-<section><h2 class="name">Uchenna</h2><img src="images/uchenna.jpg" width=200px><p class="short-bio"></p>
+<section><h2 class="name">Uchenna</h2><p><img src="images/uchenna.jpg" width=200px></p><p class="short-bio">Uchenna is a Python developer with a passion for data engineering. He is currently an Applied Business Management student of BYU-Idaho and is aspiring to transition into the field of data engineering, leveraging Python to manipulate and analyse large datasets for valuable insights. He lives in Aba, Abia State, Nigeria and currently interns for DataThink.io.</p><p><a href="long_bio.qmd#Bridger Norman">Click to view full bio..</a></p>
+</p>
 </section>
 
 :::
 ::: {.g-col-4}
-<section><h2 class="name">Nissi Douglas</h2><img src="images/nissi.jpg" width=200px><p class="short-bio"></p>
+<section><h2 class="name">Nissi Douglas</h2><p><img src="images/placeholder.jpg" width=200px></p><p class="short-bio">NISSI DOUGLAS is a female data scientist from ABUJA,NIGERIA with a passion for unraveling insights from raw data. Her journey into the world of data began as a personal interest, where she honed her skills through online resources and real-world projects. With a keen eye for patterns and trends, she has developed expertise in data visualization, statistical analysis, and machine learning algorithms.</p><p><a href="long_bio.qmd#Bridger Norman">Click to view full bio..</a></p>
 </section>
 
 :::
 ::: {.g-col-4}
-<section><h2 class="name">Bridger Norman</h2><img src="images/bridger.jpg" width=200px><p class="short-bio">Bridger is a student at Brigham Young University Idaho. Upon graduation, he will receive a Bachelor's Degree in Data Science paired with his minors in Business Analytics and Finance. He is a data enthusiast with two years of experience in data science and analytics roles. His interest lies in seamlessly integrating the realms of business and data. Bridger is a driven individual who is intellectually curious and eager to take on new challenges.
-</p><p class="long-bio">
-Long bio:
-Bridger is a student at Brigham Young University Idaho. He is majoring in Data Science with a Minor in Business Analytics and another in Finance. Bridger also has an interest in machine learning and will receive an ML certificate from his university. He will be awarded his bachelor's degree in December of 2024. He is a data enthusiast with two years of practical experience in data science and analytics roles and hopes to gain more experience in this field, specifically in consulting. His interest lies in seamlessly integrating the realms of business and data, transforming disorganized information into actionable insights. He is a driven individual who is intellectually curious and eager to take on new challenges. In the context of this course, Bridger was a content reviewer and helped with the creation of Unit 3.</p>
+<section><h2 class="name">Bridger Norman</h2><p><img src="images/bridger.jpg" width=200px></p><p class="short-bio">Bridger is a student at Brigham Young University Idaho. Upon graduation, he will receive a Bachelor's Degree in Data Science paired with his minors in Business Analytics and Finance. He is a data enthusiast with two years of experience in data science and analytics roles. His interest lies in seamlessly integrating the realms of business and data. Bridger is a driven individual who is intellectually curious and eager to take on new challenges.</p><p><a href="long_bio.qmd#Bridger Norman">Click to view full bio..</a></p>
 </section>
 
 :::

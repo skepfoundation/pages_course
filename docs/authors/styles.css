@@ -1,0 +1,19 @@
+/* css styles */
+.name {
+    font-weight: 800;
+    text-align: center;
+    text-wrap: pretty;
+}
+
+.short-bio, p {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    margin: 5px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+

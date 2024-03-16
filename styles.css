@@ -1,5 +1,7 @@
 /* css styles */
-
+h1, .logo, .tool {
+    text-align: center;
+}
 .para-1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -7,8 +9,7 @@
 
 .tool {
     margin: 1rem;
-    padding: 0;
-    text-align: center;
+    padding: auto;
 }
 
 a .start_btn {
@@ -23,7 +24,8 @@ a .start_btn {
     border-radius: 15px;
     padding: .75rem;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    height: 5rem;
 }
 
 a .syllabus_btn {

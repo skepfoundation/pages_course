@@ -5,17 +5,15 @@
     text-wrap: pretty;
 }
 
-.short-bio {
+.short-bio, p {
     text-align: center;
-}
-
-.long-bio {
-    display: none;
 }
 
 img {
     border-radius: 50%;
     margin: 5px;
     padding: 5px;
-    align-self: center;
+    object-fit: contain;
 }
+
+
