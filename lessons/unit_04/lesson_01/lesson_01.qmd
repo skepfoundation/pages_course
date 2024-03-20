@@ -1,0 +1,77 @@
+---
+title: "Using A Custom Domain"
+---
+
+
+# Overview
+In this lesson, we will explore how to personalize your GitHub Pages website by changing its domain name. Whether you're looking to align your site with a personal brand or make it more memorable, a custom domain can set your project apart. We'll cover how to modify your site's default GitHub domain and guide you through the process of setting up a custom domain from an external provider.
+
+# Learning Objectives
+- Students will be able to change the default GitHub Pages domain to a more personalized one within GitHub settings.
+  
+- Students will be able to acquire and configure a custom domain from an external domain registrar for their GitHub Pages site.
+
+
+# Creating the default Github Pages Domain:
+To create a default github pages domain;
+
+1. you have to go to your github profile.
+2. create a reporsitory with the name in this format **[your profile name].github.io**. i.e, if your profile name is **"james"** your default github domain name will be **james.github.io**.
+
+![details in the image above](./lesson_images/0.png)
+
+
+
+# Acquiring and Setting Up a Custom Domain:
+
+Choose a domain registrar to acquire a free or paid custom domain (e.g., Freenom for free domains).
+Once you have your domain, you can follow the step listed below on ***Changing the Default Github Pages Domain*** to configure it.
+
+You can lookup the github domain documentation for more details on how to setup custom domain. [custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+
+
+# Changing the Default GitHub Pages Domain:
+
+1. When you navigate to the reporsitory you just created to host your website, Navigate to the **Settings**
+   
+2. Then find the **'Pages'** section on the left sidebar. as annotated in the image below.
+   
+3. In the **'Custom domain'** section, you can input your personalized site's URL in the text box provided. For this lesson, I will be making use of [africancompute.com](https://africacompute.com/) as my personalized domain name.
+   
+4. As a heads up, Github has to run a DNS check on the url. This is a security measure which takes at most 48 hours before being approved. So do not panic when it takes longer than you anticipated.
+
+![details in the image above](./lesson_images/1.png)
+
+## When DNS check is successful
+This is what you get when DNS check is successful.
+![DNS check successful](./lesson_images/image4.png)
+
+---------------
+After a successful DNS check as denoted by **1** in the image below, you can navigate to the website by clicking on **view site** as annotated.
+![details in the image above](./lesson_images/image7.png)
+
+----------------
+
+After a successful DNS check and viewing the url link, the image below will be the final result.
+![website](./lesson_images/image8.png)
+
+You can see the custom domain name [africancompute.com](https://africacompute.com/) in the url bar above.
+
+
+
+# Practice Activity
+Change your GitHub Pages site to a more personalized GitHub domain.
+Acquire a custom domain from an external registrar and configure it for your GitHub Pages site. Document the steps and any challenges you encounter.
+
+
+# Conclusion
+You should now have a GitHub Pages site with a personalized domain, enhancing its professional appearance and memorability. In our next lesson, we will delve into optimizing your site's SEO to increase visibility and traffic.
+
+# FAQ
+1. Can I use any domain registrar for a custom GitHub Pages domain?
+
+**Ans:** Yes, you can use any domain registrar to acquire a custom domain for your GitHub Pages site. The key is to correctly configure the DNS settings to point to GitHub's servers.
+
+2. What if my custom domain isn't working immediately?
+
+**Ans:** Changes can take up to 48 hours to propagate. If your custom domain isn't working right away, give it some time. Ensure your DNS settings are correctly configured according to GitHub's documentation.
