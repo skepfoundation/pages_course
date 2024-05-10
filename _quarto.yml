@@ -30,6 +30,7 @@ website:
             href: lessons/unit_01/lesson_04/lesson_04.qmd
           - text: "Lesson 5: Organizing Your Github Repository"
             href: lessons/unit_01/lesson_05/lesson_05.qmd
+
       - text: "Unit 2"
         menu: 
           - text: "Lesson 1: Intro to VSCode"
@@ -47,11 +48,19 @@ website:
             href: lessons/unit_03/lesson_02/lesson_02.qmd
           - text: "Lesson 3: Subpages and Nav Bars"
             href: lessons/unit_03/lesson_03/lesson_03.qmd
+
       - text: "Unit 4"
+        menu:
+          - text: "lesson 1: Using A Custom Domain"
+            href: lessons/unit_04/lesson_01/lesson_01.qmd
+          - text: "Lesson 2: Temp Title"
+            href: lessons/unit_04/lesson_02/lesson_02.qmd  
+
       - text: "Bonus Lessons"
         menu:
           - text: "Customizing Website Appearance with CSS"
             href: lessons/unit_bonus/css/customizing_css.qmd
+            
       - text: "About the Authors"
         href: authors/authors.qmd
 
