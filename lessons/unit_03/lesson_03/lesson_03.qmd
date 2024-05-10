@@ -39,7 +39,7 @@ Step two is changing our metadata file, by default this will be named _quarto.ym
 
 ![](images/linked_file_in_yaml.png)
 
-Step three is to now render or preview your index.html file after everthing is connected and saved. This allows quarto to output the html files and all other supporting files that creates our website.
+Step three is to now render or preview your index.html file after everything is connected and saved. This allows quarto to output the html files and all other supporting files that creates our website.
 
 After these changes push your work to git hub as shown in 3 Lesson 2 and your website should update. You have now successfully connected your new page to the website! It should look something like this:
 
@@ -51,7 +51,7 @@ Now we will explore formatting options so you can customize your website to your
 ### Formatting
 
 #### Navigation Bar
-Your _quarto.yml page contains the informaiton on how you want the webite formated. By default the website uses a navigation bar oriented at the top of the page. And should look like the image on your right.
+Your _quarto.yml page contains the informaiton on how you want the website formated. By default the website uses a navigation bar oriented at the top of the page. And should look like the image on your right.
 
 ::: {.columns}
 ::: {.column}
@@ -98,7 +98,7 @@ website:
 ::: 
 
 #### Side Bar
-If we want a side bar as opposed to a nav bar all we need to change is the `navbar:` to `sidebar:`. The style docked gives the navigation panel a gray background to seperate from the white page. You can remove this if you want it to blend with the page. Also not you need to specify the `contents:` for this code to work properly.
+If we want a side bar as opposed to a nav bar all we need to change is the `navbar:` to `sidebar:`. The style docked gives the navigation panel a gray background to seperate from the white page. You can remove this if you want it to blend with the page. Also note you need to specify the `contents:` for this code to work properly.
 
 ::: {.columns}
 ::: {.column}
@@ -121,7 +121,7 @@ website:
 ::: 
 
 #### Sections
-Lastly If you want a similar effect like menu with the nav bar you need to use `section:`. Notive you can give you section a title right after the section: code, my section is titled Pages. Note you can have multiple secitons which would be beneficial to seperate your content.
+Lastly If you want a similar effect like menu with the nav bar you need to use `section:`. Notice you can give your section a title right after the section: code, my section is titled Pages. Note you can have multiple secitons which would be beneficial to seperate your content.
 
 
 ::: {.columns}
