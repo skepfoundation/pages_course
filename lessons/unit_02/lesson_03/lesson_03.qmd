@@ -1,16 +1,8 @@
 ---
 title: "Lesson 3: Git and How to connect to VScode"
-format:
-    html:
-        code-copy: true
-        mermaid: 
-            theme: dark
-        page-layout: full
-        grid: 
-            body-width: 1500px
-            margin-width: 200px
 ---
-
+## Overview
+In this lesson you will learn the basics of git in VScode
 
 # Learning Objectives:
 

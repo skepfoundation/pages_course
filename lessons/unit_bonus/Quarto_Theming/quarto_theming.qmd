@@ -1,21 +1,5 @@
 ---
 title: "Quarto Themimg"
-format:
-  html:
-    theme:
-      light: flatly
-      dark: darkly
-    toc-location: left
-    code-copy: true
-    code-line-numbers: true
-    code-block-border-left: "#A9A9A9"
-    code-block-bg: true
-    code-bloc-bg-alpha: -.2
-    page-layout: full
-    grid:
-      sidebar-width: 200px
-      body-width: 1030px
-      margin-width: 70px
 ---
 
 ## Overview

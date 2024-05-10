@@ -2,12 +2,140 @@
 title: "Course Tasks"
 ---
 
-# Task 1 - Creating Your First Github Repo
+<!-- here is a blank template below to add another task -->
 
-Git is the world's [most popular version control system](https://www.accuwebhosting.com/blog/best-version-control-systems/) and Github is the most popular site for hosting code using git in the cloud. As a version control system, Git helps you keep your coding project files organized by keeping a record of when you edited files and tags them with short notes about what changes were made in the last iteration. This is particularly helpful when you are colaborating on a project with other programmers and need to stay tidy while working on the same files.
+<!-- ### lesson name  
+text
 
-Github is a free web service for storing your version controlled code in the cloud. It allows you to access your code from anywhere and it provides a handy interface for tracking your code's changes over time. It also happens to have a handy service for hosting static websites for free on their platform.
+ * [Details](qmd_file_path)
 
-In this task you will create a github account, create a repository, and clone that repository onto your local machine in Rstudio.
+
+---------------------------------------- -->
+
+
+
+
+
+## Unit 1
+
+### Lesson 01: Creating a Github Account
+This lesson will go over the steps necessary to create a GitHub account. GitHub is a site that will host repositories fo code for free. It's an industry standard tool used by most programmers. In this course it has the added benefit of being the place where we will host the websites we create.
+
+
+ * [Details](lessons/unit_01/lesson_01/lesson_01.qmd)
+
+----------------------------------------
+
+### Lesson 2: Creating your GitHub Profile README
+The GitHub profile README serves as a distinctive profile page showcasing who you are and what you do. Functioning as a customizable "about me" section, it provides an avenue for individuals to introduce themselves, exhibit their projects, and communicate details about their interests and achievements. Essentially, the content of this README defines one's GitHub profile, making it a pivotal element for creating a compelling first impression, particularly for employers seeking insights into an individual's skills and interests upon visiting their GitHub profile. By the end of this lesson, you will have crafted your own GitHub profile readme using markdown.
+
+ * [Details](lessons/unit_01/lesson_02/lesson_02.qmd)
+
+----------------------------------------
+
+### Lesson 03: Writing in Markdown 
+You will learn the basics of Markdown, a lightweight markup language that is widely used for formatting plain text. Markdown is commonly used for writing content on platforms like GitHub, where it is essential for creating README files, documentation, and more.
+
+ * [Details](lessons/unit_01/lesson_03/lesson_03.qmd)
+
+----------------------------------------
+
+### Lesson 4: Additional Profile README Features
+This lesson will help you know what to include on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.
+
+ * [Details](lessons/unit_01/lesson_04/lesson_04.qmd)
+
+----------------------------------------
+
+### Lesson 05: Organizing Your Github Repository
+This lesson will equip you with the most important principles to follow to organize your github repository in a way that makes the most impact.
+
+ * [Details](lessons/unit_01/lesson_05/lesson_05.qmd)
+
+----------------------------------------
+
+
+
+<!-- green to help you find the unit breaks -->
+## Unit 2
+
+### Lesson 01 : Introduction to Visual Studio Code
+In this lesson, we'll go over an Integrated Development Enviroment (IDE) known as **Visual Studio Code**, also commonly referred to as **VS Code**. We'll explore what an IDE - such as Visual Studio Code - is, benefits of using it, and in and out's of using Visual Studio Code.
+
+ * [Details](lessons/unit_02/lesson_01/lesson_01.qmd)
+
+----------------------------------------
+
+### Lesson 2: Installing Quarto
+This lesson will briefly explain Quarto and go over the steps necessary to create a install Quarto in Visual Studio Code (VScode)
+
+ * [Details](lessons/unit_02/lesson_02/lesson_02.qmd)
+
+----------------------------------------
+
+### Lesson 3: Git and How to connect to VScode
+In this lesson you will learn the basics of git in VScode
+
+ * [Details](lessons/unit_02/lesson_03/lesson_03.qmd)
+
+----------------------------------------
+
+
+
+<!-- green to help you find the unit breaks -->
+## Unit 3
+
+### Lesson 1: Creating Your First Website with Quarto
+You will learn to create a personalized website using Quarto. You will build a foundational **About Me** page, add new sections like **Blog Posts** and **Contact**, and render your site with `quarto render`. You will also be introduced to working with to YAML files.
+
+ * [Details](lessons/unit_03/lesson_01/lesson_01.qmd)
+
+----------------------------------------
+
+### Lesson 2: Hosting Your Website On Github
+By the end of this lesson, students will be able to create a GitHub repository for their website and configure the basic settings for hosting on GitHub Pages
+
+ * [Details](lessons/unit_03/lesson_02/lesson_02.qmd)
+
+----------------------------------------
+
+### Lesson 3: Subpages and Nav Bars
+This lesson will provide an overview of using subpages in Quarto and navigation options.
+
+ * [Details](lessons/unit_03/lesson_03/lesson_03.qmd)
+
+----------------------------------------
+
+
+
+<!-- green to help you find the unit breaks -->
+## Unit 4
+
+### Lesson 1: Using A Custom Domain
+In this lesson, we will explore how to personalize your GitHub Pages website by changing its domain name. Whether you're looking to align your site with a personal brand or make it more memorable, a custom domain can set your project apart. We'll cover how to modify your site's default GitHub domain and guide you through the process of setting up a custom domain from an external provider.
+
+ * [Details](lessons/unit_04/lesson_01/lesson_01.qmd)
+
+----------------------------------------
+
+### 
+Place holder
+
+ * [Details](lessons/unit_04/lesson_02/lesson_02.qmd)
+
+----------------------------------------
+
+
+
+<!-- green to help you find the unit breaks -->
+## Bonus
+
+
+### CSS  
+Students will learn how to use CSS for basic styling such as font sizes, font color, background colors, and more
+
+ * [Details](lessons/unit_bonus/css/customizing_css.qmd)
+
+----------------------------------------
 
 

@@ -19,7 +19,7 @@ format:
 :::
 
 ::: {.g-col-6}
-<a href=""> <input class="syllabus_btn btn" type="submit" value="View Course Syllabus"></a>
+<a href="tasks_overview.qmd"> <input class="tasks_btn btn" type="submit" value="View Course Tasks"></a>
 
 :::
 
@@ -60,14 +60,14 @@ Some excellent websites where people post questions and answers to common progra
 ## Required Materials
 
 ::: {.grid}
-::: {.g-col-5}
+::: {.g-col-4}
 
 ![](images/laptop.png){width="100" height="100"}
 
 *A reliable laptop or desktop computer*
 :::
 
-::: {.g-col-5}
+::: {.g-col-4}
 ![](images/network.png){width="100" height="100"}
 
 *A strong internet connection*
@@ -84,11 +84,9 @@ Some excellent websites where people post questions and answers to common progra
 
 ### What you will know by the end
 
-By the end of this course you should know how to build a basic, static website using R and hosted for free on Github. You will know how to customize your website and how to add cool things like embedded pictures and videos, interactive charts, and direct links to social platforms like facebook and twitter.
+By the end of this course you should know how to build a basic, static website using Quarto and hosted for free on Github. You will know how to customize your website and how to add cool things like embedded pictures and videos, code blocks, multiple pages, a nav bar, and as a bonus how to style your site with CSS.
 
-✅  You will know how to use Github for version control of future coding projects.
-
-✅  You will know how to use the R programming language to generate plots and manage data from a variety of sources.
+✅  You will know how to use Github for version control of future coding projects inside of VS code .
 
 ✅  You will know how to use Quarto to publish professional reports including websites.
 
@@ -98,8 +96,12 @@ While we hope you feel you can create a custom website from scratch by the end o
 
 ❌  You won't be able to create a dynamic website. A dynamic website is where the contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
 
-❌  You won't known the ins and outs of data science skills like data wrangling or machine learning.    (These are saved for future courses)
+❌  You won't known the ins and outs of data science programming like data wrangling, visualizing, or machine learning.  (These are saved for future courses)
 
 # Conclusion
 
-We truly hope you enjoy this course and that it serves you on your data science journey. This course is designed to teach you the basic skills you will need to succeed as a data scientist. We do this through a lens of learning how to create websites but with the primary intent of giving you transferable skills to succeed in the world of data science.
+We truly hope you enjoy this foundational course and that it serves you on your data science journey. This course is designed to teach you the basic skills you will need to succeed in the tech space. We do this through learning version control and creating static websites but with the primary intent of giving you transferable skills to succeed.
+
+### Testimonials
+
+Reach out to J and get a word or two from him
