@@ -14,11 +14,14 @@ title: "Lesson 1: Creating Your First Website with Quarto"
 
 -   Students will be able to render the website using `quarto render`.
 
-## Prerequisites
+## Lesson
+
+### Prerequisites
 
 -   Students should have Visual Studio Code and the Quarto extension installed on their computer. Refer to our lessons on [VS Code](lessons/unit_02/lesson_01) and [Quarto](lessons/unit_02/lesson_02) if you don't have it already.
 
-## Why Quarto for Creating Websites?
+
+### Why Quarto for Creating Websites?
 
 **Reproducibility:** Quarto ensures reproducibility by combining content, code, and results into a single document. This is vital for maintaining consistency and transparency in web development projects.
 
@@ -26,7 +29,7 @@ title: "Lesson 1: Creating Your First Website with Quarto"
 
 **Effortless Document Structuring:** With Quarto's intuitive structure, creating and organizing pages becomes straightforward. Its simplicity enables quick addition of new content, making it an ideal choice for both beginners and experienced users in the website development realm.
 
-## Getting started with building your first website
+### Getting started with building your first website
 
 1.  Open Visual Studio Code (VS Code)
 
