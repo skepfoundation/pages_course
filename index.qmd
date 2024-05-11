@@ -84,7 +84,7 @@ Some excellent websites where people post questions and answers to common progra
 
 ### What you will know by the end
 
-By the end of this course you should know how to build a basic, static website using Quarto and hosted for free on Github. You will know how to customize your website and how to add cool things like embedded pictures and videos, code blocks, multiple pages, a nav bar, and as a bonus how to style your site with CSS.
+By the end of this course you should know how to build a basic, static website using Quarto and hosted for free on Github. You will know how to customize your website and how to add cool things like embedded pictures and videos, code blocks, multiple pages, and nav bars.
 
 ✅  You will know how to use Github for version control of future coding projects inside of VS code .
 

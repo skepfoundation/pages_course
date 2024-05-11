@@ -60,6 +60,12 @@ website:
         menu:
           - text: "Customizing Website Appearance with CSS"
             href: lessons/unit_bonus/css/customizing_css.qmd
+          - text: "Advanced Git"
+            href: lessons/unit_bonus/Advanced_Git/Advanced_Git.qmd
+          - text: "Embedding IFrames"
+            href: lessons/unit_bonus/Embedding_Iframes/Embedding_IFrames.qmd
+          - text: "Quarto Themes"
+            href: lessons/unit_bonus/Quarto_Theming/quarto_theming.qmd
             
       - text: "About the Authors"
         href: authors/authors.qmd

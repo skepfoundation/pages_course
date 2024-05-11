@@ -138,4 +138,30 @@ Students will learn how to use CSS for basic styling such as font sizes, font co
 
 ----------------------------------------
 
+### Advanced Git 
+In the previous lessons on Git, we learned foundational git concepts and commands using the terminal and directly from VS code. In this lesson, we'll explore some advanced git concepts and how to troubleshoot issues, when things are not working properly.
+
+
+ * [Details](lessons/unit_bonus/Advanced_Git/Advanced_Git.qmd)
+
+
+---------------------------------------- 
+
+### IFrames
+In this lesson, we'll discover how to add Inline Frames (IFrames) to your Quarto Website to be able to pull content from multiple servers to make a more coherent user experience.
+
+
+ * [Details](lessons/unit_bonus/Embedding_Iframes/Embedding_IFrames.qmd)
+
+
+---------------------------------------- 
+
+### Quarto Theming  
+In this lesson, we'll go through using Quarto's support for building a website theme and implement it throughout your site.
+
+ * [Details](lessons/unit_bonus/Quarto_Theming/quarto_theming.qmd)
+
+
+---------------------------------------- 
+
 
