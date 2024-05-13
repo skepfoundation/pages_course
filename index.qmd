@@ -100,7 +100,7 @@ While we hope you feel you can create a custom website from scratch by the end o
 
 # Conclusion
 
-We truly hope you enjoy this foundational course and that it serves you on your data science journey. This course is designed to teach you the basic skills you will need to succeed in the tech space. We do this through learning version control and creating static websites but with the primary intent of giving you transferable skills to succeed.
+We truly hope you enjoy this foundational course and that it serves you on your educational goals and career. This course is designed to teach you basic skills that will help you succeed. We do this through learning version control and creating static websites but with the primary intent of giving you transferable skills.
 
 ### Testimonials
 
