@@ -14,8 +14,12 @@ website:
         text: Home
       - text: "Tools"
         menu: 
-          - href: tools/r_installation.qmd
-            text: "R Installation"
+          - href: tools/Quarto_Installation/Quarto_Installation.qmd
+            text: "Quarto Installation"
+          - href: tools/VsCode_Installation/VsCode_Installation.qmd
+            text: "VS Code Installation"
+          - href: tools/Git/Git_Installation.qmd
+            text: "Git Installation"
       - href: tasks_overview.qmd
         text: Course Tasks
       - text: "Unit 1"
