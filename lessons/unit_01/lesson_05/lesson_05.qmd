@@ -12,7 +12,7 @@ This lesson will equip you with the most important principles to follow to organ
 
 ## Lesson
 
-### What is a Github Repository and What Makes It Special?
+### What is a Github Repository?
 
 Imagine a GitHub repository like a toolbox for coders. Instead of physical tools, it stores all the digital "tools" you will use to build projects, like code, instructions, and notes. Think of it like a box that holds one project like a website, game, or data analysis program. Inside the box are smaller boxes (folders) which organize different, and smaller, parts of the overall program like: main code, images, or data files.
 
@@ -77,6 +77,8 @@ By following these principles, you can create a well-organized and accessible Gi
   
 -   Instantiate a small project using the principles outlined above. The project can be any of your choice.
 
+-   Post a link to the repository in your group channel
+
 
 ## Conclusion
 
@@ -84,7 +86,7 @@ You should now understand what a github repository is and how it can help you to
 
 Happy Coding 😎🎊🎊
 
-## FAQ
+### FAQ
 
 #### What kind of project should I experiment with?
 

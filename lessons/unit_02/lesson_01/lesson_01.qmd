@@ -11,42 +11,43 @@ In this lesson, we'll go over an Integrated Development Enviroment (IDE) known a
 -   Students will understand what VS Code is and why they should use it.
 
 -   Students will know how to download extensions and use VS Code to write source code.
-s
+
+
 ## Lesson
 
 ### What is Visual Studio Code ?
 
-![](./Images/visual-studio-code.jpg)
+![](./Images/visual-studio-code.jpg){width="750" height="400"}
 
 Visual Studio Code is a **Integrated Development Enviroment (IDE)** developed by Microsoft for Windows, Linux and macOS. An integrated development environment or IDE is a software for building applications. An IDE is just like a text editor except instead of writing documents you're writing source-code. Visual Studio Code includes features such as **syntax highlighting, error highlighting, intelligent code completion, snippets, code refactoring**, and embedded **Git**. Users can change the theme, keyboard shortcuts, preferences, install extensions that add functionality, and has support for different programming languages.
 
-#### Syntax Highlighting
+#### **Syntax Highlighting**
 
 To improve readability for developers, VS Code has syntax highlighting. What this means, is that special keywords of the programming language are highlighted in different colors so that the developer can quickly differentiate these keywords from other texts. For example, if you're writing Python code without syntax highlighting, it could be harder to identify keywords from other texts. With syntax highlighting, that gets much easier because the Python keywords and variables are colored differently.
 
 ![](./Images/syntax-highlighting.png)
 
-#### Error Highlighting
+#### **Error Highlighting**
 
 Just like checking spelling in a text document, IDEs can highlight mistakes you make in your programming code. For example, if I delete the equal symbol where it's needed, my IDE will highlight the error.
 
-#### Intelligent Code Completion
+#### **Intelligent Code Completion**
 
 When you're typing a message on your phone, it suggests words as you type. Visual Studio Code's code completion is a similar feature. Since programming languages have special keywords, it can offer suggestions to autocomplete words as you start typing them. Together with IntelliSense, this makes the IDE smart and even able to understand your code. They can detect variables and functions and offer them as suggestions during autocomplete. For example, if I have a Python function named *myFunction* defined at the top of the Python file, then as soon as I start typing the letter *m* my IDE suggest this function as an autocompletion. This speeds up the process of coding applications by reducing typos and other common mistakes.
 
 ![](./Images/code-completion.png)
 
-#### Code Refactoring
+#### **Code Refactoring**
 
 Since IDEs understand your code, they can help you if you need to change it. To demonstrate how refactoring works, let's continue with the *myFunction* function that I defined a moment ago. In the code, the function is then called multiple times. It can also be called in the code of other files too. But what if you need to rename this function? You would need to rename it in every file that uses the function ensuring that you update those files to use the new name. This process is known as refactoring, changing the structure of the code without changing the functionality. Doing this manually is very time consuming and prone to error. If you mistyped the new function name in one place, the application will break. Since the IDE understand your code, it can assist with refactoring and automatically update the function name across all files.
 
-#### Snippets
+#### **Snippets**
 
 Code snippets are small blocks of reusable code that you can add to a code file by using the right-click context menu command or a combination of hotkeys. This saves time and ensures consistency on routine operations. Snippets make it easier to remember specific formatting for functions and can be shared amomg a team to ensure no one is doubling down on the same work.
 
-![](./Images/snippet-demo.gif)
+![](./Images/snippet-demo.gif){width="600" height="300"}
 
-#### Git
+#### **Git**
 
 Git is a version control system that tracks changes in any set of computer files, usually used for coordinating work among developers who are collaboratively developing source code during software development. You'll learn more on Git in Lesson 3. For now, it's good to know that Visual Studio code has built-in support for Git through Source Control and the terminal.
 
@@ -54,20 +55,20 @@ Git is a version control system that tracks changes in any set of computer files
 
 VS Code has a host of extensions and plugins that add various functionality to aid rapid software development.
 
-## Practice Activity
 
-### Download and Install Visual Studio Code
 
-#### Prerequisites
+### Installing Visual Studio Code
+
+#### **Prerequisites**
 
 -   VS Code is lightweight and should run on most available hardware and platform versions. You can review the [System Requirements](https://code.visualstudio.com/docs/supporting/requirements) to check if your computer configuration is supported.
 
-#### For Windows PC
+#### **For Windows PC**
 
 -   Visit the [official website](https://code.visualstudio.com/download) of Visual Studio Code using any web browser like Google Chrome, Microsoft Edge, etc.
 -   Click the "Windows" button under the Windows logo on the website to start the download of the Visual Studio Code Application.
 
-![](./Images/installing-vscode-win01.png)
+![](./Images/installing-vscode-win01.png){width="750" height="400"}
 
 -   When the download finishes, click on the installer icon in the downloads folder to start the installation process of the Visual Studio Code.
 
@@ -92,18 +93,18 @@ VS Code has a host of extensions and plugins that add various functionality to a
 
 Your VS Code is installed on your PC and ready for you to start coding away with it.
 
-![](./Images/installing-vscode-win12.png)
+![](./Images/installing-vscode-win12.png){width="700" height="400"}
 
 You can always launch it by clicking on the Desktop Icon (if you selected that option during the installation process) or by searching it in the `⊞ Start Menu`.
 
-![](./Images/installing-vscode-win11.png)
+![](./Images/installing-vscode-win11.png){height="400"}
 
-#### For Mac OS
+#### **For Mac OS**
 
 -   Navigate to the [official website](https://code.visualstudio.com/download) of Visual Studio Code using any web browser like Safari, Google Chrome etc.
 -   Click the "Mac" button under the Apple logo on the website to start the download of the Visual Studio Code Application
 
-![](./Images/installing-vscode-mac01.png)
+![](./Images/installing-vscode-mac01.png){width="750" height="400"}
 
 -   Depending on the browser used and security settings within, there may be prompts to allow access to the Download folder or similar. Allow any prompts that are generated.
 
@@ -111,7 +112,7 @@ You can always launch it by clicking on the Desktop Icon (if you selected that o
 
 -   Hold down the `Command ⌘` key on your keyboard and press the `Space Bar` and type 'Downloads' in the search field, click on the Downloads Finder icon.
 
-![](./Images/installing-vscode-mac03.png)
+![](./Images/installing-vscode-mac03.png){width="600"}
 
 -   Click on "Downloads" on the left side of the Finder window then locate the Visual Studio Code application file. You can click on the Date Added column to sort by newest to help you find the VS Code file.
 -   Click and drag the Visual Studio Code application to the Applications folder on the left.
@@ -120,7 +121,7 @@ You can always launch it by clicking on the Desktop Icon (if you selected that o
 
 Your VS Code is installed on your Mac and ready for you to start coding away with it.
 
-![](./Images/installing-vscode-mac09.png)
+![](./Images/installing-vscode-mac09.png){width="700" height="400"}
 
 You can launch it by clicking on the Launchpad Icon in the Mac OS dock and then either look for the Visual Studio Code icon, or use the Search bar at the top of the Launchpad.
 
@@ -134,21 +135,19 @@ Mac OS will prompt to confirm that opening a program downloaded from the interne
 
 ![](./Images/installing-vscode-mac08.png)
 
-### Install VS Code's Python Extension
 
-This is an extension with rich support for the Python programming language, including features such as IntelliSense (Pylance), linting, debugging, code navigation, code formatting, refactoring, and more!
+## Practice Activity
 
--   Open VS Code and navigate to the extention icon on the left pane.
+Your practice activity will be to:
 
-![](./Images/VS_Code_Extension_01.png)
+-   Download and Install Visual Studio Code on your computer.
 
--   Search "Python" in the search box and select the first item that says "Python" in the search result and click on install.
+-   Take a screenshot of the _Get Started_ page after installation.
 
-![](./Images/VS_Code_Extension_02.png)
+-   Share screenshot in your group channel.
 
--   Once it's done installing, your python extension should be good to go.
 
-![](./Images/VS_Code_Extension_03.png)
+
 
 ## Conclusion
 
@@ -162,4 +161,4 @@ Nice work completing this lesson! By now you should:
 
 In the next lesson, you will learn how to use Quarto - an open-source publishing system, and have the extension installed in VS Code.
 
-## FAQ
+### FAQ

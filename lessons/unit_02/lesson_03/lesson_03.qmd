@@ -2,19 +2,26 @@
 title: "Lesson 3: Git and How to connect to VScode"
 ---
 ## Overview
-In this lesson you will learn the basics of git in VScode
 
-# Learning Objectives:
+In this lesson you will learn the basics of git and how to use it in VScode
 
-1. Understand the concepts of Git and its functionality.
-2. Learn the benefits of using Git for version control.
-3. Identify the basic Git workflows, including cloning, committing, pushing, branching, and merging.
-4. Gain practical knowledge of setting up and using Git within VScode.
+## Learning Objectives:
 
-# Introduction to Git
+-   Students will be able to understand the concepts of Git and its functionality.
+
+-   Students will learn the benefits of using Git for version control.
+
+-   Students will be able to identify basic Git workflows, including cloning, committing, pushing, branching, and merging.
+
+-   Students will gain practical knowledge of setting up and using Git within VScode.
+
+## Lesson
+
+### Introduction to Git
+
 Git is a powerful and widely used version control system that allows developers to track changes in their code over time. It was created by Linus Torvalds in 2005 to support the development of the Linux kernel. Git is designed to handle projects of all sizes with speed and efficiency.
 
-# Why Use Git?
+### Why Use Git?
 
 1. **Collaboration:** Git makes it easier for multiple people to work on the same project without interfering with each other's work. It allows for parallel development, where team members can work on different features simultaneously.
 2. **History Tracking:** Every change made to the files in a project is tracked. This means you can revert back to any version of a file at any point in time.
@@ -24,13 +31,8 @@ Branching and Merging: Git's branching capabilities are a standout feature. They
 Basic Concepts
 
 
------------------
 
-# Working with Git
-
-::: {.grid}
-
-::: {.g-col-6}
+### Working with Git
 
 
 Git's functionality is accessible primarily through the command line. Common commands include; 
@@ -72,11 +74,11 @@ flowchart LR
 
 
 
-# How to Install Git
+### How to Install Git
 
 Installing Git is a crucial step for anyone getting started with version control. Here's a beginner friendly guide to installing Git on different operating systems.
 
-## 1. For Windows Users 
+#### **1. For Windows Users** 
 **Download the Git Installer:**
 
 - Visit the Git website and download the latest version of Git for Windows.
@@ -109,7 +111,7 @@ Open Command Prompt and type
 to ensure Git is installed correctly and to see the installed version.
 
 
-## 2. For MacOS Users
+#### **2. For MacOS Users**
    
 **Install Git via Homebrew:** 
 If you have Homebrew (a package manager for macOS), you can install Git by opening the Terminal and typing
@@ -131,38 +133,14 @@ In the Terminal, type
 to check the installation.
 
 
-## 3. For Linux Users
-**Install Git through Package Manager:** 
-
-- For Debian/Ubuntu-based distributions, open the Terminal and type 
-
-```bash
-    sudo apt-get install git
-```
-
-- For Fedora, users
-
-```bash
-    sudo dnf install git
-```
-
-- For other distributions, use the respective package manager and the package named 'git'.
- 
-**Verify Installation:**
-Confirm the installation by typing in the terminal.
-
-```bash
-    git --version
-```
-
 --------------------------------
 
-# Git configuration:
+### Git configuration:
 
 After installing Git, it's a good practice for users to set their Git username and email address, which will be used for every Git commit. This can be done by executing the following commands in the terminal or command prompt:
 
 ```bash
-    git config --global user.name [your-name]
+    git config --global user.name [your-username]
 ```
 
 ```bash
@@ -172,7 +150,7 @@ After installing Git, it's a good practice for users to set their Git username a
 This steps ensures that all your commits will have your identity attached to them anytime you commit and push to a repo.
 
 
-# Basic Concepts of Git
+### Basic Concepts of Git
 
 
 1. **Repository(Local and Remote):** A repository (or 'repo') is like a project's folder. It contains all of the project files and the history of changes made to those files.
@@ -187,9 +165,9 @@ Working with Git.
 
 5. **Pull Request:** Is a feature in Git that allows developers working on a project collaboratively to propose changes to a codebase. It is a way to initiate a discussion and review process
 
-# 1. Repository (Local and Remote)
+#### **1. Repository (Local and Remote)**
 
-## Local Repository
+#### **Local Repository**
 
 
 
@@ -197,24 +175,45 @@ Working with Git.
 
 **Function:** It allows you to work on your project and make commits, branches, and other Git operations offline.
 
-### Creation and Usage:
+Creation and Usage:
 
+::: {.panel-tabset}
 
-
-<center><strong>Command Line</strong></center>
+#### Command Line
 
 Created using ```git init``` or ```git clone``` commands.
 
 Local repositories are where you'll do most of your work, including editing, staging, and committing changes.
 
-**Note:** When you initialize or clone a repository on your local mahcine, you will often see a *.Git* directory as shown below:
-
-![](../Unit_2/images/1.png)
+**Note:** When you initialize or clone a repository on your local machine, you will often see a *.Git* directory as shown below:
 
 
+#### Source Control
+
+**Clone a Repository**
+To get a repository from GitHub onto your computer, the repository on GitHub needs to be "cloned" on to your computer. Open a new window in VSCode, source control will look like this. 
+
+![](source_control_clone_repo.png)
+
+Steps:
+- open new window for VSCode
+- copy the github url for the desired repository
+- click "Clone Repository" and paste in there
 
 
-### Remote Repository
+**Initialize a Repository**
+To put an existing project of yours onto GitHub, you'll need to "initialize a repository". Open VSCode in that existing project's folder, source code will look like this. 
+
+![](source_control_init_repo.png)
+
+Steps: 
+
+1) click "Initialize Repository"
+
+:::
+
+
+#### **Remote Repository**
 
 **Definition:** A remote repository is a version of your project hosted on the internet or a network.
 
@@ -222,7 +221,7 @@ Local repositories are where you'll do most of your work, including editing, sta
 
 **Common Platforms:** Platforms like GitHub, GitLab, and Bitbucket host remote repositories.
 
-### Interaction:
+**Interaction:**
 - You can push your local changes to a remote repository using 
   
 ```bash 
@@ -239,37 +238,10 @@ Local repositories are where you'll do most of your work, including editing, sta
 ```
 
 
-## Source Control
+#### **2. Commit/Push**
 
-### Clone a Repository
-To get a repository from GitHub onto your computer, the repository on GitHub needs to be "cloned" on to your computer. Open a new window in VSCode, source control will look like this. 
-
-![](source_control_clone_repo.png)
-
-Steps:
-- open new window for VSCode
-- copy the github url for the desired repository
-- click "Clone Repository" and paste in there
-
-
-### Initialize a Repository
-To put an existing project of yours onto GitHub, you'll need to "initialize a repository". Open VSCode in that existing project's folder, source code will look like this. 
-
-![](source_control_init_repo.png)
-
-Steps: 
-
-1) click "Initialize Repository"
-
-:::
-
-
-
-
-
-
-
-# 2. Commit/Push
+::: {.panel-tabset}
+#### Git Commit
 
 **Definition:** A commit in Git is a snapshot of your project's current state, allowing you to capture the condition of your project at a specific point in time.
 
@@ -292,7 +264,7 @@ To save your staged changes along with a descriptive message, use the code below
 - commit messages should reflect the changes made. i.e *"updated file upload function in task.py"*
 
 
-## Git Push
+#### Git Push
 **Purpose:** Git push is used whenever we want to push your current commit from your local repository to the remote repository. What this code does under the hood is to push the current state of our codes to the remote repository. 
 
 **Syntax**
@@ -308,7 +280,7 @@ By default, ```origin``` is the name git gives to the remote repository once ini
     git push -u origin main
 ```
 
-## Source Control
+#### Source Control
 
 To get your changes from your computer to GitHub, you'll need to commit and push your changes. 
 
@@ -326,7 +298,7 @@ To commit and push your most recent changes to your files:
 
 
 
-# 3. Branch
+#### **3. Branch**
 
 ::: {.panel-tabset}
 
@@ -405,11 +377,11 @@ Steps:
 
 :::
 
-# 4. Merge
+#### **4. Merge**
 
 ::: {.panel-tabset}
 
-## Command Line 
+#### Command Line 
 
 **Definition:** Merging in Git is the act of integrating changes from one branch into another.
 
@@ -423,7 +395,7 @@ to merge the changes from [branch-name] into your current branch.
 
 **Conflict Resolution:** If there are conflicts between the branches, Git will prompt you to resolve them before completing the merge.
 
-## Source Control
+#### Source Control
 
 To make your branch part of the main version of the code, you'll have to "merge" your branch.
 
@@ -439,7 +411,7 @@ Steps:
 :::
 
 
-# 5. Pull Request
+#### **5. Pull Request**
 
 **Definition:** A pull request (PR) is a method of submitting contributions to a project. It's specific to platforms like GitHub, GitLab, or Bitbucket.
 
@@ -451,79 +423,59 @@ Other team members can review the changes, provide feedback, and once approved, 
 
 
 
-# Git with VSCode:
-
-### Why should we use Git with on Vscode?
-
-- Integrated development environment.
-- Streamlined workflow.
+### Git with VSCode:
 
 
-### Connecting Git to Visual Studio Code (VSCode)
+#### **Connecting Git to Visual Studio Code (VSCode)**
 
-**VSCode Overview:** Visual Studio Code is a popular, lightweight, and powerful source code editor that supports multiple programming languages and tools.
-
-**Integration Benefits:** Integrating Git with VSCode streamlines the development workflow, allowing you to perform version control tasks directly from the editor.
-
-Step-by-Step Guide:
-
-- **Ensure Git is Installed:** Before connecting Git to VSCode, ensure Git is installed on your system. (Installation was covered in the last section).
+Integrating Git with VSCode streamlines the development workflow, allowing you to perform version control tasks directly from the editor.
   
-
-- **Open VSCode:** Launch Visual Studio Code.
-
-### Accessing Git: 
-On the left sidebar, click on the Source Control icon. If Git is installed, VSCode will automatically detect and display Git functionalities.
-
-
-**Ensure Git is Installed:**
-
-Before integrating Git with VSCode, you must have Git installed on your computer.
-To check if Git is already installed, open a terminal (Command Prompt on Windows, Terminal on macOS or Linux) and type git --version. If Git is installed, this command will return the version number.
-If Git is not installed, you'll need to download and install it from Git's official website.
-
-### The installation and configuration of Git was treated in the previous lesson. Revert to it for better understanding.
-
-### Open VSCode:
-
-Start by launching Visual Studio Code on your computer.
-If it’s not already installed, you can download it from Visual Studio Code's official site.
+**Open VSCode:** Launch Visual Studio Code.
 
 **Accessing Git:**
 
 In VSCode, Git can be accessed by two methods:
 
 1. Via the Source Control: Locate the source control icon on the left sidebar (it looks like a branching tree).
-
-
 Clicking on this icon will open the Source Control panel. If Git is installed and configured correctly, VSCode will automatically detect and integrate Git functionalities.
 
-2. Via the command line. Which is what we are focusing on in this lesson.
+2. Via the command line using Git commands. Which is what we focused on in this lesson.
 
 
-# Practice Activity
-
-
+## Practice Activity
 
 ### 1. Git Simulation Game:
 
-Tutors should divide students into pairs and provide each pair with a set of files representing a small project. Students will take turns making changes to the files, simulating working on the project collaboratively.
+Tutors should provide students with a Markdown file. Students will add a paragraph to the file, tracking the changes made.
 
-Task: Each pair will perform the following actions using Git commands in a terminal:
+Task: Each pair will perform the following actions using Git commands in a terminal or with Source Control:
 
-1. Initialize a local repository for the project files.
-2. Make changes to the files and stage them for commit.
-3. Write clear commit messages describing the changes.
-4. Create a new branch to work on a specific feature.
-5. Make further changes on the feature branch and commit them.
-6. Switch back to the main branch and merge the feature branch.
-7. Resolve any potential merge conflicts.
+- Initialize a local repository in a new folder with the file in it.
+
+- Create a new branch to work on a specific feature.
+
+- Make changes on the feature branch and commit them.
+
+- Write clear commit messages describing the changes.
+
+- Switch back to the main branch and merge the feature branch.
+
+- Send a screenshot of the merge output from the terminal or Source control and the modified file to your group channel.
+
+Reach out to group members or mentor if any merge conflicts arise.
    
-Bonus: For advanced learners, introduce concepts like pull requests and remote repositories. Students can simulate pushing their changes to a remote repository and creating pull requests for review and merging.
+Bonus: For advanced learners, you can experiment with concepts like pull requests and remote repositories. Students can simulate pushing their changes to a remote repository and creating pull requests for review and merging.
 
-# Conclusion
-With the basics of Git under your belt and VScode's integrated power at your fingertips, you're well on your way to mastering version control and boosting your development workflow. Remember, the more you practice, the smoother your project journeys will become. Keep exploring, keep learning, and keep pushing your code horizons!
+## Conclusion
+With the basics of Git under your belt and VScode's integrated power at your fingertips, you're well on your way to mastering version control and boosting your development workflow. Good Job. By now you should:
+
+- Understand the basic concepts of Git - Repository, Commit, Push etc.
+
+- Know how to use Git in Visual Studio Code
+
+- Know how to upload to and work with cloud repositories online like Github, Gitlab etc. 
+
+
+Remember, the more you practice, the smoother your project journeys will become. Keep exploring, keep learning, and keep pushing your code horizons!
 
 This concise yet impactful conclusion retains the key takeaways while encouraging continued learning and development.
-
-Feel free to customize it further based on your specific lesson and audience. Happy teaching!
