@@ -2,9 +2,15 @@
 title: "Lesson 4: Additional Profile README Features"
 ---
 
-# Overview 
+## Overview 
 
 This page will help you know what to include on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.
+
+## Learning Objectives
+
+-   Students will be able to create a Github Profile README customized to their unique skills and abilities.
+
+## Lesson
 
 ### Definition of Github README
 Generally, A GitHub README is a document that typically accompanies a GitHub repository, providing essential information about the repository and its contents. It's named "README" because it's often the first thing a visitor should read to understand what the project is about. The importance of a GitHub README cannot be overstated, as it serves several critical functions, but we will only talk about 3 in this lesson.
@@ -31,92 +37,7 @@ In the context of creating a GitHub profile, a GitHub README serves as a persona
 - GitHub Statistics: Some users include dynamic GitHub stats like their number of contributions, most used languages, or streaks. This can be done using GitHub widgets and badges.
 
 
-
-# Learning Objectives
-
--   Students will be able to create a GitHUb Profile README customized to their unique sensibilities and needs.
-
-# Basic Markdown For Github Profile README
-#### Baisc Text Formatting(Bold, Italics and Lists) in Markdown
-1. **Headers**
-
-Headers are created using the # symbol. The number of # symbols before the text determines the level of the header.
-For example:
-***# Header 1 for the largest header size.***
-and ***## Header 2 for the second-largest, and so on.***
-
-```md
-  # Header 1
-  ## Header 2
-```
-
-1. **Bold Text**
-
-To make text bold, wrap it in two asterisks ** or two underscores __.
-For example: **bold text** or __bold text__.
-
-```md
-  **bold text**
-  __bold text__
-```
-
-3. **Italic Text**
-
-To italicize text, wrap it in one asterisk * or one underscore _.
-For example: *italic text* or _italic text_.
-
-```md
-*italic text*
-_italic text_
-```
-
-4. **Bold and Italic**
-
-Combine both formats for bold and italic text.
-For example: **_bold and italic_** or __*bold and italic*__.
-
-```md
-  **_bold and italic_**
-  __*bold and italic*__
-```
-
-5. **Bulleted Lists**
-
-Use asterisks *, plus +, or minus - for bulleted lists.
-For example:
-```markdown
-  * Item 1
-  * Item 2
-```
-
-6. **Numbered Lists**
-
-Simply number with a period at the end of the number for each line for a numbered list (1. 2.).
-For example:
-```md
-  1. First item
-  2. Second item
-```
-
-#### Adding images and links in Markdown
-1. **Links**
-
-To create a hyperlink, enclose the link text in square brackets [], followed by the URL in parentheses ().
-For example: [Google](https://www.google.com)
-```md
-  [Google](https://www.google.com)
-```
-
-2. **Images**
-
-Similar to links, but with an exclamation mark ! in front. Include the alt text in square brackets and the image URL in parentheses. Image URL usually referes to the image directory on your local machine. It is always safe to move the images you wish to use in a particular project to a folder in which the project is.
-For example: ![Alt text](image-url.jpg)
-
-```md
-  ![Alt text](image-url.jpg)
-```
-
-# 4. Tools And Links
+### Tools And Links
 There are a list of tools and links which we will make use of in this Lesson to enhance our Github Profile Readme. They are as follows;
 
 1. **Devicons:** [DevIcons Github Repository](https://github.com/devicons/devicon/) This link can be used to integrate logos(images) of any programming language you are conversant with to you Github profile. You shall learn how to do this in the ***Adding logos*** in ***Enhancing Your Github Profile***  section below.
@@ -128,7 +49,8 @@ There are a list of tools and links which we will make use of in this Lesson to 
 4. **Github's built in text Editor:** Github comes with a built in code editor, and this is basically what we will be using to edit our github profile readme file. You can click on the "Pen" icon on the top right conrner of your profile to edit your profile using Github built in text editor. 
 ![](./github_annotated.png)
 
-# 5. Enhancing Your Github Profile README
+
+### Enhancing Your Github Profile README
 
 To create an impactful GitHub profile README, focus on an engaging presentation of your skills and projects. Begin with a brief introduction, including your name, role, and a touch of personalization to make it relatable.
 
@@ -136,7 +58,7 @@ Next, showcase your work by organizing sections with project thumbnails, titles,
 
 Keep your README updated as you embark on new projects or attain milestones, and encourage engagement from visitors by including a call to action.
 
-### Name Section:
+#### **Name Section**:
 
 This will go best at the top of your profile readme. Paste this code at the top.
 
@@ -162,7 +84,7 @@ This will go best at the top of your profile readme. Paste this code at the top.
 
 <!-- End tabset -->
 
-### Description Section:
+#### **Description Section**:
 
 Writing a description section is very important. Here is where you can make yourself stand out from others to employers. Below are ideas of what to include. Feel free to include anything that conveys that you are a capable employee in your field.
 
@@ -170,7 +92,7 @@ Provide a brief introduction about yourself, your current academic pursuits, and
 
 ::: columns
 ::: {.column width="47%"}
-### Description:
+**Description**:
 
 -   🔭 I'm currently working on \[Current Project/Job\].
 -   🌱 I'm currently learning \[What you are learning\].
@@ -189,7 +111,7 @@ Provide a brief introduction about yourself, your current academic pursuits, and
 
 
 ``` md
-## Description: 
+**Description**: 
 
 - 🔭 I’m currently working on [Current Project/Job].
 - 🌱 I’m currently learning [What you are learning].
@@ -202,7 +124,7 @@ Provide a brief introduction about yourself, your current academic pursuits, and
 :::
 :::
 
-## Hard Skills Section
+#### **Skills Section**
 
 This section is where you can show what you are comfortable using. As a beginner, this section can be empty. For more experienced students, it's a good idea to include the technology you are familiar with. Areas to include are:
 
@@ -218,7 +140,7 @@ The example below is table showing technology a Data Science student might be fa
 
 ::: columns
 ::: {.column width="47%"}
-### Favorite Technology
+**Favorite Technology**
 
 |               |    Python     |       R       |
 |---------------|:-------------:|:-------------:|
@@ -235,7 +157,7 @@ The example below is table showing technology a Data Science student might be fa
 <br>
 
 ``` md
-## Favorite Technology
+**Favorite Technology**
 
 |               | Python        | R             |
 | ---           | :---:         | :---:         |
@@ -251,7 +173,7 @@ The example below is table showing technology a Data Science student might be fa
 
 <!-- End tabset -->
 
-# 6. Adding Logos (Software, Lanugages, Companies...)
+#### **Adding Logos (Software, Lanugages, Companies...)**
 
 Now, we will add images representing the technologies and skills you are familiar with. You can always finds free logos for many programming languages and tools in [DevIcons Github Repository](https://github.com/devicons/devicon/).
 
@@ -263,43 +185,31 @@ Include the code below to your Github `README.md`. You can Add/Remove any skills
 
 ::: columns
 ::: {.column width="47%"}
-<br>
 
-<div>
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![GIT](https://img.shields.io/badge/Git-fc6d26?style=for-the-badge&logo=git&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg" title="Spring" alt="Spring" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" title="Material UI" alt="Material UI" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" title="Flutter" alt="Flutter" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg" title="CSS3" alt="CSS" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gatsby/gatsby-original.svg" title="Gatsby" alt="Gatsby" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" alt="AWS" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40"/>
-
-</div>
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="47%"}
-``` html
-<div>
-    <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" title="Spring" alt="Spring" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg" title="Material UI" alt="Material UI" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/flutter/flutter-original.svg" title="Flutter" alt="Flutter" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/gatsby/gatsby-original.svg" title="Gatsby"  alt="Gatsby" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" alt="AWS" width="40" height="40"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
-</div>
+``` markdown
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) 
+![MySQL](https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![GIT](https://img.shields.io/badge/Git-fc6d26?style=for-the-badge&logo=git&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) 
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
 ```
 :::
 :::
 
-# 7. Adding Social Links to Your Github Profile README
+#### **Adding Social Links to Your Github Profile README**
 
+On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium (blog site), etc. But for this section, we shall only focus on two: LinkedIn and Twitter.
+
+To get the respective badges for each social networks, we'll use [shields.io](https://shields.io/) which provides various endpoints letting users create and customize social media badges. We'll use the [ ](https://img.shields.io/badge/) URL and pass additional parameters to this URL to get the respective social media badges.
 
 ::: columns
 ::: {.column width="40%"}
@@ -312,7 +222,7 @@ Include the code below to your Github `README.md`. You can Add/Remove any skills
 :::
 
 ::: {.column width="55%"}
-``` md
+``` markdown
 [![](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](<your-linkedin-profile-url>)
 
 [![](https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white)](<your-twitter-profile-URL>)
@@ -323,11 +233,7 @@ Include the code below to your Github `README.md`. You can Add/Remove any skills
 
 <!-- Ending Tabs -->
 
-# 8. Adding GIFS to Your Github Profile README
-
-On this section, we will be adding social network badges to your github profile readme. On clicking this badges, it redirects users or visitors to their respective social networking sites. Badges of various social networks like Instagram, Facebook, Twitter, Medium (blog site), etc. But for this section, we shall only focus on two: LinkedIn and Twitter.
-
-To get the respective badges for each social networks, we'll use [shields.io](https://shields.io/) which provides various endpoints letting users create and customize social media badges. We'll use the [ ](https://img.shields.io/badge/) URL and pass additional parameters to this URL to get the respective social media badges.
+#### **Adding GIFS to Your Github Profile README**
 
 The Gif used in this section can be found [here](https://giphy.com/gifs/scaler-official-computer-laptop-hello-world-hpXdHPfFI5wTABdDx9). I found this GIF on [Giphy](https://giphy.com/), which is full of free GIFs to use.
 
@@ -364,9 +270,9 @@ When the parameters listed above (Label and color) are combined with <https://im
 
 <!-- Ending tabset -->
 
-# 9. Adding Github Profile Summary Stats Widgets
+#### **Adding Github Profile Summary Stats Widgets**
 
-### Option 1
+**Option 1**
 
 ::: panel-tabset
 ## Markdown
@@ -391,7 +297,7 @@ When the parameters listed above (Label and color) are combined with <https://im
 
 <!-- End tabset -->
 
-### Option 2
+**Option 2**
 
 ::: panel-tabset
 ## Markdown
@@ -414,7 +320,7 @@ When the parameters listed above (Label and color) are combined with <https://im
 
 :::
 
-### Option 3
+**Option 3**
 
 ::: panel-tabset
 ## Markdown
@@ -440,18 +346,24 @@ When the parameters listed above (Label and color) are combined with <https://im
 <!-- End tabset -->
 
 
-# 10. Hands-On Practice Activity
-1. Update Your GitHub Profile README
+## Practice Activity
 
 - Using the tools and examples provided, update your GitHub profile README.
-- Include at least one widget, a skills section, and a personal introduction.
 
-2. Share for Feedback
+- Include at least one widget, a skills section, and a personal introduction.
 
 - Post your updated README in your team channel to receive feedback from peers.
 
-You should now have your own github profile and should be equipped to help others make one as well. In the next lesson you will learn **Github website creation.**
 
-## Notes
+## Conclusion
+
+Great job completing this lesson! By now you should:
+
+- Have a robust github profile of your own.
+
+- Should be equipped to help others make one as well.
+
+
+#### Note
 
 Remember to keep your github profile readme up to date. Treat this page like a resume and portal to your portfolio for employers to find. This is a tool for finding work. Think to yourself, "If I were an employer, what would I need in an employee?". Whatever the answer to that is, convey it in your README.

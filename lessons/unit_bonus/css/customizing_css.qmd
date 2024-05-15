@@ -480,7 +480,9 @@ Want to elevate your elements and create a sense of dimension? The box-shadow pr
 
 
 
-## Practice Activity: Stylish Web Page Creation
+## Practice Activity
+
+### Stylish Web Page Creation
 
 Objective:
 Create a stylish web page that incorporates various CSS styling techniques covered in the lesson. This activity will test your understanding of CSS properties, selectors, text styling, background styling, and border & shadow effects.
@@ -507,10 +509,14 @@ Throughout this lesson, we've taken a deep dive into the world of CSS, learning 
 By now, you should be able to confidently:
 
 - Identify and target elements on a webpage using different CSS selectors.
+
 - Apply various CSS properties to customize the appearance of those elements.
+
 - Understand the cascading nature of CSS and how styles are applied.
+
 - Create basic visual themes and layouts using your newfound CSS skills.
-- 
+
+
 Remember, CSS is a vast and powerful tool, and this lesson has just scratched the surface. As you continue your exploration, you'll discover even more possibilities to bring your web pages to life and express your unique design vision. Here are some additional resources to fuel your journey:
 
 1. **Interactive CSS Tutorials:** Websites like Codecademy and Khan Academy offer interactive tutorials that allow you to learn CSS by doing.
@@ -520,9 +526,9 @@ Remember, CSS is a vast and powerful tool, and this lesson has just scratched th
 3. **Online Design Tools:** Experiment with online design tools like Figma or Adobe XD to visualize your styles before coding them.
 Don't be afraid to experiment, explore, and unleash your creativity! The world of CSS awaits your unique touch.
 
-## FAQ
+### FAQ
 
-## Image References:
-1. [google](https://google.com)
+## Image References
+1. [Google](https://google.com)
 2. HTML & CSS Design and Build Websites by Jon Duckett
 

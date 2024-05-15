@@ -16,8 +16,9 @@ In this lesson, we will explore how to personalize your GitHub Pages website by 
 ### Creating the default Github Pages Domain:
 To create a default github pages domain;
 
-1. you have to go to your github profile.
-2. create a reporsitory with the name in this format **[your profile name].github.io**. i.e, if your profile name is **"james"** your default github domain name will be **james.github.io**.
+1. You have to go to your github profile.
+
+2. Create a repository with the name in this format **[your profile name].github.io**. i.e, if your profile name is **"james"** your default github domain name will be **james.github.io**.
 
 ![details in the image above](./lesson_images/0.png)
 
@@ -61,18 +62,26 @@ You can see the custom domain name [africancompute.com](https://africacompute.co
 
 
 ## Practice Activity
-Change your GitHub Pages site to a more personalized GitHub domain.
-Acquire a custom domain from an external registrar and configure it for your GitHub Pages site. Document the steps and any challenges you encounter.
+
+- Acquire a custom domain with your name from an external registrar e.g. _mfonekpo.com_.
+
+- Configure it for your GitHub Pages site.
+
+- Change your GitHub Pages site to a more personalized GitHub domain.
+
+- Share a link to your website in your group channel.
+
+Note - Share any challenges you might be havin there too.
 
 
 ## Conclusion
 You should now have a GitHub Pages site with a personalized domain, enhancing its professional appearance and memorability. In our next lesson, we will delve into optimizing your site's SEO to increase visibility and traffic.
 
-## FAQ
-1. Can I use any domain registrar for a custom GitHub Pages domain?
+### FAQ
+- Can I use any domain registrar for a custom GitHub Pages domain?
 
 **Ans:** Yes, you can use any domain registrar to acquire a custom domain for your GitHub Pages site. The key is to correctly configure the DNS settings to point to GitHub's servers.
 
-2. What if my custom domain isn't working immediately?
+- What if my custom domain isn't working immediately?
 
 **Ans:** Changes can take up to 48 hours to propagate. If your custom domain isn't working right away, give it some time. Ensure your DNS settings are correctly configured according to GitHub's documentation.

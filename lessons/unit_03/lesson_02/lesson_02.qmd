@@ -67,16 +67,16 @@ project:
 
 ![](images/publishedwebsiteexample.png){height="300"}
 
-### links
+### Links
 
 Here are some links to extra help and information if you are curious or in need. 
 
-<https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages>
+[About Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 
-<https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site>
+[Creating a Github Pages Site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
 ## Conclusion
 
-You should now be able to veiw and share your website with everyone!
+You should now be able to view and share your website with everyone!
 
-## FAQ
+### FAQ

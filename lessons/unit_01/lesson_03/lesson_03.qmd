@@ -30,11 +30,13 @@ In short, Markdown is a handy, versatile text-formatting tool that you can use t
 
 ### Emphasizing text in Markdown
 
--   In Markdown, the use of asterisks (\*) or underscores (\_) allows you to emphasize text by making it either *italic* or **bold**.
+In Markdown, the use of asterisks (\*) or underscores (\_) allows you to emphasize text by making it either *italic* or **bold**.
 
--   To make text italic, wrap it with a single asterisk or underscore on both sides: `*italic*` or `_italic_`.
+-   To make text *italic*, wrap it with a single asterisk or underscore on both sides: `*italic*` or `_italic_`.
 
--   For bold text, wrap it with double asterisks or underscores: `**bold**` or `__bold__`.
+-   For **bold** text, wrap it with double asterisks or underscores: `**bold**` or `__bold__`.
+
+-   You can also make text both __*bold and italic*__. Simply wrap text in either double asterisks and an underscore or double underscore and an asterisk: `**_bold and italic_**` or `__*bold and italic*__`
 
 ### Headings in Markdown
 
@@ -89,13 +91,13 @@ This will produce a horizontal line break in your text like the following:
 
 ***
 
-#### Links
+### Links
 
 -   To create a link, enclose the link text in square brackets and then follow it immediately with the URL in parentheses. As such: `[example](https://www.example.com)`
 
 The rendered output looks like this: My example link is [example](https://www.example.com)
 
-#### Images
+### Images
 
 -   To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title in quotation marks after the path or URL. As such: `![alt text](/path/to/image.jpg)`
 
@@ -103,28 +105,28 @@ The rendered output looks like this:
 
 ![A River](./image/lake-8305673_1280.webp)
 
-# Hands On Practice Activity
+## Practice Activity
 
-For this lesson, you will be doing two(2) tasks.
-
-### Task 1:
-
-1. For the first taks, you shall be recreating this documents--> [document](https://www.dropbox.com/scl/fi/urdglf9eg5kt9o0n4m05p/My-Favorite-Hobby_-Photography.pdf?rlkey=9nbv8ly365uzej9ymm0yjwjmm&dl=0) 
+For this lesson, your practice activity will be to recreate this document --> [document](https://www.dropbox.com/scl/fi/urdglf9eg5kt9o0n4m05p/My-Favorite-Hobby_-Photography.pdf?rlkey=9nbv8ly365uzej9ymm0yjwjmm&dl=0) and upload it to a Github repository.
 The image link for this task can be gotten here:
  [image](https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=600)
 
-### GitHub Profile Setup:
+#### GitHub Repository Setup:
 
 -   If you don't have a GitHub account, sign up for one [here](https://www.github.com). Refer to Lesson 1 guide.
+
 -   Create a new repository with the name "Markdown Practice".
+
 -   Add a short description and initialize it with a README.
 
-### Markdown README:
+#### Markdown README:
 
 -   Recreate this document in that ReadMe: [document](https://www.dropbox.com/scl/fi/urdglf9eg5kt9o0n4m05p/My-Favorite-Hobby_-Photography.pdf?rlkey=9nbv8ly365uzej9ymm0yjwjmm&dl=0) 
--   WHen you are done, post a link to that repository to your class channel.
 
-## Tips
+-   Post a link to that repository in your class channel when complete.
+
+
+#### **Tips**
 
 -   Refer back to the lesson content for guidance on Markdown syntax. Test your Markdown file by previewing it locally or using online Markdown editors.
 -   Feel free to explore additional Markdown features not covered in the lesson.
@@ -140,9 +142,9 @@ Good job completing this lesson! By now you should:
 -   Have created a README file using Markdown, with an image, a code block and working links.
 
 
-## FAQ
+### FAQ
 
-## Resources
+### Resources
 
 [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 

@@ -84,6 +84,8 @@ For this lesson, your task will be to:
 
 -   Set the ``` width ``` and ``` height ``` as __780__ and __500__ respectively.
 
+-   Submit a link to your webpage in your group channel.
+
 -   The result should look like this when you're done;
 
 ```{=html}

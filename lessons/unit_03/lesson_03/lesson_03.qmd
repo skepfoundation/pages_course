@@ -8,10 +8,13 @@ This lesson will provide an overview of using subpages in Quarto and navigation 
 
 ## Learning Objectives
 
-- Students will understand the purpose of subpages 
-- Students will understand the purpose of a Nav bar 
-- Students will be able to edit the website YAML
-- Students will create a website with a nav bar and subpages
+- Students will understand the purpose of subpages.
+
+- Students will understand the purpose of a Nav bar.
+
+- Students will be able to edit the website YAML.
+
+- Students will create a website with a nav bar and subpages.
 
 
 ## Lesson
@@ -54,7 +57,7 @@ Now we will explore formatting options so you can customize your website to your
 Your _quarto.yml page contains the informaiton on how you want the website formated. By default the website uses a navigation bar oriented at the top of the page. And should look like the image on your right.
 
 ::: {.columns}
-::: {.column}
+::: {.column width="47%"}
 
 ```yml
 website:
@@ -67,7 +70,11 @@ website:
       - newpage.qmd
 ```
 :::
-::: {.column}
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47%"}
 ![](images/nav1.png)
 :::
 ::: 
@@ -77,7 +84,7 @@ If we don't like the default nav bar we can do a couple things to change it. Not
 
 
 ::: {.columns}
-::: {.column}
+::: {.column width="47%"}
 
 ```yml
 website:
@@ -92,7 +99,11 @@ website:
         - newpage.qmd
 ```
 :::
-::: {.column}
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47%"}
 ![](images/nav2.png)
 :::
 ::: 
@@ -101,7 +112,7 @@ website:
 If we want a side bar as opposed to a nav bar all we need to change is the `navbar:` to `sidebar:`. The style docked gives the navigation panel a gray background to seperate from the white page. You can remove this if you want it to blend with the page. Also note you need to specify the `contents:` for this code to work properly.
 
 ::: {.columns}
-::: {.column}
+::: {.column width="47%"}
 
 ```yml
 website:
@@ -115,7 +126,11 @@ website:
         - newpage.qmd
 ```
 :::
-::: {.column}
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47%"}
 ![](images/sidebar1.png)
 :::
 ::: 
@@ -125,7 +140,7 @@ Lastly If you want a similar effect like menu with the nav bar you need to use `
 
 
 ::: {.columns}
-::: {.column}
+::: {.column width="47%"}
 
 ```yml
 website:
@@ -141,7 +156,11 @@ website:
         - newpage.qmd
 ```
 :::
-::: {.column}
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47%"}
 ![](images/sidebar2.png)
 :::
 ::: 
@@ -157,9 +176,14 @@ Note: If you want to change the colors of your web page look into changing the `
 ### Add a New Page to your Website
 
 - Add a new Contact Page to your website.
+
 - The qmd file should be ‘contact.qmd’.
+
 - Add ‘Contact’ as the heading
+
 - Do not forget to link to it in the YAML file
+
+- Share a screenshot of the Contact Page and the _qmd_ file in your group channel.
 
 Your new page should look something like this :
 
@@ -176,7 +200,7 @@ Your new page should look something like this :
 With the ability to create subpages and the flexibility to design navigation interfaces, you are capable of building an organized website. Congratulations, with Quarto on your toolbelt you can build structured and useful websites that could benefit the lives of many!
 
 
-## FAQ
+### FAQ
 
 
 <!-- Bridger Norman -->
