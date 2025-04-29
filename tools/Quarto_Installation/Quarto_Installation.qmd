@@ -2,11 +2,9 @@
 title: "Quarto Installation"
 ---
 
-
 # What is Quarto?
 
-Quarto is a dynamic open-source publishing system made to simplify the process of creating easily reproducible reports, articles, research, HTML, and other print and non-print documents. It is built on top of the exceptionally powerful [Pandoc converter](https://pandoc.org/) and uses a flavor of markdown.
-Quarto includes support for Python, Julia, and Observable among others.
+Quarto is a dynamic open-source publishing system made to simplify the process of creating easily reproducible reports, articles, research, HTML, and other print and non-print documents. It is built on top of the exceptionally powerful [Pandoc converter](https://pandoc.org/) and uses a flavor of markdown. Quarto includes support for Python, Julia, and Observable among others.
 
 # Installing Quarto
 

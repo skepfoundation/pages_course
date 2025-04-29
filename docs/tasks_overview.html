@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GitHub For The Real World - Course Tasks</title>
+<title>Course Tasks – GitHub For The Real World</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -55,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -69,141 +76,205 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">GitHub For The Real World</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tools</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
         <li>
-    <a class="dropdown-item" href="./tools/r_installation.html" rel="" target="">
- <span class="dropdown-text">R Installation</span></a>
+    <a class="dropdown-item" href="./tools/Quarto_Installation/Quarto_Installation.html">
+ <span class="dropdown-text">Quarto Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tools/VsCode_Installation/VSCode_Installation.html">
+ <span class="dropdown-text">VS Code Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tools/Git/Git_Installation.html">
+ <span class="dropdown-text">Git Installation</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./tasks_overview.html" rel="" target="" aria-current="page">
- <span class="menu-text">Course Tasks</span></a>
+    <a class="nav-link active" href="./tasks_overview.html" aria-current="page"> 
+<span class="menu-text">Course Tasks</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-1" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-1" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Unit 1</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-1">    
         <li>
-    <a class="dropdown-item" href="./lessons/unit_01/lesson_01/lesson_01.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_01/lesson_01/lesson_01.html">
  <span class="dropdown-text">Lesson 1: Intro to GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_01/lesson_02/lesson_02.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_01/lesson_02/lesson_02.html">
  <span class="dropdown-text">Lesson 2: Creating your GitHub Profile README</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_01/lesson_03/lesson_03.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_01/lesson_03/lesson_03.html">
  <span class="dropdown-text">Lesson 3: Markdown</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_01/lesson_04/lesson_04.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_01/lesson_04/lesson_04.html">
  <span class="dropdown-text">Lesson 4: Additional Profile README Features</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_01/lesson_05/lesson_05.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_01/lesson_05/lesson_05.html">
  <span class="dropdown-text">Lesson 5: Organizing Your Github Repository</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-2" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-2" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Unit 2</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-2">    
         <li>
-    <a class="dropdown-item" href="./lessons/unit_02/lesson_01/lesson_01.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_02/lesson_01/lesson_01.html">
  <span class="dropdown-text">Lesson 1: Intro to VSCode</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_02/lesson_02/lesson_02.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_02/lesson_02/lesson_02.html">
  <span class="dropdown-text">Lesson 2: Intro to Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_02/lesson_03/lesson_03.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_02/lesson_03/lesson_03.html">
  <span class="dropdown-text">Lesson 3: Git in VSCode</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-3" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-3" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Unit 3</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-3">    
         <li>
-    <a class="dropdown-item" href="./lessons/unit_03/lesson_01/lesson_01.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_03/lesson_01/lesson_01.html">
  <span class="dropdown-text">Lesson 1: Create Your First Website</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_03/lesson_02/lesson_02.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_03/lesson_02/lesson_02.html">
  <span class="dropdown-text">Lesson 2: Hosting Your Website on GitHub Pages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./lessons/unit_03/lesson_03/lesson_03.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_03/lesson_03/lesson_03.html">
  <span class="dropdown-text">Lesson 3: Subpages and Nav Bars</span></a>
   </li>  
     </ul>
   </li>
-  <li class="dropdown-header">
- <span class="menu-text">Unit 4</span></li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bonus-lessons" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-4" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Unit 4</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-4">    
+        <li>
+    <a class="dropdown-item" href="./lessons/unit_04/lesson_01/lesson_01.html">
+ <span class="dropdown-text">lesson 1: Using A Custom Domain</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/unit_04/lesson_02/lesson_02.html">
+ <span class="dropdown-text">Lesson 2: Temp Title</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bonus-lessons" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Bonus Lessons</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-bonus-lessons">    
         <li>
-    <a class="dropdown-item" href="./lessons/unit_bonus/css/customizing_css.html" rel="" target="">
+    <a class="dropdown-item" href="./lessons/unit_bonus/css/customizing_css.html">
  <span class="dropdown-text">Customizing Website Appearance with CSS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/unit_bonus/Advanced_Git/Advanced_Git.html">
+ <span class="dropdown-text">Advanced Git</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/unit_bonus/Embedding_Iframes/Embedding_IFrames.html">
+ <span class="dropdown-text">Embedding IFrames</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lessons/unit_bonus/Quarto_Theming/quarto_theming.html">
+ <span class="dropdown-text">Quarto Themes</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./authors/authors.html" rel="" target="">
- <span class="menu-text">About the Authors</span></a>
+    <a class="nav-link" href="./authors/authors.html"> 
+<span class="menu-text">About the Authors</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#task-1---creating-your-first-github-repo" id="toc-task-1---creating-your-first-github-repo" class="nav-link active" data-scroll-target="#task-1---creating-your-first-github-repo">Task 1 - Creating Your First Github Repo</a></li>
+  <li><a href="#unit-1" id="toc-unit-1" class="nav-link active" data-scroll-target="#unit-1">Unit 1</a>
+  <ul class="collapse">
+  <li><a href="#lesson-01-creating-a-github-account" id="toc-lesson-01-creating-a-github-account" class="nav-link" data-scroll-target="#lesson-01-creating-a-github-account">Lesson 01: Creating a Github Account</a></li>
+  <li><a href="#lesson-2-creating-your-github-profile-readme" id="toc-lesson-2-creating-your-github-profile-readme" class="nav-link" data-scroll-target="#lesson-2-creating-your-github-profile-readme">Lesson 2: Creating your GitHub Profile README</a></li>
+  <li><a href="#lesson-03-writing-in-markdown" id="toc-lesson-03-writing-in-markdown" class="nav-link" data-scroll-target="#lesson-03-writing-in-markdown">Lesson 03: Writing in Markdown</a></li>
+  <li><a href="#lesson-4-additional-profile-readme-features" id="toc-lesson-4-additional-profile-readme-features" class="nav-link" data-scroll-target="#lesson-4-additional-profile-readme-features">Lesson 4: Additional Profile README Features</a></li>
+  <li><a href="#lesson-05-organizing-your-github-repository" id="toc-lesson-05-organizing-your-github-repository" class="nav-link" data-scroll-target="#lesson-05-organizing-your-github-repository">Lesson 05: Organizing Your Github Repository</a></li>
+  </ul></li>
+  <li><a href="#unit-2" id="toc-unit-2" class="nav-link" data-scroll-target="#unit-2">Unit 2</a>
+  <ul class="collapse">
+  <li><a href="#lesson-01-introduction-to-visual-studio-code" id="toc-lesson-01-introduction-to-visual-studio-code" class="nav-link" data-scroll-target="#lesson-01-introduction-to-visual-studio-code">Lesson 01 : Introduction to Visual Studio Code</a></li>
+  <li><a href="#lesson-2-installing-quarto" id="toc-lesson-2-installing-quarto" class="nav-link" data-scroll-target="#lesson-2-installing-quarto">Lesson 2: Installing Quarto</a></li>
+  <li><a href="#lesson-3-git-and-how-to-connect-to-vscode" id="toc-lesson-3-git-and-how-to-connect-to-vscode" class="nav-link" data-scroll-target="#lesson-3-git-and-how-to-connect-to-vscode">Lesson 3: Git and How to connect to VScode</a></li>
+  </ul></li>
+  <li><a href="#unit-3" id="toc-unit-3" class="nav-link" data-scroll-target="#unit-3">Unit 3</a>
+  <ul class="collapse">
+  <li><a href="#lesson-1-creating-your-first-website-with-quarto" id="toc-lesson-1-creating-your-first-website-with-quarto" class="nav-link" data-scroll-target="#lesson-1-creating-your-first-website-with-quarto">Lesson 1: Creating Your First Website with Quarto</a></li>
+  <li><a href="#lesson-2-hosting-your-website-on-github" id="toc-lesson-2-hosting-your-website-on-github" class="nav-link" data-scroll-target="#lesson-2-hosting-your-website-on-github">Lesson 2: Hosting Your Website On Github</a></li>
+  <li><a href="#lesson-3-subpages-and-nav-bars" id="toc-lesson-3-subpages-and-nav-bars" class="nav-link" data-scroll-target="#lesson-3-subpages-and-nav-bars">Lesson 3: Subpages and Nav Bars</a></li>
+  </ul></li>
+  <li><a href="#unit-4" id="toc-unit-4" class="nav-link" data-scroll-target="#unit-4">Unit 4</a>
+  <ul class="collapse">
+  <li><a href="#lesson-1-using-a-custom-domain" id="toc-lesson-1-using-a-custom-domain" class="nav-link" data-scroll-target="#lesson-1-using-a-custom-domain">Lesson 1: Using A Custom Domain</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  <li><a href="#bonus" id="toc-bonus" class="nav-link" data-scroll-target="#bonus">Bonus</a>
+  <ul class="collapse">
+  <li><a href="#css" id="toc-css" class="nav-link" data-scroll-target="#css">CSS</a></li>
+  <li><a href="#advanced-git" id="toc-advanced-git" class="nav-link" data-scroll-target="#advanced-git">Advanced Git</a></li>
+  <li><a href="#iframes" id="toc-iframes" class="nav-link" data-scroll-target="#iframes">IFrames</a></li>
+  <li><a href="#quarto-theming" id="toc-quarto-theming" class="nav-link" data-scroll-target="#quarto-theming">Quarto Theming</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
@@ -217,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -225,15 +296,174 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<section id="task-1---creating-your-first-github-repo" class="level1">
-<h1>Task 1 - Creating Your First Github Repo</h1>
-<p>Git is the world’s <a href="https://www.accuwebhosting.com/blog/best-version-control-systems/">most popular version control system</a> and Github is the most popular site for hosting code using git in the cloud. As a version control system, Git helps you keep your coding project files organized by keeping a record of when you edited files and tags them with short notes about what changes were made in the last iteration. This is particularly helpful when you are colaborating on a project with other programmers and need to stay tidy while working on the same files.</p>
-<p>Github is a free web service for storing your version controlled code in the cloud. It allows you to access your code from anywhere and it provides a handy interface for tracking your code’s changes over time. It also happens to have a handy service for hosting static websites for free on their platform.</p>
-<p>In this task you will create a github account, create a repository, and clone that repository onto your local machine in Rstudio.</p>
+
+<!-- here is a blank template below to add another task -->
+<!-- ### lesson name  
+text
+
+ * [Details](qmd_file_path)
 
 
+---------------------------------------- -->
+<section id="unit-1" class="level2">
+<h2 class="anchored" data-anchor-id="unit-1">Unit 1</h2>
+<section id="lesson-01-creating-a-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-01-creating-a-github-account">Lesson 01: Creating a Github Account</h3>
+<p>This lesson will go over the steps necessary to create a GitHub account. GitHub is a site that will host repositories fo code for free. It’s an industry standard tool used by most programmers. In this course it has the added benefit of being the place where we will host the websites we create.</p>
+<ul>
+<li><a href="./lessons/unit_01/lesson_01/lesson_01.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-2-creating-your-github-profile-readme" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-2-creating-your-github-profile-readme">Lesson 2: Creating your GitHub Profile README</h3>
+<p>The GitHub profile README serves as a distinctive profile page showcasing who you are and what you do. Functioning as a customizable “about me” section, it provides an avenue for individuals to introduce themselves, exhibit their projects, and communicate details about their interests and achievements. Essentially, the content of this README defines one’s GitHub profile, making it a pivotal element for creating a compelling first impression, particularly for employers seeking insights into an individual’s skills and interests upon visiting their GitHub profile. By the end of this lesson, you will have crafted your own GitHub profile readme using markdown.</p>
+<ul>
+<li><a href="./lessons/unit_01/lesson_02/lesson_02.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-03-writing-in-markdown" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-03-writing-in-markdown">Lesson 03: Writing in Markdown</h3>
+<p>You will learn the basics of Markdown, a lightweight markup language that is widely used for formatting plain text. Markdown is commonly used for writing content on platforms like GitHub, where it is essential for creating README files, documentation, and more.</p>
+<ul>
+<li><a href="./lessons/unit_01/lesson_03/lesson_03.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-4-additional-profile-readme-features" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-4-additional-profile-readme-features">Lesson 4: Additional Profile README Features</h3>
+<p>This lesson will help you know what to include on your github profile readme. All these are ideas. Use this code as needed in your profile. On the left is what the section will look like. On the right is the code used to make the section on the right. Copy the code and put it into your profile, editing it as needed to fit you.</p>
+<ul>
+<li><a href="./lessons/unit_01/lesson_04/lesson_04.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-05-organizing-your-github-repository" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-05-organizing-your-github-repository">Lesson 05: Organizing Your Github Repository</h3>
+<p>This lesson will equip you with the most important principles to follow to organize your github repository in a way that makes the most impact.</p>
+<ul>
+<li><a href="./lessons/unit_01/lesson_05/lesson_05.html">Details</a></li>
+</ul>
+<hr>
+<!-- green to help you find the unit breaks -->
+</section>
+</section>
+<section id="unit-2" class="level2">
+<h2 class="anchored" data-anchor-id="unit-2">Unit 2</h2>
+<section id="lesson-01-introduction-to-visual-studio-code" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-01-introduction-to-visual-studio-code">Lesson 01 : Introduction to Visual Studio Code</h3>
+<p>In this lesson, we’ll go over an Integrated Development Enviroment (IDE) known as <strong>Visual Studio Code</strong>, also commonly referred to as <strong>VS Code</strong>. We’ll explore what an IDE - such as Visual Studio Code - is, benefits of using it, and in and out’s of using Visual Studio Code.</p>
+<ul>
+<li><a href="./lessons/unit_02/lesson_01/lesson_01.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-2-installing-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-2-installing-quarto">Lesson 2: Installing Quarto</h3>
+<p>This lesson will briefly explain Quarto and go over the steps necessary to create a install Quarto in Visual Studio Code (VScode)</p>
+<ul>
+<li><a href="./lessons/unit_02/lesson_02/lesson_02.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-3-git-and-how-to-connect-to-vscode" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-3-git-and-how-to-connect-to-vscode">Lesson 3: Git and How to connect to VScode</h3>
+<p>In this lesson you will learn the basics of git in VScode</p>
+<ul>
+<li><a href="./lessons/unit_02/lesson_03/lesson_03.html">Details</a></li>
+</ul>
+<hr>
+<!-- green to help you find the unit breaks -->
+</section>
+</section>
+<section id="unit-3" class="level2">
+<h2 class="anchored" data-anchor-id="unit-3">Unit 3</h2>
+<section id="lesson-1-creating-your-first-website-with-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-1-creating-your-first-website-with-quarto">Lesson 1: Creating Your First Website with Quarto</h3>
+<p>You will learn to create a personalized website using Quarto. You will build a foundational <strong>About Me</strong> page, add new sections like <strong>Blog Posts</strong> and <strong>Contact</strong>, and render your site with <code>quarto render</code>. You will also be introduced to working with to YAML files.</p>
+<ul>
+<li><a href="./lessons/unit_03/lesson_01/lesson_01.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-2-hosting-your-website-on-github" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-2-hosting-your-website-on-github">Lesson 2: Hosting Your Website On Github</h3>
+<p>By the end of this lesson, students will be able to create a GitHub repository for their website and configure the basic settings for hosting on GitHub Pages</p>
+<ul>
+<li><a href="./lessons/unit_03/lesson_02/lesson_02.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="lesson-3-subpages-and-nav-bars" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-3-subpages-and-nav-bars">Lesson 3: Subpages and Nav Bars</h3>
+<p>This lesson will provide an overview of using subpages in Quarto and navigation options.</p>
+<ul>
+<li><a href="./lessons/unit_03/lesson_03/lesson_03.html">Details</a></li>
+</ul>
+<hr>
+<!-- green to help you find the unit breaks -->
+</section>
+</section>
+<section id="unit-4" class="level2">
+<h2 class="anchored" data-anchor-id="unit-4">Unit 4</h2>
+<section id="lesson-1-using-a-custom-domain" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-1-using-a-custom-domain">Lesson 1: Using A Custom Domain</h3>
+<p>In this lesson, we will explore how to personalize your GitHub Pages website by changing its domain name. Whether you’re looking to align your site with a personal brand or make it more memorable, a custom domain can set your project apart. We’ll cover how to modify your site’s default GitHub domain and guide you through the process of setting up a custom domain from an external provider.</p>
+<ul>
+<li><a href="./lessons/unit_04/lesson_01/lesson_01.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+<p>Place holder</p>
+<ul>
+<li><a href="./lessons/unit_04/lesson_02/lesson_02.html">Details</a></li>
+</ul>
+<hr>
+<!-- green to help you find the unit breaks -->
+</section>
+</section>
+<section id="bonus" class="level2">
+<h2 class="anchored" data-anchor-id="bonus">Bonus</h2>
+<section id="css" class="level3">
+<h3 class="anchored" data-anchor-id="css">CSS</h3>
+<p>Students will learn how to use CSS for basic styling such as font sizes, font color, background colors, and more</p>
+<ul>
+<li><a href="./lessons/unit_bonus/css/customizing_css.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="advanced-git" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-git">Advanced Git</h3>
+<p>In the previous lessons on Git, we learned foundational git concepts and commands using the terminal and directly from VS code. In this lesson, we’ll explore some advanced git concepts and how to troubleshoot issues, when things are not working properly.</p>
+<ul>
+<li><a href="./lessons/unit_bonus/Advanced_Git/Advanced_Git.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="iframes" class="level3">
+<h3 class="anchored" data-anchor-id="iframes">IFrames</h3>
+<p>In this lesson, we’ll discover how to add Inline Frames (IFrames) to your Quarto Website to be able to pull content from multiple servers to make a more coherent user experience.</p>
+<ul>
+<li><a href="./lessons/unit_bonus/Embedding_Iframes/Embedding_IFrames.html">Details</a></li>
+</ul>
+<hr>
+</section>
+<section id="quarto-theming" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-theming">Quarto Theming</h3>
+<p>In this lesson, we’ll go through using Quarto’s support for building a website theme and implement it throughout your site.</p>
+<ul>
+<li><a href="./lessons/unit_bonus/Quarto_Theming/quarto_theming.html">Details</a></li>
+</ul>
+<hr>
+
+
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -278,6 +508,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -346,13 +603,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -387,18 +646,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -430,11 +678,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -444,8 +731,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -457,7 +753,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -501,6 +920,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -526,6 +946,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -586,6 +1032,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

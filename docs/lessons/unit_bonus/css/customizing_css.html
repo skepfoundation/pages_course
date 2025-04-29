@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GitHub For The Real World - CSS Selectors Table</title>
+<title>CSS Selectors Table – GitHub For The Real World</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -80,7 +80,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,6 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -104,132 +111,165 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">GitHub For The Real World</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tools</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tools">    
         <li>
-    <a class="dropdown-item" href="../../../tools/r_installation.html" rel="" target="">
- <span class="dropdown-text">R Installation</span></a>
+    <a class="dropdown-item" href="../../../tools/Quarto_Installation/Quarto_Installation.html">
+ <span class="dropdown-text">Quarto Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../tools/VsCode_Installation/VsCode_Installation.qmd">
+ <span class="dropdown-text">VS Code Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../tools/Git/Git_Installation.html">
+ <span class="dropdown-text">Git Installation</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../tasks_overview.html" rel="" target="">
- <span class="menu-text">Course Tasks</span></a>
+    <a class="nav-link" href="../../../tasks_overview.html"> 
+<span class="menu-text">Course Tasks</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-1" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-1" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Unit 1</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-1">    
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_01/lesson_01.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_01/lesson_01.html">
  <span class="dropdown-text">Lesson 1: Intro to GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_02/lesson_02.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_02/lesson_02.html">
  <span class="dropdown-text">Lesson 2: Creating your GitHub Profile README</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_03/lesson_03.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_03/lesson_03.html">
  <span class="dropdown-text">Lesson 3: Markdown</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_04/lesson_04.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_04/lesson_04.html">
  <span class="dropdown-text">Lesson 4: Additional Profile README Features</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_05/lesson_05.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_01/lesson_05/lesson_05.html">
  <span class="dropdown-text">Lesson 5: Organizing Your Github Repository</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-2" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-2" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Unit 2</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-2">    
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_02/lesson_01/lesson_01.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_02/lesson_01/lesson_01.html">
  <span class="dropdown-text">Lesson 1: Intro to VSCode</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_02/lesson_02/lesson_02.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_02/lesson_02/lesson_02.html">
  <span class="dropdown-text">Lesson 2: Intro to Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_02/lesson_03/lesson_03.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_02/lesson_03/lesson_03.html">
  <span class="dropdown-text">Lesson 3: Git in VSCode</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-3" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-3" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Unit 3</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-3">    
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_03/lesson_01/lesson_01.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_03/lesson_01/lesson_01.html">
  <span class="dropdown-text">Lesson 1: Create Your First Website</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_03/lesson_02/lesson_02.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_03/lesson_02/lesson_02.html">
  <span class="dropdown-text">Lesson 2: Hosting Your Website on GitHub Pages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_03/lesson_03/lesson_03.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_03/lesson_03/lesson_03.html">
  <span class="dropdown-text">Lesson 3: Subpages and Nav Bars</span></a>
   </li>  
     </ul>
   </li>
-  <li class="dropdown-header">
- <span class="menu-text">Unit 4</span></li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bonus-lessons" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-unit-4" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Unit 4</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-unit-4">    
+        <li>
+    <a class="dropdown-item" href="../../../lessons/unit_04/lesson_01/lesson_01.html">
+ <span class="dropdown-text">lesson 1: Using A Custom Domain</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../lessons/unit_04/lesson_02/lesson_02.html">
+ <span class="dropdown-text">Lesson 2: Temp Title</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bonus-lessons" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Bonus Lessons</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-bonus-lessons">    
         <li>
-    <a class="dropdown-item" href="../../../lessons/unit_bonus/css/customizing_css.html" rel="" target="">
+    <a class="dropdown-item" href="../../../lessons/unit_bonus/css/customizing_css.html">
  <span class="dropdown-text">Customizing Website Appearance with CSS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../lessons/unit_bonus/Advanced_Git/Advanced_Git.html">
+ <span class="dropdown-text">Advanced Git</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../lessons/unit_bonus/Embedding_Iframes/Embedding_IFrames.html">
+ <span class="dropdown-text">Embedding IFrames</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../lessons/unit_bonus/Quarto_Theming/quarto_theming.html">
+ <span class="dropdown-text">Quarto Themes</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../authors/authors.html" rel="" target="">
- <span class="menu-text">About the Authors</span></a>
+    <a class="nav-link" href="../../../authors/authors.html"> 
+<span class="menu-text">About the Authors</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
@@ -248,18 +288,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#text" id="toc-text" class="nav-link" data-scroll-target="#text">Text</a></li>
   <li><a href="#styling-background" id="toc-styling-background" class="nav-link" data-scroll-target="#styling-background">Styling Background</a></li>
   </ul></li>
-  <li><a href="#practice-activity-stylish-web-page-creation" id="toc-practice-activity-stylish-web-page-creation" class="nav-link" data-scroll-target="#practice-activity-stylish-web-page-creation">Practice Activity: Stylish Web Page Creation</a>
+  <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a>
   <ul class="collapse">
+  <li><a href="#stylish-web-page-creation" id="toc-stylish-web-page-creation" class="nav-link" data-scroll-target="#stylish-web-page-creation">Stylish Web Page Creation</a></li>
   <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements:</a></li>
   <li><a href="#styling-with-css" id="toc-styling-with-css" class="nav-link" data-scroll-target="#styling-with-css">Styling with CSS:</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
-  <li><a href="#image-references" id="toc-image-references" class="nav-link" data-scroll-target="#image-references">Image References:</a></li>
+  </ul></li>
+  <li><a href="#image-references" id="toc-image-references" class="nav-link" data-scroll-target="#image-references">Image References</a></li>
   </ul>
 </nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
@@ -273,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -281,7 +324,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
@@ -334,7 +379,7 @@ This is a Dracula-themed paragraph with colored text, a darker background, and a
 <h4 class="anchored" data-anchor-id="inline">Inline</h4>
 <p>Imagine you’re drawing a picture, and you want to color one part of it differently from the rest. You could take a colored marker and draw over that part directly, right? That’s similar to how inline CSS works.</p>
 <p>With inline CSS, you add styling directly to individual HTML elements using the “style” attribute. Here’s an example:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color: blue; font-size: 18px;"</span><span class="kw">&gt;</span>This text is blue and bigger!<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color: blue; font-size: 18px;"</span><span class="dt">&gt;</span>This text is blue and bigger!<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 In this example, the style attribute is added to the
 <p>
 </p><p>tag, and it contains CSS rules (like color: blue; and font-size: 18px;) that specify how the text inside the paragraph should look. This way, you’re directly applying styling to that specific paragraph.</p>
@@ -363,7 +408,6 @@ In this CSS file, we’ve defined styling rules for
 <p><strong>What is a CSS Selector?</strong> Now, let’s imagine you are building a website like a big playground! Each element on the page, like pictures, buttons, or text, is like a building block. CSS Selectors are like special tools that let you point and say, “Hey, you in a blue shirt and red hat, I want you to do THIS!”.</p>
 <p>Using this scenario, it is safe to say that css selectors help us identify and interact with html tags. The knowledge of the tags, will enable us use css selectors and apply a set of rules and styling to the HTML element tag.</p>
 <p>There are many different types of CSS selector that allow you to target rules to specific elements in an HTML document as shown in the table below.</p>
-
 <table border="1">
 <thead>
 <tr>
@@ -476,7 +520,6 @@ Matches an element that is a sibling of another, although it does not have to be
 </td>
 </tr>
 </tbody>
-
 </table>
 
 
@@ -506,12 +549,12 @@ Matches an element that is a sibling of another, although it does not have to be
 </ul></li>
 </ol>
 <p>Example:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1"></a>    color<span class="in">: blue</span>; <span class="pp">#will</span> set the text color to blue<span class="fu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1"></a>    color<span class="in">:</span> blue; <span class="pp">#will</span> set the text color to blue.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li>Font-Family: This property specifies the font for the text. It can be a specific font <strong>(e.g., Arial)</strong>, a generic family <strong>(e.g., sans-serif)</strong>, or a list of fonts, known as a <strong><em>“font stack,”</em></strong> where the browser will use the first available font.</li>
 </ol>
 <p>Example:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb5-1"><a href="#cb5-1"></a>    font-family<span class="in">: "Times</span> New Roman"<span class="op">,</span> serif;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb5-1"><a href="#cb5-1"></a>    font-family<span class="in">:</span> "Times New Roman"<span class="op">,</span> serif;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>uses “Times New ROman” if available, otherwise falls back to any available serif font.</p>
 <ol start="3" type="1">
 <li>Font-Size: font-size determines the size of the font. Font-size can be specified in different units, such as;</li>
@@ -523,7 +566,7 @@ Matches an element that is a sibling of another, although it does not have to be
 <li>Percentages (%)</li>
 </ul>
 <p>Example:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1"></a>    font-size<span class="in">: 16px; #Sets</span> the font size to 16 pixels<span class="fu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1"></a>    font-size<span class="in">:</span> 16px; <span class="pp">#Sets</span> the font size to 16 pixels.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="4" type="1">
 <li>Font-Weight: Controls the thickness of the text. Some font-weight include;</li>
 </ol>
@@ -535,7 +578,7 @@ Matches an element that is a sibling of another, although it does not have to be
 <li>or numerical values ranging from 100-900.</li>
 </ul>
 <p>Example:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb7-1"><a href="#cb7-1"></a>    font-weight<span class="in">: bold</span>; <span class="pp">#makes</span> the text bold<span class="fu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb7-1"><a href="#cb7-1"></a>    font-weight<span class="in">:</span> bold; <span class="pp">#makes</span> the text bold.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="5" type="1">
 <li>Text-Align: This Css property aligns text horizontally within it’s containing element. Possible values are</li>
 </ol>
@@ -546,7 +589,7 @@ Matches an element that is a sibling of another, although it does not have to be
 <li>justify</li>
 </ul>
 <p>Example:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb8-1"><a href="#cb8-1"></a>    text-align<span class="in">: center</span>; <span class="pp">#this</span> centers the text<span class="fu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb8-1"><a href="#cb8-1"></a>    text-align<span class="in">:</span> center; <span class="pp">#this</span> centers the text.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="6" type="1">
 <li>Text-Decoration: Adds decorative elements to text, such as;
 <ul>
@@ -557,7 +600,7 @@ Matches an element that is a sibling of another, although it does not have to be
 </ul></li>
 </ol>
 <p>Example:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb9-1"><a href="#cb9-1"></a>    text-decoration<span class="in">: underline</span>; <span class="pp">#underlines</span> the text<span class="fu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb9-1"><a href="#cb9-1"></a>    text-decoration<span class="in">:</span> underline; <span class="pp">#underlines</span> the text.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="7" type="1">
 <li>Text-Transform: Text Transform controls the capitalization of text. The values includes the following;</li>
 </ol>
@@ -576,13 +619,13 @@ Matches an element that is a sibling of another, although it does not have to be
 <li>or precentage.</li>
 </ul>
 <p>Example:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb10-1"><a href="#cb10-1"></a>    line-height<span class="in">: 1.5; #sets</span> the line height to 1<span class="fu">.5</span> times the font size<span class="fu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb10-1"><a href="#cb10-1"></a>    line-height<span class="in">:</span> 1<span class="fu">.5</span>; <span class="pp">#sets</span> the line height to 1<span class="fu">.5</span> times the font size.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The purpose of line-height is to enhance readability.</p>
 <ol start="9" type="1">
 <li>Letter-Spacing and Word-Spacing: These properties control the space between letters and words, respectively. They can accept values like normal or lengths (e.g., 2px).</li>
 </ol>
 <p>Example:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb11-1"><a href="#cb11-1"></a>    letter-spacing<span class="in">: 1px; #increases</span> the space between letters by 1 pixel<span class="fu">.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb11-1"><a href="#cb11-1"></a>    letter-spacing<span class="in">:</span> 1px; <span class="pp">#increases</span> the space between letters by 1 pixel.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="text" class="level3">
 <h3 class="anchored" data-anchor-id="text">Text</h3>
@@ -590,7 +633,7 @@ Matches an element that is a sibling of another, although it does not have to be
 <p><strong>1. Coloring Your Words: The Magic of <code>color</code></strong></p>
 <p>Imagine writing with a rainbow of colors instead of a plain black ink! The <code>color</code> property lets you do just that! You can apply an color imaginable using either it color-name(red, blue) or HEX values(#FF0000) just as we discussed in the <strong><em>CSS Properties and Values</em></strong> section.</p>
 <p>The Example below will change the text color to Red;</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb12-1"><a href="#cb12-1"></a>  <span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color: #FF0000;"</span><span class="kw">&gt;</span>This text is a red color!<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb12-1"><a href="#cb12-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color: #FF0000;"</span><span class="dt">&gt;</span>This text is a red color!<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <strong>Outcome:</strong>
 <div style="border: 1px solid green; padding: 10px;">
 <p style="color: #FF0000;">
@@ -602,8 +645,8 @@ This text is a red color!
 <p>DO you want your text to whisper softly or shout out from the rooftops? The <code>font-size</code> property controls the size of your font. Fonts sizes are measured in various units like pixels, point, or even relative sizes like larger(em) or smaller(rem). This was discussed in the <strong><em>CSS properties and values section above.</em></strong></p>
 <p><strong>Image of Units Of Type Size</strong> <img src="./units_of_type_size.png" class="img-fluid" alt="unit type size"></p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb13-1"><a href="#cb13-1"></a>  <span class="kw">&lt;h1&gt;</span>This heading is big and bold!<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a>  <span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"font-size: 1.5em;"</span><span class="kw">&gt;</span>This paragraph is slightly larger than the default size.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb13-1"><a href="#cb13-1"></a>  <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>This heading is big and bold!<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"font-size: 1.5em;"</span><span class="dt">&gt;</span>This paragraph is slightly larger than the default size.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <strong>Outcome:</strong>
 <div style="border: 1px solid green; padding: 10px;">
 <h1>
@@ -616,8 +659,8 @@ This paragraph is slightly larger than the default size.
 <p><strong>3. Font Family: The Power of <code>font-family</code></strong></p>
 <p>The world has more than just <strong>Times New Roman!</strong> Use the font-family prperty to choose from a wide variety of fonts installed on the user’s system. Remember, you have to specify multiple options as a fallback in case the user’s systems doesn’t have your first choice.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb14-1"><a href="#cb14-1"></a>  <span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"font-family: 'Courier New', monospace;"</span><span class="kw">&gt;</span>This text uses a typewriter-like font style.<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a><span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"font-family: 'Playfair Display', serif;"</span><span class="kw">&gt;</span>This one uses a fancy serif font.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb14-1"><a href="#cb14-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"font-family: 'Courier New', monospace;"</span><span class="dt">&gt;</span>This text uses a typewriter-like font style.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"font-family: 'Playfair Display', serif;"</span><span class="dt">&gt;</span>This one uses a fancy serif font.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Image of Typeface Terminology</strong> <img src="./typeface_terminology.jpeg" class="img-fluid" alt="An Image of Typeface Terminology"></p>
 <strong>Outcome:</strong>
 <div style="border: 1px solid green; padding: 10px;">
@@ -636,9 +679,9 @@ This one uses a fancy serif font.
 <li><code>font-variant</code>: Apply decorative effects like small-caps or superscript/subscript.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb15-1"><a href="#cb15-1"></a>  <span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"font-style: italic;"</span><span class="kw">&gt;</span>This text is italicized.<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"font-weight: bold;"</span><span class="kw">&gt;</span>This one is bold and strong!<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb15-3"><a href="#cb15-3"></a>  <span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"font-variant: small-caps;"</span><span class="kw">&gt;</span>This text uses small caps.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb15-1"><a href="#cb15-1"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"font-style: italic;"</span><span class="dt">&gt;</span>This text is italicized.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"font-weight: bold;"</span><span class="dt">&gt;</span>This one is bold and strong!<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3"></a>  <span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"font-variant: small-caps;"</span><span class="dt">&gt;</span>This text uses small caps.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <strong>Outcome:</strong>
 <div style="border: 1px solid green; padding: 5px;">
 <p style="font-style: italic;">
@@ -663,9 +706,9 @@ This text uses small caps.
 <p><strong>2. Bringing Pictures to Life: The Power of <code>background-image</code></strong></p>
 <p>With the <code>background-image</code> property, you can showcase a beautiful image as your background. Enter the background-image property! Specify the image path, and your chosen image will grace your web page.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb17-1"><a href="#cb17-1"></a>  <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"hero-section"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"background-image: url('images/hero-banner.jpg');"</span><span class="kw">&gt;</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a>  <span class="kw">&lt;h1&gt;</span>Welcome to Our Website!<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb17-3"><a href="#cb17-3"></a>  <span class="kw">&lt;/div&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb17-1"><a href="#cb17-1"></a>  <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-section"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"background-image: url('images/hero-banner.jpg');"</span><span class="dt">&gt;</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>  <span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Welcome to Our Website!<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
+<span id="cb17-3"><a href="#cb17-3"></a>  <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>3. Positioning and Repeating Images: <code>background-position</code> and <code>background-repeat</code></strong></p>
 <p>Don’t let your background image sit awkwardly! Use these properties to fine-tune its placement and behavior:</p>
 <p><strong>background-position:</strong> Control the X and Y coordinates of the image or use keywords like <code>center</code>, <code>top</code>, etc.</p>
@@ -678,10 +721,10 @@ This text uses small caps.
 </ul>
 <p>Imagine building walls around your elements to seperate and define them. The <code>border</code> property let’s you do just that, creating a single line border around an html element. You can customize it’s width, style, and color to achieve the desired visual effect. <strong>Example:</strong></p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb18-1"><a href="#cb18-1"></a>  h2 {</span>
-<span id="cb18-2"><a href="#cb18-2"></a>    <span class="kw">border</span>: <span class="dv">5</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#ccc</span><span class="op">;</span> <span class="co">/* 3px wide solid border in light gray */</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>    <span class="kw">border</span><span class="ch">:</span> <span class="dv">5</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#ccc</span><span class="op">;</span> <span class="co">/* 3px wide solid border in light gray */</span></span>
 <span id="cb18-3"><a href="#cb18-3"></a>}</span>
 <span id="cb18-4"><a href="#cb18-4"></a><span class="fu">.button</span> {</span>
-<span id="cb18-5"><a href="#cb18-5"></a>    <span class="kw">border</span>: <span class="dv">5</span><span class="dt">px</span> <span class="dv">dashed</span> <span class="cn">#333</span><span class="op">;</span> <span class="co">/* 2px dashed border in dark gray */</span></span>
+<span id="cb18-5"><a href="#cb18-5"></a>    <span class="kw">border</span><span class="ch">:</span> <span class="dv">5</span><span class="dt">px</span> <span class="dv">dashed</span> <span class="cn">#333</span><span class="op">;</span> <span class="co">/* 2px dashed border in dark gray */</span></span>
 <span id="cb18-6"><a href="#cb18-6"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Outcome:</strong></p>
 <p><img src="./styles.png" class="img-fluid"></p>
@@ -694,11 +737,11 @@ This text uses small caps.
 </ul>
 <p><strong>Example:</strong></p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb19-1"><a href="#cb19-1"></a>  p<span class="fu">.one</span> {</span>
-<span id="cb19-2"><a href="#cb19-2"></a>  <span class="kw">border-top</span>: <span class="dv">5</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#FF0000</span><span class="op">;</span> <span class="co">/* Thick red border on top only */</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a>  <span class="kw">border-top</span><span class="ch">:</span> <span class="dv">5</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#FF0000</span><span class="op">;</span> <span class="co">/* Thick red border on top only */</span></span>
 <span id="cb19-3"><a href="#cb19-3"></a>}</span>
 <span id="cb19-4"><a href="#cb19-4"></a>  p<span class="fu">.two</span> {</span>
-<span id="cb19-5"><a href="#cb19-5"></a>    <span class="kw">border</span>: <span class="dv">5</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#ddd</span><span class="op">;</span> <span class="co">/* Thin gray border all around */</span></span>
-<span id="cb19-6"><a href="#cb19-6"></a>    <span class="kw">border-right-color</span>: <span class="cn">#000</span><span class="op">;</span> <span class="co">/* Change right border color */</span></span>
+<span id="cb19-5"><a href="#cb19-5"></a>    <span class="kw">border</span><span class="ch">:</span> <span class="dv">5</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#ddd</span><span class="op">;</span> <span class="co">/* Thin gray border all around */</span></span>
+<span id="cb19-6"><a href="#cb19-6"></a>    <span class="kw">border-right-color</span><span class="ch">:</span> <span class="cn">#000</span><span class="op">;</span> <span class="co">/* Change right border color */</span></span>
 <span id="cb19-7"><a href="#cb19-7"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Outcome:</strong></p>
 <p><img src="./border-styling.png" class="img-fluid"></p>
@@ -706,17 +749,20 @@ This text uses small caps.
 <p>Want to elevate your elements and create a sense of dimension? The box-shadow property allows you to add shadows around elements, mimicking real-life light and depth perception.</p>
 <p><strong>Example:</strong></p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">.card</span> {</span>
-<span id="cb20-2"><a href="#cb20-2"></a>  <span class="kw">box-shadow</span>: <span class="dv">0</span><span class="dt">px</span> <span class="dv">2</span><span class="dt">px</span> <span class="dv">5</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.3</span><span class="fu">)</span><span class="op">;</span> <span class="co">/* Subtle shadow below the card */</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a>  <span class="kw">box-shadow</span><span class="ch">:</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">2</span><span class="dt">px</span> <span class="dv">5</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.3</span><span class="fu">)</span><span class="op">;</span> <span class="co">/* Subtle shadow below the card */</span></span>
 <span id="cb20-3"><a href="#cb20-3"></a>}</span>
 <span id="cb20-4"><a href="#cb20-4"></a><span class="fu">.button</span><span class="in">:hover</span> {</span>
-<span id="cb20-5"><a href="#cb20-5"></a>  <span class="kw">box-shadow</span>: <span class="dv">0</span><span class="dt">px</span> <span class="dv">3</span><span class="dt">px</span> <span class="dv">8</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.5</span><span class="fu">)</span><span class="op">;</span> <span class="co">/* Grow shadow on hover */</span></span>
+<span id="cb20-5"><a href="#cb20-5"></a>  <span class="kw">box-shadow</span><span class="ch">:</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">3</span><span class="dt">px</span> <span class="dv">8</span><span class="dt">px</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.5</span><span class="fu">)</span><span class="op">;</span> <span class="co">/* Grow shadow on hover */</span></span>
 <span id="cb20-6"><a href="#cb20-6"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Outcome:</strong> <img src="./box-shadow.png" class="img-fluid"></p>
 </section>
 </section>
-<section id="practice-activity-stylish-web-page-creation" class="level2">
-<h2 class="anchored" data-anchor-id="practice-activity-stylish-web-page-creation">Practice Activity: Stylish Web Page Creation</h2>
+<section id="practice-activity" class="level2">
+<h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
+<section id="stylish-web-page-creation" class="level3">
+<h3 class="anchored" data-anchor-id="stylish-web-page-creation">Stylish Web Page Creation</h3>
 <p>Objective: Create a stylish web page that incorporates various CSS styling techniques covered in the lesson. This activity will test your understanding of CSS properties, selectors, text styling, background styling, and border &amp; shadow effects.</p>
+</section>
 <section id="requirements" class="level3">
 <h3 class="anchored" data-anchor-id="requirements">Requirements:</h3>
 <p>Page Structure and Content:</p>
@@ -736,25 +782,25 @@ This text uses small caps.
 <p>Throughout this lesson, we’ve taken a deep dive into the world of CSS, learning how to manipulate the appearance and style of web pages. We started with the fundamental concepts of selectors, properties, and values, and then explored various properties for styling text, backgrounds, borders, and shadows.</p>
 <p>By now, you should be able to confidently:</p>
 <ul>
-<li>Identify and target elements on a webpage using different CSS selectors.</li>
-<li>Apply various CSS properties to customize the appearance of those elements.</li>
-<li>Understand the cascading nature of CSS and how styles are applied.</li>
-<li>Create basic visual themes and layouts using your newfound CSS skills.</li>
-<li>Remember, CSS is a vast and powerful tool, and this lesson has just scratched the surface. As you continue your exploration, you’ll discover even more possibilities to bring your web pages to life and express your unique design vision. Here are some additional resources to fuel your journey:</li>
+<li><p>Identify and target elements on a webpage using different CSS selectors.</p></li>
+<li><p>Apply various CSS properties to customize the appearance of those elements.</p></li>
+<li><p>Understand the cascading nature of CSS and how styles are applied.</p></li>
+<li><p>Create basic visual themes and layouts using your newfound CSS skills.</p></li>
 </ul>
+<p>Remember, CSS is a vast and powerful tool, and this lesson has just scratched the surface. As you continue your exploration, you’ll discover even more possibilities to bring your web pages to life and express your unique design vision. Here are some additional resources to fuel your journey:</p>
 <ol type="1">
 <li><p><strong>Interactive CSS Tutorials:</strong> Websites like Codecademy and Khan Academy offer interactive tutorials that allow you to learn CSS by doing.</p></li>
 <li><p><strong>CSS Cheat Sheet:</strong> Keep a quick reference sheet summarizing common CSS properties and values handy for easy lookup.</p></li>
 <li><p><strong>Online Design Tools:</strong> Experiment with online design tools like Figma or Adobe XD to visualize your styles before coding them. Don’t be afraid to experiment, explore, and unleash your creativity! The world of CSS awaits your unique touch.</p></li>
 </ol>
+<section id="faq" class="level3">
+<h3 class="anchored" data-anchor-id="faq">FAQ</h3>
 </section>
-<section id="faq" class="level2">
-<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
 </section>
 <section id="image-references" class="level2">
-<h2 class="anchored" data-anchor-id="image-references">Image References:</h2>
+<h2 class="anchored" data-anchor-id="image-references">Image References</h2>
 <ol type="1">
-<li><a href="https://google.com">google</a></li>
+<li><a href="https://google.com">Google</a></li>
 <li>HTML &amp; CSS Design and Build Websites by Jon Duckett</li>
 </ol>
 
@@ -803,6 +849,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -871,13 +944,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -912,18 +987,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -955,11 +1019,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -969,8 +1072,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -982,7 +1094,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1026,6 +1261,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1051,6 +1287,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1111,6 +1373,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

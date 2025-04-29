@@ -7,47 +7,73 @@ format:
 
 ![](/images/home-banner-png.png)
 
-<p class="para-1">Welcome to GitHub For The Real World, a course designed to take you from complete beginner to a website creating machine! In this course we will walk through the basics of using Github, Visual Studio Code, and Quarto for website development. If you don't know what any of those are, that is OK. We'll teach you! Just know this, we will collectively use those tools to develop free websites. Along the way you will pick up some fundamental HTML and CSS skills.</p>
+<p class="para-1">
 
+Welcome to GitHub For The Real World, a course designed to take you from complete beginner to a website creating machine! In this course we will walk through the basics of using Github, Visual Studio Code, and Quarto for website development. If you don't know what any of those are, that is OK. We'll teach you! Just know this, we will collectively use those tools to develop free websites. Along the way you will pick up some fundamental HTML and CSS skills.
+
+</p>
 
 {{< video https://youtu.be/NpEaa2P7qZI?si=mIxmp2B40lqpStgg >}}
 
-::: {.grid}
-::: {.g-col-6}
+::::: grid
+::: g-col-6
 <a href="lessons\unit_01\lesson_01\lesson_01.qmd" target="_blank"><input class="start_btn btn" type="submit" value="Start Your Journey"></a>
-
 :::
 
-::: {.g-col-6}
+::: g-col-6
 <a href="tasks_overview.qmd"> <input class="tasks_btn btn" type="submit" value="View Course Tasks"></a>
-
 :::
+:::::
 
-:::
+:::::: grid
+::: g-col-4
+<p class="logo">
 
-::: {.grid}
-::: {.g-col-4}
-<p class="logo">![](images/github.png){width=auto height=100}</p>
-<h3 class="tool">GitHub</h3>
+![](images/github.png){width="auto" height="100"}
+
+</p>
+
+<h3 class="tool">
+
+GitHub
+
+</h3>
 
 GitHub is a web-based platform for storing and sharing code. It lets developers work together on projects, track changes, and control who can access the code. Think of it as a social network for code!
 :::
 
-::: {.g-col-4}
-<p class="logo">![](images/visual-studio-code-icon.png){width=auto height=100}</p>
-<h3 class="tool">Visual Studio Code</h3>
+::: g-col-4
+<p class="logo">
+
+![](images/visual-studio-code-icon.png){width="auto" height="100"}
+
+</p>
+
+<h3 class="tool">
+
+Visual Studio Code
+
+</h3>
 
 Visual Studio Code (VS Code) is a free, open-source code editor for writing computer programs. It's popular for its features like syntax highlighting, code completion, and debugging tools, making it easier and faster to write code.
 :::
 
-::: {.g-col-4}
-<p class="logo">![](images/quarto-logo.png){width=auto height=100}</p>
-<h3 class="tool">Quarto</h3>
+::: g-col-4
+<p class="logo">
+
+![](images/quarto-logo.png){width="auto" height="100"}
+
+</p>
+
+<h3 class="tool">
+
+Quarto
+
+</h3>
 
 Quarto is a document creation framework that allows you to write content using familiar markdown syntax and generate various output formats like reports, presentations, websites, and more. It combines the readability of markdown with the power to programmatically generate content.
 :::
-
-:::
+::::::
 
 ## Required Experience
 
@@ -59,26 +85,25 @@ Some excellent websites where people post questions and answers to common progra
 
 ## Required Materials
 
-::: {.grid}
-::: {.g-col-4}
-
+:::::: grid
+::: g-col-4
 ![](images/laptop.png){width="100" height="100"}
 
 *A reliable laptop or desktop computer*
 :::
 
-::: {.g-col-4}
+::: g-col-4
 ![](images/network.png){width="100" height="100"}
 
 *A strong internet connection*
 :::
 
-::: {.g-col-4}
+::: g-col-4
 ![](images/goals.png){width="100" height="100"}
 
 *Consistency and the grit to set and achieve your goals*
 :::
-:::
+::::::
 
 # Course Outcomes
 
@@ -86,17 +111,17 @@ Some excellent websites where people post questions and answers to common progra
 
 By the end of this course you should know how to build a basic, static website using Quarto and hosted for free on Github. You will know how to customize your website and how to add cool things like embedded pictures and videos, code blocks, multiple pages, and nav bars.
 
-✅  You will know how to use Github for version control of future coding projects inside of VS code .
+✅ You will know how to use Github for version control of future coding projects inside of VS code .
 
-✅  You will know how to use Quarto to publish professional reports including websites.
+✅ You will know how to use Quarto to publish professional reports including websites.
 
 ### What you will *not* know by the end
 
 While we hope you feel you can create a custom website from scratch by the end of this course, there will still be some things you won't be able to do by the end.
 
-❌  You won't be able to create a dynamic website. A dynamic website is where the contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
+❌ You won't be able to create a dynamic website. A dynamic website is where the contents of the site react differently to each individual user on the site. (Like facebook, google, or youtube)
 
-❌  You won't known the ins and outs of data science programming like data wrangling, visualizing, or machine learning.  (These are saved for future courses)
+❌ You won't known the ins and outs of data science programming like data wrangling, visualizing, or machine learning. (These are saved for future courses)
 
 # Conclusion
 

@@ -16,7 +16,7 @@ website:
         menu: 
           - href: tools/Quarto_Installation/Quarto_Installation.qmd
             text: "Quarto Installation"
-          - href: tools/VsCode_Installation/VsCode_Installation.qmd
+          - href: tools/VsCode_Installation/VSCode_Installation.qmd
             text: "VS Code Installation"
           - href: tools/Git/Git_Installation.qmd
             text: "Git Installation"
