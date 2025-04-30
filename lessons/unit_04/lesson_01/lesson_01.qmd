@@ -46,9 +46,7 @@ You can lookup the github domain documentation for more details on how to setup 
 
 This is what you get when DNS check is successful. ![DNS check successful](./lesson_images/image4.png)
 
-|  |
-|-----------------|
-| After a successful DNS check as denoted by **1** in the image below, you can navigate to the website by clicking on **view site** as annotated. ![details in the image above](./lesson_images/image7.png) |
+After a successful DNS check as denoted by **1** in the image below, you can navigate to the website by clicking on **view site** as annotated. ![details in the image above](./lesson_images/image7.png) \|
 
 After a successful DNS check and viewing the url link, the image below will be the final result. ![website](./lesson_images/image8.png)
 
@@ -64,7 +62,7 @@ You can see the custom domain name [africancompute.com](https://africacompute.co
 
 -   Share a link to your website in your group channel.
 
-Note - Share any challenges you might be havin there too.
+Note - Share any challenges you might be having there too.
 
 ## Conclusion
 

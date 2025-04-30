@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Advanced Git Concepts – GitHub For The Real World</title>
+<title>lesson_02 – GitHub For The Real World</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -268,135 +234,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
-  <ul class="collapse">
-  <li><a href="#git-stash" id="toc-git-stash" class="nav-link" data-scroll-target="#git-stash">Git Stash</a></li>
-  <li><a href="#git-revert" id="toc-git-revert" class="nav-link" data-scroll-target="#git-revert">Git Revert</a></li>
-  <li><a href="#git-grep" id="toc-git-grep" class="nav-link" data-scroll-target="#git-grep">Git Grep</a></li>
-  <li><a href="#git-diff" id="toc-git-diff" class="nav-link" data-scroll-target="#git-diff">Git Diff</a></li>
-  <li><a href="#git-rebase" id="toc-git-rebase" class="nav-link" data-scroll-target="#git-rebase">Git Rebase</a></li>
-  <li><a href="#git-clean" id="toc-git-clean" class="nav-link" data-scroll-target="#git-clean">Git Clean</a></li>
-  </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  </ul>
-</nav>
-</nav>
+  
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Advanced Git Concepts</h1>
-</div>
+<main class="content column-page" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta column-page-right">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
 
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>In the previous lesson on Git, we learned of foundational git concepts and commands using the terminal and directly from VS code. In this lesson, we’ll explore some advanced git concepts and how to troubleshoot issues, when things are not working properly.</p>
-</section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<ul>
-<li><p>Students will understand and be able to run some advanced Git functions using the terminal.</p></li>
-<li><p>Students will be able to resolve common conflicts that come up while using Git.</p></li>
-</ul>
-</section>
-<section id="lesson" class="level2">
-<h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
-<p>Git provides developers with some powerful features and has become the standard tool for version control. Using its advanced features can seem intimidating at first, but with regular practice, they can become second nature and can greatly improve your workflow. If you’re feeling motivated, here are some advanced Git concepts and commands to enhance your productivity :</p>
-<section id="git-stash" class="level3">
-<h3 class="anchored" data-anchor-id="git-stash">Git Stash</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>git stash</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You may have noticed that while working on a branch locally, you won’t be able to checkout (switch) to another branch and pull in upstream (remote repo) changes without making a commit of the changes made to your current branch. With <code>git stash</code> you can temporarily save changes made on your working branch so you can switch to a different branch, pull in upstream changes, and switch back to your original branch, at which point you can apply the saved changes. It works by keeping or saving all of your uncommitted changes locally, but doesn’t commit them, while also cleaning up your working tree. Stashing can come in handy if you need to move away from what you are doing, say to fix an urgent bug, but aren’t quite ready to commit what you’ve done so far.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>git stash pop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>When you’re ready to continue, you can pull your changes from the stash with the command above.</p>
-</section>
-<section id="git-revert" class="level3">
-<h3 class="anchored" data-anchor-id="git-revert">Git Revert</h3>
-<p>Git revert is a command that allows you to undo a previous commit without deleting it entirely. It creates a new commit that reverses the changes made in the previous commit, making it easy to fix mistakes or roll back to a previous version of your project. You can use <code>git revert</code> when you want to undo changes that have already been pushed to a shared repository or when you need to fix a bug without affecting other parts of your code. To use <code>git revert</code>, you need to identify the commit you want to undo and run the command:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>git revert &lt;commit-hash&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will create a new commit that reverses the changes introduced by the previous commit. It’s important to note that <code>git revert</code> doesn’t delete any commits or rewrite the commit history, which makes it a safer option compared to other undo methods. You can also use this if you want to revert the latest commit:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>git revert HEAD</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="git-grep" class="level3">
-<h3 class="anchored" data-anchor-id="git-grep">Git Grep</h3>
-<p>Git grep is a command that lets you search for specific text or patterns within your repository. This can be helpful when you need to find all instances of a particular function, variable, or string across your project. It searches through the tracked files in the current branch of a Git repository and returns a list of files that match the specified text or pattern, along with the line numbers where it appears. This can be particularly helpful when working on large projects with many files and lines of code.</p>
-<p>To use git grep, simply run the command followed by the search term:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a href="#cb5-1"></a>git grep &lt;search-term&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="git-diff" class="level3">
-<h3 class="anchored" data-anchor-id="git-diff">Git Diff</h3>
-<p>Git diff allows you to compare file changes between the working directory and the latest commit in the local repository, two commits or two branches. It shows the differences between the files, highlighting the lines that were added or removed. This command is useful when you want to review your changes before committing them, or when you want to see the changes made by someone else on your team. It’s also helpful when you want to troubleshoot issues by comparing different versions of your code.</p>
-<p>To compare file changes between the working directory and the local repository, simply type:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href="#cb6-1"></a>git diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To compare two commits:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a href="#cb7-1"></a>git diff &lt;commit1&gt;&lt;commit2&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To compare two branches:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href="#cb8-1"></a>git diff &lt;branch1&gt; -- &lt;branch2&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="git-rebase" class="level3">
-<h3 class="anchored" data-anchor-id="git-rebase">Git Rebase</h3>
-<p>If you wanted to merge all your commits in a feature branch to the main branch, what probably comes to mind is using the <code>git merge</code> command. This will take all of the changes in the featured branch and stuff it into one merge commit and then put that merge commit into the main branch. After those changes are combined into that merge commit, it looks scattered, especially when you have a bunch of people working on the featured branch and pushing changes almost every time.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./git_rebase1.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Git Merge</figcaption>
-</figure>
-</div>
-<p>The <code>git rebase</code> command can solve that for us. It takes all of your commits from a featured branch and moves them on top of the main commit.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./git_rebase2.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Git Rebase</figcaption>
-</figure>
-</div>
-<p>A major advantage is that it easily traces your commits inside the main branch. You should use the <code>git rebase</code> command to consolidate into a single branch when you have multiple private branches. This will display the commit history in a linear form, which makes it easy to see the progression of changes because they are all applied one after the other, without any branches or merge commits. This can make it easier to understand how the code evolved over time.</p>
-<p>Additionally, a linear history can make it easier to track down bugs because you can more easily see when a particular change was introduced, and to revert changes since you can simply revert a single commit rather than dealing with the complexity of merging branches.</p>
-<p>To use the rebase command, simply type:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a href="#cb9-1"></a>git rebase &lt;base&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Where <code>&lt;base&gt;</code> is the branch you want to move your current branch to.</p>
-</section>
-<section id="git-clean" class="level3">
-<h3 class="anchored" data-anchor-id="git-clean">Git Clean</h3>
-<p>If you have files in your working directory that you don’t want or need, <code>git clean</code> can help you out. Git Clean is a command that allows you to remove untracked files from your working directory. These could be temporary files, build artifacts, or other files that you don’t need. To use <code>git clean</code> - just navigate to the directory where you want to clean up and run the command:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>git clean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You can also use options like <code>-n</code> to preview which files will be deleted before actually deleting them, and <code>-d</code> to delete untracked directories as well as files. Git Clean is useful for keeping your working directory clean and organized. Just be careful not to accidentally delete any important files!</p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Good Job completing this lesson! By now you should:</p>
-<ul>
-<li><p>Understand some advanced Git concepts and know how to run Git commands using the terminal.</p></li>
-<li><p>Know how to troubleshoot conflicts that may arise while using Git.</p></li>
-</ul>
-
-
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

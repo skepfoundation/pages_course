@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Advanced Git Concepts – GitHub For The Real World</title>
+<title>Lesson 1: Using A Custom Domain – GitHub For The Real World</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -277,14 +243,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
   <ul class="collapse">
-  <li><a href="#git-stash" id="toc-git-stash" class="nav-link" data-scroll-target="#git-stash">Git Stash</a></li>
-  <li><a href="#git-revert" id="toc-git-revert" class="nav-link" data-scroll-target="#git-revert">Git Revert</a></li>
-  <li><a href="#git-grep" id="toc-git-grep" class="nav-link" data-scroll-target="#git-grep">Git Grep</a></li>
-  <li><a href="#git-diff" id="toc-git-diff" class="nav-link" data-scroll-target="#git-diff">Git Diff</a></li>
-  <li><a href="#git-rebase" id="toc-git-rebase" class="nav-link" data-scroll-target="#git-rebase">Git Rebase</a></li>
-  <li><a href="#git-clean" id="toc-git-clean" class="nav-link" data-scroll-target="#git-clean">Git Clean</a></li>
+  <li><a href="#creating-the-default-github-pages-domain" id="toc-creating-the-default-github-pages-domain" class="nav-link" data-scroll-target="#creating-the-default-github-pages-domain">Creating the default Github Pages Domain:</a></li>
+  <li><a href="#acquiring-and-setting-up-a-custom-domain" id="toc-acquiring-and-setting-up-a-custom-domain" class="nav-link" data-scroll-target="#acquiring-and-setting-up-a-custom-domain">Acquiring and Setting Up a Custom Domain:</a></li>
+  <li><a href="#changing-the-default-github-pages-domain" id="toc-changing-the-default-github-pages-domain" class="nav-link" data-scroll-target="#changing-the-default-github-pages-domain">Changing the Default GitHub Pages Domain:</a></li>
+  <li><a href="#when-dns-check-is-successful" id="toc-when-dns-check-is-successful" class="nav-link" data-scroll-target="#when-dns-check-is-successful">When DNS check is successful</a></li>
   </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -297,7 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Advanced Git Concepts</h1>
+<h1 class="title">Lesson 1: Using A Custom Domain</h1>
 </div>
 
 
@@ -316,86 +284,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>In the previous lesson on Git, we learned of foundational git concepts and commands using the terminal and directly from VS code. In this lesson, we’ll explore some advanced git concepts and how to troubleshoot issues, when things are not working properly.</p>
+<p>In this lesson, we will explore how to personalize your GitHub Pages website by changing its domain name. Whether you’re looking to align your site with a personal brand or make it more memorable, a custom domain can set your project apart. We’ll cover how to modify your site’s default GitHub domain and guide you through the process of setting up a custom domain from an external provider.</p>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li><p>Students will understand and be able to run some advanced Git functions using the terminal.</p></li>
-<li><p>Students will be able to resolve common conflicts that come up while using Git.</p></li>
+<li><p>Students will be able to change the default GitHub Pages domain to a more personalized one within GitHub settings.</p></li>
+<li><p>Students will be able to acquire and configure a custom domain from an external domain registrar for their GitHub Pages site.</p></li>
 </ul>
 </section>
 <section id="lesson" class="level2">
 <h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
-<p>Git provides developers with some powerful features and has become the standard tool for version control. Using its advanced features can seem intimidating at first, but with regular practice, they can become second nature and can greatly improve your workflow. If you’re feeling motivated, here are some advanced Git concepts and commands to enhance your productivity :</p>
-<section id="git-stash" class="level3">
-<h3 class="anchored" data-anchor-id="git-stash">Git Stash</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>git stash</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You may have noticed that while working on a branch locally, you won’t be able to checkout (switch) to another branch and pull in upstream (remote repo) changes without making a commit of the changes made to your current branch. With <code>git stash</code> you can temporarily save changes made on your working branch so you can switch to a different branch, pull in upstream changes, and switch back to your original branch, at which point you can apply the saved changes. It works by keeping or saving all of your uncommitted changes locally, but doesn’t commit them, while also cleaning up your working tree. Stashing can come in handy if you need to move away from what you are doing, say to fix an urgent bug, but aren’t quite ready to commit what you’ve done so far.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>git stash pop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>When you’re ready to continue, you can pull your changes from the stash with the command above.</p>
-</section>
-<section id="git-revert" class="level3">
-<h3 class="anchored" data-anchor-id="git-revert">Git Revert</h3>
-<p>Git revert is a command that allows you to undo a previous commit without deleting it entirely. It creates a new commit that reverses the changes made in the previous commit, making it easy to fix mistakes or roll back to a previous version of your project. You can use <code>git revert</code> when you want to undo changes that have already been pushed to a shared repository or when you need to fix a bug without affecting other parts of your code. To use <code>git revert</code>, you need to identify the commit you want to undo and run the command:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>git revert &lt;commit-hash&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will create a new commit that reverses the changes introduced by the previous commit. It’s important to note that <code>git revert</code> doesn’t delete any commits or rewrite the commit history, which makes it a safer option compared to other undo methods. You can also use this if you want to revert the latest commit:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>git revert HEAD</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="git-grep" class="level3">
-<h3 class="anchored" data-anchor-id="git-grep">Git Grep</h3>
-<p>Git grep is a command that lets you search for specific text or patterns within your repository. This can be helpful when you need to find all instances of a particular function, variable, or string across your project. It searches through the tracked files in the current branch of a Git repository and returns a list of files that match the specified text or pattern, along with the line numbers where it appears. This can be particularly helpful when working on large projects with many files and lines of code.</p>
-<p>To use git grep, simply run the command followed by the search term:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a href="#cb5-1"></a>git grep &lt;search-term&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="git-diff" class="level3">
-<h3 class="anchored" data-anchor-id="git-diff">Git Diff</h3>
-<p>Git diff allows you to compare file changes between the working directory and the latest commit in the local repository, two commits or two branches. It shows the differences between the files, highlighting the lines that were added or removed. This command is useful when you want to review your changes before committing them, or when you want to see the changes made by someone else on your team. It’s also helpful when you want to troubleshoot issues by comparing different versions of your code.</p>
-<p>To compare file changes between the working directory and the local repository, simply type:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href="#cb6-1"></a>git diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To compare two commits:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a href="#cb7-1"></a>git diff &lt;commit1&gt;&lt;commit2&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To compare two branches:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href="#cb8-1"></a>git diff &lt;branch1&gt; -- &lt;branch2&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="git-rebase" class="level3">
-<h3 class="anchored" data-anchor-id="git-rebase">Git Rebase</h3>
-<p>If you wanted to merge all your commits in a feature branch to the main branch, what probably comes to mind is using the <code>git merge</code> command. This will take all of the changes in the featured branch and stuff it into one merge commit and then put that merge commit into the main branch. After those changes are combined into that merge commit, it looks scattered, especially when you have a bunch of people working on the featured branch and pushing changes almost every time.</p>
+<section id="creating-the-default-github-pages-domain" class="level3">
+<h3 class="anchored" data-anchor-id="creating-the-default-github-pages-domain">Creating the default Github Pages Domain:</h3>
+<p>To create a default github pages domain;</p>
+<ol type="1">
+<li><p>You have to go to your github profile.</p></li>
+<li><p>Create a repository with the name in this format <strong>[your profile name].github.io</strong>. i.e, if your profile name is <strong>“james”</strong> your default github domain name will be <strong>james.github.io</strong>.</p></li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./git_rebase1.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Git Merge</figcaption>
+<p><img src="./lesson_images/0.png" class="img-fluid figure-img"></p>
+<figcaption>details in the image above</figcaption>
 </figure>
 </div>
-<p>The <code>git rebase</code> command can solve that for us. It takes all of your commits from a featured branch and moves them on top of the main commit.</p>
+</section>
+<section id="acquiring-and-setting-up-a-custom-domain" class="level3">
+<h3 class="anchored" data-anchor-id="acquiring-and-setting-up-a-custom-domain">Acquiring and Setting Up a Custom Domain:</h3>
+<p>Choose a domain registrar to acquire a free or paid custom domain (e.g., Freenom for free domains). Once you have your domain, you can follow the step listed below on <strong><em>Changing the Default Github Pages Domain</em></strong> to configure it.</p>
+<p>You can lookup the github domain documentation for more details on how to setup custom domain. <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">custom domain</a></p>
+</section>
+<section id="changing-the-default-github-pages-domain" class="level3">
+<h3 class="anchored" data-anchor-id="changing-the-default-github-pages-domain">Changing the Default GitHub Pages Domain:</h3>
+<ol type="1">
+<li><p>When you navigate to the reporsitory you just created to host your website, Navigate to the <strong>Settings</strong></p></li>
+<li><p>Then find the <strong>‘Pages’</strong> section on the left sidebar. as annotated in the image below.</p></li>
+<li><p>In the <strong>‘Custom domain’</strong> section, you can input your personalized site’s URL in the text box provided. For this lesson, I will be making use of <a href="https://africacompute.com/">africancompute.com</a> as my personalized domain name.</p></li>
+<li><p>As a heads up, Github has to run a DNS check on the url. This is a security measure which takes at most 48 hours before being approved. So do not panic when it takes longer than you anticipated.</p></li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./git_rebase2.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Git Rebase</figcaption>
+<p><img src="./lesson_images/1.png" class="img-fluid figure-img"></p>
+<figcaption>details in the image above</figcaption>
 </figure>
 </div>
-<p>A major advantage is that it easily traces your commits inside the main branch. You should use the <code>git rebase</code> command to consolidate into a single branch when you have multiple private branches. This will display the commit history in a linear form, which makes it easy to see the progression of changes because they are all applied one after the other, without any branches or merge commits. This can make it easier to understand how the code evolved over time.</p>
-<p>Additionally, a linear history can make it easier to track down bugs because you can more easily see when a particular change was introduced, and to revert changes since you can simply revert a single commit rather than dealing with the complexity of merging branches.</p>
-<p>To use the rebase command, simply type:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a href="#cb9-1"></a>git rebase &lt;base&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Where <code>&lt;base&gt;</code> is the branch you want to move your current branch to.</p>
 </section>
-<section id="git-clean" class="level3">
-<h3 class="anchored" data-anchor-id="git-clean">Git Clean</h3>
-<p>If you have files in your working directory that you don’t want or need, <code>git clean</code> can help you out. Git Clean is a command that allows you to remove untracked files from your working directory. These could be temporary files, build artifacts, or other files that you don’t need. To use <code>git clean</code> - just navigate to the directory where you want to clean up and run the command:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource git number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href="#cb10-1"></a>git clean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You can also use options like <code>-n</code> to preview which files will be deleted before actually deleting them, and <code>-d</code> to delete untracked directories as well as files. Git Clean is useful for keeping your working directory clean and organized. Just be careful not to accidentally delete any important files!</p>
+<section id="when-dns-check-is-successful" class="level3">
+<h3 class="anchored" data-anchor-id="when-dns-check-is-successful">When DNS check is successful</h3>
+<p>This is what you get when DNS check is successful. <img src="./lesson_images/image4.png" class="img-fluid" alt="DNS check successful"></p>
+<p>After a successful DNS check as denoted by <strong>1</strong> in the image below, you can navigate to the website by clicking on <strong>view site</strong> as annotated. <img src="./lesson_images/image7.png" class="img-fluid" alt="details in the image above"> |</p>
+<p>After a successful DNS check and viewing the url link, the image below will be the final result. <img src="./lesson_images/image8.png" class="img-fluid" alt="website"></p>
+<p>You can see the custom domain name <a href="https://africacompute.com/">africancompute.com</a> in the url bar above.</p>
 </section>
+</section>
+<section id="practice-activity" class="level2">
+<h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
+<ul>
+<li><p>Acquire a custom domain with your name from an external registrar e.g.&nbsp;<em>mfonekpo.com</em>.</p></li>
+<li><p>Configure it for your GitHub Pages site.</p></li>
+<li><p>Change your GitHub Pages site to a more personalized GitHub domain.</p></li>
+<li><p>Share a link to your website in your group channel.</p></li>
+</ul>
+<p>Note - Share any challenges you might be having there too.</p>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Good Job completing this lesson! By now you should:</p>
+<p>You should now have a GitHub Pages site with a personalized domain, enhancing its professional appearance and memorability. In our next lesson, we will delve into optimizing your site’s SEO to increase visibility and traffic.</p>
+<section id="faq" class="level3">
+<h3 class="anchored" data-anchor-id="faq">FAQ</h3>
 <ul>
-<li><p>Understand some advanced Git concepts and know how to run Git commands using the terminal.</p></li>
-<li><p>Know how to troubleshoot conflicts that may arise while using Git.</p></li>
+<li>Can I use any domain registrar for a custom GitHub Pages domain?</li>
 </ul>
+<p><strong>Ans:</strong> Yes, you can use any domain registrar to acquire a custom domain for your GitHub Pages site. The key is to correctly configure the DNS settings to point to GitHub’s servers.</p>
+<ul>
+<li>What if my custom domain isn’t working immediately?</li>
+</ul>
+<p><strong>Ans:</strong> Changes can take up to 48 hours to propagate. If your custom domain isn’t working right away, give it some time. Ensure your DNS settings are correctly configured according to GitHub’s documentation.</p>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
